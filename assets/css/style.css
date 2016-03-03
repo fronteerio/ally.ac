@@ -44,6 +44,12 @@ body {
     width: 500px
 }
 
+@media (max-width: 768px) {
+    .container #logo-full {
+        width: 350px;
+    }
+}
+
 footer {
     color: #424242;
     padding-top: 30px;
