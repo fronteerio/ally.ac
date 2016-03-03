@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="106px" height="106px" viewBox="0 0 106 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Home label</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="iPad-Landscape-1/2" sketch:type="MSArtboardGroup" transform="translate(-47.000000, 0.000000)">
+            <g id="Home-label" sketch:type="MSLayerGroup" transform="translate(47.200000, 0.200000)">
+                <rect id="Rectangle-4" fill="#40C6D0" sketch:type="MSShapeGroup" x="4.97379915e-14" y="0" width="105.6" height="105.6"></rect>
+                <g id="ally-logo" transform="translate(19.875524, 28.171455)" fill="#333333" sketch:type="MSShapeGroup">
+                    <path d="M65.8489523,49.2570903 L32.9244762,0 L0,49.2570903 L16.1386071,49.2570903 C19.055469,42.803401 25.5619615,38.3110703 33.1204552,38.3110703 C40.6789489,38.3110703 47.1854414,42.803401 50.1022995,49.2570897 L65.8489523,49.2570903 Z M32.9244762,34.4017774 C37.2539252,34.4017774 40.7636372,30.9012773 40.7636372,26.5831916 C40.7636372,22.2651059 37.2539252,18.7646058 32.9244762,18.7646058 C28.5950271,18.7646058 25.0853152,22.2651059 25.0853152,26.5831916 C25.0853152,30.9012773 28.5950271,34.4017774 32.9244762,34.4017774 L32.9244762,34.4017774 Z" id="A"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

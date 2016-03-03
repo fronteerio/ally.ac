@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Clear Sans';
+    src: url('../fonts/clearsans-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    src: url('../fonts/clearsans-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+  font-family: "Clear Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding-bottom: 100px;
+}
+
+.container {
+    max-width: 700px;
+}
+
+.container div#logo-small {
+    height: 110px;
+}
+
+.container #logo-small img {
+    float: left;
+    height: 75px;
+}
+
+.container #logo-full {
+    margin-bottom: 40px;
+    width: 500px
+}
+
+footer {
+    color: #424242;
+    padding-top: 30px;
+    font-size: 12px;
+}
+
+footer a {
+    color: #424242;
+    font-size: 18px;
+    font-variant: small-caps;
+}
