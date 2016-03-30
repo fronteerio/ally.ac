@@ -15,6 +15,23 @@ ul li {
     display: inline-block;
 }
 
+input.form-control {
+    color: #222;
+}
+
+input.form-control:-webkit-input-placeholder {
+    color: #4A4A4A;
+}
+input.form-control:-moz-placeholder {
+   color: #4A4A4A;
+}
+input.form-control::-moz-placeholder {
+   color: #4A4A4A;
+}
+input.form-control:-ms-input-placeholder {
+   color: #4A4A4A;
+}
+
 .inside-full-height {
     height: 100%;
     margin-bottom: 0;
