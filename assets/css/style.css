@@ -519,4 +519,6 @@ footer figure {
 
 #footer-copyright-container figure {
     margin-right: 10px;
+    position: relative;
+    top: -1px;
 }
