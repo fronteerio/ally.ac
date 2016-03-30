@@ -201,6 +201,11 @@ ul li {
     padding-top: 10px;
 }
 
+#top h1 {
+    line-height: 35px;
+    margin: 0px;
+}
+
 #top,
 #top h2 {
     color: #FFF;
