@@ -4,27 +4,201 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ally is an SAAS offering focusing on making course content accessible to everyone">
+    <meta name="description" content="// TODO">
     <meta name="author" content="Fronteer LTD">
     <link rel="icon" href="favicon.ico">
+
     <title>Ally - Making course content accessible</title>
-    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,300,500" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div class="wrapper" role="main">
-        <div class="container" role="main">
-            <h1 class="sr-only">Ally</h1>
-            <img src="assets/images/logo-full.svg" alt="Ally" id="logo-full" aria-hidden="true" />
-            <p>working hard to <strong>make course content accessible</strong> soon</p>
-        </div>
-    </div>
 
+    <section id="top" class="triangle clearfix">
+        <h1 class="sr-only">Ally</h1>
+
+        <!-- NAVIGATION -->
+        <nav class="clearfix">
+            <div class="hidden-xs col-sm-3">
+                <figure>
+                    <img src="/assets/img/logo-brand-mark.svg" alt="" title="Ally" />
+                </figure>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <ul>
+                    <li><a href="#request-demo">Request demo</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <!-- <li><a href="#get-in-touch">Contact</a></li> -->
+                </ul>
+            </div>
+        </nav>
+
+        <!-- REQUEST DEMO -->
+        <div id="request-demo">
+            <figure id="logo">
+                <img src="assets/img/logo.svg" alt="" title="Ally" />
+            </figure>
+            <p>Making course content accessible</p>
+            <h2>Request a demo</h2>
+            <div id="request-demo-form-container" class="clearfix">
+                <form id="request-demo-form" class="form-inline request-demo-component" role="form">
+                    <div class="form-group">
+                        <label class="sr-only" for="request-demo-email">Email:</label>
+                        <input type="email" id="request-demo-email" name="email" placeholder="Your email address" class="form-control" required /><button type="submit" class="btn">Request demo</button>
+                    </div>
+                </form>
+                <div class="hide request-demo-component">
+                    <p id="request-demo-success" tabindex="0">
+                        Thanks for requesting a demo. We'll be in touch soon!
+                    </p>
+                </div>
+            </div>
+
+            <div id="hero-container">
+                <div id="hero">
+                    <figure>
+                        <img src="/assets/img/hero.png" alt="" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="about" class="triangle">
+        <!-- FEATURES -->
+        <section id="features" class="container-fluid">
+            <h2 class="sr-only">Features</h2>
+            <div class="row">
+                <div class="row-height">
+                    <div class="col-xs-12 col-sm-5 col-sm-height">
+                        <div class="inside inside-full-height">
+                            <div class="content">
+                                <figure>
+                                    <img src="assets/img/features/alternative-accessible-formats.png" alt="" title="Alternative accessible formats" />
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-sm-height col-sm-middle">
+                        <div class="inside">
+                            <div class="content">
+                                <h3>Alternative accessible formats</h3>
+                                <p>Automatically check for accessibility issues and generate alternative accessible formats using advanced Machine Learning algorithms.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-height">
+                    <div class="visible-xs col-xs-12">
+                        <figure>
+                            <img src="assets/img/features/instructor-feedback.png" alt="" title="Instructor feedback" />
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-sm-height col-sm-middle">
+                        <div class="inside">
+                            <div class="content">
+                                <h3>Instructor feedback</h3>
+                                <p>Guide instructors on how to improve the accessibility of their course content and alter future behavior.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-xs col-sm-5 col-sm-height">
+                        <div class="inside inside-full-height">
+                            <div class="content">
+                                <figure>
+                                    <img src="assets/img/features/instructor-feedback.png" alt="" title="Instructor feedback" />
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-height">
+                    <div class="col-xs-12 col-sm-5 col-sm-height">
+                        <div class="inside">
+                            <div class="content">
+                                <figure>
+                                    <img src="assets/img/features/institutional-report.png" alt="" title="Institutional report" />
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-sm-height col-sm-middle">
+                        <div class="inside">
+                            <div class="content">
+                                <h3>Institutional report</h3>
+                                <p>Provides institution-wide reporting on course content accessibility and drive further improvements at the institution.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTEGRATIONS -->
+        <section id="integrations">
+            <h2 class="sr-only">Learning Management System integrations</h2>
+            <div class="clearfix">
+                <ul>
+                    <li>
+                        <span class="sr-only">Blackboard</span>
+                        <figure>
+                            <img src="/assets/img/integrations/blackboard.png" alt="" title="Blackboard" />
+                        </figure>
+                    </li>
+                    <li>
+                        <span class="sr-only">Instructure Canvas</span>
+                        <figure>
+                            <img src="/assets/img/integrations/canvas.png" alt="" title="Instructure Canvas" />
+                        </figure>
+                    </li>
+                    <li>
+                        <span class="sr-only">Brightspace by D2L</span>
+                        <figure>
+                            <img src="/assets/img/integrations/d2l.png" alt="" title="Brightspace by D2L" />
+                        </figure>
+                    </li>
+                    <li>
+                        <span class="sr-only">Moodle</span>
+                        <figure>
+                            <img src="/assets/img/integrations/moodle.png" alt="" title="Moodle" />
+                        </figure>
+                    </li>
+                    <li>
+                        <span class="sr-only">Sakai</span>
+                        <figure>
+                            <img src="/assets/img/integrations/sakai.png" alt="" title="Sakai" />
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
     <footer>
-        <p>&copy; <span id="footer-year"></span>. All rights reserved.</p>
+        <div id="footer-logo-container">
+            <figure>
+                <img src="/assets/img/logo-footer.svg" alt="" title="Ally" />
+            </figure>
+        </div>
+        <div id="footer-copyright-container">
+            <a href="http://fronteer.io" target="_blank">
+                <span class="sr-only">Fronteer</span>
+                <figure>
+                    <img src="/assets/img/fronteer.svg" alt="" title="Fronteer" />
+                </figure>
+            </a>
+            &copy; All rights reserved Fronteer Ltd <span id="footer-year"></span>
+        </div>
     </footer>
 
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/ally.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -33,9 +207,6 @@
 
       ga('create', 'UA-74642053-1', 'auto');
       ga('send', 'pageview');
-
-      document.getElementById('footer-year').innerHTML = new Date().getFullYear();
-
     </script>
 </body>
 </html>

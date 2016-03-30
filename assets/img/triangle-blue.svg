@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="519px" height="783px" viewBox="0 0 519 783" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>triangleBlue</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="keyWidths" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2880" transform="translate(0.000000, -304.000000)" fill="#00C0CB">
+            <g id="bgPanels" transform="translate(-526.000000, 299.000000)">
+                <g id="colouredAngles">
+                    <path d="M1045,787.865055 L522.5,0 L0,787.865055 L1045,787.865055 Z" id="triangleBlue"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
