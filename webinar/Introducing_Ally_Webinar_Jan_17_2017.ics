@@ -6,7 +6,7 @@ CALSCALE:GREGORIAN
 BEGIN:VTIMEZONE
 TZID:Europe/London
 TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
-X-LIC-LOCATION:Europe/London
+LOCATION:http://tinyurl.com/j3sojrf
 BEGIN:DAYLIGHT
 TZOFFSETFROM:+0000
 TZOFFSETTO:+0100
