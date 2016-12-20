@@ -28,6 +28,7 @@ UID:20161216T153318Z-451818131@marudot.com
 DTSTART;TZID="Europe/London":20170117T150000
 DTEND;TZID="Europe/London":20170117T160000
 SUMMARY:Ally introduction webinar and demo
+LOCATION:http://tinyurl.com/j3sojrf
 URL:http%3A%2F%2Ftinyurl.com%2Fj3sojrf
 DESCRIPTION:Ally – Making course content accessible. Introduction webinar and demo.\n\nFor best results join on a PC or Mac using Chrome:\nPlease click this URL to join. http://tinyurl.com/j3sojrf\n\nBrowser or device information:\nhttps://en-us.help.blackboard.com/Collaborate/Ultra/Participant/010_Get_Started/Browser_Support
 END:VEVENT
