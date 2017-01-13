@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="106px" height="106px" viewBox="0 0 106 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
-    <title>Home label</title>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="106px" viewBox="0 0 106 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-small</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="iPad-Landscape-1/2" sketch:type="MSArtboardGroup" transform="translate(-47.000000, 0.000000)">
-            <g id="Home-label" sketch:type="MSLayerGroup" transform="translate(47.200000, 0.200000)">
-                <rect id="Rectangle-4" fill="#40C6D0" sketch:type="MSShapeGroup" x="4.97379915e-14" y="0" width="105.6" height="105.6"></rect>
-                <g id="ally-logo" transform="translate(19.875524, 28.171455)" fill="#333333" sketch:type="MSShapeGroup">
-                    <path d="M65.8489523,49.2570903 L32.9244762,0 L0,49.2570903 L16.1386071,49.2570903 C19.055469,42.803401 25.5619615,38.3110703 33.1204552,38.3110703 C40.6789489,38.3110703 47.1854414,42.803401 50.1022995,49.2570897 L65.8489523,49.2570903 Z M32.9244762,34.4017774 C37.2539252,34.4017774 40.7636372,30.9012773 40.7636372,26.5831916 C40.7636372,22.2651059 37.2539252,18.7646058 32.9244762,18.7646058 C28.5950271,18.7646058 25.0853152,22.2651059 25.0853152,26.5831916 C25.0853152,30.9012773 28.5950271,34.4017774 32.9244762,34.4017774 L32.9244762,34.4017774 Z" id="A"></path>
-                </g>
-            </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo-small">
+            <rect id="Rectangle-4" fill="#4A90E2" x="0.2" y="0.2" width="105.6" height="105.6"></rect>
+            <path d="M17.75,79.9451933 L35.2685349,79.9451933 C38.4355851,72.9190889 45.5006756,68.0269022 53.7089772,68.0269022 C61.9178521,68.0269022 68.9823692,72.9190889 72.1494195,79.9451933 L89.25,79.9451933 L53.4962734,26.31403 L17.75,79.9451933 Z M44.9835359,55.257796 C44.9835359,50.5559534 48.7944307,46.7450586 53.4962734,46.7450586 C58.1975427,46.7450586 62.0090108,50.5559534 62.0090108,55.257796 C62.0090108,59.9596387 58.1975427,63.7705335 53.4962734,63.7705335 C48.7944307,63.7705335 44.9835359,59.9596387 44.9835359,55.257796 Z" id="Fill-1" fill="#FFFFFF"></path>
         </g>
     </g>
 </svg>
