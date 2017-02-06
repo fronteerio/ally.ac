@@ -429,9 +429,6 @@ nav ul li a:focus {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    #footer-video-container {
-        width: 416px;
-    }
 }
 
 @media (min-width: 768px) {
@@ -448,9 +445,6 @@ nav ul li a:focus {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    #footer-video-container {
-        width: 432px;
-    }
 }
 
 @media (min-width: 992px) {
@@ -463,12 +457,9 @@ nav ul li a:focus {
     #about {
         padding-top: 260px;
     }
-    ##share {
+    #share {
         padding-top: 20px;
         padding-bottom: 20px;
-    }
-    #footer-video-container {
-        width: 558px;
     }
 }
 
@@ -485,9 +476,6 @@ nav ul li a:focus {
     #share {
         padding-top: 20px;
         padding-bottom: 20px;
-    }
-    #footer-video-container {
-        width: 675px;
     }
 }
 
@@ -648,7 +636,8 @@ footer figure {
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    max-width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .embed-container iframe,
