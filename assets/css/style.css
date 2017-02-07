@@ -524,11 +524,6 @@ nav ul li a:focus {
     }
 }
 
-@media (min-width: 1024px) {
-    #message {
-        max-width: 600px;
-    }
-
 /* Features */
 
 #features .row {
