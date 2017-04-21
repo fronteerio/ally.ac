@@ -6,6 +6,10 @@ $(document).on('ready', function() {
     var requestDemoSubmitted = function() {
         $('.request-demo-component').toggleClass('hide');
         $('#request-demo-success').focus();
+        _dcq.push(['identify', {
+            'email': $.trim($('#request-demo-email').val()),
+            'tags': ['requested_demo']
+        }]);
     };
 
     /**
