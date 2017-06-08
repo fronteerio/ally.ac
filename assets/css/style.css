@@ -524,6 +524,35 @@ nav ul li a:focus {
     }
 }
 
+/* Release notes */
+
+#release {
+    padding: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#release p {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#release a {
+    color: #00C0CB;
+}
+
+@media (min-width: 768px) {
+    #release {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+    #footer-logo-container {
+        margin-top: 30px;
+    }
+}
+
 /* Features */
 
 #features .row {

@@ -1,0 +1,617 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Make your course content more accessible with Ally</title>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+/* --- GLOBAL RESETS --- */ 
+
+    img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%;
+        outline:none;
+        text-decoration:none;
+        -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+        border:none;
+    }
+
+    body {
+        background-color: #EAECEC;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        width:100% !important;
+        -ms-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    table {
+        border-collapse: collapse;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%;
+    }
+
+    table td {
+        border-collapse: collapse;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        vertical-align: top;
+    }
+
+/* --- BODY AND CONTAINER  --- */
+
+    .body {
+        background-color: #EAECEC;
+        width: 100%;
+    }
+
+    /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+        .container {
+            display: block;
+            Margin: 0 auto !important;
+            /* makes it centered */
+            max-width: 580px;
+            padding: 10px;
+            width: 580px;
+        }
+
+    /* This should also be a block element, so that it will fill 100% of the .container */
+        .content {
+            box-sizing: border-box;
+            display: block;
+            Margin: 0 auto;
+            max-width: 580px;
+            padding: 10px;
+        }
+
+        .main-header {
+            background-color: #191E25;
+            padding-bottom: 16px;
+            padding-top: 22px;
+            width: 100%;
+        }
+
+/* --- HEADERS, FOOTER, WRAPPER, MAIN --- */
+
+    .main {
+        background-color: #FFFFFF;
+        Margin-bottom: 32px;
+        width: 100%;
+    }
+
+    .wrapper {
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .header {
+        box-sizing: border-box;
+    }
+
+    .hero {
+        box-sizing: border-box;
+        background-color: #191F25;
+        text-align: center;
+        line-height: 0;
+    }
+
+    #footer {
+        border-top: 1px solid #d0d0d0;
+        clear: both;
+        color: #777;
+        font-size: 13px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    #footer td,
+    #footer p,
+    #footer span,
+    #footer a {
+        color: #44474F;
+        font-size: 13px;
+    }
+
+/* --- TYPOGRAPHY --- */
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: #191F25;
+        font-family: 'Source Sans Pro', sans-serif;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    p,
+    ul,
+    ol {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    p li,
+    ul li,
+    ol li {
+        list-style-position: outside;
+        margin-left: 5px;
+    }
+
+    a {
+        color: #191F25;
+        text-decoration: underline;
+    }
+
+    p {
+        color: #191F25;
+        margin: 1em 0;
+    }
+
+/* --- BUTTONS --- */
+
+    .btn {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn {
+        padding: 16px;
+    }
+
+    .btn table {
+        width: auto;
+    }
+
+    .btn table td {
+        background-color: #FFFFFF;
+        text-align: center;
+    }
+
+    .btn a {
+        background-color: #FFFFFF;
+        border: solid 1px #007900;
+        box-sizing: border-box;
+        color: #007900;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 1.6;
+        margin: 0;
+        padding: 8px 16px;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    .btn-primary table td {
+        background-color: #44474F;
+    }
+
+    .btn-primary a {
+        background-color: #44474F;
+        border-color: #44474F;
+        color: #FFFFFF;
+    }
+
+/* --- OTHER STYLES THAT MIGHT BE USEFUL --- */
+
+    .last {
+        margin-bottom: 0;
+    }
+
+    .first {
+        margin-top: 0;
+    }
+
+    .align-center {
+        text-align: center;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+
+    .align-left {
+        text-align: left;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .mt0 {
+        margin-top: 0;
+    }
+
+    .mb0 {
+        margin-bottom: 0;
+    }
+
+    .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0;
+    }
+
+    .image_fix {
+        display:block;
+    }
+
+    hr {
+        border: 0;
+        border-bottom: 1px solid #F6F6F6;
+        Margin: 20px 0;
+    }
+
+/* --- RESPONSIVE AND MOBILE FRIENDLY STYLES --- */
+
+    @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+            font-size: 28px !important;
+            margin-bottom: 10px !important;
+        }
+
+        table[class=body] .wrapper,
+        table[class=body] .article {
+            padding: 10px !important;
+        }
+
+        table[class=body] .content {
+            padding: 0 !important;
+        }
+
+        table[class=body] .container {
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        table[class=body] .main {
+            border-left-width: 0 !important;
+            border-radius: 0 !important;
+            border-right-width: 0 !important;
+        }
+
+        table[class=body] .btn table {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        table[class=body] .btn a {
+            width: 100% !important;
+        }
+
+        table[class=body] .img-responsive {
+            height: auto !important;
+            max-width: 100% !important;
+            width: auto !important;
+        }
+
+    }
+
+/* --- PRESERVE THESE STYLES IN THE HEAD --- */
+    #outlook a {
+        padding:0;
+    }
+
+    #backgroundTable {
+        margin:0;
+        padding:0;
+        width:600px !important;
+        line-height: 100% !important;
+    }
+
+    @media all {
+        .ExternalClass {
+            width: 100%;
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        .apple-link a {
+            color: inherit !important;
+            font-family: inherit !important;
+            font-size: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        } 
+
+        .btn-primary table td:hover {
+            background-color: #44474F !important;
+        }
+
+        .btn-primary a:hover {
+            background-color: #44474F !important;
+            border-color: #44474F !important;
+        }
+    }
+
+/* --- SPECIFIC TO DESIGN --- */
+
+    .header p {
+        color: #6C6C6C;
+        font-size: 13px;
+    }
+
+    .header-right-col {
+        text-align: right;
+    }
+
+    .btn-watch {
+        display: inline;
+    }
+
+    .btn-request {
+        display: inline;
+    }
+
+    .hero img {
+        padding-top: 40px;
+    }
+
+    .hero p {
+        color: #FFFFFF;
+        font-weight: 200;
+        font-size: 20px;
+        padding-top: 16px;
+        padding-bottom: 32px;
+    }
+
+    .intro p {
+        color: #191919;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        padding: 16px 72px 16px 72px;
+    }
+
+    .details h2 {
+        color: #191919;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        padding: 0 63px 0 105px;
+        text-align: left;
+    }
+
+    .details p {
+        color: #191919;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;     
+        padding: 0 63px 32px 105px;
+        text-align: left;
+    }
+
+    .btn-group {
+        background-image: url('_assets/img/bgTile.png');
+        background-repeat: repeat-x;
+        padding-top: 64px;
+    }
+
+    .btn-group ul {
+        display: inline-block;
+    }
+
+    .btn-group li {
+        float: left;
+        list-style: none;
+        padding: 64px 24px 32px 0;
+    }
+
+    .footer {
+        Margin-bottom: 32px;
+    }
+
+    .footer p {
+        color: #6C6C6C;
+        font-size: 12px;
+        font-weight: 400px;
+    }
+
+    .footer a {
+        color: #191919;
+        font-size: 12px;
+    }
+
+    .footer ul{
+        list-style: none;
+    }
+
+</style>
+</head>
+<body>
+    <table border="0" cellpadding="0" cellspacing="0" class="body">
+        <tbody>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="container">
+                    <div class="content">
+                        <table border="0" cellpadding="0" cellspacing="0" class="header">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>Make your course content more accessible with Ally</p>
+                                    </td>
+                                    <td class="header-right-col">
+                                        <p>Can’t view this email? <a href="#" title="Open this email in a browser">Open in a browser</a></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <span class="preheader">Make your course content more accessible with Ally</span>
+                        <!-- START CENTERED WHITE CONTAINER -->
+                        <table border="0" cellpadding="0" cellspacing="0" class="main">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <!-- START HERO -->
+                                        <table border="0" cellpadding="0" cellspacing="0" class="hero">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <h1><a href="http://www.blackboard.com/accessibility/blackboard-ally.aspx" target="_blank"><img src="_assets/img/blackboardAllyLogo.png" title="Blackboard Ally" alt="Blackboard Ally" width="190"></a></h1>
+                                                        <p>Making course content accessible</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <!-- START BUTTON GROUP TOP -->
+                                                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="http://www.blackboard.com/accessibility/blackboard-ally.aspx" title="Blackboard Ally" target="_blank">Learn more</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="_assets/img/heroImage.png" title="Blackboard Ally" alt="Blackboard Ally interfaces shown on various devices" width="337">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- END HERO -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wrapper">
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="intro">    
+                                                        <p>Blackboard Ally is a revolutionary product that focuses on making digital course content more accessible. Using inclusivity, sustainability, and automation as its key pillars, Blackboard Ally helps you understand and tackle accessibility in a way that benefits all students.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="message">    
+                                                        <a href="http://www.blackboard.com/accessibility/blackboard-ally.aspx" title="Blackboard Ally" target="_blank"><img src="_assets/img/item01.png" title="Ally alternative accessible formats" alt="Blackboard Ally interface showing a range of alternative accessible formats available for students to download" width="650"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="details">    
+                                                        <h2>Alternative accessible formats</h2>
+                                                        <p>Automatically run course materials through an accessibility checklist. Using advanced Machine Learning algorithms, you can generate a range of more accessible alternatives for the instructor's original content including Semantic HTML, audio, ePub, and electronic Braille.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="message">    
+                                                        <a href="http://www.blackboard.com/accessibility/blackboard-ally.aspx" title="Blackboard Ally" target="_blank"><img src="_assets/img/item02.png" title="Ally instructor feedback feature" alt="Blackboard Ally interface showing the on-screen accessibility score of an uploaded file and the issue which needs attention" width="650"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="details">    
+                                                        <h2>Instructor Feedback</h2>
+                                                        <p>Provide the instructor with feedback about the accessibility of their course materials and guidance on how to fix identified accessibility issues. Increase awareness and understanding of accessibility with instructors and generate a change in behavior over time.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="message">    
+                                                        <a href="http://www.blackboard.com/accessibility/blackboard-ally.aspx" title="Blackboard Ally" target="_blank"><img src="_assets/img/item03.png" title="Ally institution-wide report dashboard" alt="Blackboard Ally interface showing an example of an institution-wide report as a dashboard of various metrics" width="650"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="details">    
+                                                        <h2>Institutional Reporting</h2>
+                                                        <p>Receive an institution-wide course content accessibility report that allows for deep insight and understanding into how your institution is performing from a course content accessibility point of view. Use it to track progress and identify problem areas to inform decisions.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="btn-group">
+                                                        <!-- START BUTTON GROUP BOTTOM -->
+                                                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="http://www.blackboard.com/accessibility/blackboard-ally.aspx" title="Blackboard Ally" target="_blank">Learn more</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <ul>
+                                                            <li><a href="https://twitter.com/blackboardLATAM" target="_blank"><img alt="Blackboard Twitter" border="0" height="30" src="http://images.email.blackboard.com/EloquaImages/clients/BlackboardInc/%7b4772faf8-fc3c-4a29-ab2d-7fa91d0f5086%7d_Twitter_email-icon-60x60.png" width="30"></a></li>
+                                                            <li><a href="https://www.facebook.com/BlackboardLatinoamerica" target="_blank"><img alt="Blackboard Facebook" border="0" height="30" src="http://images.email.blackboard.com/EloquaImages/clients/BlackboardInc/%7b47ed1048-2573-4126-a0a2-131c9ccd0389%7d_Facebook_email-icon-60x60.png" width="30"></a></li>
+                                                            <li><a href="https://www.youtube.com/user/BlackboardTV" target="_blank"><img alt="Blackboard Youtube" border="0" height="30" src="http://images.email.blackboard.com/EloquaImages/clients/BlackboardInc/%7bb7dfcd47-da2d-44c6-b4ab-545e0a9c9da3%7d_Video_email-icon-60x60.png" width="30"></a></li>
+                                                            <li><a href="https://www.linkedin.com/company/blackboard-latam" target="_blank"><img alt="Blackboard LinkedIn" border="0" height="30" src="http://images.email.blackboard.com/EloquaImages/clients/BlackboardInc/%7b262ac486-343f-4c61-acae-ecf15a15c185%7d_LinkedIn_email-icon-60x60.png" width="30"></a></li>
+                                                            <li><a href="http://blog.blackboard.com/" target="_blank"><img alt="Blackboard Blog" border="0" height="30" src="http://images.email.blackboard.com/EloquaImages/clients/BlackboardInc/%7b4fc786f8-5963-4a08-a7ad-625260ef7ad3%7d_Blog_email-icon-60x60.png" width="30"></a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- END CENTERED WHITE CONTAINER -->
+                        <table border="0" cellpadding="0" cellspacing="0" class="footer">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img alt="Blackboard" border="0" height="15" src="_assets/img/blackboardLogo.png" width="107">
+                                        <p>1111 19th Street NW, 9th Floor Washington, DC 20036 USA</p>
+                                        <p>This message was sent to <a href="mailto:Elisa.Viali@blackboard.com" title="Elisa Viali">Elisa.Viali@blackboard.com</a> by Blackboard</p>
+                                        <p>© 1997 - 2017 Blackboard Inc. All rights reserved.</p>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="http://lac.blackboard.com/sites/international/globalmaster/about/" title="About Blackboard">About Blackboard</a></li>
+                                            <li><a href="http://lac.blackboard.com/sites/international/globalmaster/about/contact-us.html" title="Contact us">Contact us</a></li>
+                                            <li><a href="http://bbbb.blackboard.com/optin" title="Manage your preferences">Manage your preferences</a></li>
+                                            <li><a href="http://bbbb.blackboard.com/optin" title="Cancel subscription">Cancel subscription</a></li>
+                                            <li><a href="http://uki.blackboard.com/footer/privacy-center.aspx" title="Privacy policy" target="_blank">Privacy policy</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
