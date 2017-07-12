@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Ally seamlessly integrates with the Learning Management System and automatically generates alternative accessible formats, provides instructor feedback and generates an institutional accessibility report">
-    <meta name="author" content="Fronteer LTD">
+    <meta name="author" content="Blackboard Inc.">
     <link rel="icon" href="favicon.ico">
 
-    <title>Ally - Making course content accessible</title>
+    <title>Blackboard Ally - Making course content accessible</title>
 
     <link href="//fonts.googleapis.com/css?family=Roboto:400,300,500" rel="stylesheet" type="text/css">
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/index.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -29,9 +30,9 @@
             </div>
             <div class="col-xs-12 col-sm-9">
                 <ul>
-                    <li><a href="#request-demo">Request demo</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <!-- <li><a href="#get-in-touch">Contact</a></li> -->
+                    <li><a class="active">Features</a></li>
+                    <li><a href="/demo.html">Request Demo</a></li>
+                    <li><a href="https://usergroup.ally.ac" target="_blank">Ally User Group</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,20 +43,8 @@
                 <img src="assets/img/logo.svg" alt="" />
             </figure>
             <p>Making course content accessible</p>
-            <h2>Request a demo</h2>
-            <div id="request-demo-form-container" class="clearfix">
-                <form id="request-demo-form" class="form-inline request-demo-component" role="form">
-                    <div class="form-group">
-                        <label class="sr-only" for="request-demo-email">Email:</label>
-                        <input type="email" id="request-demo-email" name="email" placeholder="Your email address" class="form-control" required /><button type="submit" class="btn">Request demo</button>
-                    </div>
-                </form>
-                <div class="hide request-demo-component">
-                    <p id="request-demo-success" tabindex="0">
-                        Thanks for requesting a demo. We'll be in touch soon!
-                    </p>
-                </div>
-            </div>
+
+            <a id="request-demo-action" href="demo.html">Request Demo</a>
 
             <div id="hero-container">
                 <div id="hero">
@@ -213,12 +202,12 @@
     </script>
     <script type="text/javascript">
       var _dcq = _dcq || [];
-      var _dcs = _dcs || {}; 
+      var _dcs = _dcs || {};
       _dcs.account = '9041875';
-      
+
       (function() {
         var dc = document.createElement('script');
-        dc.type = 'text/javascript'; dc.async = true; 
+        dc.type = 'text/javascript'; dc.async = true;
         dc.src = '//tag.getdrip.com/9041875.js';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(dc, s);
