@@ -40,10 +40,9 @@
 
         <div id="demo" class="triangle clearfix">
             <h2>Request a demo</h2>
-            <h3>Please register below for a demonstration of Blackboard Ally.</h3>
-            <p>* Required field</p>
-
-            <form id="demo-form" method="post" name="AllyMicrosite" action="https://s2376.t.eloqua.com/e/f2" onsubmit="setTimeout(function(){if(document.querySelector){var s=document.querySelector('form#form3831 input[type=submit]');if(s){s.disabled=true;}}},100);return true;" id="form3831" >
+            <form id="demo-form" method="post" name="AllyMicrosite" id="form3831">
+                <h3>Please register below for a demonstration of Blackboard Ally.</h3>
+                <p>* Required field</p>
                 <div class="form-group">
                     <label for="form-email">Email address *</label>
                     <input type="email" class="form-control" id="form-email" name="emailAddress" placeholder="Your email">
@@ -365,8 +364,9 @@
                 <input type="hidden" name="elqCustomerGUID" value="">
                 <input type="hidden" name="elqCookieWrite" value="0">
                 <input type="hidden" name="elqCampaignId" />
-
             </form>
+
+            <p id="demo-success">Thank you for requesting a demo. We'll be in touch soon!</p>
         </div>
 
         <footer>

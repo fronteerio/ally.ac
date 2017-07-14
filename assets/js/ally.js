@@ -4,10 +4,10 @@ $(document).on('ready', function() {
      * Show the form submit success message
      */
     var requestDemoSubmitted = function() {
-        $('.request-demo-component').toggleClass('hide');
-        $('#request-demo-success').focus();
+        $('#demo-form').hide();
+        $('#demo-success').show().focus();
         _dcq.push(['identify', {
-            'email': $.trim($('#request-demo-email').val()),
+            'email': $.trim($('#form-email').val()),
             'tags': ['requested_demo']
         }]);
     };
@@ -15,18 +15,13 @@ $(document).on('ready', function() {
     /**
      * Submit the contact form when valid
      */
-    $('#request-demo-form').on('submit', function(e) {
+    $('#demo-form').on('submit', function(e) {
         if (!e.isDefaultPrevented()) {
-            var email = $.trim($('#request-demo-email').val());
-
+            var formData = $(this).serialize();
             $.ajax({
-                'url': 'http://formspree.io/info@ally.ac',
+                'url': 'https://s2376.t.eloqua.com/e/f2',
                 'method': 'POST',
-                'data': {
-                    'email': email,
-                    '_subject': 'Ally demo request'
-                },
-                'dataType': 'json',
+                'data': formData,
                 'success': requestDemoSubmitted,
                 'error': function(err) {
                     window.alert('An error has occurred. Please try again later.')
