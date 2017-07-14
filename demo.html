@@ -23,21 +23,16 @@
             <nav class="clearfix">
                 <div class="hidden-xs col-sm-3">
                     <h1>
-                    <figure>
-                        <img src="/assets/img/logo-brand-mark.svg" alt="Ally" title="Ally" />
-                    </figure></h1>
+                        <figure>
+                            <img src="/assets/img/logo-brand-mark.svg" alt="Ally" title="Ally" />
+                        </figure>
+                    </h1>
                 </div>
                 <div class="col-xs-12 col-sm-9">
                     <ul>
-                        <li>
-                            <a href="/">Features</a>
-                        </li>
-                        <li>
-                            <a class="active">Request Demo</a>
-                        </li>
-                        <li>
-                            <a href="https://usergroup.ally.ac" target="_blank">Ally User Group</a>
-                        </li>
+                        <li><a href="/">Features</a></li>
+                        <li><a class="active">Request Demo</a></li>
+                        <li><a href="https://usergroup.ally.ac" target="_blank">Ally User Group</a></li>
                     </ul>
                 </div>
             </nav>
@@ -45,15 +40,10 @@
 
         <div id="demo" class="triangle clearfix">
             <h2>Request a demo</h2>
-            <p>
-                Please register below for a demonstration of Blackboard Ally.
-            </p>
-            <p>
-                * Required field
-            </p>
+            <h3>Please register below for a demonstration of Blackboard Ally.</h3>
+            <p>* Required field</p>
 
-            <!-- <form id="demo-form"> --></form>
-            <form method="post" name="AllyMicrosite" action="https://s2376.t.eloqua.com/e/f2" onsubmit="setTimeout(function(){if(document.querySelector){var s=document.querySelector('form#form3831 input[type=submit]');if(s){s.disabled=true;}}},100);return true;" id="form3831" >
+            <form id="demo-form" method="post" name="AllyMicrosite" action="https://s2376.t.eloqua.com/e/f2" onsubmit="setTimeout(function(){if(document.querySelector){var s=document.querySelector('form#form3831 input[type=submit]');if(s){s.disabled=true;}}},100);return true;" id="form3831" >
                 <div class="form-group">
                     <label for="form-email">Email address *</label>
                     <input type="email" class="form-control" id="form-email" name="emailAddress" placeholder="Your email">
@@ -68,7 +58,23 @@
                 </div>
                 <div class="form-group">
                     <label for="form-role">Role *</label>
-                    <input type="text" class="form-control" id="form-role" name="primaryRole" placeholder="Your role">
+                    <select class="form-control" id="form-role" name="primaryRole">
+                        <option value="" selected="selected">-- Please Select --</option>
+                        <option value="CAO/CLO/Provost">CAO/CLO/Provost</option>
+                        <option value="CFO">CFO</option>
+                        <option value="Consultant">Consultant</option>
+                        <option value="COO">COO</option>
+                        <option value="CTO/CIO">CTO/CIO</option>
+                        <option value="Dean">Dean</option>
+                        <option value="Designer/Course Designer">Designer/Course Designer</option>
+                        <option value="Director">Director</option>
+                        <option value="Manager/Supervisor">Manager/Supervisor</option>
+                        <option value="President/Provost/CEO/Chancellor">President/CEO/Chancellor</option>
+                        <option value="Professor/Teacher/Instructor">Professor/Teacher/Instructor</option>
+                        <option value="Student">Student</option>
+                        <option value="System Administrator">System Administrator</option>
+                        <option value="Vice President/Vice Provost/Vice Chancellor">Vice President/Vice Provost/Vice Chancellor</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="form-institution">Institution *</label>
@@ -76,7 +82,7 @@
                 </div>
                 <div class="form-group">
                     <label for="form-country">Country *</label>
-                    <select class="form-control" id="form-country">
+                    <select class="form-control" id="form-country" name="country">
                         <option value="" selected="selected">-- Please Select --</option>
                         <option value="USA">United States</option>
                         <option value="Canada">Canada</option>
@@ -321,11 +327,28 @@
                     </select>
                 </div>
                 <div class="form-group">
+                    <label for="form-role">Industry *</label>
+                    <select class="form-control" id="form-industry" name="industry">
+                        <option value="" selected="selected">Select</option>
+                        <option value="Higher Ed. - For Profit Ed.">Higher Ed. - For Profit Ed.</option>
+                        <option value="Higher Ed. - Not for Profit Ed.">Higher Ed. - Not for Profit Ed.</option>
+                        <option value="Higher Ed. - Other Vocation Education">Higher Ed. - Other Vocation Education</option>
+                        <option value="Further Education">Further Education</option>
+                        <option value="K12">K12</option>
+                        <option value="Corporate">Corporate</option>
+                        <option value="Non-Corporate Organization">Non-Corporate Organization</option>
+                        <option value="Government - DoD">Government - DoD</option>
+                        <option value="Government - Other">Government - Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
                     <label for="form-phone">Phone</label>
-                    <input type="text" class="form-control" id="form-phone" placeholder="Your phone number">
+                    <input type="text" class="form-control" id="form-phone" name="businessPhone" placeholder="Your phone number">
                 </div>
 
-                <input type="submit" value="Request Demo" />
+                <button class="primary" type="submit">Request demo</button>
+                <p>By submitting this form you agree to receiving emails from Blackboard. You can unsubscribe at any time. Please visit our <a href="https://www.blackboard.com/footer/privacy-policy.aspx" title="Blackboard Privay Policy" >Privacy Policy</a> for more information.
+
 
                 <input value="AllyMicrosite" type="hidden" name="elqFormName" />
                 <input value="2376" type="hidden" name="elqSiteId" />
@@ -333,6 +356,15 @@
                 <input id="field16" type="hidden" name="utm_source" value="" />
                 <input id="field17" type="hidden" name="utm_medium" value="" />
                 <input id="field18" type="hidden" name="utm_term" value="" />
+                <input id="field19" type="hidden" name="utm_content" value="" />
+                <input id="field20" type="hidden" name="utm_campaign" value="" />
+                <input id="field11" type="hidden" name="numberOfUsers" value="0-100" />
+                <input id="field4" type="hidden" name="company" value="Fronteer"  />
+                <input id="field7" type="hidden" name="jobTitleCategory1" value="Director" />
+
+                <input type="hidden" name="elqCustomerGUID" value="">
+                <input type="hidden" name="elqCookieWrite" value="0">
+                <input type="hidden" name="elqCampaignId" />
 
             </form>
         </div>
@@ -350,6 +382,28 @@
                 &copy; All rights reserved Blackboard Inc. <span id="footer-year"></span>
             </div>
         </footer>
+
+        <script type='text/javascript'><!--//
+            var timerId = null, timeout = 5;
+            //--></script>
+        <script type='text/javascript'><!--//
+            function WaitUntilCustomerGUIDIsRetrieved() {
+                if (!!(timerId)) {
+                    if (timeout == 0) {
+                        return;
+                    }
+                    if (typeof this.GetElqCustomerGUID === 'function') {
+                        document.forms["AllyMicrosite"].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
+                        return;
+                    }
+                    timeout -= 1;
+                }
+                timerId = setTimeout("WaitUntilCustomerGUIDIsRetrieved()", 500);
+                return;
+            }
+            window.onload = WaitUntilCustomerGUIDIsRetrieved;
+            _elqQ.push(['elqGetCustomerGUID']);
+            //--></script>
 
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/ally.js"></script>
