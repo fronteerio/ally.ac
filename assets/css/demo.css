@@ -80,16 +80,25 @@ nav {
 }
 
 #demo p {
-    margin-bottom: 64px; 
+    margin-bottom: 64px;
 }
 
+.form-group.has-error .form-control {
+    color: #D0021B;
+}
 
+.form-group.has-error .form-control::-webkit-input-placeholder {
+    color: #D0021B;
+}
 
+.form-group.has-error .form-control:-moz-placeholder {
+    color: #D0021B;
+}
 
+.form-group.has-error .form-control::-moz-placeholder {
+    color: #D0021B;
+}
 
-
-
-
-
-
-
+.form-group.has-error .form-control:-ms-input-placeholder {
+    color: #D0021B;
+}

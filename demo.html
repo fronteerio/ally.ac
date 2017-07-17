@@ -77,7 +77,7 @@
                 </div>
                 <div class="form-group">
                     <label for="form-institution">Institution *</label>
-                    <input type="text" class="form-control" id="form-institution" placeholder="Your institution">
+                    <input type="text" class="form-control" id="form-institution" name="company" placeholder="Your institution">
                 </div>
                 <div class="form-group">
                     <label for="form-country">Country *</label>
@@ -358,7 +358,6 @@
                 <input id="field19" type="hidden" name="utm_content" value="" />
                 <input id="field20" type="hidden" name="utm_campaign" value="" />
                 <input id="field11" type="hidden" name="numberOfUsers" value="0-100" />
-                <input id="field4" type="hidden" name="company" value="Fronteer"  />
                 <input id="field7" type="hidden" name="jobTitleCategory1" value="Director" />
 
                 <input type="hidden" name="elqCustomerGUID" value="">
@@ -402,7 +401,7 @@
                 return;
             }
             window.onload = WaitUntilCustomerGUIDIsRetrieved;
-            _elqQ.push(['elqGetCustomerGUID']);
+            //_elqQ.push(['elqGetCustomerGUID']);
             //--></script>
 
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
