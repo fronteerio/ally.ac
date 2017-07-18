@@ -2,12 +2,62 @@ $(document).on('ready', function() {
 
     // Set the UTM parameters in the form
     var utmParameters = [ 'utm_source', 'utm_medium', 'utm_term', 'utm_content', 'utm_campaign'];
+    var utmQs = [];
     for (var i = 0; i < utmParameters.length; i++) {
         var utmValue = getParameterByName(utmParameters[i]);
         if (utmValue) {
             $('input[name="' + utmParameters[i] + '"]').val(utmValue);
+            utmQs.push([utmParameters[i], utmValue]);
         }
     }
+
+    // Re-write all links so that they contain the UTM paramers
+    $('a').each(function() {
+        var $a = $(this);
+        var link = $a.attr('href');
+        if (link) {
+            // Get the query string in the link (if any)
+            var qsString = '';
+            var questionMarkParts = link.split('?');
+            if (questionMarkParts.length > 1) {
+                qsString = questionMarkParts[1];
+            }
+
+            // Get the hash in the link (if any)
+            var hashString = '';
+            var hashParts = link.split('#');
+            if (hashParts.length > 1) {
+                hashString = hashParts[1];
+            }
+
+
+            // Start with the base URL
+            var url = questionMarkParts[0].split('#')[0];
+
+            // Create an array of the link's query string.
+            // e.g., name=Jack&age=12 becomes [ ['name', 'jack'], ['age', '21'] ]
+            var qs = qsString
+                .split('&')
+                .filter(function(s) { return s; })
+                .map(function(s) { return s.split('='); });
+
+            // Add the UTM parameters (if any) to the query string
+            qs = qs.concat(utmQs);
+
+            // Append the new query string (including UTM params) to the base URL
+            if (qs.length > 0) {
+                url += '?';
+                url += qs.map(function(s) { return s.join('='); }).join('&');
+            }
+
+            // Tack on the hash if there was any
+            if (hashString) {
+                url += '#';
+                url += hash;
+            }
+            $a.attr('href', url);
+        }
+    });
 
     /**
      * Submit the contact form when valid
