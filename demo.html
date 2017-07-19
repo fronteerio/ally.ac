@@ -14,9 +14,22 @@
         <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
         <link href="assets/css/demo.css" rel="stylesheet" type="text/css">
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NXVW3QS');</script>
+        <!-- End Google Tag Manager -->
+
     </head>
 
     <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXVW3QS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
         <section id="top" class="triangle clearfix">
             <!-- NAVIGATION -->
@@ -356,8 +369,7 @@
                 <input id="field18" type="hidden" name="utm_term" value="" />
                 <input id="field19" type="hidden" name="utm_content" value="" />
                 <input id="field20" type="hidden" name="utm_campaign" value="" />
-                <input id="field11" type="hidden" name="numberOfUsers" value="0-100" />
-                <input id="field7" type="hidden" name="jobTitleCategory1" value="Director" />
+                <input id="field21" type="hidden" name="campaignID" value="" />
                 <input type="hidden" name="elqCustomerGUID" value="">
                 <input type="hidden" name="elqCookieWrite" value="0">
             </form>
@@ -378,28 +390,6 @@
                 &copy; All rights reserved Blackboard Inc. <span id="footer-year"></span>
             </div>
         </footer>
-
-        <script type='text/javascript'><!--//
-            var timerId = null, timeout = 5;
-            //--></script>
-        <script type='text/javascript'><!--//
-            function WaitUntilCustomerGUIDIsRetrieved() {
-                if (!!(timerId)) {
-                    if (timeout == 0) {
-                        return;
-                    }
-                    if (typeof this.GetElqCustomerGUID === 'function') {
-                        document.forms["AllyMicrosite"].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
-                        return;
-                    }
-                    timeout -= 1;
-                }
-                timerId = setTimeout("WaitUntilCustomerGUIDIsRetrieved()", 500);
-                return;
-            }
-            window.onload = WaitUntilCustomerGUIDIsRetrieved;
-            //_elqQ.push(['elqGetCustomerGUID']);
-            //--></script>
 
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/ally.js"></script>

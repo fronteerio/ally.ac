@@ -1,7 +1,7 @@
 $(document).on('ready', function() {
 
     // Set the UTM parameters in the form
-    var utmParameters = [ 'utm_source', 'utm_medium', 'utm_term', 'utm_content', 'utm_campaign'];
+    var utmParameters = ['utm_source', 'utm_medium', 'utm_term', 'utm_content', 'utm_campaign', 'campaignID'];
     var utmQs = [];
     for (var i = 0; i < utmParameters.length; i++) {
         var utmValue = getParameterByName(utmParameters[i]);
