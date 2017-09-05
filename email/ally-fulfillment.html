@@ -1,537 +1,54 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Congratulations! Ally is now implemented into your production environment</title>
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600" rel="stylesheet" type="text/css">
-<style type="text/css">
-
-/* --- GLOBAL RESETS --- */ 
-
-    img {
-        border: none;
-        -ms-interpolation-mode: bicubic;
-        max-width: 100%;
-        outline:none;
-        text-decoration:none;
-        -ms-interpolation-mode: bicubic;
-    }
-
-    a img {
-        border:none;
-    }
-
-    body {
-        background-color: #EAECEC;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 16px;
-        margin: 0;
-        padding: 0;
-        width:100% !important;
-        -ms-text-size-adjust: 100%;
-        -webkit-font-smoothing: antialiased;
-        -webkit-text-size-adjust: 100%;
-    }
-
-    table {
-        border-collapse: collapse;
-        mso-table-lspace: 0pt;
-        mso-table-rspace: 0pt;
-        width: 100%;
-    }
-
-    table td {
-        border-collapse: collapse;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 16px;
-        vertical-align: top;
-    }
-
-/* --- BODY AND CONTAINER  --- */
-
-    .body {
-        background-color: #EAECEC;
-        width: 100%;
-    }
-
-    /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
-        .container {
-            display: block;
-            Margin: 0 auto !important;
-            /* makes it centered */
-            max-width: 650px;
-            padding: 10px;
-            width: 650px;
-        }
-
-    /* This should also be a block element, so that it will fill 100% of the .container */
-        .content {
-            box-sizing: border-box;
-            display: block;
-            Margin: 0 auto;
-            max-width: 650px;
-            padding: 10px;
-        }
-
-        .main-header {
-            background-color: #191E25;
-            padding-bottom: 16px;
-            padding-top: 22px;
-            width: 100%;
-        }
-
-/* --- HEADERS, FOOTER, WRAPPER, MAIN --- */
-
-    .main {
-        background-color: #FFFFFF;
-        Margin-bottom: 32px;
-        width: 100%;
-    }
-
-    .wrapper {
-        box-sizing: border-box;
-        text-align: center;
-    }
-
-    .header {
-        box-sizing: border-box;
-    }
-
-    .hero {
-        box-sizing: border-box;
-        background-color: #121519;
-        text-align: center;
-        line-height: 0;
-    }
-
-    #footer {
-        border-top: 1px solid #d0d0d0;
-        clear: both;
-        color: #777;
-        font-size: 13px;
-        line-height: 1.4;
-        text-align: center;
-    }
-
-    #footer td,
-    #footer p,
-    #footer span,
-    #footer a {
-        color: #44474F;
-        font-size: 13px;
-    }
-
-/* --- TYPOGRAPHY --- */
-
-    h1,
-    h2,
-    h3,
-    h4 {
-        color: #191F25;
-        font-family: 'Source Sans Pro', sans-serif;
-        line-height: 1.4;
-        margin: 0;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 22px;
-        text-align: center;
-    }
-
-    h3 {
-        font-size: 22px;
-    }
-
-    p,
-    ul,
-    ol {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 16px;
-        font-weight: normal;
-        margin: 0;
-    }
-
-    p li,
-    ul li,
-    ol li {
-        list-style-position: outside;
-        margin-left: 5px;
-    }
-
-    a {
-        color: #191F25;
-        text-decoration: underline;
-    }
-
-    p {
-        color: #191F25;
-        margin: 1em 0;
-    }
-
-/* --- BUTTONS --- */
-
-    .btn {
-        box-sizing: border-box;
-        width: 100%;
-        text-align: center;
-    }
-
-    .btn {
-        padding: 16px;
-    }
-
-    .btn table {
-        width: auto;
-    }
-
-    .btn table td {
-        background-color: #FFFFFF;
-        text-align: center;
-    }
-
-    .btn a {
-        background-color: #FFFFFF;
-        border: solid 1px #007900;
-        box-sizing: border-box;
-        color: #007900;
-        cursor: pointer;
-        display: inline-block;
-        font-size: 15px;
-        font-weight: bold;
-        line-height: 1.6;
-        margin: 0;
-        padding: 8px 16px;
-        text-decoration: none;
-        text-transform: capitalize;
-    }
-
-    .btn-primary table td {
-        background-color: #44474F;
-    }
-
-    .btn-primary a {
-        background-color: #44474F;
-        border-color: #44474F;
-        color: #FFFFFF;
-    }
-
-/* --- OTHER STYLES THAT MIGHT BE USEFUL --- */
-
-    .last {
-        margin-bottom: 0;
-    }
-
-    .first {
-        margin-top: 0;
-    }
-
-    .align-center {
-        text-align: center;
-    }
-
-    .align-right {
-        text-align: right;
-    }
-
-    .align-left {
-        text-align: left;
-    }
-
-    .clear {
-        clear: both;
-    }
-
-    .mt0 {
-        margin-top: 0;
-    }
-
-    .mb0 {
-        margin-bottom: 0;
-    }
-
-    .preheader {
-        color: transparent;
-        display: none;
-        height: 0;
-        max-height: 0;
-        max-width: 0;
-        opacity: 0;
-        overflow: hidden;
-        mso-hide: all;
-        visibility: hidden;
-        width: 0;
-    }
-
-    .image_fix {
-        display:block;
-    }
-
-    hr {
-        border: 0;
-        border-bottom: 1px solid #F6F6F6;
-        Margin: 20px 0;
-    }
-
-/* --- RESPONSIVE AND MOBILE FRIENDLY STYLES --- */
-
-    @media only screen and (max-width: 620px) {
-        table[class=body] h1 {
-            font-size: 28px !important;
-            margin-bottom: 10px !important;
-        }
-
-        table[class=body] .wrapper,
-        table[class=body] .article {
-            padding: 10px !important;
-        }
-
-        table[class=body] .hero {
-            background-image: none;
-        }
-
-        table[class=body] .usergroup {
-            background-image: none;
-        }
-
-        table[class=body] .main-content .btn {
-            text-align: center;
-        }
-
-        table[class=body] .main-content p {
-            font-size: 16px;
-        }
-
-        table[class=body] .content {
-            padding: 0 !important;
-        }
-
-        table[class=body] .container {
-            padding: 0 !important;
-            width: 100% !important;
-        }
-
-        table[class=body] .main {
-            border-left-width: 0 !important;
-            border-radius: 0 !important;
-            border-right-width: 0 !important;
-        }
-
-        table[class=body] .btn table {
-            width: 100% !important;
-            max-width: 100% !important;
-        }
-
-        table[class=body] .btn a {
-            width: 100% !important;
-        }
-
-        table[class=body] .img-responsive {
-            height: auto !important;
-            max-width: 100% !important;
-            width: auto !important;
-        }
-
-    }
-
-/* --- PRESERVE THESE STYLES IN THE HEAD --- */
-    #outlook a {
-        padding:0;
-    }
-
-    #backgroundTable {
-        margin:0;
-        padding:0;
-        width:600px !important;
-        line-height: 100% !important;
-    }
-
-    @media all {
-        .ExternalClass {
-            width: 100%;
-        }
-        .ExternalClass,
-        .ExternalClass p,
-        .ExternalClass span,
-        .ExternalClass font,
-        .ExternalClass td,
-        .ExternalClass div {
-            line-height: 100%;
-        }
-
-        .apple-link a {
-            color: inherit !important;
-            font-family: inherit !important;
-            font-size: inherit !important;
-            font-weight: inherit !important;
-            line-height: inherit !important;
-        } 
-
-        .btn-primary table td:hover {
-            background-color: #44474F !important;
-        }
-
-        .btn-primary a:hover {
-            background-color: #44474F !important;
-            border-color: #44474F !important;
-        }
-    }
-
-/* --- SPECIFIC TO DESIGN --- */
-
-    .header p {
-        color: #6C6C6C;
-        font-size: 13px;
-    }
-
-    .header-right-col {
-        text-align: right;
-    }
-
-    .hero {
-        background-image: url('_assets/img/triangleBlue.png');
-        background-repeat: no-repeat;
-        background-size: 68px 102px;
-        background-position: left bottom; 
-    }
-
-    .hero .url {
-        color: #FFFFFF;
-        display: block;
-        font-size: 17px;
-        font-weight: bold;
-        text-decoration: underline;
-        padding-bottom: 40px;
-    }
-
-    .hero .btn {
-        Margin-bottom: 40px;
-    }
-
-    .hero .btn a {
-        background-color: #007900;
-        border: solid 1px #007900;
-    }
-
-    .hero .btn table td {
-        background-color: #007900;
-        text-align: center;
-    }
-
-    .hero img {
-        padding-top: 40px;
-    }
-
-    .hero h2 {
-        color: #00C0CB;
-        font-weight: 400;
-        font-size: 24px;
-        padding: 32px 90px 32px 90px;
-    }
-
-    .main-content {
-        text-align: left;
-    }
-
-    .main-content .img {
-        width: 49%;
-        vertical-align: middle;
-        padding-bottom: 19px;
-        padding-right: 8px;
-    }
-
-    .main-content p {
-        font-size: 18px;
-        padding-right: 32px;
-        vertical-align: middle;
-    }
-
-    .main-content .btn {
-        text-align: left;
-    }
-
-    .usergroup {
-        background-image: url('_assets/img/bg-usergroup.png');
-        background-repeat: none;
-        background-size: 650px 265px;
-        padding-top: 40px;
-    }
-
-    .reporting {
-        padding-top: 32px;
-    }
-
-    .footer {
-        Margin-bottom: 32px;
-    }
-
-    .footer p {
-        color: #6C6C6C;
-        font-size: 12px;
-        font-weight: 400px;
-    }
-
-    .footer a {
-        color: #191919;
-        font-size: 12px;
-    }
-
-    .footer ul{
-        list-style: none;
-    }
-
-</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/purl/2.3.1/purl.min.js"></script>
+    <script src="_assets/js/ally-fulfillment.js"></script>
 </head>
-<body>
-    <table border="0" cellpadding="0" cellspacing="0" class="body">
-        <tbody>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="container">
-                    <div class="content">
-                        <table border="0" cellpadding="0" cellspacing="0" class="header">
+<body style="background-color:#eaecec">
+    <div id="container" style="margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;min-width:100%;background-color:#eaecec">></div>
+
+    <script type="text/template" id='template'>
+        <table style="border-spacing:0;width:100%;background-color:#eaecec;table-layout:fixed" align="center">
+            <tbody>
+                <tr>
+                    <td align="center" style="padding-top:20px; padding-bottom:0; padding-right:0; padding-left:0; vertical-align:top;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="650" style="border-spacing:0; margin:0 auto 25px; padding-bottom: 10px; background-color: #fff;">
                             <tbody>
                                 <tr>
-                                    <td>
-                                        <p>Ally is now implemented into your production environment</p>
-                                    </td>
-                                    <td class="header-right-col">
-                                        <p>Can’t view this email? <a href="#" title="Open this email in a browser">Open in a browser</a></p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <span class="preheader">Ally is now implemented into your production environment</span>
-                        <!-- START CENTERED WHITE CONTAINER -->
-                        <table border="0" cellpadding="0" cellspacing="0" class="main">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <!-- START HERO -->
-                                        <table border="0" cellpadding="0" cellspacing="0" class="hero">
+                                    <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
+                                        <table border="0" cellpadding="0" cellspacing="0" class="hero" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:100%;box-sizing:border-box;background-color:#121519;text-align:center;line-height:0;background-image:url('http://ally.ac/email/_assets/img/triangleBlue.png');background-repeat:no-repeat;background-size:68px 102px;background-position:left bottom;">
                                             <tbody>
                                                 <tr>
-                                                    <td>
-                                                        <h1><a href="http://www.blackboard.com/accessibility/blackboard-ally.aspx" title="Blackboard Ally" target="_blank"><img src="_assets/img/blackboardAllyLogo.png" alt="Blackboard Ally" width="142"></a></h1>
-                                                        <h2>Congratulations! Ally is now implemented into your production environment</h2>
+                                                    <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
+                                                        <h1 style="color:#191F25;font-family:'Source Sans Pro', sans-serif;line-height:1.4;margin:0;text-align:center;"><a href="http://www.blackboard.com/accessibility/blackboard-ally.aspx" title="Blackboard Ally" target="_blank" style="color:#191F25;text-decoration:underline;"><img src="http://ally.ac/email/_assets/img/blackboardAllyLogo.png" alt="Blackboard Ally" width="142" style="-ms-interpolation-mode:bicubic;max-width:100%;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;border:none;padding-top:40px;"></a></h1>
+                                                        <h2 style="color:#191F25;font-family:'Source Sans Pro', sans-serif;line-height:1.4;margin:0;font-size:22px;text-align:center;color:#00C0CB;font-weight:400;font-size:24px;padding:32px 90px 32px 90px;">
+                                                            Congratulations!
+                                                            <% if (lms === 'learn') { %>
+                                                                Ally is now available on your Blackboard Learn environment.
+                                                            <% } else if (lms === 'moodlerooms') { %>
+                                                                Ally is now available on your Moodlerooms environment.
+                                                            <% } else if (lms === 'canvas') { %>
+                                                                Ally is now available on your Canvas environment.
+                                                            <% } %>
+                                                        </h2>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        <a class="url" href="#" title="http://institition.edu" target="_blank">http://institition.edu</a>
+                                                    <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
+                                                        <a href="<%= instance %>" target="_blank" style="color:#191F25;color:#FFFFFF;display:block;font-size:17px;font-weight:bold;text-decoration:underline;padding-bottom:40px;"><%= instance %></a>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="hero-btn">
-                                                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                                                    <td class="hero-btn" style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
+                                                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;box-sizing:border-box;width:100%;text-align:center;padding:16px;Margin-bottom:40px;">
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>
-                                                                        <a href="http://usergroup.ally.ac" title="Request an Ally demonstration" target="_blank">View Ally documentation</a>
+                                                                    <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
+                                                                        <a href="https://help.blackboard.com/Ally" target="_blank" style="color:#191F25;text-decoration:underline;background-color:#FFFFFF;box-sizing:border-box;color:#007900;cursor:pointer;display:inline-block;font-size:15px;font-weight:bold;line-height:1.6;margin:0;padding:8px 16px;text-decoration:none;text-transform:capitalize;background-color:#44474F;border-color:#44474F;color:#FFFFFF;background-color:#007900;border:solid 1px #007900;">View Ally documentation</a>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -540,28 +57,27 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        <!-- END HERO -->
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="wrapper">
-                                        <table border="0" cellpadding="0" cellspacing="0" class="main-content">
+                                    <td class="wrapper" style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;box-sizing:border-box;text-align:center;">
+                                        <table border="0" cellpadding="0" cellspacing="0" class="main-content" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:100%;text-align:left;">
                                             <tbody>
                                                 <tr>
-                                                    <td class="usergroup">
-                                                        <table border="0" cellpadding="0" cellspacing="0">
+                                                    <td class="usergroup" style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;background-image:url('http://ally.ac/email/_assets/img/bg-usergroup.png');background-repeat:none;background-size:650px 265px;padding-top:40px;">
+                                                        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:100%;">
                                                             <tbody>
                                                                 <tr>
-                                                                    <td class="img">
-                                                                        <a href="http://usergroup.ally.ac" title="Ally User Group" target="_blank"><img src="_assets/img/img-usergroup.png" title="Join the Ally User Group" alt="Interface example of the Ally User Group activity feed" width="289"></a>
+                                                                    <td class="img" style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;width:49%;vertical-align:middle;padding-bottom:19px;padding-right:8px;">
+                                                                        <a href="http://usergroup.ally.ac" title="Ally User Group" target="_blank" style="color:#191F25;text-decoration:underline;"><img src="http://ally.ac/email/_assets/img/img-usergroup.png" title="Join the Ally User Group" alt="Interface example of the Ally User Group activity feed" width="289" style="-ms-interpolation-mode:bicubic;max-width:100%;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;border:none;"></a>
                                                                     </td>
-                                                                    <td class="message">
-                                                                        <p>If you haven’t already please help us shape Ally going forward and join our insightful User Group.</p>
-                                                                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                                                                    <td class="message" style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
+                                                                        <p style="font-family:'Source Sans Pro', sans-serif;font-size:16px;font-weight:normal;margin:0;color:#191F25;margin:1em 0;font-size:18px;padding-right:32px;vertical-align:middle;">Join the Ally User Group to receive the latest Ally news, engage with the Ally community and help shape the future of Ally.</p>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;box-sizing:border-box;width:100%;text-align:center;padding:16px;text-align:left;">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td>
-                                                                                        <a href="http://usergroup.ally.ac" title="Join the Ally User Group" target="_blank">Join User Group</a>
+                                                                                    <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
+                                                                                        <a href="http://usergroup.ally.ac" title="Join the Ally User Group" target="_blank" style="color:#191F25;text-decoration:underline;background-color:#FFFFFF;border:solid 1px #007900;box-sizing:border-box;color:#007900;cursor:pointer;display:inline-block;font-size:15px;font-weight:bold;line-height:1.6;margin:0;padding:8px 16px;text-decoration:none;text-transform:capitalize;background-color:#44474F;border-color:#44474F;color:#FFFFFF;">Join User Group</a>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -573,20 +89,26 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="reporting">
-                                                        <table border="0" cellpadding="0" cellspacing="0" class="main-content">
+                                                    <td class="reporting" style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;padding-top:32px;">
+                                                        <table border="0" cellpadding="0" cellspacing="0" class="main-content" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:100%;text-align:left;">
                                                             <tbody>
                                                                 <tr>
-                                                                    <td class="img">
-                                                                        <a href="#" title="Book a reporting run-through" target="_blank"><img src="_assets/img/img-reporting.png" alt="Book a session to run through reporting" width="289"></a>
+                                                                    <td class="img" style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;width:49%;vertical-align:middle;padding-bottom:19px;padding-right:8px;">
+                                                                        <a href="http://support.blackboard.com" target="_blank" style="color:#191F25;text-decoration:underline;"><img src="http://ally.ac/email/_assets/img/img-btbb.png" alt="Behind The Blackboard Support Portal" width="289" style="-ms-interpolation-mode:bicubic;max-width:100%;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;border:none;"></a>
                                                                     </td>
-                                                                    <td class="message">
-                                                                        <p>Schedule a time to run through the institutional report together.</p>
-                                                                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                                                                    <td class="message" style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
+                                                                        <p style="font-family:'Source Sans Pro', sans-serif;font-size:16px;font-weight:normal;margin:0;color:#191F25;margin:1em 0;font-size:18px;padding-right:32px;vertical-align:middle;">
+                                                                            <% if (lms === 'canvas') { %>
+                                                                                If you are new to Blackboard, you will receive a separate email containing credentials to access the Behind the Blackboard™ support portal.
+                                                                            <% } else { %>
+                                                                                Ally will become an extra option in the Behind the Blackboard™ support portal. Your current credentials will not change.
+                                                                            <% } %>
+                                                                        </p>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;box-sizing:border-box;width:100%;text-align:center;padding:16px;text-align:left;">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td>
-                                                                                        <a href="#" title="Book a reporting run-through" target="_blank">Book now</a>
+                                                                                    <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
+                                                                                        <a href="http://support.blackboard.com" target="_blank" style="color:#191F25;text-decoration:underline;background-color:#FFFFFF;border:solid 1px #007900;box-sizing:border-box;color:#007900;cursor:pointer;display:inline-block;font-size:15px;font-weight:bold;line-height:1.6;margin:0;padding:8px 16px;text-decoration:none;text-transform:capitalize;background-color:#44474F;border-color:#44474F;color:#FFFFFF;">Support Portal</a>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -603,33 +125,29 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <!-- END CENTERED WHITE CONTAINER -->
-                        <table border="0" cellpadding="0" cellspacing="0" class="footer">
+                        <table width="650" style="border-spacing:0; margin:0 auto; margin-bottom:25px;">
                             <tbody>
                                 <tr>
-                                    <td>
-                                        <img alt="Blackboard" border="0" height="15" src="_assets/img/blackboardLogo.png" width="107">
-                                        <p>1111 19th Street NW, 9th Floor Washington, DC 20036 USA</p>
-                                        <p>This message was sent to <a href="mailto:Elisa.Viali@blackboard.com" title="Elisa Viali">Elisa.Viali@blackboard.com</a> by Blackboard</p>
-                                        <p>© 1997 - 2017 Blackboard Inc. All rights reserved.</p>
+                                    <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
+                                        <img alt="Blackboard" border="0" height="15" src="http://ally.ac/email/_assets/img/blackboardLogo.png" width="107" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;">
+                                        <p style="font-family:'Source Sans Pro', sans-serif;font-size:16px;font-weight:normal;margin:0;color:#191F25;margin:1em 0;color:#6C6C6C;font-size:12px;font-weight:400px;">1111 19th Street NW, 9th Floor Washington, DC 20036 USA</p>
+                                        <p style="font-family:'Source Sans Pro', sans-serif;font-size:16px;font-weight:normal;margin:0;color:#191F25;margin:1em 0;color:#6C6C6C;font-size:12px;font-weight:400px;">© 1997 - 2017 Blackboard Inc. All rights reserved.</p>
                                     </td>
-                                    <td>
-                                        <ul>
-                                            <li><a href="http://lac.blackboard.com/sites/international/globalmaster/about/" title="About Blackboard">About Blackboard</a></li>
-                                            <li><a href="http://lac.blackboard.com/sites/international/globalmaster/about/contact-us.html" title="Contact us">Contact us</a></li>
-                                            <li><a href="http://bbbb.blackboard.com/optin" title="Manage your preferences">Manage your preferences</a></li>
-                                            <li><a href="http://bbbb.blackboard.com/optin" title="Cancel subscription">Cancel subscription</a></li>
-                                            <li><a href="http://uki.blackboard.com/footer/privacy-center.aspx" title="Privacy policy" target="_blank">Privacy policy</a></li>
+                                    <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
+                                        <ul style="font-family:'Source Sans Pro', sans-serif;font-size:16px;font-weight:normal;margin:0;list-style:none;">
+                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://www.blackboard.com/about-us/index.aspx" style="color:#191F25;text-decoration:underline;color:#191919;font-size:12px;">About Blackboard</a></li>
+                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://www.blackboard.com/forms/contact_form.aspx" style="color:#191F25;text-decoration:underline;color:#191919;font-size:12px;">Contact us</a></li>
+                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://bbbb.blackboard.com/optin" style="color:#191F25;text-decoration:underline;color:#191919;font-size:12px;">Manage your preferences</a></li>
+                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://www.blackboard.com/footer/privacy-center.aspx" target="_blank" style="color:#191F25;text-decoration:underline;color:#191919;font-size:12px;">Privacy policy</a></li>
                                         </ul>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-        </tbody>
-    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </script>
 </body>
 </html>
