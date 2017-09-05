@@ -9,10 +9,10 @@
     <script src="_assets/js/ally-fulfillment.js"></script>
 </head>
 <body style="background-color:#eaecec">
-    <div id="container" style="margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;min-width:100%;background-color:#eaecec">></div>
+    <div id="container" style="font-family:'Source Sans Pro', sans-serif; margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;min-width:100%;background-color:#eaecec">></div>
 
     <script type="text/template" id='template'>
-        <table style="border-spacing:0;width:100%;background-color:#eaecec;table-layout:fixed" align="center">
+        <table style="border-spacing:0;width:100%;background-color:#eaecec;table-layout:fixed;" align="center">
             <tbody>
                 <tr>
                     <td align="center" style="padding-top:20px; padding-bottom:0; padding-right:0; padding-left:0; vertical-align:top;">
@@ -59,6 +59,27 @@
                                         </table>
                                     </td>
                                 </tr>
+                                <tr style="background-color:#eaecec;">
+                                    <td>
+                                        <div style="font-size:10px; line-height:10px; min-height:10px; display: block;">&nbsp;</div>
+                                    </td>
+                                </tr>
+                                <tr style="font-family:'Source Sans Pro', sans-serif; background-color: #333; text-align: center; color: #fff;">
+                                    <td style="padding: 30px;">
+                                        <a href="https://www.surveymonkey.com/r/6NWTMPB?lms=<%= lms %>&institution=<%= institution %>" style="color: #FFF; text-decoration: none;" target="_blank">
+                                            <img src="_assets/img/stars.png" alt="" width="112" style="padding-bottom: 15px; display: inline-block;" />
+                                            <span style="font-size: 18px; padding-bottom: 20px; display: block;">Tell us how we did on your implementation!</div>
+                                        </a>
+                                        <div>
+                                            <a href="https://www.surveymonkey.com/r/6NWTMPB?lms=<%= lms %>&institution=<%= institution %>" target="_blank" style="font-family:'Source Sans Pro', sans-serif; color:#222; background-color:#fff;border:solid 1px #fff;box-sizing:border-box;cursor:pointer;display:inline-block;font-size:15px;font-weight:bold;line-height:1.6;margin:0;padding:8px 16px;text-decoration:none;text-transform:capitalize;">Give Feedback</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr style="background-color:#eaecec;">
+                                    <td>
+                                        <div style="font-size:10px; line-height:10px; min-height:10px; display: block;">&nbsp;</div>
+                                    </td>
+                                </tr>
                                 <tr>
                                     <td class="wrapper" style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;box-sizing:border-box;text-align:center;">
                                         <table border="0" cellpadding="0" cellspacing="0" class="main-content" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:100%;text-align:left;">
@@ -89,26 +110,26 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="reporting" style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;padding-top:32px;">
-                                                        <table border="0" cellpadding="0" cellspacing="0" class="main-content" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:100%;text-align:left;">
+                                                    <td style="border-collapse:collapse; font-size:18px; vertical-align:top; padding-top: 32px;">
+                                                        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:100%;text-align:left;">
                                                             <tbody>
                                                                 <tr>
-                                                                    <td class="img" style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;width:49%;vertical-align:middle;padding-bottom:19px;padding-right:8px;">
-                                                                        <a href="http://support.blackboard.com" target="_blank" style="color:#191F25;text-decoration:underline;"><img src="http://ally.ac/email/_assets/img/img-btbb.png" alt="Behind The Blackboard Support Portal" width="289" style="-ms-interpolation-mode:bicubic;max-width:100%;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;border:none;"></a>
+                                                                    <td class="img" style="border-collapse:collapse; width:49%;vertical-align:middle;padding-bottom:19px;padding-right:8px;">
+                                                                        <a href="http://support.blackboard.com" target="_blank"><img src="http://ally.ac/email/_assets/img/img-btbb.png" alt="Behind The Blackboard Support Portal" width="289" style="max-width:100%;outline:none;text-decoration:none;border:none;"></a>
                                                                     </td>
-                                                                    <td class="message" style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
-                                                                        <p style="font-family:'Source Sans Pro', sans-serif;font-size:16px;font-weight:normal;margin:0;color:#191F25;margin:1em 0;font-size:18px;padding-right:32px;vertical-align:middle;">
+                                                                    <td style="border-collapse:collapse; vertical-align:top;">
+                                                                        <p style="font-weight:normal;margin:0;color:#191F25;margin:1em 0;padding-right:32px;vertical-align:middle; font-size: 18px;">
                                                                             <% if (lms === 'canvas') { %>
                                                                                 If you are new to Blackboard, you will receive a separate email containing credentials to access the Behind the Blackboard™ support portal.
                                                                             <% } else { %>
                                                                                 Ally will become an extra option in the Behind the Blackboard™ support portal. Your current credentials will not change.
                                                                             <% } %>
                                                                         </p>
-                                                                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;box-sizing:border-box;width:100%;text-align:center;padding:16px;text-align:left;">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;box-sizing:border-box;width:100%;padding:16px;text-align:left;">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
-                                                                                        <a href="http://support.blackboard.com" target="_blank" style="color:#191F25;text-decoration:underline;background-color:#FFFFFF;border:solid 1px #007900;box-sizing:border-box;color:#007900;cursor:pointer;display:inline-block;font-size:15px;font-weight:bold;line-height:1.6;margin:0;padding:8px 16px;text-decoration:none;text-transform:capitalize;background-color:#44474F;border-color:#44474F;color:#FFFFFF;">Support Portal</a>
+                                                                                    <td style="border-collapse:collapse;vertical-align:top;">
+                                                                                        <a href="http://support.blackboard.com" target="_blank" style="border:solid 1px #007900;box-sizing:border-box;cursor:pointer;display:inline-block;font-size:15px;font-weight:bold;line-height:1.6;margin:0;padding:8px 16px;text-decoration:none;text-transform:capitalize;background-color:#44474F;border-color:#44474F;color:#FFFFFF;">Support Portal</a>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -128,17 +149,17 @@
                         <table width="650" style="border-spacing:0; margin:0 auto; margin-bottom:25px;">
                             <tbody>
                                 <tr>
-                                    <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
+                                    <td style="border-collapse:collapse; vertical-align:top; font-size:12px;font-weight:normal;">
                                         <img alt="Blackboard" border="0" height="15" src="http://ally.ac/email/_assets/img/blackboardLogo.png" width="107" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;">
-                                        <p style="font-family:'Source Sans Pro', sans-serif;font-size:16px;font-weight:normal;margin:0;color:#191F25;margin:1em 0;color:#6C6C6C;font-size:12px;font-weight:400px;">1111 19th Street NW, 9th Floor Washington, DC 20036 USA</p>
-                                        <p style="font-family:'Source Sans Pro', sans-serif;font-size:16px;font-weight:normal;margin:0;color:#191F25;margin:1em 0;color:#6C6C6C;font-size:12px;font-weight:400px;">© 1997 - 2017 Blackboard Inc. All rights reserved.</p>
+                                        <p style="margin:0;color:#191F25;margin:1em 0;color:#6C6C6C;">1111 19th Street NW, 9th Floor Washington, DC 20036 USA</p>
+                                        <p style="margin:0;color:#191F25;margin:1em 0;color:#6C6C6C;">© 1997 - 2017 Blackboard Inc. All rights reserved.</p>
                                     </td>
                                     <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
-                                        <ul style="font-family:'Source Sans Pro', sans-serif;font-size:16px;font-weight:normal;margin:0;list-style:none;">
-                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://www.blackboard.com/about-us/index.aspx" style="color:#191F25;text-decoration:underline;color:#191919;font-size:12px;">About Blackboard</a></li>
-                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://www.blackboard.com/forms/contact_form.aspx" style="color:#191F25;text-decoration:underline;color:#191919;font-size:12px;">Contact us</a></li>
-                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://bbbb.blackboard.com/optin" style="color:#191F25;text-decoration:underline;color:#191919;font-size:12px;">Manage your preferences</a></li>
-                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://www.blackboard.com/footer/privacy-center.aspx" target="_blank" style="color:#191F25;text-decoration:underline;color:#191919;font-size:12px;">Privacy policy</a></li>
+                                        <ul style="font-family:'Source Sans Pro', sans-serif;font-size:12px;font-weight:normal;margin:0;list-style:none;">
+                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://www.blackboard.com/about-us/index.aspx" style="text-decoration:underline;color:#191919;">About Blackboard</a></li>
+                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://www.blackboard.com/forms/contact_form.aspx" style="text-decoration:underline;color:#191919;">Contact us</a></li>
+                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://bbbb.blackboard.com/optin" style="text-decoration:underline;color:#191919;">Manage your preferences</a></li>
+                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://www.blackboard.com/footer/privacy-center.aspx" target="_blank" style="text-decoration:underline;color:#191919;">Privacy policy</a></li>
                                         </ul>
                                     </td>
                                 </tr>
