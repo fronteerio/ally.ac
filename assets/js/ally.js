@@ -59,6 +59,19 @@ $(document).on('ready', function() {
         }
     });
 
+    $('#form-country').on('change', function() {
+        // Reset state options
+        $('#demo-form #state').hide();
+        $('#demo-form #form-state option').hide();
+
+        // Optionally show state field
+        if (selectedCountryHasRequiredStateField()) {
+            var country = $(this).val();
+            $('#demo-form #state').show();
+            $('#demo-form #form-state option[data-country="' + country + '"]').show();
+        }
+    });
+
     /**
      * Submit the contact form when valid
      */
@@ -69,6 +82,9 @@ $(document).on('ready', function() {
             var isValid = true;
             var requiredFields = ['emailAddress', 'firstName', 'lastName', 'primaryRole', 'company', 'country',
                 'industry', 'businessPhone'];
+            if (selectedCountryHasRequiredStateField()) {
+                requiredFields.push('StateorProvince');
+            }
             for (var i = 0; i < requiredFields.length; i++) {
                 if (!formContains(formData, requiredFields[i])) {
                     isValid = false;
@@ -79,10 +95,14 @@ $(document).on('ready', function() {
             }
 
             if (isValid) {
+                var data = $(this).serialize();
+                if (!selectedCountryHasRequiredStateField()) {
+                    data = data.replace('StateorProvince=', '');
+                }
                 $.ajax({
                     'url': 'https://s2376.t.eloqua.com/e/f2',
                     'method': 'POST',
-                    'data': $(this).serialize(),
+                    'data': data,
                     'success': requestDemoSubmitted,
                     'error': function(err) {
                         window.alert('An error has occurred. Please try again later.')
@@ -93,6 +113,16 @@ $(document).on('ready', function() {
             return false;
         }
     });
+
+    /**
+     * Whether the selected country also requires the user to input the state they're from
+     *
+     * @return {Boolean}    `true` if the country requires a state entry
+     */
+    function selectedCountryHasRequiredStateField() {
+        var country = $('#demo-form #form-country').val();
+        return (country === 'USA' || country === 'Canada' || country === 'Australia');
+    }
 
     /**
      * Show the form submit success message
