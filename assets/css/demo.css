@@ -83,6 +83,10 @@ nav {
     margin-bottom: 64px;
 }
 
+#demo-success {
+    display: none;
+}
+
 .form-group.has-error .form-control {
     color: #D0021B;
 }

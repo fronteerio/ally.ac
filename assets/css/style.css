@@ -282,6 +282,12 @@ footer {
     font-weight: 200;
 }
 
+footer a,
+footer a:hover,
+footer a:focus {
+    color: #FFF;
+}
+
 footer figure {
     display: inline-block;
 }
@@ -292,6 +298,11 @@ footer figure {
 
 #footer-copyright-container {
     margin-bottom: 20px;
+}
+
+.footer-copyright-divider {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .embed-container {
