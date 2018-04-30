@@ -1,5 +1,62 @@
 $(document).on('ready', function() {
 
+    // Array of countries where opt in should be pre-checked
+    var optOutCountries = [
+        'Anguilla',
+        'Antigua and Barbuda',
+        'Argentina',
+        'Aruba',
+        'Barbados',
+        'Belize',
+        'Bermuda',
+        'Bolivia',
+        'Bonaire',
+        'Brazil',
+        'Cayman Islands',
+        'Chile',
+        'Colombia',
+        'Costa Rica',
+        'Jamaica',
+        'Cuba',
+        'Curacao',
+        'Dominica',
+        'Dominican Republic',
+        'Ecuador',
+        'El Salvador',
+        'Falkland Islands (malvinas)',
+        'French Guiana',
+        'Grenada',
+        'Guadeloupe',
+        'Guatemala',
+        'Guyana',
+        'Haiti',
+        'Honduras',
+        'Martinique',
+        'Mexico',
+        'Montserrat',
+        'Nicaragua',
+        'Panama',
+        'Paraguay',
+        'Peru',
+        'Saint Kitts and Nevis',
+        'Saint Lucia',
+        'Saint Martin',
+        'St Vincent and the Grenadines',
+        'Sth Georgia & Sth Sandwich Is',
+        'Suriname',
+        'The Bahamas',
+        'Trinidad and Tobago',
+        'Turks and Caicos Islands',
+        'Uruguay',
+        'Venezuela',
+        'Virgin Islands (British)',
+        'USA',
+        'US Minor Outlying Islands'
+    ];
+
+    // Whether the user manually opted in
+    var manuallyOptedIn = false;
+
     // Set the UTM parameters in the form
     var utmParameters = ['utm_source', 'utm_medium', 'utm_term', 'utm_content', 'utm_campaign', 'campaignID'];
     var utmQs = [];
@@ -70,6 +127,27 @@ $(document).on('ready', function() {
             $('#demo-form #state').show();
             $('#demo-form #form-state option[data-country="' + country + '"]').show();
         }
+    });
+
+    /**
+     * Update Opt-In when country is updated, unless user has already made a choice
+     */
+    $('#demo-form [name="country"]').change(function() {
+        var country = $('[name="country"]').val();
+        if (!manuallyOptedIn) {
+            if ($.inArray(country, optOutCountries) > -1) {
+                $('[name="OptIn"]').prop('checked', true);
+            } else {
+                $('[name="OptIn"]').prop('checked', false);
+            }
+        }
+    });
+
+    /**
+     * Ensure Opt-In doesn't get changed automatically after the user makes a choice
+     */
+    $('#demo-form [name="OptIn"]').change(function() {
+        manuallyOptedIn = true;
     });
 
     /**

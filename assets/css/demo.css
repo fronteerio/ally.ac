@@ -36,17 +36,13 @@ nav {
 }
 
 #demo-form {
-    margin: 0 auto;
+    margin: 32px auto;
     max-width: 600px;
     text-align: left;
 }
 
 .form-control {
     height: 40px;
-}
-
-#demo form {
-    margin-top: 32px;
 }
 
 #demo label {
