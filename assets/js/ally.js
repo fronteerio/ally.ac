@@ -68,7 +68,7 @@ $(document).on('ready', function() {
         }
     }
 
-    // Re-write all links so that they contain the UTM paramers
+    // Re-write all links so that they contain the UTM params
     $('a').each(function() {
         var $a = $(this);
         var link = $a.attr('href');
@@ -158,7 +158,7 @@ $(document).on('ready', function() {
             var formData = $(this).serializeArray();
 
             var isValid = true;
-            var requiredFields = ['emailAddress', 'firstName', 'lastName', 'primaryRole', 'company', 'country',
+            var requiredFields = ['emailAddress', 'firstName', 'demoInterest', 'lastName', 'primaryRole', 'company', 'country',
                 'industry', 'businessPhone'];
             if (selectedCountryHasRequiredStateField()) {
                 requiredFields.push('StateorProvince');
