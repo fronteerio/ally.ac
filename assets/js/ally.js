@@ -177,6 +177,9 @@ $(document).on('ready', function() {
                 if (!selectedCountryHasRequiredStateField()) {
                     data = data.replace('StateorProvince=', '');
                 }
+                if (!$('#form-optin').prop('checked')) {
+                    data = data + '&OptIn=0';
+                }
                 $.ajax({
                     'url': 'https://s2376.t.eloqua.com/e/f2',
                     'method': 'POST',
