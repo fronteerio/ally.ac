@@ -110,7 +110,7 @@ $(document).on('ready', function() {
             // Tack on the hash if there was any
             if (hashString) {
                 url += '#';
-                url += hash;
+                url += hashString;
             }
             $a.attr('href', url);
         }
@@ -279,17 +279,15 @@ $(document).on('ready', function() {
      * Sticky heading
      */
 
-    window.onscroll = function() {myFunction()};
-
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
+    var $header = $('.header');
+    if ($header.length > 0) {
+        window.onscroll = function() {
+            if (window.pageYOffset >= $header.offset().top) {
+                $header.addClass('sticky');
+            } else {
+                $header.removeClass('sticky');
+            }
+        };
     }
 
 });
