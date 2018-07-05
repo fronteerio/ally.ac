@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="19px" viewBox="0 0 11 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>btnIconCaret</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="listing-singleLine" transform="translate(-317.000000, -18.000000)" fill="#222222">
+            <g id="btnIconCaret">
+                <polygon points="317 34.7675 323.79892 27.5 317 20.2325 319.093117 18 328 27.5 319.093117 37"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
