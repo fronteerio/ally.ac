@@ -29,12 +29,14 @@
                                                             Congratulations!
                                                             <% if (lms === 'Learn') { %>
                                                                 Ally is now available on your Blackboard Learn environment.
-                                                            <% } else if (lms === 'Moodle') { %>
-                                                                Ally is now available on your Moodlerooms environment.
                                                             <% } else if (lms === 'Canvas') { %>
                                                                 Ally is now available on your Canvas environment.
                                                             <% } else if (lms === 'Wcm') { %>
                                                                 Ally is now available on your Web Community Manager environment.
+                                                            <% } else if (lms === 'Moodle' && sh === 'true') { %>
+                                                                Ally is now available on your Moodle environment.
+                                                            <% } else if (lms === 'Moodle') { %>
+                                                                Ally is now available on your Moodlerooms environment.
                                                             <% } %>
                                                         </h2>
                                                     </td>
@@ -123,7 +125,7 @@
                                                                     </td>
                                                                     <td style="border-collapse:collapse; vertical-align:top;">
                                                                         <p style="font-weight:normal;margin:0;color:#191F25;margin:1em 0;padding-right:32px;vertical-align:middle; font-size: 18px;">
-                                                                            <% if (lms === 'Canvas') { %>
+                                                                            <% if (lms === 'Canvas' || (lms === 'Moodle' && sh === 'true')) { %>
                                                                                 If you are new to Blackboard, you will receive a separate email containing credentials to access the Behind the Blackboard™ support portal.
                                                                             <% } else { %>
                                                                                 Ally will become an extra option in the Behind the Blackboard™ support portal. Your current credentials will not change.
