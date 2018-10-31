@@ -11,7 +11,7 @@ $(document).ready(function() {
             'BLACKBOARD_ADDRESS': '1111 19th Street NW, 9th Floor Washington, DC 20036 USA',
             'BLACKBOARD_COPYRIGHT': '© 1997 - 2017 Blackboard Inc. All rights reserved.',
             'CONGRATULATIONS': 'Congratulations!',
-            'CONTACTS_US': 'Contact us',
+            'CONTACT_US': 'Contact us',
             'GIVE_FEEDBACK': 'Give Feedback',
             'JOIN_USER_GROUP': 'Join User Group',
             'JOIN_USER_GROUP_DESCRIPTION': 'Join the Ally User Group to receive the latest Ally news, engage with the Ally community and help shape the future of Ally.',
