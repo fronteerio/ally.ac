@@ -26,25 +26,25 @@
                                                     <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
                                                         <h1 style="color:#191F25;font-family:'Source Sans Pro', sans-serif;line-height:1.4;margin:0;text-align:center;"><a href="http://www.blackboard.com/accessibility/blackboard-ally.aspx" title="Blackboard Ally" target="_blank" style="color:#191F25;text-decoration:underline;"><img src="http://ally.ac/email/_assets/img/blackboardAllyLogo.png" alt="Blackboard Ally" width="142" style="-ms-interpolation-mode:bicubic;max-width:100%;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;border:none;padding-top:40px;"></a></h1>
                                                         <h2 style="color:#191F25;font-family:'Source Sans Pro', sans-serif;line-height:1.4;margin:0;font-size:22px;text-align:center;color:#00C0CB;font-weight:400;font-size:24px;padding:32px 90px 32px 90px;">
-                                                            Congratulations!
-                                                            <% if (lms === 'Learn') { %>
-                                                                Ally is now available on your Blackboard Learn environment.
-                                                            <% } else if (lms === 'Canvas') { %>
-                                                                Ally is now available on your Canvas environment.
-                                                            <% } else if (lms === 'Wcm') { %>
-                                                                Ally is now available on your Web Community Manager environment.
-                                                            <% } else if (lms === 'Moodle' && sh === 'true') { %>
-                                                                Ally is now available on your Moodle environment.
-                                                            <% } else if (lms === 'Moodle') { %>
-                                                                Ally is now available on your Blackboard Open LMS environment.
+                                                            <%= translate('CONGRATULATIONS') %>
+                                                            <% if (qs.lms === 'Learn') { %>
+                                                                <%= translate('ALLY_AVAILABLE_LEARN') %>
+                                                            <% } else if (qs.lms === 'Canvas') { %>
+                                                                <%= translate('ALLY_AVAILABLE_CANVAS') %>
+                                                            <% } else if (qs.lms === 'Wcm') { %>
+                                                                <%= translate('ALLY_AVAILABLE_WCM') %>
+                                                            <% } else if (qs.lms === 'Moodle' && qs.sh === 'true') { %>
+                                                                <%= translate('ALLY_AVAILABLE_MOODLE') %>
+                                                            <% } else if (qs.lms === 'Moodle') { %>
+                                                                <%= translate('ALLY_AVAILABLE_OPEN_LMS') %>
                                                             <% } %>
                                                         </h2>
                                                     </td>
                                                 </tr>
-                                                <% if (lms !== 'Wcm') { %>
+                                                <% if (qs.lms !== 'Wcm') { %>
                                                     <tr>
                                                         <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
-                                                            <a href="<%= instance %>" target="_blank" style="color:#191F25;color:#FFFFFF;display:block;font-size:17px;font-weight:bold;text-decoration:underline;padding-bottom:40px;"><%= instance %></a>
+                                                            <a href="<%= qs.instance %>" target="_blank" style="color:#191F25;color:#FFFFFF;display:block;font-size:17px;font-weight:bold;text-decoration:underline;padding-bottom:40px;"><%= qs.instance %></a>
                                                         </td>
                                                     </tr>
                                                 <% } %>
@@ -54,7 +54,7 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
-                                                                        <a href="https://help.blackboard.com/Ally" target="_blank" style="color:#191F25;text-decoration:underline;background-color:#FFFFFF;box-sizing:border-box;color:#007900;cursor:pointer;display:inline-block;font-size:15px;font-weight:bold;line-height:1.6;margin:0;padding:8px 16px;text-decoration:none;text-transform:capitalize;background-color:#44474F;border-color:#44474F;color:#FFFFFF;background-color:#007900;border:solid 1px #007900;">View Ally documentation</a>
+                                                                        <a href="https://help.blackboard.com/Ally" target="_blank" style="color:#191F25;text-decoration:underline;background-color:#FFFFFF;box-sizing:border-box;color:#007900;cursor:pointer;display:inline-block;font-size:15px;font-weight:bold;line-height:1.6;margin:0;padding:8px 16px;text-decoration:none;text-transform:capitalize;background-color:#44474F;border-color:#44474F;color:#FFFFFF;background-color:#007900;border:solid 1px #007900;"><%= translate('VIEW_ALLY_DOCUMENTATION') %></a>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -72,12 +72,12 @@
                                 </tr>
                                 <tr style="font-family:'Source Sans Pro', sans-serif; background-color: #333; text-align: center; color: #fff;">
                                     <td style="padding: 30px;">
-                                        <a href="https://www.surveymonkey.com/r/6NWTMPB?lms=<%= lms %>&institution=<%= institution %>" style="color: #FFF; text-decoration: none;" target="_blank">
+                                        <a href="https://www.surveymonkey.com/r/6NWTMPB?lms=<%= qs.lms %>&institution=<%= qs.institution %>" style="color: #FFF; text-decoration: none;" target="_blank">
                                             <img src="http://ally.ac/email/_assets/img/stars.png" alt="" width="112" style="padding-bottom: 15px; display: inline-block;" />
-                                            <span style="font-size: 18px; padding-bottom: 20px; display: block;">Tell us how we did on your implementation!</div>
+                                            <span style="font-size: 18px; padding-bottom: 20px; display: block;"><%= translate('TELL_US_HOW_WE_DID') %></div>
                                         </a>
                                         <div>
-                                            <a href="https://www.surveymonkey.com/r/6NWTMPB?lms=<%= lms %>&institution=<%= institution %>" target="_blank" style="font-family:'Source Sans Pro', sans-serif; color:#222; background-color:#fff;border:solid 1px #fff;box-sizing:border-box;cursor:pointer;display:inline-block;font-size:15px;font-weight:bold;line-height:1.6;margin:0;padding:8px 16px;text-decoration:none;text-transform:capitalize;">Give Feedback</a>
+                                            <a href="https://www.surveymonkey.com/r/6NWTMPB?lms=<%= qs.lms %>&institution=<%= qs.institution %>" target="_blank" style="font-family:'Source Sans Pro', sans-serif; color:#222; background-color:#fff;border:solid 1px #fff;box-sizing:border-box;cursor:pointer;display:inline-block;font-size:15px;font-weight:bold;line-height:1.6;margin:0;padding:8px 16px;text-decoration:none;text-transform:capitalize;"><%= translate('GIVE_FEEDBACK') %></a>
                                         </div>
                                     </td>
                                 </tr>
@@ -96,15 +96,15 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td class="img" style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;width:49%;vertical-align:middle;padding-bottom:19px;padding-right:8px;">
-                                                                        <a href="http://usergroup.ally.ac" title="Ally User Group" target="_blank" style="color:#191F25;text-decoration:underline;"><img src="http://ally.ac/email/_assets/img/img-usergroup.png" title="Join the Ally User Group" alt="Interface example of the Ally User Group activity feed" width="289" style="-ms-interpolation-mode:bicubic;max-width:100%;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;border:none;"></a>
+                                                                        <a href="http://usergroup.ally.ac" title="http://usergroup.ally.ac" target="_blank" style="color:#191F25;text-decoration:underline;"><img src="http://ally.ac/email/_assets/img/img-usergroup.png" title="<%= translate('JOIN_USER_GROUP') %>" alt="Interface example of the Ally User Group activity feed" width="289" style="-ms-interpolation-mode:bicubic;max-width:100%;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;border:none;"></a>
                                                                     </td>
                                                                     <td class="message" style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
-                                                                        <p style="font-family:'Source Sans Pro', sans-serif;font-size:16px;font-weight:normal;margin:0;color:#191F25;margin:1em 0;font-size:18px;padding-right:32px;vertical-align:middle;">Join the Ally User Group to receive the latest Ally news, engage with the Ally community and help shape the future of Ally.</p>
+                                                                        <p style="font-family:'Source Sans Pro', sans-serif;font-size:16px;font-weight:normal;margin:0;color:#191F25;margin:1em 0;font-size:18px;padding-right:32px;vertical-align:middle;"><%= translate('JOIN_USER_GROUP_DESCRIPTION') %></p>
                                                                         <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;box-sizing:border-box;width:100%;text-align:center;padding:16px;text-align:left;">
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
-                                                                                        <a href="http://usergroup.ally.ac" title="Join the Ally User Group" target="_blank" style="color:#191F25;text-decoration:underline;background-color:#FFFFFF;border:solid 1px #007900;box-sizing:border-box;color:#007900;cursor:pointer;display:inline-block;font-size:15px;font-weight:bold;line-height:1.6;margin:0;padding:8px 16px;text-decoration:none;text-transform:capitalize;background-color:#44474F;border-color:#44474F;color:#FFFFFF;">Join User Group</a>
+                                                                                        <a href="http://usergroup.ally.ac" target="_blank" style="color:#191F25;text-decoration:underline;background-color:#FFFFFF;border:solid 1px #007900;box-sizing:border-box;color:#007900;cursor:pointer;display:inline-block;font-size:15px;font-weight:bold;line-height:1.6;margin:0;padding:8px 16px;text-decoration:none;text-transform:capitalize;background-color:#44474F;border-color:#44474F;color:#FFFFFF;"><%= translate('JOIN_USER_GROUP') %></a>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -121,21 +121,21 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td class="img" style="border-collapse:collapse; width:49%;vertical-align:middle;padding-bottom:19px;padding-right:8px;">
-                                                                        <a href="http://support.blackboard.com" target="_blank"><img src="http://ally.ac/email/_assets/img/img-btbb.png" alt="Behind The Blackboard Support Portal" width="289" style="max-width:100%;outline:none;text-decoration:none;border:none;"></a>
+                                                                        <a href="http://support.blackboard.com" target="_blank"><img src="http://ally.ac/email/_assets/img/img-btbb.png" alt="Behind The Blackboard <%= translate('SUPPORT_PORTAL') %>" width="289" style="max-width:100%;outline:none;text-decoration:none;border:none;"></a>
                                                                     </td>
                                                                     <td style="border-collapse:collapse; vertical-align:top;">
                                                                         <p style="font-weight:normal;margin:0;color:#191F25;margin:1em 0;padding-right:32px;vertical-align:middle; font-size: 18px;">
-                                                                            <% if (lms === 'Canvas' || (lms === 'Moodle' && sh === 'true')) { %>
-                                                                                If you are new to Blackboard, you will receive a separate email containing credentials to access the Behind the Blackboard™ support portal.
+                                                                            <% if (qs.lms === 'Canvas' || (qs.lms === 'Moodle' && qs.sh === 'true')) { %>
+                                                                                <%= translate('SUPPORT_NEW') %>
                                                                             <% } else { %>
-                                                                                Ally will become an extra option in the Behind the Blackboard™ support portal. Your current credentials will not change.
+                                                                                <%= translate('SUPPORT_BEHIND_BLACKBOARD') %>
                                                                             <% } %>
                                                                         </p>
                                                                         <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;box-sizing:border-box;width:100%;padding:16px;text-align:left;">
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td style="border-collapse:collapse;vertical-align:top;">
-                                                                                        <a href="http://support.blackboard.com" target="_blank" style="border:solid 1px #007900;box-sizing:border-box;cursor:pointer;display:inline-block;font-size:15px;font-weight:bold;line-height:1.6;margin:0;padding:8px 16px;text-decoration:none;text-transform:capitalize;background-color:#44474F;border-color:#44474F;color:#FFFFFF;">Support Portal</a>
+                                                                                        <a href="http://support.blackboard.com" target="_blank" style="border:solid 1px #007900;box-sizing:border-box;cursor:pointer;display:inline-block;font-size:15px;font-weight:bold;line-height:1.6;margin:0;padding:8px 16px;text-decoration:none;text-transform:capitalize;background-color:#44474F;border-color:#44474F;color:#FFFFFF;"><%= translate('SUPPORT_PORTAL') %></a>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -157,15 +157,15 @@
                                 <tr>
                                     <td style="border-collapse:collapse; vertical-align:top; font-size:12px;font-weight:normal;">
                                         <img alt="Blackboard" border="0" height="15" src="http://ally.ac/email/_assets/img/blackboardLogo.png" width="107" style="border:none;-ms-interpolation-mode:bicubic;max-width:100%;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;">
-                                        <p style="margin:0;color:#191F25;margin:1em 0;color:#6C6C6C;">1111 19th Street NW, 9th Floor Washington, DC 20036 USA</p>
-                                        <p style="margin:0;color:#191F25;margin:1em 0;color:#6C6C6C;">© 1997 - 2017 Blackboard Inc. All rights reserved.</p>
+                                        <p style="margin:0;color:#191F25;margin:1em 0;color:#6C6C6C;"><%= translate('BLACKBOARD_ADDRESS') %></p>
+                                        <p style="margin:0;color:#191F25;margin:1em 0;color:#6C6C6C;"><%= translate('BLACKBOARD_COPYRIGHT') %></p>
                                     </td>
                                     <td style="border-collapse:collapse;font-family:'Source Sans Pro', sans-serif;font-size:16px;vertical-align:top;">
                                         <ul style="font-family:'Source Sans Pro', sans-serif;font-size:12px;font-weight:normal;margin:0;list-style:none;">
-                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://www.blackboard.com/about-us/index.aspx" style="text-decoration:underline;color:#191919;">About Blackboard</a></li>
-                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://www.blackboard.com/forms/contact_form.aspx" style="text-decoration:underline;color:#191919;">Contact us</a></li>
-                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://bbbb.blackboard.com/optin" style="text-decoration:underline;color:#191919;">Manage your preferences</a></li>
-                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://www.blackboard.com/footer/privacy-center.aspx" target="_blank" style="text-decoration:underline;color:#191919;">Privacy policy</a></li>
+                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://www.blackboard.com/about-us/index.aspx" style="text-decoration:underline;color:#191919;"><%= translate('ABOUT_BLACKBOARD') %></a></li>
+                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://www.blackboard.com/forms/contact_form.aspx" style="text-decoration:underline;color:#191919;"><%= translate('BLACKBOARD_COPYRIGHT') %></a></li>
+                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://bbbb.blackboard.com/optin" style="text-decoration:underline;color:#191919;"><%= translate('MANAGE_YOUR_PREFERENCES') %></a></li>
+                                            <li style="list-style-position:outside;margin-left:5px;"><a href="http://www.blackboard.com/footer/privacy-center.aspx" target="_blank" style="text-decoration:underline;color:#191919;"><%= translate('PRIVACY_POLICY') %></a></li>
                                         </ul>
                                     </td>
                                 </tr>
