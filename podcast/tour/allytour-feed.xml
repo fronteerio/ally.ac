@@ -21,7 +21,6 @@
         </itunes:category>
         <itunes:keywords>Accessibility, A11y, Ally, Blackboard Ally, Road Trip, Campus visit, Inclusion, Inclucity, Universal Design For Learning, UDL, Student remediation, Student support, Student services</itunes:keywords>
         <itunes:explicit>no</itunes:explicit>
-        <itunes:subtitle>
             <itunes:image href="http://www.ally.ac/podcast/tour/assets/img/2019-tour-podcast-cover-art.png" />
             <atom:link href="http://www.ally.ac/podcast/tour/allytour-feed.xml" rel="self" type="application/rss+xml" />
             <pubDate>Mon, 04 Feb 2019 09:00:00 GMT</pubDate>
