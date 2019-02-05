@@ -32,8 +32,11 @@
             <itunes:subtitle>What does inclusive education looks like in our modern age? Blackboard Ally is visiting campuses around the globe to learn how they're tackling their toughest accessibility challenges and improving the learning experience for all students.</itunes:subtitle>
             <lastBuildDate>Tue, 05 Feb 2019 09:00:00 GMT</lastBuildDate>
 
+
             <!-- EPISODE 01-->
             <item>
+                <itunes:episodeType>trailer</itunes:episodeType>
+                <itunes:season>1</itunes:season>
                 <title>Introducing the Ally Tour for 2019</title>
                 <description>The 2019 Ally Tour Trailer is an overview of our plans to visit as many institutions around the globe as possible for 2019. It includes some of the activities we are planning carrying out and how to follow the tour.
 
