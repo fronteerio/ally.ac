@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunesu="http://www.itunesu.com/feed" version="2.0">
+    <channel>
+        <title>The Ally Tour Podcast</title>
+        <link>http://tour.ally.ac</link>
+        <language>en-us</language>
+        <copyright>&#xA9;2018 Blackboard Ally</copyright>
+        <webMaster>your@email.com (Your Name)</webMaster>
+        <managingEditor>info@ally.ac (Blackboard Ally)</managingEditor>
+        <image>
+            <url>https://www.ally.ac/podcast/tour/assets/img/2019-tour-podcast-cover-art.png</url>
+            <title>2019 Ally Tour Cover Art</title>
+            <link>http://tour.ally.ac</link>
+        </image>
+        <itunes:owner>
+            <itunes:name>Blackboard Ally</itunes:name>
+            <itunes:email>info@ally.ac</itunes:email>
+        </itunes:owner>
+        <itunes:category text="Education">
+            <itunes:category text="Higher Education" />
+        </itunes:category>
+        <itunes:keywords>Accessibility, A11y, Ally, Blackboard Ally, Road Trip, Campus visit, Inclusion, Inclucity, Universal Design For Learning, UDL, Student remediation, Student support, Student services</itunes:keywords>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:subtitle>
+            <itunes:image href="http://www.ally.ac/podcast/tour/assets/img/2019-tour-podcast-cover-art.png" />
+            <atom:link href="http://www.ally.ac/podcast/tour/allytour-feed.xml" rel="self" type="application/rss+xml" />
+            <pubDate>Mon, 04 Feb 2019 09:00:00 GMT</pubDate>
+            <title>The Ally Tour Podcast</title>
+            <itunes:author>Blackboard Ally</itunes:author>
+            <description>We're on a worldwide search to see what inclusive education looks like in the digital age. So Blackboard Ally is going on Tour, visiting campuses around the globe to learn how they're tackling their toughest accessibility challenges and improving the learning experience for all students.</description>
+            <itunes:summary>We're on a worldwide search to see what inclusive education looks like in the digital age. So Blackboard Ally is going on Tour, visiting campuses around the globe to learn how they're tackling their toughest accessibility challenges and improving the learning experience for all students.</itunes:summary>
+            <itunes:subtitle>What does inclusive education looks like in our modern age? Blackboard Ally is visiting campuses around the globe to learn how they're tackling their toughest accessibility challenges and improving the learning experience for all students.</itunes:subtitle>
+            <lastBuildDate>Tue, 05 Feb 2019 09:00:00 GMT</lastBuildDate>
+
+            <!-- EPISODE 01-->
+            <item>
+                <title>Introducing the Ally Tour for 2019</title>
+                <description>The 2019 Ally Tour Trailer is an overview of our plans to visit as many institutions around the globe as possible for 2019. It includes some of the activities we are planning carrying out and how to follow the tour.
+
+                Join the tour along with the rest of the Ally Community at tour.ally.ac. You can catch the latest updates on Instagram and Twitter at #AllyTour2019. And listen to stories of inclusion from our Community Champions on the Ally Tour 2019 Podcast series available on SoundCloud or in your favorite podcast app. We’ll look forward to seeing you at the next stop on the road to IncluCity.</description>
+                <itunes:summary>The 2019 Ally Tour Trailer is an overview of our plans to visit as many institutions around the globe as possible for 2019. It includes some of the activities we are planning carrying out and how to follow the tour.
+
+                Join the tour along with the rest of the Ally Community at tour.ally.ac. You can catch the latest updates on Instagram and Twitter at #AllyTour2019. And listen to stories of inclusion from our Community Champions on the Ally Tour 2019 Podcast series available on SoundCloud or in your favorite podcast app. We’ll look forward to seeing you at the next stop on the road to IncluCity.</itunes:summary>
+                <itunes:subtitle>The 2019 Ally Tour Trailer is an overview of our plans to visit as many institutions around the globe as possible for 2019. It includes some of the activities we are planning carrying out and how to follow the tour.</itunes:subtitle>
+                <itunesu:category itunesu:code="112" />
+                <enclosure url="http://www.ally.ac/podcast/tour/2019-ally-tour-trailer.mp3" type="audio/mpeg" length="1" />
+                <guid>http://www.ally.ac/podcast/tour/2019-ally-tour-trailer.mp3</guid>
+                <itunes:duration>0:01:10</itunes:duration>
+                <pubDate>Tue, 05 Feb 2019 09:00:00 GMT</pubDate>
+            </item>
+            <!--END EPISODE 01-->
+
+        </channel>
+    </rss>
