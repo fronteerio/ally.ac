@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="323px" height="323px" viewBox="0 0 323 323" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>tour-icon-mic</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M120,140 C136.6,140 149.9,126.6 149.9,110 L150,50 C150,33.4 136.6,20 120,20 C103.4,20 90,33.4 90,50 L90,110 C90,126.6 103.4,140 120,140 Z M173,110 C173,140 147.6,161 120,161 C92.4,161 67,140 67,110 L50,110 C50,144.1 77.2,172.3 110,177.2 L110,210 L130,210 L130,177.2 C162.8,172.4 190,144.2 190,110 L173,110 Z" id="path-1"></path>
+    </defs>
+    <g id="usergroupPages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tour-icon-mic">
+            <circle id="Oval" fill="#000000" cx="161.5" cy="161.5" r="161.5"></circle>
+            <g id="iconMic" transform="translate(43.000000, 43.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Shape" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
