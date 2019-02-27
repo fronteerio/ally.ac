@@ -19,7 +19,7 @@
         <itunes:category text="Education">
             <itunes:category text="Higher Education" />
         </itunes:category>
-        <itunes:keywords>Accessibility, A11y, Ally, Blackboard Ally, Road Trip, Campus visit, Inclusion, Inclucity, Universal Design For Learning, UDL, Student remediation, Student support, Student services</itunes:keywords>
+        <itunes:keywords>accessibility,a11y,coursecontent,universaldesignforlearning,udl,remediation</itunes:keywords>
         <itunes:explicit>no</itunes:explicit>
             <itunes:image href="http://www.ally.ac/podcast/tour/assets/img/2019-tour-podcast-cover-art.png" />
             <atom:link href="http://www.ally.ac/podcast/tour/allytour-feed.xml" rel="self" type="application/rss+xml" />
@@ -30,27 +30,60 @@
             <itunes:summary>We're on a worldwide search to see what inclusive education looks like in the digital age. So Blackboard Ally is going on Tour, visiting campuses around the globe to learn how they're tackling their toughest accessibility challenges and improving the learning experience for all students.</itunes:summary>
             <itunes:subtitle>What does inclusive education looks like in our modern age? Blackboard Ally is visiting campuses around the globe to learn how they're tackling their toughest accessibility challenges and improving the learning experience for all students.</itunes:subtitle>
             <lastBuildDate>Tue, 05 Feb 2019 09:00:00 GMT</lastBuildDate>
-
-
-            <!-- EPISODE 01-->
+            <!-- TRAILER-->
             <item>
                 <itunes:episodeType>trailer</itunes:episodeType>
                 <itunes:season>1</itunes:season>
                 <title>Introducing the Ally Tour for 2019</title>
-                <description>The 2019 Ally Tour Trailer is an overview of our plans to visit as many institutions around the globe as possible for 2019. It includes some of the activities we are planning carrying out and how to follow the tour.
-
-                Join the tour along with the rest of the Ally Community at tour.ally.ac. You can catch the latest updates on Instagram and Twitter at #AllyTour2019. And listen to stories of inclusion from our Community Champions on the Ally Tour 2019 Podcast series available on SoundCloud or in your favorite podcast app. We’ll look forward to seeing you at the next stop on the road to IncluCity.</description>
-                <itunes:summary>The 2019 Ally Tour Trailer is an overview of our plans to visit as many institutions around the globe as possible for 2019. It includes some of the activities we are planning carrying out and how to follow the tour.
-
-                Join the tour along with the rest of the Ally Community at tour.ally.ac. You can catch the latest updates on Instagram and Twitter at #AllyTour2019. And listen to stories of inclusion from our Community Champions on the Ally Tour 2019 Podcast series available on SoundCloud or in your favorite podcast app. We’ll look forward to seeing you at the next stop on the road to IncluCity.</itunes:summary>
+                <description>The 2019 Ally Tour Trailer is an overview of our plans to visit as many institutions around the globe as possible for 2019. It includes some of the activities we are planning carrying out and how to follow the tour. Join the tour along with the rest of the Ally Community at tour.ally.ac. You can catch the latest updates on Instagram and Twitter at #AllyTour2019. And listen to stories of inclusion from our Community Champions on the Ally Tour 2019 Podcast series available on SoundCloud or in your favorite podcast app. We’ll look forward to seeing you at the next stop on the road to IncluCity.</description>
+                <itunes:summary>The 2019 Ally Tour Trailer is an overview of our plans to visit as many institutions around the globe as possible for 2019. It includes some of the activities we are planning carrying out and how to follow the tour.</itunes:summary>
                 <itunes:subtitle>The 2019 Ally Tour Trailer is an overview of our plans to visit as many institutions around the globe as possible for 2019. It includes some of the activities we are planning carrying out and how to follow the tour.</itunes:subtitle>
                 <itunesu:category itunesu:code="112" />
-                <enclosure url="http://www.ally.ac/podcast/tour/2019-ally-tour-trailer.mp3" type="audio/mpeg" length="1" />
+                <enclosure url="http://www.ally.ac/podcast/tour/2019-ally-tour-trailer.mp3" type="audio/mpeg" length="1690088" />
                 <guid>http://www.ally.ac/podcast/tour/2019-ally-tour-trailer.mp3</guid>
-                <itunes:duration>0:01:10</itunes:duration>
+                <link>https://usergroup.ally.ac/s/tour/custom_pages/container/view?id=36</link>
+                <itunes:duration>00:01:10</itunes:duration>
                 <pubDate>Tue, 05 Feb 2019 09:00:00 GMT</pubDate>
             </item>
+            <!--END TRAILER-->
+            <!-- EPISODE 01-->
+            <item>
+                <itunes:episodeType>full</itunes:episodeType>
+                <itunes:season>1</itunes:season>
+                <title>Ep01: Atlantic Cape Community College – Rising up to the Challenge</title>
+                <itunes:title>Atlantic Cape Community College – Rising up to the Challenge: A Three-Year Journey to a more Inclusive Campus</itunes:title>
+                <description>After receiving a complaint from the Office of Civil Rights, a Community College faces the tall task of becoming accessible in three years. How did they respond in the face of adversity? In the first episode of the Ally Tour, we hear from the team at Atlantic Cape Community College in New Jersey their journey on the pathway to inclusion. Now three years later, inclusivity has become a core part of their campus culture. Their story is an inspiration for the many institutions out there facing similar challenges in becoming more inclusive, and a lesson about how in the end, it really is about student success.</description>
+                <itunes:summary>After receiving a complaint from the Office of Civil Rights, a Community College faces the tall task of becoming accessible in three years. How did they respond in the face of adversity? In the first episode of the Ally Tour, we hear from the team at Atlantic Cape Community College in New Jersey their journey on the pathway to inclusion. Now three years later, inclusivity has become a core part of their campus culture. Their story is an inspiration for the many institutions out there facing similar challenges in becoming more inclusive, and a lesson about how in the end, it really is about student success.</itunes:summary>
+                <itunes:subtitle>A Community College makes a campus-wide commitment to accessibility to create more equitable, higher quality learning experiences for students.</itunes:subtitle>
+                <itunesu:category itunesu:code="112" />
+                <enclosure url="http://www.ally.ac/podcast/tour/ep01-atlantic-cape.mp3" type="audio/mpeg" length="75196095" />
+                <guid>http://www.ally.ac/podcast/tour/ep01-atlantic-cape.mp3</guid>
+                <link>https://usergroup.ally.ac/s/tour/custom_pages/container/view?id=36</link>
+                <itunes:duration>00:56:38</itunes:duration>
+                <pubDate>Wed, 27 Feb 2019 09:00:00 GMT</pubDate>
+                <content:encoded>
+                    <p>For the first stop on the Ally Tour, John Scott of the Ally Team visits <a href="http://www.atlantic.edu">Atlantic Cape Community College</a> in New Jersey. Members of the Instructional Technology group and the Center for Accessibility sit down to share their story.</p>
+                    <p>After two blind students and the National Federation for the Blind filed a lawsuit against the campus for failing to provide equitable access to their learning content for students with disabilities, the team was issued a <a href="http://www.atlantic.edu/documents/nfb_lanzailotti_atlantic_cape_consent_decree.pdf">Consent Decree</a> to become 100% accessible in three years.</p>
+                    <p>In the beginning, the team talks about when they first heard about the decree, and where they and their faculty were in terms of accessibility at that time. They then share go into detail about the processes they put into place and strategies they developed to begin the long march toward inclusion.</p>
+                    <p>Part of that process included becoming an early adopted of Blackboard Ally, which became a crucial tool for them in monitoring their progress and training faculty. So where are they today? </p>
+                    <p>In the end, the team discusses how they have witnessed a culture change on their campus, where faculty haven’t only prioritized accessibility in their teaching for the sake of compliance, but because they have found a more inclusive campus benefits all their learners.</p>
+                    <ul>
+                        <li>Michelle Perkins – Director of Instructional Technology</li>
+                        <li>Chad Bullock – Senior Manager Adaptive Technology</li>
+                        <li>Mike Barnes – Director of the Center for Accessibility</li>
+                        <li>Joshua Carroll – Senior Technician Instructional Technology</li>
+                        <li>Patricia Kubaska – Program Coordinator Instructional Technology</li>
+                        <li>Gerald Fox – Faculty Support</li>
+                    </ul>
+                    <p><a href="http://www.atlantic.edu">www.atlantic.edu</a></p>
+                    <br/>
+                    <p>The Ally Tour Blog:<a href="https://usergroup.ally.ac/s/tour/custom_pages/container/view?id=36">http://tour.ally.ac</a></p>
+                    <p><a href="https://twitter.com/hashtag/AllyTour2019?src=hash" title="Twitter Searching #AllyTour2109" target="_blank">#AllyTour2019</a></p>
+                    <p><a href="https://twitter.com/hashtag/BbAlly?src=hash" title="Twitter Searching #BbAlly" target="_blank">#BbAlly on Twitter</a></p>
+                    <p><a href="https://www.instagram.com/allytour2019/" title="@AllyTour2019 on Instagram" target="_blank">@AllyTour2019 on Instagram</a></p>
+                </content:encoded>
+                <itunes:keywords>ada504,rehabilitationact,communitycollege,wcag,accessible,atlanticcapecommunitycollege,accc,ally,blackboardally,inclusive,accessibility,a11y,coursecontent,universaldesignforlearning,udl,studentremediation,studentsupport,studentservices</itunes:keywords>
+            </item>
             <!--END EPISODE 01-->
-
     </channel>
 </rss>
