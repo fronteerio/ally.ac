@@ -1,0 +1,850 @@
+[00:00:00] We're on a worldwide search to see what inclusive education
+looks like. So, Blackboard Ally [00:00:05] is going on tour for 2019,
+visiting campuses around the globe to learn how they're [00:00:10]
+tackling their toughest accessibility challenges and improving the
+learning experience for all [00:00:15] their students. Hey, everybody,
+welcome to the first episode of the [00:00:20] Ally Tour Podcast. So,
+for the first stop on the tour, we're going to be hearing from the
+team [00:00:25] in Atlantic Cape Community College. Wow. They have
+just a really inspiring [00:00:30] story about how in the face of
+challenging legal mandates to become more accessible, [00:00:35] they
+rally together as a campus to take on those tough accessibility
+[00:00:40] challenges and really become more inclusive for all their
+students. So, let's jump [00:00:45] into it and hear from the team.
+All right. We'll start with Mike since you just walked [00:00:50] in.
+Yeah. Just a quick introduction, your name, your role here, [00:00:55]
+and your relationship to Accessibility. Okay. My name [00:01:00] is
+Mike Barnes, Director of the Center for Accessibility here at Atlantic
+Cape Community College. [00:01:05] I've been working closely with
+Michelle's Department and [00:01:10] everyone here on making
+everything as accessible as possible, [00:01:15] in as many different
+ways as possible. My name [00:01:20] is Michelle Perkins, I'm the
+Director of Instructional Technology here in Atlantic Cape, also the
+Blackboard [00:01:25] administrator. In my role or through
+instructional [00:01:30] technology, we work very closely with the
+Center for Accessibility and delivering [00:01:35] training to faculty
+and staff throughout the college and we work with faculty in
+[00:01:40] trying to help them get their content as successful as
+possible. [00:01:45] I'm Josh Carroll, I'm the Technician for the
+Instructional Technology Department. I do most of the [00:01:50] back
+end server work for Blackboard and other academic related
+technologies. [00:01:55] My role with accessibility is basically to
+test out new solutions, try to break them. Sometimes [00:02:00] I'm
+more successful than other times, but yeah, my point is to test all
+the stuff out. I'm [00:02:05] Gerry Fox, I'm a Technologist here at
+Atlantic Cape. We [00:02:10] work with Blackboard and with the
+faculty, making their content accessible. [00:02:15] I'm Pat Kubaska,
+Coordinator in the Instructional [00:02:20] Technology Department. I
+work with Gerry and Josh and Michelle, [00:02:25] working with the
+faculty, assisting the students. They call if they have problems with
+[00:02:30] Blackboard. Chad Bullock, Senior Manager of the Center for
+Accessibility. [00:02:35] We work on all aspects of accessibility in
+terms of working with students with disabilities [00:02:40] and their
+courses and also training faculty and staff on different strategies
+[00:02:45] for accessible content. All right. [00:02:50] So, let's
+start maybe in the glory days pre-decree. What was it like around
+accessibility? [00:02:55] Who cared about it? Prior to consent decree,
+everything was funneled [00:03:00] through the counseling office. So,
+you have a few counselors that handle the students [00:03:05] that
+would visit disability services, is what it was called at the time,
+and [00:03:10] they would basically handle anything that had to do
+with accommodation. So, accessibility wasn't really in [00:03:15] the
+conversation, it was more about accommodation as opposed to making
+materials [00:03:20] of course materials accessible. So, that was
+probably the way it was set [00:03:25] up in the past. So, if any
+request came through, there's probably [00:03:30] one or maybe  two
+people to handle an accommodation request. So, now, after [00:03:35]
+the consent decree, we're trying to be proactive where what we're
+doing is making things accessible from the GetGo, [00:03:40] so we
+don't have to have as many accommodations in order for a student to be
+successful. [00:03:45] So, that's kind of how the tide is changed a
+bit. But in regards to accessible content, [00:03:50] there really
+wasn't much of anything. I mean, we would be [00:03:55] the creators,
+non-faculty creators whether for web content, [00:04:00] we would make
+sure we had an alt tag. Other than that, that was the [00:04:05] time
+of like flash animations and let's make everything as spinny and fancy
+[00:04:10] and eye-catching as we can and there maybe some people who
+can't look at it, but [00:04:15] at least those who do, will really
+enjoy it. With [00:04:20] faculty, I really don't think accessible
+content was a part of their vocabulary [00:04:25] as a whole. Content
+was really designed in those days for users [00:04:30] with perfect
+vision, hearing all their senses, nothing [00:04:35] precluding them,
+whatsoever. The rules aren't really much of a thought given to
+[00:04:40] making content accessible. Then what happened? So, then you
+get hit [00:04:45] with this, it's a consent decree, that's the
+official name. Yeah. [00:04:50] Yes. It's [00:04:55] a consent decree
+that we had agreed to [00:05:00] as an institution, we had agreed to
+100 percent accessibility [00:05:05] across the board. So, that was
+something that they had negotiated [00:05:10] prior to my arrival at
+the college and prior to Chad's leaving Michelle's department.
+[00:05:15] So, then I was hired. [00:05:20] So, Chad, he kind of
+manage this consent [00:05:25] decree. I'll never forget the moment, I
+was sitting on the beach and I'm looking at this, [00:05:30] I got an
+email from the coach saying, "Here's this document. You might want to
+check it out. It's going to be doing [00:05:35] a lot of work on it."
+So, I opened it up and I'm like, "Oh. Okay. [00:05:40] Here we go."
+But we viewed it as a [00:05:45] good thing. I think like it was very
+daunting, but it was something that in looking [00:05:50] at it, it
+was like a blueprint into making the college, like the ideal
+[00:05:55] to making the college completely accessible. Realized that
+100 percent accessibility is really [00:06:00] difficult and probably
+not attainable, but we had a blueprint right in front of us that sort
+[00:06:05] of spelled out exactly how we should do it. So, it enabled
+us [00:06:10] to reach out to other institutions that had been there
+before that done [00:06:15] it really well. It enable us to reach out
+to some consultants in industry that had worked with [00:06:20] other
+universities on figuring all that stuff out. So, we just sort of
+jumped headfirst [00:06:25] into this world and just sort of started
+just from [00:06:30] the ground up and just started with the basics
+of, "Okay. If [00:06:35] we have a student with a visual impairment,
+how do we make sure that they can get into a classroom and take this
+[00:06:40] class? What are the barriers?" We identified the barriers.
+We even went as far as, this is actually Chad's [00:06:45] idea, as
+we're going through in the very beginning, we [00:06:50] didn't really
+know how to really test a lot of this stuff. So, we hired a blind
+student [00:06:55] to test everything. So, we brought in a student, we
+paid him as a consultant, [00:07:00] and he came in. In the very
+beginning, we ran everything we did through the [00:07:05] student and
+he would tell us where he got stuck, he would tell us what do you
+know, he was able to [00:07:10] get here, maybe this part was a little
+wonky, go back and change this, and that was a game changer [00:07:15]
+for us, to be able to really see his perspective on trying to register
+for [00:07:20] classes or trying to read the course catalog or trying
+to do all these different things. So, we were able [00:07:25] to
+create a map to then go back and say, okay, like what's the main, so
+[00:07:30] in order to get over here and take this class we've got to
+get here first. We get here, we got to get here so it [00:07:35] was
+almost like a, "Choose Your Own Adventure" with this kid trying to
+figure out exactly how to get where we needed [00:07:40] to go. Then
+with all these different things with help of Ally eventually now we
+have [00:07:45] a whole system in place that's really enabling us to
+ensure that these students have [00:07:50] access to fully accessible
+content and that if they don't, there's a process for making
+[00:07:55] that accessible, both on the student side and the faculty
+side. So, pre-Ally [00:08:00] had you started to look at the content
+in the LMS? How were you trying [00:08:05] to look at the content in
+the LMS? I don't think we [00:08:10] started looking at it. We had
+started training. We that was really the first [00:08:15] thing we
+tried to do is to educate the faculty and to start [00:08:20] to teach
+them how to make their content accessible and [00:08:25] I guess at
+that point we were relying 100 percent on the office accessibility
+[00:08:30] checkers. But there was really no validation or if they
+weren't [00:08:35] using office for some reason when they uploaded
+their content. We really didn't have a way to [00:08:40] manage and
+you know it was, there was one point at a meeting that [00:08:45] I
+missed that's the way it always happens, where it got back to me that
+Michelle Perkins [00:08:50] will go through every single course on
+Blackboard and make sure that the content is accessible. [00:08:55] I
+just said- I know what that means. [00:09:00] I even don't know what
+to say because I said even if I said [00:09:05] it was accessible here
+two seconds later they upload something it might not be accessible.
+So, we've [00:09:10] really didn't have a solution at that time, we
+were just trying to get started because we knew we had to get started
+[00:09:15] we didn't insert Ally which made that journey a little
+[00:09:20] bit easier but- Once we got familiar using the Microsoft
+Office [00:09:25] Checkers, so once we found the Blackboard had a
+product that was basically going to mimic [00:09:30] in a way that
+same result and usage then we jumped on right away with [00:09:35]
+thought this is great, let's get it in here even first ones or
+something to do it, if we were but we're pretty early [00:09:40] on in
+the adoption process just for that reason because we couldn't keep
+just using the Microsoft Office [00:09:45] checkers so there wasn't
+enough analytics behind that in order to see what was really happening
+at the school. [00:09:50] Just to point out that the day Blackboard
+Ally introduced [00:09:55] their product was in mid-March of 2017, I
+believe. That same [00:10:00] day we were a better toaster for a
+Blackboard Ally's so we were in communication with Blackboard
+[00:10:05] two months before they rolled out the test products and we
+were testing it from day one [00:10:10] and we rolled out for the full
+semester I believe was the limited roll out or do [00:10:15] we
+actually do a whole roll out? We started with a pilot at fall and
+[00:10:20] the pilot was so successful. Our vice president of academic
+said turn it on [00:10:25] for everyone, everything we need everybody
+to have this tool and have access to it. [00:10:30] So- The pilot like
+20 classes, 30 classes or something along those lines? It was more
+like 20 faculty [00:10:35] members, and then of those 20 we turned it
+on and all their courses. But then over [00:10:40] thanksgiving break
+we turned it on system wide and never looked back. What were some of
+the [00:10:45] indicators of success of that pilot? [00:10:50] One big
+indicator was that when we were invited to go back on different
+[00:10:55] webinars, we were already trained on the things that they
+were discussing in those webinars, [00:11:00] on how to build
+accessible content. We were saying we're already in past, we already
+know this stuff [00:11:05] in a way like we were already educating
+faculty and staff on these stuff already. So, we felt like [00:11:10]
+we were ahead of the game, so that was a real good indicator.
+Especially on a few Blackboard webinars. As [00:11:15] a matter of
+fact, I think we are on the Blackboard webinar, we mentioned that
+we're from Atlantic Cape and they even mentioned then [00:11:20] that
+we were already been working with you guys on accessibility stuff, you
+already know this. Isn't [00:11:25] all that's neat. We're already
+making some type of indent or something in the industry. Right.
+[00:11:30] And I think to it speaks to the culture change of the
+institution. I think from the very beginning, [00:11:35] we had
+stepped in to try and figure out how to not just require people
+[00:11:40] and faculty to make accessible content, but to create
+culture of accessibility to where we're creating [00:11:45] accessible
+content irregardless of specific disabilities may or may not
+[00:11:50] be in the classroom. So, I think that vying and in combined
+with access to [00:11:55] this Ally product, you know once it came out
+and we started noticing that faculty [00:12:00] members were really
+concerned about their score, they were concerned about their content,
+[00:12:05] which I think was something that we really didn't see in
+the past. I think Ally really allowed, it was kind of like [00:12:10]
+the vehicle for our faculty members to be able to visualize [00:12:15]
+progress instead of just us saying, "Yeah, it looks good." You can
+really go in and see exactly [00:12:20] where they're at and also
+figure out how to make changes if needed. Another [00:12:25] indicator
+was a faculty started coming up to us in conversations [00:12:30] and
+start talking about accessibility. While before that, they were saying
+I don't know what that is. I don't know what accessibility [00:12:35]
+is. I don't know really know what you're talking about, and they had a
+lot of stress and trepidation about it, about [00:12:40] getting into
+it, and then they will stopping us in a hallway saying, you know I
+edit headers on this document and I can't figure out how [00:12:45] to
+modify the header, and I'm going this a great conversation because
+that means you're implementing [00:12:50] this stuff. So, that was a
+game changer. Yeah I mean the scoring system of Blackboard [00:12:55]
+Ally for some they took it like a game, like progress. I want to get
+to this [00:13:00] new level for content I'm giving to my students.
+So, I don't know if the game of fire [00:13:05] is the right word for
+that but that's kind of what the scoring system did in the beginning.
+[00:13:10] So, did you first kind of turn on the institutional report
+and look at that before you opened [00:13:15] it up to faculty? What
+was that process? I think we [00:13:20] did turn on the institutional
+report. We were looking before we [00:13:25] turned it on. Yes. So, we
+were looking just kind of out of curiosity. There was at that time
+[00:13:30] I mean we were still training faculty, it wasn't like
+anything was being held against faculty. We were kind of [00:13:35]
+morbidly curious to see where we were in those very first steps.
+[00:13:40] In those days, we would go through page after page
+[00:13:45] after page of zero percent, five percent. We were excited
+that, "Hey, we had 10 courses that [00:13:50] are 100 percent
+accessible now." Remember, we were looking at that stuff. Absolutely.
+And then that number grew more [00:13:55] and more and it was exciting
+watching the change. It was really exciting. Yeah I mean [00:14:00] it
+was a good indicator of what content faculty were putting on
+Blackboard [00:14:05] at the time and I think in the beginning, there
+were like 80 courses at zero percent [00:14:10] because they were all
+scanned PDFs. There was just not a trace of [00:14:15] anything
+accessible beyond a person who could visually see the scan document.
+[00:14:20] And as a team looking at a course like that, what was your
+strategy? Did you [00:14:25] pull them into your room and sit them
+down like we had to do something like now about it? [00:14:30] What
+was the process there? There was a lot of education. I mean [00:14:35]
+we had this series of accessibility courses that Chad created. We had
+two [00:14:40] faculty development days that were dedicated towards,
+[00:14:45] let's get down and get dirty and show you how to do this.
+We had messages [00:14:50] from upper management. I was going to say,
+we tried to take the nice guy approach at first, and [00:14:55] of
+course, that worked for some and [00:15:00] then there were others
+that we needed administration. We needed administrations backing. I
+mean, [00:15:05] it wasn't going because it does require work and it's
+not hard work, but it's different and change [00:15:10] is different,
+and until administration said, you have to do this. [00:15:15] There
+were some people who just weren't going to do it, and those people
+then would end [00:15:20] up in our offices and say, I'm so
+overwhelmed. I've no idea how to start with this and [00:15:25] we're
+going to start one document at a time. You have to look at it one
+PowerPoint at a time, one [00:15:30] video at a time because when
+you're trying to look at, well I have five different courses I teach
+[00:15:35] and I have like 60 different thought. It's very
+overwhelming to start one at a time and when you do that [00:15:40]
+one, then you can do the next one, and then the next one and you're
+going to find that it gets a little bit easier and [00:15:45] we found
+that in the beginning, we had faculty who just weren't willing to do
+anything, [00:15:50] and it really just please try and you know what I
+can do this stuff, and like they were excited [00:15:55] about it and
+then they're like you know what, I have other students who are
+actually using this too and they [00:16:00] said it's better, and that
+was all very exciting feedback for us. [00:16:05] I think to like one
+of the things that we struggled a lot with. I was sort [00:16:10] of
+on the peripheral of a lot of this stuff that rise. What I saw was a
+lot of the faculty members who've [00:16:15] been here for 40, 45
+years, 50 years [00:16:20] and that's a lot of data. That's a lot of
+course material, that's a lot of stuff, and what we wanted to
+[00:16:25] make sure that we did from the beginning is to not devalue
+all of that work and devalue [00:16:30] all of that content because it
+is still great content. It's still [00:16:35] very great for lack of a
+better word, but [00:16:40] in doing this it was saying like okay
+that's still good stuff. We had to figure out a way to bring
+[00:16:45] that to now. So, it's to make that content accessible
+[00:16:50] for kids now because right now it's not. So, what do we
+have to do to work together to make sure that that still [00:16:55]
+holds value and I think once we broke down that barrier of being like
+that I think there's [00:17:00] a lot of faculty who were just like
+look don't touch my stuff, it is my stuff, I'm not [00:17:05] playing
+this game. Once really explain that it's not [00:17:10] your stuff,
+your stuff still great. It's just how it's presented and things like
+that. So, [00:17:15] I think once that barrier was broken down, I
+think we saw a lot. [00:17:20] That's what I think we really started
+to see the culture change and that shift at the college to [00:17:25]
+more accessible content. I was part of it too. There was [00:17:30]
+some defensive faculty early on that said, you know why are you
+targeting me? [00:17:35] I've always taught it this way. I don't
+understand why anything has to changed. So, part of the message was
+[00:17:40] saying it's not your fault, we're not blaming you and
+pointing the finger directly to you, it said [00:17:45] this is really
+how the process should be all along. Let's put you in the direction of
+improving everything [00:17:50] you create from this point forward,
+whereas punishing you for what came before. [00:17:55] We had to kind
+of get around, the explanation, and get to the learning part of
+[00:18:00] it, I guess. I think using examples too of students, for
+[00:18:05] instance, we had a student with a visual impairment, who
+had no cognitive issues whatsoever [00:18:10] and this student can't
+access her material, right? The student is no different from any
+[00:18:15] other student other than the issues the student has a
+vision, and we're saying that this student effectively [00:18:20] that
+okay even though you've got nothing else besides your [00:18:25]
+visual impairment, you can't take this class because it is in a
+language [00:18:30] that you can understand, right? So, I think by
+really having that student right there in front [00:18:35] of somebody
+saying like okay well you can't be here, that I think was a little bit
+of a change [00:18:40] too because it brought the idea of
+accessibility home to where like now we have a kid who's [00:18:45] in
+our a fully capable student, who is at our institution that cannot
+access [00:18:50] anything unless we make changes. I was going
+[00:18:55] to ask me about that course with all scans because like
+that's a heavy lift right. Doing heading on [00:19:00] a word
+document, not too terrible but in cases like that, what was some
+[00:19:05] of the process? Because that's something that we hear a lot
+from institutions which we keep carve off all text [00:19:10] or
+whatever, but how did you pick up some of these big challenges? Well,
+any other training that [00:19:15] we did, we kind of reiterated a lot
+of the same thing and a lot of different training that we did,
+[00:19:20] and one of them were we're not the only school on the
+planet that are trying to make this particular [00:19:25] document or
+infographics in an alternative version. There's resources out there
+already. So, [00:19:30] whenever you get stressed out like as faculty
+member I mean about making something accessible, we have [00:19:35]
+support circles to help you with that, and if we have a solution
+today, we're to find it because we know the channels where to
+[00:19:40] reach out and where to look for. So, we'll find a solution,
+but now fix the things that you're comfortable with fixing, [00:19:45]
+record the things that you're having trouble with, and eventually your
+course will [00:19:50] be fully accessible. So, just keep chipping
+away at the course semester after semester. [00:19:55] They would
+email you directly [00:20:00] when they had an issue of what was that
+system they use? The words accessibility and Chad just weren't
+together [00:20:05] at all aspects even like staff, they were going to
+buy a [00:20:10] piece of software Chad has to test it. I'm like wait,
+hold on what! and I have [00:20:15] a lot of email. So, originally
+that's what happened and then we looked at the process [00:20:20]
+though, and we looked at where we needed to implement different stages
+of the process. [00:20:25] So, what they brought on a part time
+employee just for the academic side of things. [00:20:30] So, just for
+faculty support that helped me out a lot, as opposed to [00:20:35]
+just coming directly to one person. Now, we have a few people that
+instructional technology [00:20:40] was helping out a lot with giving
+direction. We made a web page strictly for resources [00:20:45] where
+faculty can read up on things on their own, so they didn't have to
+keep reaching out to us especially [00:20:50] for things that we felt
+were a little more simpler concepts to really understand and get.
+[00:20:55] So, that helped out so all these different channels and
+buckets we really started to fill. Now, once [00:21:00] those buckets
+got filled a little more, it was easier to get things done especially
+[00:21:05] the time of [inaudible 00:21:05] anyway . That's what we
+were saying for the academic side for [inaudible 00:21:09] [00:21:10]
+, the part time support on the academic side, and then we just
+[00:21:15] kept educating ourselves. So, we went through professional
+development for ourselves. We have two people on staff [00:21:20] now
+that are certified, right? For accessibility. So, we took courses in
+professional development. [00:21:25] We spoke to vendors, we brought
+vendors in. We went to conferences all these different [00:21:30]
+things. Anything that we could do to gain more experience as quickly
+as [00:21:35] we could with experience, and then once we gain that, we
+bring it back and disseminate that information [00:21:40] as much as
+possible, and that was really the plan. We just keep going [00:21:45]
+with that. Great. The process doesn't end. No. It never had and
+[00:21:50] never will, and that's a message we said it backwards to
+about their courses. It's never going to end. You're not just going to
+be fully [00:21:55] accessible one day. Because anytime you bring in a
+new piece of equipment, you want to have accessibility in mind
+[00:22:00] whatever that concept might be so. Yes. It's constantly
+evolving but it's [00:22:05] good. So, some of the training that you
+all set up, I mean you are showing [00:22:10] me some of the things
+that you have built out, and so you provided basically asynchronous
+[00:22:15] secret. However, you can reach them you did it. Yeah, and
+bombarded [00:22:20] too. We offered more training than we had ever
+had in the past. We [00:22:25] basically made it like Fridays where
+training. Without a doubt, we always had something on Fridays
+[00:22:30] and then we would always do a Tuesday or Wednesday as well
+on top of that. We brought out new workshops stuff [00:22:35] that was
+never been offered before to keep it a bit fresh. I mean obviously
+there were no accessibility workshops. [00:22:40] We know that, but
+then we also parlay that into universal design. We talked about video
+captioning [00:22:45] which is certainly accessibility, what is just
+the bucket of it. We never had workshops [00:22:50] dedicated to those
+topics before. So, now we have more education than we ever had before.
+[00:22:55] So, it's easier especially for a new faculty member, a new
+adjunct that comes [00:23:00] in. They can jump right into all these
+resources and get educated very quickly on this topic, [00:23:05] and
+that's probably one of the biggest things. Right, and one of the other
+things [00:23:10] that academics is doing now is, they started putting
+together [00:23:15] some standard courses that had accessible content
+[00:23:20] already filled out in it. So, that when a new adjunct was
+hired instead of saying, hi [00:23:25] you're hired. Here's the
+syllabus on a text. Good luck. Here you go. Here's [00:23:30] a course
+we already have fully accessible PowerPoint. We already have a fully
+accessible syllabus. We already have all these [00:23:35] things that
+are already done and give them a head start. What I mean when they
+started. So, [00:23:40] we're still working on that. But we definitely
+have made a lot of progress. [00:23:45] So, those templates were
+something pretty new that you introduced after. Oh, yeah. They're very
+[00:23:50] new. They just started last summer. I think they just
+started [00:23:55] developing them for last fall. How is faculty
+response [00:24:00] to templates? Are they like, don't tell me how to
+organize my course or my syllabus. [00:24:05] There's some of that.
+There's others who have embraced that a little [00:24:10] bit more
+because it doesn't. They're not restricted from changing it. Once they
+get it, it's just given [00:24:15] them a foundation to get started.
+Once they have it, they can then use it, not [00:24:20] use it, add
+their own content. Some of our [00:24:25] academic departments have
+really, again you spoke with some of our science folks earlier.
+[00:24:30] They've done amazing things with developing that type of
+content both for [00:24:35] lecture and lab blackboard core shells.
+[00:24:40] So, that way when an adjunct comes in. Just think of it,
+you're a brand new adjunct they're hiring maybe in the 11th [00:24:45]
+hour. How am I going to make this happen? Just like that and they not
+only have the tools they need [00:24:50] to be successful, but it's
+already accessible and it all is just going to help make the students
+[00:24:55] more successful. In the process of training up faculty,
+[00:25:00] getting them on board, did certain faculty champions emerge
+that you [00:25:05] propped up on the campus to say, hey this is your
+model look at this faculty member? [00:25:10] Absolutely. We're
+definitely did because we had some remember [00:25:15] where you can
+see right away. Like that bell click or something clicks [00:25:20]
+all of a sudden where they get it. So, this isn't as stressful as I
+thought it would be or as [00:25:25] daunting as a test because I
+thought it would be. But then we started getting feedback going.
+[00:25:30] I've cleaned up a lot of stuff in my course. I didn't
+realize how much stuff I have had my course. I don't even use anymore
+that's really [00:25:35] old or something like that, and I brought in
+new content new fresh stuff as well. So, [00:25:40] we're getting good
+feedback from that. With something that we really didn't think about.
+We were just trying to make it accessible. But [00:25:45] here we are.
+They're designing their courses all over again and updating their
+materials [00:25:50] and they felt like that cleaning out my closet
+type of feeling, more organized and I'm [00:25:55] ready to go. So,
+that was a nice response. Well it sounds like there's been [00:26:00]
+some cost savings, there too as far as storage. Oh, yeah. Right.
+Because [00:26:05] we were always up against the limits because of
+storage [00:26:10] with Blackboard. Because we are a managed hosting
+and we pay for [00:26:15] our storage and faculty, they'd upload a
+file and it would never be [00:26:20] deleted from their course and we
+could go through their files and they'd have a syllabus in there from
+2004. [00:26:25] That's just been copied over and over and over and
+over again, and we had, [00:26:30] well over half of our faculty that
+just said, "Give me a brand new course [00:26:35] I'm starting over,"
+and that is really. Cleaned [00:26:40] it up a lot. Yes it did. Comes
+down to customer service [00:26:45] emails and all that. [00:26:50]
+So, now I mean you're pretty far along in this journey. You got some
+[00:26:55] success in there. As you were starting to see these courses
+turn green. [00:27:00] Did that inspire the campus? Did it start to
+move away from just a stick being [00:27:05] beating over to them to a
+sense of pride? How has, when you talking about a culture shift, how
+does that now [00:27:10] feel on a campus that has become more
+inclusive? Well, accessibility [00:27:15] is obviously a big word.
+Everybody I think on campus knows about it and knows exactly what it
+means, [00:27:20] exactly how to implement it. Which is three years
+ago there wasn't something that was happening [00:27:25] here at all.
+Right. That's just not a word that people knew and now they know a lot
+of it probably more than they want [00:27:30] to know about it. Well,
+I think they're proud to know I mean we were talking [00:27:35] a
+little bit earlier and some of us in the room teaching. [00:27:40] I'm
+proud that my course is accessible. I wanted it to be accessible as
+accessible as it can to everybody and [00:27:45] I think that there
+are a lot of faculty on campus that are proud that they can say that
+now, and many [00:27:50] of them did the work themselves and they are
+like I did that, and [00:27:55] I think there are a lot of people who
+are proud of themselves. I think when the teachers hear [00:28:00] any
+feedback from a student though. Right. That's where it really makes an
+impact because that's [00:28:05] what they're here for at the end of
+the today. So, we always [00:28:10] pitched the idea of saying, would
+you like less emails from your students about they can't get access to
+this [00:28:15] thing. Where they can't find this document, those
+types of things. Now, that the courses [00:28:20] are more organized
+and accessible, they're not getting those emails or just getting
+emails about content [00:28:25] which is where they want to be. They
+don't want to have emails about software where things are. So,
+[00:28:30] you know when they get that feedback from the students I
+think that really makes them feel so good about it that they have a
+good product that they're putting out there. [00:28:35] I think also
+how much it's support students without disabilities. I think that's a
+point [00:28:40] that does get lost a little bit. Accessibility is a
+whole doesn't [00:28:45] just serve students with disabilities, it
+helps students without disabilities incredibly well [00:28:50] as
+well. So, I think by seeing sort of the student [00:28:55] investiture
+in their Blackboard courses I think they're starting to [00:29:00] see
+an uptick of students using them. Students be able to access them and
+also [00:29:05] by taking out a lot of that stuff that has been there
+forever, [00:29:10] it's very much easier to navigate. So, I think
+students are using the Blackboard [00:29:15] courses a little bit more
+now because they're a little bit cleaner. So, I think that's
+[00:29:20] been a pretty positive thing as well for staff and faculty.
+[00:29:25] So, and faculty get the service, right? I mean they get
+feedback on their courses. [00:29:30] So, they can literally read all
+this feedback and get feedback directly from the students. So, that's
+a big one [00:29:35] too. Are you getting a sense that it has improved
+in some of those areas [00:29:40] that students are reporting a better
+experience in the course? Yeah. [00:29:45] Well, and part of that was
+as a part of this process in the very [00:29:50] beginning of the
+process probably one of the first things we did is we instituted
+[00:29:55] a standard course menu in all of our Blackboard course
+shells. So, we [00:30:00] could make navigation a little more
+consistent. That probably hit more resistance than [00:30:05] you
+could probably imagine from faculty. Because we were telling them, you
+can only have [00:30:10] these eight things on your course menu now
+instead of the 30 things [00:30:15] that you had before and they
+didn't want to be told that and they sure didn't want somebody telling
+[00:30:20] them what to name them. But we did survey students after we
+did that and [00:30:25] there was so much positive feedback. The
+students were like it was nice that no matter what [00:30:30] course I
+was going in, I knew where to find my syllabus, I knew where to find
+this, I knew where to find that, and [00:30:35] that definitely was
+validation that we were moving in the right direction there.
+[00:30:40] Has it changed the way your office is doing things? What's
+been the impact on your office? [00:30:45] It's been a great impact as
+we're able to now ensure accessibility for students [00:30:50] and we
+can now say, so if a student comes in and we know what they need to
+take, [00:30:55] like for instance got one of our student visual
+impairment. We know he has to [00:31:00] take a biology class at some
+point in the next few semesters. So, now we're able to go [00:31:05]
+in and try do a deep dive now into that course to make sure that it's
+perfect. [00:31:10] So, I think we're seeing that. Being able to look
+into the future and sort [00:31:15] of scaffolding the students
+experience as they move through. But also being able to [00:31:20]
+point our students towards [00:31:25] classes that are more
+accessible. To say, so we know we have a student who requires
+[00:31:30] a high level of accessibility. We're able to now go in and
+[00:31:35] we know that the faculty members that are really doing it
+well. So, this [00:31:40] enabled us to go in and see who are those
+professors that are just killing [00:31:45] it. So, that we can now
+take our students and put them in that direction [00:31:50] instead of
+what we're doing before. Just like this is open go here, just because
+it's open and we [00:31:55] don't know what experience that students
+is going to get. Being a community college we're full of adjuncts.
+Most [00:32:00] of them are wonderful. But sometimes you have some
+that are a little bit funny. Now, we can go in [00:32:05] and really
+see what the course looks like and make sure that students experience
+[00:32:10] is almost 100 percent going to be a good one. [00:32:15] Is
+it over now? Is the- In consent decree? No. No, it is [00:32:20] not.
+No. We still have, what do we got left? We got some time left on it.
+[00:32:25] I think it's just the progress, this is going to continue.
+That's the [00:32:30] way too much new technologies are way too much
+variation in dissemination of information, [00:32:35] where
+accessibility is always going to have to be thought of when you're
+creating [00:32:40] content and when you're bringing content in. It's
+never going to go away. So, we have to stay up [00:32:45] to date now
+for all the new stuff that's coming in. So, there's a lot of work to
+be done. [00:32:50] But as far as the legal hammer, that's still over
+your head [00:32:55] in a way? Yes, like the deadline that loomed for
+so long [00:33:00] of all content has to be 100 percent accessible by
+a certain date, that passed last summer. [00:33:05] So, we are past
+that now but we still have facets of it that [00:33:10] is still
+ongoing for a little easier. Because you are right. I mean it's always
+[00:33:15] going to be there, right? It's always a journey, right?
+That inclusive learning [00:33:20] they say it's not a destination, it
+is a journey, and it's something you'll always work [00:33:25] on.
+Well, I think the most important part over the consent decree, right?
+When everybody thinks about consent [00:33:30] decree they think about
+lawsuit, they think about things that have to get done right away. But
+what the consent [00:33:35] decree really did was it highlighted ways
+that we can support our students that we were [00:33:40] not doing
+prior. We were offering a lot of services. That's not why [00:33:45]
+the consent decree came about, it was because there were certain
+little areas that we weren't [00:33:50] offering support in. So, we
+were able to really analyze those areas and [00:33:55] strengthen
+them, and that's what we've done. So, we're taking proactive
+approaches because of that and we'll [00:34:00] continue to do that. I
+think, and I'm not sure if this was mentioned, but I think one of the
+great [00:34:05] things about the consent decree is it's allocation of
+resources, right? So, you have [00:34:10] something like this that
+we're now legally bound to do, which I stand by. I think the consent
+[00:34:15] decree is a great thing. I think it's enabled us do a lot
+of really good work, but with that comes [00:34:20] an allocation of
+resources, with that comes the ability to go to conferences,
+[00:34:25] to be able to write grants, to do these things, to be able
+to bolster the program and get the technology we need. [00:34:30] Not
+just with Blackboard Ally but being able to get the right magnifiers,
+being able to get the right [00:34:35] equipment, the right everything
+and be able to have an ability to [00:34:40] pay for it, which I think
+that's been huge for us. It's being able to [00:34:45] use that added
+resources and really figure out a way out. [00:34:50] It's very rare
+that you get the ability to build a program from scratch and say
+[00:34:55] like, "Here's this document, build a program around this
+document." So, [00:35:00] it's a unique position to be in and we
+really took full advantage of it across [00:35:05] the board. The
+other two amazing resources we did get out of the consent decree is
+Mike [00:35:10] and Chad. Whereas Mike actually was in Atlantic Cape
+before and Chad was part [00:35:15] of instructional technology, but
+the roles they have here now have [00:35:20] changed the Atlantic Cape
+forever in a positive way and have [00:35:25] just really opened up
+everybody's eyes. They have been [00:35:30] the vehicles by which they
+had directed the change of the culture here at Atlanta [00:35:35]
+Cape. I think by breaking down the silos that had existed [00:35:40]
+across campus for so long and really being able to work so closely
+with them, instructional [00:35:45] technology, that's just been a
+perfect partnership in that [00:35:50] we're able to work seamlessly
+together on projects where it's not just [00:35:55] we're off doing
+our thing and then we're on Step 10 and we go, "Hey, [00:36:00] what
+do you think about this?" And like, "I've been doing this too. Why
+don't we." So, our [00:36:05] efforts have been combined from the
+jump. Then not only just with [00:36:10] instructional technology but
+working with the academic side of the college, with purchasing, with
+[00:36:15] every area and every facet of the college being able to
+make sure [00:36:20] that it's accessible. So, for instance the
+college isn't purchasing any [00:36:25] kind of electronic technology
+without our approval, without it being completely vetted through
+[00:36:30] the center for accessibility. So, we're not even buying
+anything that we know is inaccessible now, [00:36:35] whereas before
+we just like, "Go ahead and buy it." Now we're able to go in and look
+at it and feel like if this is an accessible [00:36:40] product we're
+not buying it, right? We have the ability to [00:36:45] approve or
+deny all those things which I think is huge. We've been able to
+[00:36:50] include a lot in policy changes. We've changed a lot of
+different policies now to include [00:36:55] accessibility within
+those policies now. So,- Absolutely. [00:37:00] When I see that we've
+rebuilt the whole thing and we got rid of every policy and [00:37:05]
+procedure and we rewrote everything. We just went and we found
+different institutions that were doing [00:37:10] it right and we just
+adopted things that other people had [00:37:15] done that worked. We
+took things that we were doing that worked and we built this around
+best [00:37:20] practices from all over the place, and then realized
+that we could create our own philosophy, [00:37:25] right? We looked
+at our population of students. It's a unique community college.
+[00:37:30] We service students [00:37:35] in the community and a lot
+of our students are on the fringe, even if you take the disability
+[00:37:40] completely out of it. Even to walk in the front door is a
+huge success. So, what [00:37:45] could we do from an accessibility
+standpoint to be able to scaffold these students and [00:37:50] to be
+able to make them feel like they can be successful? [00:37:55] We've
+built a program around that. Also, [00:38:00] we want to get what we
+do without the team that's here, without the culture of the
+institution stepping [00:38:05] in and allowing us to build this
+thing. I think [00:38:10] by large it's been pretty successful thus
+far. You were talking about student success and the benefits
+[00:38:15] for all students and I shared with you all your alternative
+format downloads recently. [00:38:20] It sounds like people are pretty
+excited to hear that number. They're very excited because you know
+what? That's [00:38:25] a part of Ally that our faculty don't really
+think about a whole lot. [00:38:30] Because they think about the
+indicators and do I have green or red whatever, but they don't really
+[00:38:35] think about the fact that now their content isn't just like
+that one accessible file [00:38:40] they put up there, but now there's
+several other ways that students can also get this content [00:38:45]
+in a way that they never could before. That just makes their life,
+their [00:38:50] learning experience a better one. You were speaking
+to that [00:38:55] point earlier Chad, about broadening the
+conversation to that UDL, [00:39:00] thinking about the usability of
+the course and opening up a lot of those principles. Do [00:39:05] you
+want to talk about maybe what you see as you all move further down the
+road here? [00:39:10] Well, we're definitely focused more on universal
+design. There's a lot of different aspects to universal [00:39:15]
+design but just the organization structure to the course. It's
+[00:39:20] extremely beneficial for student success, but I think what
+we're finding too is how faculty [00:39:25] member can actually have a
+dialogue with students about certain things that they never knew
+before. So, [00:39:30] we have a student in your class that relies on
+a screen reader. We have a faculty member now saying, "I know what
+screen [00:39:35] reader is" I'm aware of that tool and I can build
+contents so that that will work that way. [00:39:40] So that's a huge
+benefit. That's one of the big changes that we're seeing that actual
+conversations [00:39:45] that are happening. Prior to this, you
+probably said I don't know what a screen reader is. So go [00:39:50]
+see disability support services and get a combination of something
+while now it's like, "No, we can work [00:39:55] with that. As a
+matter of fact, there's an alternative versions right here in
+blackboard. Let me show you. Click this button" type of deal.
+[00:40:00] So, faculty are definitely more open to discussing these
+type [00:40:05] of things with their students. There is a lot of
+dialogue, which is good. Yeah. I'll just point out prior [00:40:10] to
+this whole thing, the word accessibility was not required in syllabus.
+[00:40:15] So, it wasn't really a thing that a student even had the
+opportunity to bring up with their instructor. [00:40:20] One of the
+first policy changes you guys can correct me and all that is that
+there had to be [00:40:25] a little blurb in every syllabus thing.
+"Hey, we have these resources available, here's the contact [00:40:30]
+information to reach out for that." Part of that is now with the very
+first class. You [00:40:35] hand out the syllabus. Hey, it's right
+there in writing. If the student was curious about something, they can
+bring it up with their [00:40:40] instructor or they can just go
+straight to CFA to take care of it. That's part of the reasons
+[00:40:45] when we rebuilt the program, we rebranded it. It was for
+years, it was disability [00:40:50] support services. So, the first
+thing that we did was we took that out and threw it away and changed
+[00:40:55] it to the Center for Accessibility. That's at the bare
+bones. That's what we do, [00:41:00] is we make things accessible for
+students not distractions with disabilities. So statements like
+[00:41:05] that on the syllabus, we were able to do that and link that
+directly back to an office instead [00:41:10] of just being just
+random statement. Any other policy [00:41:15] things that you wanted
+to mention, any other things that you instituted you thought were
+pretty effective [00:41:20] and in creating that culture shift? I'm
+sure a lot of other institutions would love to hear about. Well,
+[00:41:25] we did the 90 percent green. I don't know if you want to
+mention that, [00:41:30] but yeah. Yeah, we did have a goal or
+challenge. You emphasize 90 [00:41:35] percent and you say that we're
+had a standard that we were looking for. Right, that the Office of
+Academic [00:41:40] Affairs put out, where they told faculty, they
+wanted [00:41:45] everybody to strive towards a 100 percent
+accessibility but they really wouldn't accept anything [00:41:50]
+below 90 percent. So as a result of that, [00:41:55] we had Josh here
+develop a way to extract the data that the Deans [00:42:00] actually
+look at the accessibility of all of our active courses on [00:42:05] a
+weekly basis. Anybody that dips below that number gets [00:42:10] an
+email from the Dean, "Hey, there's something going on in your course.
+[00:42:15] Did you upload some new content that you need help with? We
+have these resources. [00:42:20] Do you have it in an alternative
+format we're not aware of? If so, let us know [00:42:25] so we're
+aware." So, that definitely was huge [00:42:30] in our success. Again,
+that's administration support. You need [00:42:35] the backbone. You
+need the muscle from the top and you need the workers [00:42:40] from
+the bottom to have that perfect success I think. Absolutely.
+[00:42:45] I mean, not this isn't specific to Ally, but one of the
+things that we [00:42:50] implemented that I think we've seen a big
+success on is, being a community college we see [00:42:55] a lot of
+older students. Like a lot of institutions that [00:43:00] we are one
+of them in order to receive accommodations, we have to provide
+documentation [00:43:05] of your disability. We were only accepting
+documentation that was, [00:43:10] less than five years old. So,
+[00:43:15] and making students go if it was older than five years,
+they can go out and get re-evaluated, [00:43:20] at their own cost.
+I've seen most institutions are doing this but when I was [00:43:25]
+going or going through regarding this, we realized we don't, we really
+have to do that. We don't really have to have [00:43:30] this barrier
+so, it's kind of the idea for five of the students has documentation
+that [00:43:35] they have autism but the documentation is from 2010.
+There's a really [00:43:40] good chance they still have autism, and
+what kind of a barrier am I putting in place now for the student
+[00:43:45] saying, oh great, I have this IEP from high school, that
+says you have autism, [00:43:50] but it's not, we can't take it
+anymore. So, I'm going to need you [00:43:55] to go out and spend a
+thousand bucks to get re-evaluated to tell me something that I already
+know. We [00:44:00] threw out the window, we got rid of it. So, as
+always we get something from a licensed [00:44:05] professional, we're
+going to take it and we're going to work with every student also comes
+[00:44:10] in and meets with us. So, we don't really [00:44:15] go on
+the days where a student just sends off a piece of documentation, we
+give them accommodation. [00:44:20] They come in and we come up with
+an individualized plan and if their plan involves accessibility
+[00:44:25] and technology, they're going to go and meet with Chad and
+develop an individual technology [00:44:30] plan to be able to suit
+them and this is, we're in high schools now. So we're talking to
+[00:44:35] kids or juniors in high school now, that identified
+Atlantic Cape is the place that they're going to come. We're working
+[00:44:40] with them now, on technology plans, still in high school.
+So, trying to get this technology [00:44:45] in their hands now, so
+that when they come to Atlantic Cape, they're proficient [00:44:50] in
+the use of that technology already. So, we're really dialing it back.
+So, we [00:44:55] know for instance like how many visually impaired
+students, how many deaf students [00:45:00] are in our catchment area
+that may possibly come to Atlantic Cape at some point over [00:45:05]
+the next five years. So we're ready, and they know that we have a
+resource here. They also come on [00:45:10] campus. You don't have to
+be a student here to come in and talk with us and learn about the
+resource, learn what we can do, how [00:45:15] to support you
+irregardless of where you go to college. So, I think it's been a good
+[00:45:20] success for us, policy wise. It's our [00:45:25] policy
+wise but one of the new Blackboard Ally tools that we are actually or
+[00:45:30] abilities that we are using is, we had to develop or Mike
+[00:45:35] developed a form that students could click on and fill out
+if they do happen [00:45:40] to go through their Blackboard course and
+find a piece of content that wasn't accessible. They could [00:45:45]
+click on that link and it takes them to a form, then goes to Chad and
+Mike so they can help [00:45:50] the professor identify what the
+content is and make it more accessible. We were able to use that new
+[00:45:55] feature, where you could include that automatic help
+feedback to the student to [00:46:00] put in a direct link to that
+form. So as the student clicks on the piece of content and [00:46:05]
+that's not working for them and they go through the alternative
+formats and they're not working for them, then right [00:46:10] there,
+they're taken to the form that goes straight to those guys to help
+them to get [00:46:15] their content in a format that's actually going
+to work for them. Very cool. [00:46:20] Any closing thoughts? You want
+me to expand just a minute [00:46:25] longer, I know because you
+wanted some stuff on universal design. Where we're at though in terms
+[00:46:30] of training, we did a lot of training for accessibility,
+meaning you can use an automated [00:46:35] tool to see if something
+is accessible, just like Blackboard Ally. So, our faculty [00:46:40]
+really understand what accessibility is and how to make something
+compliant. But now, [00:46:45] we're trying to educate them a little
+bit more on usability and why we're doing the things that we're doing
+[00:46:50] for student success. The student experience side of it. So
+that's what we're catering towards [00:46:55] our workshops now, in
+the future, adjusting [00:47:00] to that. So, in other words you can
+run a document through an accessibility checker and get the green
+light [00:47:05] because the accessibility checker might say that you
+have alternative text on an image, but [00:47:10] is the alternative
+text good for the context of the lesson? Is it really [00:47:15] a
+quality alternative text. So that's where the conversation is heading
+now at our [00:47:20] school, quality in universal front. Let me as
+one challenge question, while I read [00:47:25] this one back in at
+another part. But as far as you mentioned some faculty, [00:47:30]
+because I've heard this one before, some faculty saying I'm going to
+yank my content out of there so that [00:47:35] it doesn't get
+checked. What's been the strategies in trying to address that? Do you
+see [00:47:40] that starting to change a little as they see other
+faculty get green and feel more comfortable [00:47:45] with it? No,
+yeah. Number one, our message from our departments and we do workshops
+is never ever [00:47:50] pull content down like that. That's not the
+way this institution operates, and that's not [00:47:55] the way we're
+trying to operate. That's really not an option. The option is to
+identify [00:48:00] where the barriers are, the struggles for
+accessibility and reach out to the support circles in order come
+[00:48:05] up with a resolution. So, if we keep doing that rhetoric,
+then [00:48:10] that's what's going to happen. If we have a rhetoric
+of take it down, it can to make excessive of work. It's too hard,
+[00:48:15] don't worry about it, then that's the result you're going
+to get. So, we're not really looking at that result. We don't
+[00:48:20] say that rhetoric. We don't, we try to do, push them
+[00:48:25] in the positive direction of trying to, we absorb the
+challenges, we look forward to a [00:48:30] challenge and try to come
+up with a solution for it, so. I think a lot of it too is just
+[00:48:35] having real talk with faculty members and just when we're
+noticing that [00:48:40] content's removed, the content's not
+reflective [00:48:45] of the course, having blatant purposeful
+conversations with that faculty [00:48:50] member and just trying to
+figure out why, figuring out what's the rationale [00:48:55] behind
+it. Then, just taking things from there, just realizing what like Chad
+[00:49:00] had said it's not the culture of the institution. We've
+been collectively working really hard for [00:49:05] a long time to
+build this culture and that's counter to what that culture is and what
+the [00:49:10] mission of the college and the Center for Accessibility
+and all of the other offices [00:49:15] and it's not acceptable and
+it's kind won't be tolerated. [00:49:20] We do have the support of,
+[00:49:25] all the way up to make sure that this stuff happens.
+[00:49:30] But I think communication and real talk and just making
+sure that [00:49:35] once people I think realize how non-difficult
+[00:49:40] it is, that's when we start to see that shift. So I think,
+having those conversations and not [00:49:45] sort of beating around
+the bush so to speakers, is really important. And you said the
+examples. [00:49:50] I mean we have examples in classes about how this
+was made accessible. Well, I [00:49:55] don't know how to make that.
+Is it possible to do that? I say, "No hold on, let me show you."
+Exactly. We have different ways of doing it. We've done [00:50:00] it
+over here this way, maybe you can implement that. When they see that
+their peers are [00:50:05] able to do it and maybe they think outside
+the box a little bit, to get it done, [00:50:10] that's the direction
+that we push people in. It's a bit of a strange statement because when
+[00:50:15] you're saying I'm going to pull my content down, you're
+basically saying I don't want to give my students the ability to learn
+this. So, it's [00:50:20] an odd starting point for something like
+that to say that. I'm going to remove resources from [00:50:25] my
+students, then okay. I mean, if that's going [00:50:30] to be your
+starting point as a teacher, you probably have other things you got to
+look at. Yeah. [00:50:35] All right. That's a wrap. Wow. [00:50:40]
+Hearing from the team in Atlantic Cape, I mean what an amazing,
+amazing story. [00:50:45] They deserve major kudos for leading their
+campus and really turning a tough situation [00:50:50] into a triumph
+for inclusive learning. So next stop, we'll be [00:50:55] continuing
+on the northeast leg of the tour with visits to William Paterson
+University [00:51:00] from the University of Connecticut. Until then,
+good luck on your road to IncluCity. [00:51:05] Join the tour along
+with the rest of the Ally [00:51:10] community at tour.ally.ac. You
+can catch the latest updates on [00:51:15] Instagram and Twitter at
+#AllyTour2019 and listen to stories of inclusion [00:51:20] from our
+community champions on the Ally Tour 2019 podcast series, [00:51:25]
+available on SoundCloud or in your favorite podcast app. We'll look
+forward to seeing [00:51:30] you at the next stop on the road to
+IncluCity.

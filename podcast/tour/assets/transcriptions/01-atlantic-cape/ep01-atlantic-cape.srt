@@ -1,0 +1,3819 @@
+1
+00:00:00,000 --> 00:00:04,095
+We're on a worldwide search to see what inclusive education looks like.
+
+2
+00:00:04,095 --> 00:00:07,350
+So, Blackboard Ally is going on tour for 2019,
+
+3
+00:00:07,350 --> 00:00:10,560
+visiting campuses around the globe to learn how they're tackling
+
+4
+00:00:10,560 --> 00:00:13,140
+their toughest accessibility challenges and
+
+5
+00:00:13,140 --> 00:00:16,560
+improving the learning experience for all their students.
+
+6
+00:00:16,560 --> 00:00:21,780
+Hey, everybody, welcome to the first episode of the Ally Tour Podcast.
+
+7
+00:00:21,780 --> 00:00:23,670
+So, for the first stop on the tour,
+
+8
+00:00:23,670 --> 00:00:27,420
+we're going to be hearing from the team in Atlantic Cape Community College.
+
+9
+00:00:27,420 --> 00:00:31,260
+Wow. They have just a really inspiring story about
+
+10
+00:00:31,260 --> 00:00:35,715
+how in the face of challenging legal mandates to become more accessible,
+
+11
+00:00:35,715 --> 00:00:38,835
+they rally together as a campus to take on
+
+12
+00:00:38,835 --> 00:00:41,310
+those tough accessibility challenges and
+
+13
+00:00:41,310 --> 00:00:44,010
+really become more inclusive for all their students.
+
+14
+00:00:44,010 --> 00:00:46,665
+So, let's jump into it and hear from the team.
+
+15
+00:00:46,665 --> 00:00:50,505
+All right. We'll start with Mike since you just walked in.
+
+16
+00:00:50,505 --> 00:00:50,790
+Yeah.
+
+17
+00:00:50,790 --> 00:00:53,730
+Just a quick introduction, your name,
+
+18
+00:00:53,730 --> 00:00:58,395
+your role here, and your relationship to Accessibility.
+
+19
+00:00:58,395 --> 00:01:01,305
+Okay. My name is Mike Barnes,
+
+20
+00:01:01,305 --> 00:01:05,310
+Director of the Center for Accessibility here at Atlantic Cape Community College.
+
+21
+00:01:05,310 --> 00:01:08,385
+I've been working closely with
+
+22
+00:01:08,385 --> 00:01:15,140
+Michelle's Department and everyone here on making everything as accessible as possible,
+
+23
+00:01:15,140 --> 00:01:18,780
+in as many different ways as possible.
+
+24
+00:01:18,800 --> 00:01:21,240
+My name is Michelle Perkins,
+
+25
+00:01:21,240 --> 00:01:24,060
+I'm the Director of Instructional Technology here in Atlantic Cape,
+
+26
+00:01:24,060 --> 00:01:26,970
+also the Blackboard administrator.
+
+27
+00:01:26,970 --> 00:01:31,200
+In my role or through instructional technology,
+
+28
+00:01:31,200 --> 00:01:32,470
+we work very closely with
+
+29
+00:01:32,470 --> 00:01:37,270
+the Center for Accessibility and delivering training to faculty and
+
+30
+00:01:37,270 --> 00:01:40,110
+staff throughout the college and we work with faculty in
+
+31
+00:01:40,110 --> 00:01:44,455
+trying to help them get their content as successful as possible.
+
+32
+00:01:44,455 --> 00:01:49,095
+I'm Josh Carroll, I'm the Technician for the Instructional Technology Department.
+
+33
+00:01:49,095 --> 00:01:51,725
+I do most of the back end server work for Blackboard
+
+34
+00:01:51,725 --> 00:01:54,790
+and other academic related technologies.
+
+35
+00:01:54,790 --> 00:01:59,420
+My role with accessibility is basically to test out new solutions, try to break them.
+
+36
+00:01:59,420 --> 00:02:01,790
+Sometimes I'm more successful than other times,
+
+37
+00:02:01,790 --> 00:02:04,100
+but yeah, my point is to test all the stuff out.
+
+38
+00:02:04,100 --> 00:02:09,655
+I'm Gerry Fox, I'm a Technologist here at Atlantic Cape.
+
+39
+00:02:09,655 --> 00:02:12,870
+We work with Blackboard and with the faculty,
+
+40
+00:02:12,870 --> 00:02:15,615
+making their content accessible.
+
+41
+00:02:15,615 --> 00:02:21,750
+I'm Pat Kubaska, Coordinator in the Instructional Technology Department.
+
+42
+00:02:21,750 --> 00:02:24,990
+I work with Gerry and Josh and Michelle,
+
+43
+00:02:24,990 --> 00:02:28,390
+working with the faculty, assisting the students.
+
+44
+00:02:28,390 --> 00:02:31,515
+They call if they have problems with Blackboard.
+
+45
+00:02:31,515 --> 00:02:35,295
+Chad Bullock, Senior Manager of the Center for Accessibility.
+
+46
+00:02:35,295 --> 00:02:37,350
+We work on all aspects of
+
+47
+00:02:37,350 --> 00:02:40,230
+accessibility in terms of working with students with disabilities and
+
+48
+00:02:40,230 --> 00:02:42,885
+their courses and also training faculty and staff
+
+49
+00:02:42,885 --> 00:02:47,230
+on different strategies for accessible content.
+
+50
+00:02:47,960 --> 00:02:53,495
+All right. So, let's start maybe in the glory days pre-decree.
+
+51
+00:02:53,495 --> 00:02:56,465
+What was it like around accessibility? Who cared about it?
+
+52
+00:02:56,465 --> 00:02:59,270
+Prior to consent decree,
+
+53
+00:02:59,270 --> 00:03:02,155
+everything was funneled through the counseling office.
+
+54
+00:03:02,155 --> 00:03:05,180
+So, you have a few counselors that handle the students
+
+55
+00:03:05,180 --> 00:03:08,060
+that would visit disability services,
+
+56
+00:03:08,060 --> 00:03:09,380
+is what it was called at the time,
+
+57
+00:03:09,380 --> 00:03:13,315
+and they would basically handle anything that had to do with accommodation.
+
+58
+00:03:13,315 --> 00:03:15,930
+So, accessibility wasn't really in the conversation,
+
+59
+00:03:15,930 --> 00:03:18,770
+it was more about accommodation as opposed to
+
+60
+00:03:18,770 --> 00:03:22,175
+making materials of course materials accessible.
+
+61
+00:03:22,175 --> 00:03:27,460
+So, that was probably the way it was set up in the past.
+
+62
+00:03:27,460 --> 00:03:29,630
+So, if any request came through,
+
+63
+00:03:29,630 --> 00:03:33,275
+there's probably one or maybe  two people to handle an accommodation request.
+
+64
+00:03:33,275 --> 00:03:35,660
+So, now, after the consent decree,
+
+65
+00:03:35,660 --> 00:03:37,580
+we're trying to be proactive where what we're
+
+66
+00:03:37,580 --> 00:03:40,050
+doing is making things accessible from the GetGo,
+
+67
+00:03:40,050 --> 00:03:45,195
+so we don't have to have as many accommodations in order for a student to be successful.
+
+68
+00:03:45,195 --> 00:03:48,160
+So, that's kind of how the tide is changed a bit.
+
+69
+00:03:48,160 --> 00:03:51,230
+But in regards to accessible content,
+
+70
+00:03:51,230 --> 00:03:53,160
+there really wasn't much of anything.
+
+71
+00:03:53,160 --> 00:03:56,910
+I mean, we would be the creators,
+
+72
+00:03:56,910 --> 00:04:00,215
+non-faculty creators whether for web content,
+
+73
+00:04:00,215 --> 00:04:03,005
+we would make sure we had an alt tag.
+
+74
+00:04:03,005 --> 00:04:05,765
+Other than that, that was the time of like
+
+75
+00:04:05,765 --> 00:04:09,310
+flash animations and let's make everything as spinny
+
+76
+00:04:09,310 --> 00:04:14,980
+and fancy and eye-catching as we can and there maybe some people who can't look at it,
+
+77
+00:04:14,980 --> 00:04:16,920
+but at least those who do,
+
+78
+00:04:16,920 --> 00:04:18,870
+will really enjoy it.
+
+79
+00:04:18,870 --> 00:04:22,270
+With faculty, I really don't
+
+80
+00:04:22,270 --> 00:04:26,835
+think accessible content was a part of their vocabulary as a whole.
+
+81
+00:04:26,835 --> 00:04:31,120
+Content was really designed in those days for users with perfect vision,
+
+82
+00:04:31,120 --> 00:04:33,669
+hearing all their senses,
+
+83
+00:04:33,669 --> 00:04:36,965
+nothing precluding them, whatsoever.
+
+84
+00:04:36,965 --> 00:04:42,305
+The rules aren't really much of a thought given to making content accessible.
+
+85
+00:04:42,305 --> 00:04:46,745
+Then what happened? So, then you get hit with this,
+
+86
+00:04:46,745 --> 00:04:48,180
+it's a consent decree,
+
+87
+00:04:48,180 --> 00:04:49,350
+that's the official name.
+
+88
+00:04:49,350 --> 00:04:51,490
+Yeah.
+
+89
+00:04:51,490 --> 00:04:53,630
+Yes.
+
+90
+00:04:53,630 --> 00:05:01,839
+It's a consent decree that we had agreed to as an institution,
+
+91
+00:05:01,839 --> 00:05:07,235
+we had agreed to 100 percent accessibility across the board.
+
+92
+00:05:07,235 --> 00:05:11,590
+So, that was something that they had negotiated prior to my arrival at
+
+93
+00:05:11,590 --> 00:05:16,345
+the college and prior to Chad's leaving Michelle's department.
+
+94
+00:05:16,345 --> 00:05:20,450
+So, then I was hired.
+
+95
+00:05:21,100 --> 00:05:26,265
+So, Chad, he kind of manage this consent decree.
+
+96
+00:05:26,265 --> 00:05:27,670
+I'll never forget the moment,
+
+97
+00:05:27,670 --> 00:05:30,250
+I was sitting on the beach and I'm looking at this,
+
+98
+00:05:30,250 --> 00:05:32,770
+I got an email from the coach saying, "Here's this document.
+
+99
+00:05:32,770 --> 00:05:34,165
+You might want to check it out.
+
+100
+00:05:34,165 --> 00:05:35,995
+It's going to be doing a lot of work on it."
+
+101
+00:05:35,995 --> 00:05:39,130
+So, I opened it up and I'm like, "Oh.
+
+102
+00:05:39,130 --> 00:05:42,655
+Okay. Here we go."
+
+103
+00:05:42,655 --> 00:05:46,315
+But we viewed it as a good thing.
+
+104
+00:05:46,315 --> 00:05:48,010
+I think like it was very daunting,
+
+105
+00:05:48,010 --> 00:05:50,380
+but it was something that in looking at it,
+
+106
+00:05:50,380 --> 00:05:53,820
+it was like a blueprint into making the college,
+
+107
+00:05:53,820 --> 00:05:57,800
+like the ideal to making the college completely accessible.
+
+108
+00:05:57,800 --> 00:06:03,190
+Realized that 100 percent accessibility is really difficult and probably not attainable,
+
+109
+00:06:03,190 --> 00:06:05,185
+but we had a blueprint right in front of us that sort of
+
+110
+00:06:05,185 --> 00:06:08,280
+spelled out exactly how we should do it.
+
+111
+00:06:08,280 --> 00:06:12,189
+So, it enabled us to reach out to other institutions
+
+112
+00:06:12,189 --> 00:06:15,730
+that had been there before that done it really well.
+
+113
+00:06:15,730 --> 00:06:19,200
+It enable us to reach out to some consultants in industry that
+
+114
+00:06:19,200 --> 00:06:22,870
+had worked with other universities on figuring all that stuff out.
+
+115
+00:06:22,870 --> 00:06:28,135
+So, we just sort of jumped headfirst into this world and just sort of
+
+116
+00:06:28,135 --> 00:06:34,330
+started just from the ground up and just started with the basics of,
+
+117
+00:06:34,330 --> 00:06:37,315
+"Okay. If we have a student with a visual impairment,
+
+118
+00:06:37,315 --> 00:06:40,775
+how do we make sure that they can get into a classroom and take this class?
+
+119
+00:06:40,775 --> 00:06:42,179
+What are the barriers?"
+
+120
+00:06:42,179 --> 00:06:43,590
+We identified the barriers.
+
+121
+00:06:43,590 --> 00:06:46,445
+We even went as far as, this is actually Chad's idea,
+
+122
+00:06:46,445 --> 00:06:49,120
+as we're going through in the very beginning,
+
+123
+00:06:49,120 --> 00:06:52,900
+we didn't really know how to really test a lot of this stuff.
+
+124
+00:06:52,900 --> 00:06:56,960
+So, we hired a blind student to test everything.
+
+125
+00:06:56,960 --> 00:06:58,500
+So, we brought in a student,
+
+126
+00:06:58,500 --> 00:07:01,440
+we paid him as a consultant, and he came in.
+
+127
+00:07:01,440 --> 00:07:04,255
+In the very beginning, we ran everything we did
+
+128
+00:07:04,255 --> 00:07:07,540
+through the student and he would tell us where he got stuck,
+
+129
+00:07:07,540 --> 00:07:09,430
+he would tell us what do you know,
+
+130
+00:07:09,430 --> 00:07:10,570
+he was able to get here,
+
+131
+00:07:10,570 --> 00:07:12,294
+maybe this part was a little wonky,
+
+132
+00:07:12,294 --> 00:07:13,660
+go back and change this,
+
+133
+00:07:13,660 --> 00:07:15,470
+and that was a game changer for us,
+
+134
+00:07:15,470 --> 00:07:19,465
+to be able to really see his perspective on trying to
+
+135
+00:07:19,465 --> 00:07:21,310
+register for classes or trying to read
+
+136
+00:07:21,310 --> 00:07:24,320
+the course catalog or trying to do all these different things.
+
+137
+00:07:24,320 --> 00:07:28,120
+So, we were able to create a map to then go back and say, okay,
+
+138
+00:07:28,120 --> 00:07:29,755
+like what's the main,
+
+139
+00:07:29,755 --> 00:07:33,565
+so in order to get over here and take this class we've got to get here first.
+
+140
+00:07:33,565 --> 00:07:37,115
+We get here, we got to get here so it was almost like a, "Choose Your Own Adventure" with
+
+141
+00:07:37,115 --> 00:07:40,870
+this kid trying to figure out exactly how to get where we needed to go.
+
+142
+00:07:40,870 --> 00:07:43,300
+Then with all these different things with help of Ally
+
+143
+00:07:43,300 --> 00:07:47,185
+eventually now we have a whole system in place that's
+
+144
+00:07:47,185 --> 00:07:50,170
+really enabling us to ensure that these students have
+
+145
+00:07:50,170 --> 00:07:53,725
+access to fully accessible content and that if they don't,
+
+146
+00:07:53,725 --> 00:07:56,310
+there's a process for making that accessible,
+
+147
+00:07:56,310 --> 00:07:58,505
+both on the student side and the faculty side.
+
+148
+00:07:58,505 --> 00:08:04,150
+So, pre-Ally had you started to look at the content in the LMS?
+
+149
+00:08:04,150 --> 00:08:08,120
+How were you trying to look at the content in the LMS?
+
+150
+00:08:08,310 --> 00:08:11,740
+I don't think we started looking at it.
+
+151
+00:08:11,740 --> 00:08:13,355
+We had started training.
+
+152
+00:08:13,355 --> 00:08:16,990
+We that was really the first thing we tried to do is to
+
+153
+00:08:16,990 --> 00:08:21,280
+educate the faculty and to start to teach
+
+154
+00:08:21,280 --> 00:08:25,930
+them how to make their content accessible and I guess at that point
+
+155
+00:08:25,930 --> 00:08:30,880
+we were relying 100 percent on the office accessibility checkers.
+
+156
+00:08:30,880 --> 00:08:34,870
+But there was really no validation or if they
+
+157
+00:08:34,870 --> 00:08:38,810
+weren't using office for some reason when they uploaded their content.
+
+158
+00:08:38,810 --> 00:08:42,655
+We really didn't have a way to manage and you know it was,
+
+159
+00:08:42,655 --> 00:08:47,200
+there was one point at a meeting that I missed that's the way it always happens,
+
+160
+00:08:47,200 --> 00:08:51,820
+where it got back to me that Michelle Perkins will go through
+
+161
+00:08:51,820 --> 00:08:54,490
+every single course on Blackboard and make sure that the content
+
+162
+00:08:54,490 --> 00:08:57,460
+is accessible. I just said-
+
+163
+00:08:57,460 --> 00:08:59,120
+I know what that means.
+
+164
+00:08:59,120 --> 00:09:04,600
+I even don't know what to say because I said even
+
+165
+00:09:04,600 --> 00:09:06,070
+if I said it was accessible here
+
+166
+00:09:06,070 --> 00:09:09,340
+two seconds later they upload something it might not be accessible.
+
+167
+00:09:09,340 --> 00:09:12,220
+So, we've really didn't have a solution at that time,
+
+168
+00:09:12,220 --> 00:09:16,205
+we were just trying to get started because we knew we had to get started we didn't
+
+169
+00:09:16,205 --> 00:09:21,730
+insert Ally which made that journey a little bit easier but-
+
+170
+00:09:21,730 --> 00:09:25,810
+Once we got familiar using the Microsoft Office Checkers,
+
+171
+00:09:25,810 --> 00:09:30,370
+so once we found the Blackboard had a product that was basically going to mimic in
+
+172
+00:09:30,370 --> 00:09:35,670
+a way that same result and usage then we jumped on right away with thought this is great,
+
+173
+00:09:35,670 --> 00:09:38,420
+let's get it in here even first ones or something to do it,
+
+174
+00:09:38,420 --> 00:09:40,780
+if we were but we're pretty early on in
+
+175
+00:09:40,780 --> 00:09:43,450
+the adoption process just for that reason because we couldn't keep just
+
+176
+00:09:43,450 --> 00:09:45,970
+using the Microsoft Office checkers so there wasn't
+
+177
+00:09:45,970 --> 00:09:49,945
+enough analytics behind that in order to see what was really happening at the school.
+
+178
+00:09:49,945 --> 00:09:52,850
+Just to point out that the day
+
+179
+00:09:52,920 --> 00:09:59,145
+Blackboard Ally introduced their product was in mid-March of 2017, I believe.
+
+180
+00:09:59,145 --> 00:10:02,760
+That same day we were a better toaster for a Blackboard Ally's so we
+
+181
+00:10:02,760 --> 00:10:06,640
+were in communication with Blackboard two months before they
+
+182
+00:10:06,640 --> 00:10:11,430
+rolled out the test products and we were testing it from day one and we rolled
+
+183
+00:10:11,430 --> 00:10:13,180
+out for the full semester I
+
+184
+00:10:13,180 --> 00:10:16,455
+believe was the limited roll out or do we actually do a whole roll out?
+
+185
+00:10:16,455 --> 00:10:22,500
+We started with a pilot at fall and the pilot was so successful.
+
+186
+00:10:22,500 --> 00:10:26,515
+Our vice president of academic said turn it on for everyone,
+
+187
+00:10:26,515 --> 00:10:30,480
+everything we need everybody to have this tool and have access to it. So-
+
+188
+00:10:30,480 --> 00:10:32,910
+The pilot like 20 classes, 30 classes or something along those lines?
+
+189
+00:10:32,910 --> 00:10:35,835
+It was more like 20 faculty members,
+
+190
+00:10:35,835 --> 00:10:38,890
+and then of those 20 we turned it on and all their courses.
+
+191
+00:10:38,890 --> 00:10:43,810
+But then over thanksgiving break we turned it on system wide and never looked back.
+
+192
+00:10:43,810 --> 00:10:49,100
+What were some of the indicators of success of that pilot?
+
+193
+00:10:50,310 --> 00:10:56,470
+One big indicator was that when we were invited to go back on different webinars,
+
+194
+00:10:56,470 --> 00:11:00,475
+we were already trained on the things that they were discussing in those webinars,
+
+195
+00:11:00,475 --> 00:11:02,080
+on how to build accessible content.
+
+196
+00:11:02,080 --> 00:11:03,910
+We were saying we're already in past,
+
+197
+00:11:03,910 --> 00:11:06,130
+we already know this stuff in a way like we were
+
+198
+00:11:06,130 --> 00:11:09,280
+already educating faculty and staff on these stuff already.
+
+199
+00:11:09,280 --> 00:11:11,230
+So, we felt like we were ahead of the game,
+
+200
+00:11:11,230 --> 00:11:12,775
+so that was a real good indicator.
+
+201
+00:11:12,775 --> 00:11:14,920
+Especially on a few Blackboard webinars.
+
+202
+00:11:14,920 --> 00:11:17,230
+As a matter of fact, I think we are on the Blackboard webinar,
+
+203
+00:11:17,230 --> 00:11:20,650
+we mentioned that we're from Atlantic Cape and they even mentioned then that
+
+204
+00:11:20,650 --> 00:11:24,760
+we were already been working with you guys on accessibility stuff, you already know this.
+
+205
+00:11:24,760 --> 00:11:26,770
+Isn't all that's neat. We're already making
+
+206
+00:11:26,770 --> 00:11:29,275
+some type of indent or something in the industry.
+
+207
+00:11:29,275 --> 00:11:30,280
+Right.
+
+208
+00:11:30,280 --> 00:11:34,030
+And I think to it speaks to the culture change of the institution.
+
+209
+00:11:34,030 --> 00:11:35,140
+I think from the very beginning,
+
+210
+00:11:35,140 --> 00:11:38,500
+we had stepped in to try and figure out how to not
+
+211
+00:11:38,500 --> 00:11:41,950
+just require people and faculty to make accessible content,
+
+212
+00:11:41,950 --> 00:11:45,160
+but to create culture of accessibility to where we're creating
+
+213
+00:11:45,160 --> 00:11:48,070
+accessible content irregardless of
+
+214
+00:11:48,070 --> 00:11:51,640
+specific disabilities may or may not be in the classroom.
+
+215
+00:11:51,640 --> 00:11:56,575
+So, I think that vying and in combined with access to this Ally product,
+
+216
+00:11:56,575 --> 00:11:59,770
+you know once it came out and we started noticing that
+
+217
+00:11:59,770 --> 00:12:02,650
+faculty members were really concerned about their score,
+
+218
+00:12:02,650 --> 00:12:05,065
+they were concerned about their content,
+
+219
+00:12:05,065 --> 00:12:07,375
+which I think was something that we really didn't see in the past.
+
+220
+00:12:07,375 --> 00:12:08,920
+I think Ally really allowed,
+
+221
+00:12:08,920 --> 00:12:11,380
+it was kind of like the vehicle for
+
+222
+00:12:11,380 --> 00:12:14,080
+our faculty members to be able to
+
+223
+00:12:14,080 --> 00:12:18,100
+visualize progress instead of just us saying, "Yeah, it looks good."
+
+224
+00:12:18,100 --> 00:12:21,040
+You can really go in and see exactly where they're at and
+
+225
+00:12:21,040 --> 00:12:24,430
+also figure out how to make changes if needed.
+
+226
+00:12:24,430 --> 00:12:28,240
+Another indicator was a faculty started coming up to
+
+227
+00:12:28,240 --> 00:12:32,020
+us in conversations and start talking about accessibility.
+
+228
+00:12:32,020 --> 00:12:34,285
+While before that, they were saying I don't know what that is.
+
+229
+00:12:34,285 --> 00:12:35,530
+I don't know what accessibility is.
+
+230
+00:12:35,530 --> 00:12:37,345
+I don't know really know what you're talking about,
+
+231
+00:12:37,345 --> 00:12:39,775
+and they had a lot of stress and trepidation about it,
+
+232
+00:12:39,775 --> 00:12:42,610
+about getting into it, and then they will stopping us in a hallway saying,
+
+233
+00:12:42,610 --> 00:12:46,855
+you know I edit headers on this document and I can't figure out how to modify the header,
+
+234
+00:12:46,855 --> 00:12:48,520
+and I'm going this a great conversation because that
+
+235
+00:12:48,520 --> 00:12:50,845
+means you're implementing this stuff.
+
+236
+00:12:50,845 --> 00:12:52,600
+So, that was a game changer.
+
+237
+00:12:52,600 --> 00:12:55,480
+Yeah I mean the scoring system of Blackboard Ally
+
+238
+00:12:55,480 --> 00:12:58,420
+for some they took it like a game, like progress.
+
+239
+00:12:58,420 --> 00:13:03,160
+I want to get to this new level for content I'm giving to my students.
+
+240
+00:13:03,160 --> 00:13:06,100
+So, I don't know if the game of fire is the right word for that
+
+241
+00:13:06,100 --> 00:13:09,565
+but that's kind of what the scoring system did in the beginning.
+
+242
+00:13:09,565 --> 00:13:11,980
+So, did you first kind of turn on
+
+243
+00:13:11,980 --> 00:13:16,390
+the institutional report and look at that before you opened it up to faculty?
+
+244
+00:13:16,390 --> 00:13:18,040
+What was that process?
+
+245
+00:13:18,040 --> 00:13:23,005
+I think we did turn on the institutional report.
+
+246
+00:13:23,005 --> 00:13:25,945
+We were looking before we turned it on.
+
+247
+00:13:25,945 --> 00:13:28,930
+Yes. So, we were looking just kind of out of curiosity.
+
+248
+00:13:28,930 --> 00:13:32,080
+There was at that time I mean we were still training faculty,
+
+249
+00:13:32,080 --> 00:13:34,420
+it wasn't like anything was being held against faculty.
+
+250
+00:13:34,420 --> 00:13:40,390
+We were kind of morbidly curious to see where we were in those very first steps.
+
+251
+00:13:40,390 --> 00:13:45,430
+In those days, we would go through page after page after page
+
+252
+00:13:45,430 --> 00:13:47,260
+of zero percent, five percent.
+
+253
+00:13:47,260 --> 00:13:51,640
+We were excited that, "Hey, we had 10 courses that are 100 percent accessible now."
+
+254
+00:13:51,640 --> 00:13:53,286
+Remember, we were looking at that stuff.
+
+255
+00:13:53,286 --> 00:13:53,530
+Absolutely.
+
+256
+00:13:53,530 --> 00:13:55,435
+And then that number grew more
+
+257
+00:13:55,435 --> 00:13:59,455
+and more and it was exciting watching the change. It was really exciting.
+
+258
+00:13:59,455 --> 00:14:01,780
+Yeah I mean it was a good indicator of what
+
+259
+00:14:01,780 --> 00:14:07,660
+content faculty were putting on Blackboard at the time and I think in the beginning,
+
+260
+00:14:07,660 --> 00:14:12,310
+there were like 80 courses at zero percent because they were all scanned PDFs.
+
+261
+00:14:12,310 --> 00:14:15,610
+There was just not a trace of anything
+
+262
+00:14:15,610 --> 00:14:20,095
+accessible beyond a person who could visually see the scan document.
+
+263
+00:14:20,095 --> 00:14:23,410
+And as a team looking at a course like that,
+
+264
+00:14:23,410 --> 00:14:24,640
+what was your strategy?
+
+265
+00:14:24,640 --> 00:14:27,070
+Did you pull them into your room and sit them down
+
+266
+00:14:27,070 --> 00:14:30,010
+like we had to do something like now about it?
+
+267
+00:14:30,010 --> 00:14:32,140
+What was the process there?
+
+268
+00:14:32,140 --> 00:14:34,240
+There was a lot of education.
+
+269
+00:14:34,240 --> 00:14:38,800
+I mean we had this series of accessibility courses that Chad created.
+
+270
+00:14:38,800 --> 00:14:45,475
+We had two faculty development days that were dedicated towards,
+
+271
+00:14:45,475 --> 00:14:48,805
+let's get down and get dirty and show you how to do this.
+
+272
+00:14:48,805 --> 00:14:51,400
+We had messages from upper management.
+
+273
+00:14:51,400 --> 00:14:54,760
+I was going to say, we tried to take the nice guy approach at first,
+
+274
+00:14:54,760 --> 00:14:58,900
+and of course, that worked for
+
+275
+00:14:58,900 --> 00:15:03,310
+some and then there were others that we needed administration.
+
+276
+00:15:03,310 --> 00:15:04,900
+We needed administrations backing.
+
+277
+00:15:04,900 --> 00:15:09,070
+I mean, it wasn't going because it does require work and it's not hard work,
+
+278
+00:15:09,070 --> 00:15:10,870
+but it's different and change is different,
+
+279
+00:15:10,870 --> 00:15:13,255
+and until administration said,
+
+280
+00:15:13,255 --> 00:15:15,070
+you have to do this.
+
+281
+00:15:15,070 --> 00:15:17,710
+There were some people who just weren't going to do it,
+
+282
+00:15:17,710 --> 00:15:23,080
+and those people then would end up in our offices and say, I'm so overwhelmed.
+
+283
+00:15:23,080 --> 00:15:26,860
+I've no idea how to start with this and we're going to start one document at a time.
+
+284
+00:15:26,860 --> 00:15:29,350
+You have to look at it one PowerPoint at a time,
+
+285
+00:15:29,350 --> 00:15:32,680
+one video at a time because when you're trying to look at,
+
+286
+00:15:32,680 --> 00:15:36,760
+well I have five different courses I teach and I have like 60 different thought.
+
+287
+00:15:36,760 --> 00:15:40,570
+It's very overwhelming to start one at a time and when you do that one,
+
+288
+00:15:40,570 --> 00:15:41,755
+then you can do the next one,
+
+289
+00:15:41,755 --> 00:15:44,080
+and then the next one and you're going to find that it gets a little bit
+
+290
+00:15:44,080 --> 00:15:47,075
+easier and we found that in the beginning,
+
+291
+00:15:47,075 --> 00:15:50,160
+we had faculty who just weren't willing to do anything,
+
+292
+00:15:50,160 --> 00:15:53,970
+and it really just please try and you know what I can do this stuff,
+
+293
+00:15:53,970 --> 00:15:57,180
+and like they were excited about it and then they're like you know what,
+
+294
+00:15:57,180 --> 00:16:01,675
+I have other students who are actually using this too and they said it's better,
+
+295
+00:16:01,675 --> 00:16:05,155
+and that was all very exciting feedback for us.
+
+296
+00:16:05,155 --> 00:16:09,415
+I think to like one of the things that we struggled a lot with.
+
+297
+00:16:09,415 --> 00:16:13,060
+I was sort of on the peripheral of a lot of this stuff that rise.
+
+298
+00:16:13,060 --> 00:16:17,740
+What I saw was a lot of the faculty members who've been here for 40,
+
+299
+00:16:17,740 --> 00:16:21,475
+45 years, 50 years and that's a lot of data.
+
+300
+00:16:21,475 --> 00:16:23,920
+That's a lot of course material, that's a lot of stuff,
+
+301
+00:16:23,920 --> 00:16:28,870
+and what we wanted to make sure that we did from the beginning is to not devalue all of
+
+302
+00:16:28,870 --> 00:16:33,780
+that work and devalue all of that content because it is still great content.
+
+303
+00:16:33,780 --> 00:16:38,800
+It's still very great for lack of a better word,
+
+304
+00:16:38,800 --> 00:16:44,005
+but in doing this it was saying like okay that's still good stuff.
+
+305
+00:16:44,005 --> 00:16:47,275
+We had to figure out a way to bring that to now.
+
+306
+00:16:47,275 --> 00:16:52,345
+So, it's to make that content accessible for kids now because right now it's not.
+
+307
+00:16:52,345 --> 00:16:54,910
+So, what do we have to do to work together to make sure that that
+
+308
+00:16:54,910 --> 00:16:57,580
+still holds value and I think once we
+
+309
+00:16:57,580 --> 00:17:00,100
+broke down that barrier of being like that I think there's
+
+310
+00:17:00,100 --> 00:17:03,055
+a lot of faculty who were just like look don't touch my stuff,
+
+311
+00:17:03,055 --> 00:17:07,090
+it is my stuff, I'm not playing this game.
+
+312
+00:17:07,090 --> 00:17:11,020
+Once really explain that it's not your stuff,
+
+313
+00:17:11,020 --> 00:17:12,055
+your stuff still great.
+
+314
+00:17:12,055 --> 00:17:14,860
+It's just how it's presented and things like that.
+
+315
+00:17:14,860 --> 00:17:19,960
+So, I think once that barrier was broken down, I think we saw a lot.
+
+316
+00:17:19,960 --> 00:17:22,720
+That's what I think we really started to see the culture change and
+
+317
+00:17:22,720 --> 00:17:27,700
+that shift at the college to more accessible content.
+
+318
+00:17:27,700 --> 00:17:29,335
+I was part of it too.
+
+319
+00:17:29,335 --> 00:17:33,640
+There was some defensive faculty early on that said,
+
+320
+00:17:33,640 --> 00:17:35,140
+you know why are you targeting me?
+
+321
+00:17:35,140 --> 00:17:36,430
+I've always taught it this way.
+
+322
+00:17:36,430 --> 00:17:38,545
+I don't understand why anything has to changed.
+
+323
+00:17:38,545 --> 00:17:41,590
+So, part of the message was saying it's not your fault,
+
+324
+00:17:41,590 --> 00:17:44,455
+we're not blaming you and pointing the finger directly to you,
+
+325
+00:17:44,455 --> 00:17:47,455
+it said this is really how the process should be all along.
+
+326
+00:17:47,455 --> 00:17:49,300
+Let's put you in the direction of
+
+327
+00:17:49,300 --> 00:17:52,240
+improving everything you create from this point forward,
+
+328
+00:17:52,240 --> 00:17:54,865
+whereas punishing you for what came before.
+
+329
+00:17:54,865 --> 00:17:56,829
+We had to kind of get around,
+
+330
+00:17:56,829 --> 00:18:01,580
+the explanation, and get to the learning part of it, I guess.
+
+331
+00:18:01,740 --> 00:18:04,765
+I think using examples too of students,
+
+332
+00:18:04,765 --> 00:18:07,795
+for instance, we had a student with a visual impairment,
+
+333
+00:18:07,795 --> 00:18:13,330
+who had no cognitive issues whatsoever and this student can't access her material, right?
+
+334
+00:18:13,330 --> 00:18:15,640
+The student is no different from any other student
+
+335
+00:18:15,640 --> 00:18:18,505
+other than the issues the student has a vision,
+
+336
+00:18:18,505 --> 00:18:22,450
+and we're saying that this student effectively that okay even though you've got nothing
+
+337
+00:18:22,450 --> 00:18:27,550
+else besides your visual impairment,
+
+338
+00:18:27,550 --> 00:18:31,708
+you can't take this class because it is in a language that you can understand, right?
+
+339
+00:18:31,708 --> 00:18:34,570
+So, I think by really having that student right
+
+340
+00:18:34,570 --> 00:18:38,260
+there in front of somebody saying like okay well you can't be here,
+
+341
+00:18:38,260 --> 00:18:42,670
+that I think was a little bit of a change too because it brought the idea of
+
+342
+00:18:42,670 --> 00:18:47,515
+accessibility home to where like now we have a kid who's in our a fully capable student,
+
+343
+00:18:47,515 --> 00:18:53,995
+who is at our institution that cannot access anything unless we make changes.
+
+344
+00:18:53,995 --> 00:18:56,230
+I was going to ask me about that course with
+
+345
+00:18:56,230 --> 00:18:58,975
+all scans because like that's a heavy lift right.
+
+346
+00:18:58,975 --> 00:19:01,525
+Doing heading on a word document,
+
+347
+00:19:01,525 --> 00:19:04,390
+not too terrible but in cases like that,
+
+348
+00:19:04,390 --> 00:19:05,920
+what was some of the process?
+
+349
+00:19:05,920 --> 00:19:08,695
+Because that's something that we hear a lot from institutions which
+
+350
+00:19:08,695 --> 00:19:10,930
+we keep carve off all text or whatever,
+
+351
+00:19:10,930 --> 00:19:13,570
+but how did you pick up some of these big challenges?
+
+352
+00:19:13,570 --> 00:19:15,400
+Well, any other training that we did,
+
+353
+00:19:15,400 --> 00:19:17,575
+we kind of reiterated a lot of the same thing
+
+354
+00:19:17,575 --> 00:19:20,050
+and a lot of different training that we did,
+
+355
+00:19:20,050 --> 00:19:23,830
+and one of them were we're not the only school on the planet that are trying to make
+
+356
+00:19:23,830 --> 00:19:28,225
+this particular document or infographics in an alternative version.
+
+357
+00:19:28,225 --> 00:19:29,950
+There's resources out there already.
+
+358
+00:19:29,950 --> 00:19:32,260
+So, whenever you get stressed out like as
+
+359
+00:19:32,260 --> 00:19:34,780
+faculty member I mean about making something accessible,
+
+360
+00:19:34,780 --> 00:19:36,745
+we have support circles to help you with that,
+
+361
+00:19:36,745 --> 00:19:37,960
+and if we have a solution today,
+
+362
+00:19:37,960 --> 00:19:41,200
+we're to find it because we know the channels where to reach out and where to look for.
+
+363
+00:19:41,200 --> 00:19:42,535
+So, we'll find a solution,
+
+364
+00:19:42,535 --> 00:19:45,565
+but now fix the things that you're comfortable with fixing,
+
+365
+00:19:45,565 --> 00:19:47,740
+record the things that you're having trouble with,
+
+366
+00:19:47,740 --> 00:19:51,010
+and eventually your course will be fully accessible.
+
+367
+00:19:51,010 --> 00:19:56,450
+So, just keep chipping away at the course semester after semester.
+
+368
+00:19:57,090 --> 00:20:02,515
+They would email you directly when they had an issue of what was that system they use?
+
+369
+00:20:02,515 --> 00:20:08,934
+The words accessibility and Chad just weren't together at all aspects even like staff,
+
+370
+00:20:08,934 --> 00:20:12,160
+they were going to buy a piece of software Chad has to test it.
+
+371
+00:20:12,160 --> 00:20:14,110
+I'm like wait, hold on what!
+
+372
+00:20:14,110 --> 00:20:16,300
+and I have a lot of email.
+
+373
+00:20:16,300 --> 00:20:20,815
+So, originally that's what happened and then we looked at the process though,
+
+374
+00:20:20,815 --> 00:20:25,330
+and we looked at where we needed to implement different stages of the process.
+
+375
+00:20:25,330 --> 00:20:30,550
+So, what they brought on a part time employee just for the academic side of things.
+
+376
+00:20:30,550 --> 00:20:34,540
+So, just for faculty support that helped me out a lot,
+
+377
+00:20:34,540 --> 00:20:36,520
+as opposed to just coming directly to one person.
+
+378
+00:20:36,520 --> 00:20:38,290
+Now, we have a few people that
+
+379
+00:20:38,290 --> 00:20:42,630
+instructional technology was helping out a lot with giving direction.
+
+380
+00:20:42,630 --> 00:20:44,940
+We made a web page strictly for
+
+381
+00:20:44,940 --> 00:20:48,000
+resources where faculty can read up on things on their own,
+
+382
+00:20:48,000 --> 00:20:50,940
+so they didn't have to keep reaching out to us especially for things that we
+
+383
+00:20:50,940 --> 00:20:55,010
+felt were a little more simpler concepts to really understand and get.
+
+384
+00:20:55,010 --> 00:20:57,400
+So, that helped out so all these different channels
+
+385
+00:20:57,400 --> 00:20:59,680
+and buckets we really started to fill.
+
+386
+00:20:59,680 --> 00:21:02,215
+Now, once those buckets got filled a little more,
+
+387
+00:21:02,215 --> 00:21:07,360
+it was easier to get things done especially the time of [inaudible] anyway .
+
+388
+00:21:07,360 --> 00:21:10,900
+That's what we were saying for the academic side for [inaudible] ,
+
+389
+00:21:10,900 --> 00:21:13,675
+the part time support on the academic side,
+
+390
+00:21:13,675 --> 00:21:16,090
+and then we just kept educating ourselves.
+
+391
+00:21:16,090 --> 00:21:18,925
+So, we went through professional development for ourselves.
+
+392
+00:21:18,925 --> 00:21:22,210
+We have two people on staff now that are certified, right? For accessibility.
+
+393
+00:21:22,210 --> 00:21:25,645
+So, we took courses in professional development.
+
+394
+00:21:25,645 --> 00:21:27,940
+We spoke to vendors, we brought vendors in.
+
+395
+00:21:27,940 --> 00:21:30,415
+We went to conferences all these different things.
+
+396
+00:21:30,415 --> 00:21:36,295
+Anything that we could do to gain more experience as quickly as we could with experience,
+
+397
+00:21:36,295 --> 00:21:37,720
+and then once we gain that,
+
+398
+00:21:37,720 --> 00:21:41,230
+we bring it back and disseminate that information as much as possible,
+
+399
+00:21:41,230 --> 00:21:43,280
+and that was really the plan.
+
+400
+00:21:43,280 --> 00:21:45,705
+We just keep going with that.
+
+401
+00:21:45,705 --> 00:21:46,765
+Great.
+
+402
+00:21:46,765 --> 00:21:48,730
+The process doesn't end.
+
+403
+00:21:48,730 --> 00:21:50,760
+No. It never had and never will,
+
+404
+00:21:50,760 --> 00:21:53,360
+and that's a message we said it backwards to about their courses.
+
+405
+00:21:53,360 --> 00:21:56,040
+It's never going to end. You're not just going to be fully accessible one day.
+
+406
+00:21:56,040 --> 00:21:58,440
+Because anytime you bring in a new piece of equipment,
+
+407
+00:21:58,440 --> 00:22:02,520
+you want to have accessibility in mind whatever that concept might be so.
+
+408
+00:22:02,520 --> 00:22:06,175
+Yes. It's constantly evolving but it's good.
+
+409
+00:22:06,175 --> 00:22:09,290
+So, some of the training that you all set up,
+
+410
+00:22:09,290 --> 00:22:12,370
+I mean you are showing me some of the things that you have built out,
+
+411
+00:22:12,370 --> 00:22:15,835
+and so you provided basically asynchronous secret.
+
+412
+00:22:15,835 --> 00:22:18,655
+However, you can reach them you did it.
+
+413
+00:22:18,655 --> 00:22:21,135
+Yeah, and bombarded too.
+
+414
+00:22:21,135 --> 00:22:24,100
+We offered more training than we had ever had in the past.
+
+415
+00:22:24,100 --> 00:22:27,535
+We basically made it like Fridays where training.
+
+416
+00:22:27,535 --> 00:22:30,490
+Without a doubt, we always had something on Fridays and then we would
+
+417
+00:22:30,490 --> 00:22:33,495
+always do a Tuesday or Wednesday as well on top of that.
+
+418
+00:22:33,495 --> 00:22:35,320
+We brought out new workshops stuff that was
+
+419
+00:22:35,320 --> 00:22:37,585
+never been offered before to keep it a bit fresh.
+
+420
+00:22:37,585 --> 00:22:40,120
+I mean obviously there were no accessibility workshops.
+
+421
+00:22:40,120 --> 00:22:43,405
+We know that, but then we also parlay that into universal design.
+
+422
+00:22:43,405 --> 00:22:46,760
+We talked about video captioning which is certainly accessibility,
+
+423
+00:22:46,760 --> 00:22:48,025
+what is just the bucket of it.
+
+424
+00:22:48,025 --> 00:22:52,045
+We never had workshops dedicated to those topics before.
+
+425
+00:22:52,045 --> 00:22:55,455
+So, now we have more education than we ever had before.
+
+426
+00:22:55,455 --> 00:22:59,070
+So, it's easier especially for a new faculty member,
+
+427
+00:22:59,070 --> 00:23:00,880
+a new adjunct that comes in.
+
+428
+00:23:00,880 --> 00:23:05,395
+They can jump right into all these resources and get educated very quickly on this topic,
+
+429
+00:23:05,395 --> 00:23:08,060
+and that's probably one of the biggest things.
+
+430
+00:23:08,060 --> 00:23:11,970
+Right, and one of the other things that academics is doing now is,
+
+431
+00:23:11,970 --> 00:23:15,845
+they started putting together
+
+432
+00:23:15,845 --> 00:23:22,060
+some standard courses that had accessible content already filled out in it.
+
+433
+00:23:22,060 --> 00:23:25,930
+So, that when a new adjunct was hired instead of saying, hi you're hired.
+
+434
+00:23:25,930 --> 00:23:27,795
+Here's the syllabus on a text.
+
+435
+00:23:27,795 --> 00:23:29,980
+Good luck. Here you go.
+
+436
+00:23:29,980 --> 00:23:32,620
+Here's a course we already have fully accessible PowerPoint.
+
+437
+00:23:32,620 --> 00:23:34,240
+We already have a fully accessible syllabus.
+
+438
+00:23:34,240 --> 00:23:38,380
+We already have all these things that are already done and give them a head start.
+
+439
+00:23:38,380 --> 00:23:39,730
+What I mean when they started.
+
+440
+00:23:39,730 --> 00:23:42,820
+So, we're still working on that.
+
+441
+00:23:42,820 --> 00:23:45,085
+But we definitely have made a lot of progress.
+
+442
+00:23:45,085 --> 00:23:49,135
+So, those templates were something pretty new that you introduced after.
+
+443
+00:23:49,135 --> 00:23:50,605
+Oh, yeah. They're very new.
+
+444
+00:23:50,605 --> 00:23:54,145
+They just started last summer.
+
+445
+00:23:54,145 --> 00:23:57,820
+I think they just started developing them for last fall.
+
+446
+00:23:57,820 --> 00:24:00,730
+How is faculty response to templates?
+
+447
+00:24:00,730 --> 00:24:04,815
+Are they like, don't tell me how to organize my course or my syllabus.
+
+448
+00:24:04,815 --> 00:24:08,130
+There's some of that. There's others
+
+449
+00:24:08,130 --> 00:24:11,550
+who have embraced that a little bit more because it doesn't.
+
+450
+00:24:11,550 --> 00:24:13,290
+They're not restricted from changing it.
+
+451
+00:24:13,290 --> 00:24:16,860
+Once they get it, it's just given them a foundation to get started.
+
+452
+00:24:16,860 --> 00:24:19,830
+Once they have it, they can then use it,
+
+453
+00:24:19,830 --> 00:24:22,870
+not use it, add their own content.
+
+454
+00:24:22,870 --> 00:24:27,055
+Some of our academic departments have really,
+
+455
+00:24:27,055 --> 00:24:30,010
+again you spoke with some of our science folks earlier.
+
+456
+00:24:30,010 --> 00:24:34,240
+They've done amazing things with developing that type of
+
+457
+00:24:34,240 --> 00:24:39,495
+content both for lecture and lab blackboard core shells.
+
+458
+00:24:39,495 --> 00:24:41,905
+So, that way when an adjunct comes in.
+
+459
+00:24:41,905 --> 00:24:45,565
+Just think of it, you're a brand new adjunct they're hiring maybe in the 11th hour.
+
+460
+00:24:45,565 --> 00:24:47,260
+How am I going to make this happen?
+
+461
+00:24:47,260 --> 00:24:51,345
+Just like that and they not only have the tools they need to be successful,
+
+462
+00:24:51,345 --> 00:24:53,650
+but it's already accessible and it all is
+
+463
+00:24:53,650 --> 00:24:56,770
+just going to help make the students more successful.
+
+464
+00:24:56,770 --> 00:25:01,030
+In the process of training up faculty,
+
+465
+00:25:01,030 --> 00:25:02,300
+getting them on board,
+
+466
+00:25:02,300 --> 00:25:07,720
+did certain faculty champions emerge that you propped up on the campus to say,
+
+467
+00:25:07,720 --> 00:25:11,005
+hey this is your model look at this faculty member?
+
+468
+00:25:11,005 --> 00:25:14,140
+Absolutely. We're definitely did because we had
+
+469
+00:25:14,140 --> 00:25:17,025
+some remember where you can see right away.
+
+470
+00:25:17,025 --> 00:25:21,390
+Like that bell click or something clicks all of a sudden where they get it.
+
+471
+00:25:21,390 --> 00:25:24,375
+So, this isn't as stressful as I thought it would be
+
+472
+00:25:24,375 --> 00:25:27,550
+or as daunting as a test because I thought it would be.
+
+473
+00:25:27,550 --> 00:25:29,905
+But then we started getting feedback going.
+
+474
+00:25:29,905 --> 00:25:31,885
+I've cleaned up a lot of stuff in my course.
+
+475
+00:25:31,885 --> 00:25:33,640
+I didn't realize how much stuff I have had my course.
+
+476
+00:25:33,640 --> 00:25:36,520
+I don't even use anymore that's really old or something like that,
+
+477
+00:25:36,520 --> 00:25:39,715
+and I brought in new content new fresh stuff as well.
+
+478
+00:25:39,715 --> 00:25:41,665
+So, we're getting good feedback from that.
+
+479
+00:25:41,665 --> 00:25:43,210
+With something that we really didn't think about.
+
+480
+00:25:43,210 --> 00:25:46,015
+We were just trying to make it accessible. But here we are.
+
+481
+00:25:46,015 --> 00:25:50,530
+They're designing their courses all over again and updating their materials and they
+
+482
+00:25:50,530 --> 00:25:55,760
+felt like that cleaning out my closet type of feeling, more organized and I'm ready to go.
+
+483
+00:25:55,760 --> 00:25:58,615
+So, that was a nice response.
+
+484
+00:25:58,615 --> 00:26:01,130
+Well it sounds like there's been some cost savings,
+
+485
+00:26:01,130 --> 00:26:03,295
+there too as far as storage.
+
+486
+00:26:03,295 --> 00:26:07,720
+Oh, yeah. Right. Because we were always up
+
+487
+00:26:07,720 --> 00:26:12,220
+against the limits because of storage with Blackboard.
+
+488
+00:26:12,220 --> 00:26:17,650
+Because we are a managed hosting and we pay for our storage and faculty,
+
+489
+00:26:17,650 --> 00:26:21,585
+they'd upload a file and it would never be deleted from their course and we could
+
+490
+00:26:21,585 --> 00:26:25,370
+go through their files and they'd have a syllabus in there from 2004.
+
+491
+00:26:25,370 --> 00:26:30,560
+That's just been copied over and over and over and over again, and we had,
+
+492
+00:26:30,840 --> 00:26:33,640
+well over half of our faculty that just
+
+493
+00:26:33,640 --> 00:26:39,520
+said, "Give me a brand new course I'm starting over," and that is really.
+
+494
+00:26:39,520 --> 00:26:40,960
+Cleaned it up a lot.
+
+495
+00:26:40,960 --> 00:26:42,460
+Yes it did.
+
+496
+00:26:42,460 --> 00:26:49,510
+Comes down to customer service emails and all that.
+
+497
+00:26:49,510 --> 00:26:54,175
+So, now I mean you're pretty far along in this journey.
+
+498
+00:26:54,175 --> 00:26:56,920
+You got some success in there.
+
+499
+00:26:56,920 --> 00:27:00,495
+As you were starting to see these courses turn green.
+
+500
+00:27:00,495 --> 00:27:02,650
+Did that inspire the campus?
+
+501
+00:27:02,650 --> 00:27:07,120
+Did it start to move away from just a stick being beating over to them to a sense of pride?
+
+502
+00:27:07,120 --> 00:27:09,340
+How has, when you talking about a culture shift,
+
+503
+00:27:09,340 --> 00:27:14,080
+how does that now feel on a campus that has become more inclusive?
+
+504
+00:27:14,080 --> 00:27:16,210
+Well, accessibility is obviously a big word.
+
+505
+00:27:16,210 --> 00:27:20,395
+Everybody I think on campus knows about it and knows exactly what it means,
+
+506
+00:27:20,395 --> 00:27:22,120
+exactly how to implement it.
+
+507
+00:27:22,120 --> 00:27:25,630
+Which is three years ago there wasn't something that was happening here at all.
+
+508
+00:27:25,630 --> 00:27:28,285
+Right. That's just not a word that people knew and now they know
+
+509
+00:27:28,285 --> 00:27:31,480
+a lot of it probably more than they want to know about it.
+
+510
+00:27:31,480 --> 00:27:35,260
+Well, I think they're proud to know I mean we were talking a
+
+511
+00:27:35,260 --> 00:27:39,570
+little bit earlier and some of us in the room teaching.
+
+512
+00:27:39,570 --> 00:27:42,040
+I'm proud that my course is accessible.
+
+513
+00:27:42,040 --> 00:27:45,470
+I wanted it to be accessible as accessible as it can to everybody and I think that
+
+514
+00:27:45,470 --> 00:27:49,315
+there are a lot of faculty on campus that are proud that they can say that now,
+
+515
+00:27:49,315 --> 00:27:52,665
+and many of them did the work themselves and they are like I did that,
+
+516
+00:27:52,665 --> 00:27:58,650
+and I think there are a lot of people who are proud of themselves.
+
+517
+00:27:58,650 --> 00:28:01,630
+I think when the teachers hear any feedback from a student though.
+
+518
+00:28:01,630 --> 00:28:02,125
+Right.
+
+519
+00:28:02,125 --> 00:28:04,240
+That's where it really makes
+
+520
+00:28:04,240 --> 00:28:06,595
+an impact because that's what they're here for at the end of the today.
+
+521
+00:28:06,595 --> 00:28:11,710
+So, we always pitched the idea of saying,
+
+522
+00:28:11,710 --> 00:28:15,625
+would you like less emails from your students about they can't get access to this thing.
+
+523
+00:28:15,625 --> 00:28:18,865
+Where they can't find this document, those types of things.
+
+524
+00:28:18,865 --> 00:28:21,460
+Now, that the courses are more organized and accessible,
+
+525
+00:28:21,460 --> 00:28:23,650
+they're not getting those emails or just getting emails
+
+526
+00:28:23,650 --> 00:28:26,185
+about content which is where they want to be.
+
+527
+00:28:26,185 --> 00:28:29,055
+They don't want to have emails about software where things are.
+
+528
+00:28:29,055 --> 00:28:31,900
+So, you know when they get that feedback from the students I think that
+
+529
+00:28:31,900 --> 00:28:33,160
+really makes them feel so good about it that they
+
+530
+00:28:33,160 --> 00:28:35,080
+have a good product that they're putting out there.
+
+531
+00:28:35,080 --> 00:28:38,935
+I think also how much it's support students without disabilities.
+
+532
+00:28:38,935 --> 00:28:42,470
+I think that's a point that does get lost a little bit.
+
+533
+00:28:42,880 --> 00:28:47,380
+Accessibility is a whole doesn't just serve students with disabilities,
+
+534
+00:28:47,380 --> 00:28:51,340
+it helps students without disabilities incredibly well as well.
+
+535
+00:28:51,340 --> 00:28:56,140
+So, I think by seeing sort of the student investiture
+
+536
+00:28:56,140 --> 00:28:59,290
+in their Blackboard courses
+
+537
+00:28:59,290 --> 00:29:02,200
+I think they're starting to see an uptick of students using them.
+
+538
+00:29:02,200 --> 00:29:05,609
+Students be able to access them and also
+
+539
+00:29:05,609 --> 00:29:10,540
+by taking out a lot of that stuff that has been there forever,
+
+540
+00:29:10,540 --> 00:29:12,610
+it's very much easier to navigate.
+
+541
+00:29:12,610 --> 00:29:15,220
+So, I think students are using the Blackboard
+
+542
+00:29:15,220 --> 00:29:18,550
+courses a little bit more now because they're a little bit cleaner.
+
+543
+00:29:18,550 --> 00:29:24,895
+So, I think that's been a pretty positive thing as well for staff and faculty.
+
+544
+00:29:24,895 --> 00:29:28,345
+So, and faculty get the service, right?
+
+545
+00:29:28,345 --> 00:29:30,265
+I mean they get feedback on their courses.
+
+546
+00:29:30,265 --> 00:29:34,210
+So, they can literally read all this feedback and get feedback directly from the students.
+
+547
+00:29:34,210 --> 00:29:36,280
+So, that's a big one too.
+
+548
+00:29:36,280 --> 00:29:40,630
+Are you getting a sense that it has improved in some of those areas that
+
+549
+00:29:40,630 --> 00:29:44,695
+students are reporting a better experience in the course?
+
+550
+00:29:44,695 --> 00:29:47,935
+Yeah. Well, and part of that was
+
+551
+00:29:47,935 --> 00:29:51,855
+as a part of this process in the very beginning of the process probably one of
+
+552
+00:29:51,855 --> 00:29:54,910
+the first things we did is we
+
+553
+00:29:54,910 --> 00:29:59,710
+instituted a standard course menu in all of our Blackboard course shells.
+
+554
+00:29:59,710 --> 00:30:02,740
+So, we could make navigation a little more consistent.
+
+555
+00:30:02,740 --> 00:30:07,240
+That probably hit more resistance than you could probably imagine from faculty.
+
+556
+00:30:07,240 --> 00:30:08,875
+Because we were telling them,
+
+557
+00:30:08,875 --> 00:30:14,200
+you can only have these eight things on your course menu now instead of
+
+558
+00:30:14,200 --> 00:30:17,590
+the 30 things that you had before and they didn't
+
+559
+00:30:17,590 --> 00:30:21,370
+want to be told that and they sure didn't want somebody telling them what to name them.
+
+560
+00:30:21,370 --> 00:30:27,400
+But we did survey students after we did that and there was so much positive feedback.
+
+561
+00:30:27,400 --> 00:30:31,150
+The students were like it was nice that no matter what course I was going in,
+
+562
+00:30:31,150 --> 00:30:32,550
+I knew where to find my syllabus,
+
+563
+00:30:32,550 --> 00:30:33,620
+I knew where to find this,
+
+564
+00:30:33,620 --> 00:30:34,750
+I knew where to find that,
+
+565
+00:30:34,750 --> 00:30:39,870
+and that definitely was validation that we were moving in the right direction there.
+
+566
+00:30:39,870 --> 00:30:43,380
+Has it changed the way your office is doing things?
+
+567
+00:30:43,380 --> 00:30:45,580
+What's been the impact on your office?
+
+568
+00:30:45,580 --> 00:30:47,970
+It's been a great impact as we're able to now
+
+569
+00:30:47,970 --> 00:30:51,105
+ensure accessibility for students and we can now say,
+
+570
+00:30:51,105 --> 00:30:54,870
+so if a student comes in and we know what they need to take,
+
+571
+00:30:54,870 --> 00:30:59,240
+like for instance got one of our student visual impairment.
+
+572
+00:30:59,240 --> 00:31:03,680
+We know he has to take a biology class at some point in the next few semesters.
+
+573
+00:31:03,680 --> 00:31:06,010
+So, now we're able to go in and try do
+
+574
+00:31:06,010 --> 00:31:09,860
+a deep dive now into that course to make sure that it's perfect.
+
+575
+00:31:09,860 --> 00:31:13,235
+So, I think we're seeing that.
+
+576
+00:31:13,235 --> 00:31:15,285
+Being able to look into the future and sort of
+
+577
+00:31:15,285 --> 00:31:18,400
+scaffolding the students experience as they move through.
+
+578
+00:31:18,400 --> 00:31:27,775
+But also being able to point our students towards classes that are more accessible.
+
+579
+00:31:27,775 --> 00:31:33,220
+To say, so we know we have a student who requires a high level of accessibility.
+
+580
+00:31:33,220 --> 00:31:36,010
+We're able to now go in and we
+
+581
+00:31:36,010 --> 00:31:38,975
+know that the faculty members that are really doing it well.
+
+582
+00:31:38,975 --> 00:31:45,670
+So, this enabled us to go in and see who are those professors that are just killing it.
+
+583
+00:31:45,670 --> 00:31:48,640
+So, that we can now take our students and put
+
+584
+00:31:48,640 --> 00:31:51,520
+them in that direction instead of what we're doing before.
+
+585
+00:31:51,520 --> 00:31:53,485
+Just like this is open go here,
+
+586
+00:31:53,485 --> 00:31:57,445
+just because it's open and we don't know what experience that students is going to get.
+
+587
+00:31:57,445 --> 00:31:59,785
+Being a community college we're full of adjuncts.
+
+588
+00:31:59,785 --> 00:32:01,515
+Most of them are wonderful.
+
+589
+00:32:01,515 --> 00:32:03,820
+But sometimes you have some that are a little bit funny.
+
+590
+00:32:03,820 --> 00:32:08,110
+Now, we can go in and really see what the course looks like and make sure that
+
+591
+00:32:08,110 --> 00:32:14,205
+students experience is almost 100 percent going to be a good one.
+
+592
+00:32:14,205 --> 00:32:18,149
+Is it over now? Is the-
+
+593
+00:32:18,149 --> 00:32:19,512
+In consent decree? No.
+
+594
+00:32:19,512 --> 00:32:20,780
+No, it is not.
+
+595
+00:32:20,780 --> 00:32:23,045
+No. We still have, what do we got left?
+
+596
+00:32:23,045 --> 00:32:25,140
+We got some time left on it.
+
+597
+00:32:25,140 --> 00:32:28,130
+I think it's just the progress,
+
+598
+00:32:28,130 --> 00:32:29,465
+this is going to continue.
+
+599
+00:32:29,465 --> 00:32:31,880
+That's the way too much new technologies are way
+
+600
+00:32:31,880 --> 00:32:35,960
+too much variation in dissemination of information,
+
+601
+00:32:35,960 --> 00:32:38,825
+where accessibility is always going to have to be
+
+602
+00:32:38,825 --> 00:32:42,380
+thought of when you're creating content and when you're bringing content in.
+
+603
+00:32:42,380 --> 00:32:43,850
+It's never going to go away.
+
+604
+00:32:43,850 --> 00:32:47,975
+So, we have to stay up to date now for all the new stuff that's coming in.
+
+605
+00:32:47,975 --> 00:32:50,385
+So, there's a lot of work to be done.
+
+606
+00:32:50,385 --> 00:32:52,945
+But as far as the legal hammer,
+
+607
+00:32:52,945 --> 00:32:55,980
+that's still over your head in a way?
+
+608
+00:32:55,980 --> 00:32:59,720
+Yes, like the deadline that loomed for so
+
+609
+00:32:59,720 --> 00:33:03,680
+long of all content has to be 100 percent accessible by a certain date,
+
+610
+00:33:03,680 --> 00:33:05,120
+that passed last summer.
+
+611
+00:33:05,120 --> 00:33:07,760
+So, we are past that now but we still
+
+612
+00:33:07,760 --> 00:33:13,190
+have facets of it that is still ongoing for a little easier.
+
+613
+00:33:13,190 --> 00:33:16,370
+Because you are right. I mean it's always going to be there, right?
+
+614
+00:33:16,370 --> 00:33:19,040
+It's always a journey, right?
+
+615
+00:33:19,040 --> 00:33:23,330
+That inclusive learning they say it's not a destination, it is a journey,
+
+616
+00:33:23,330 --> 00:33:25,550
+and it's something you'll always work on.
+
+617
+00:33:25,550 --> 00:33:29,120
+Well, I think the most important part over the consent decree, right?
+
+618
+00:33:29,120 --> 00:33:31,535
+When everybody thinks about consent decree they think about lawsuit,
+
+619
+00:33:31,535 --> 00:33:33,455
+they think about things that have to get done right away.
+
+620
+00:33:33,455 --> 00:33:37,160
+But what the consent decree really did was it highlighted
+
+621
+00:33:37,160 --> 00:33:41,330
+ways that we can support our students that we were not doing prior.
+
+622
+00:33:41,330 --> 00:33:43,820
+We were offering a lot of services.
+
+623
+00:33:43,820 --> 00:33:47,030
+That's not why the consent decree came about,
+
+624
+00:33:47,030 --> 00:33:51,530
+it was because there were certain little areas that we weren't offering support in.
+
+625
+00:33:51,530 --> 00:33:53,900
+So, we were able to really analyze
+
+626
+00:33:53,900 --> 00:33:57,050
+those areas and strengthen them, and that's what we've done.
+
+627
+00:33:57,050 --> 00:34:01,775
+So, we're taking proactive approaches because of that and we'll continue to do that.
+
+628
+00:34:01,775 --> 00:34:04,040
+I think, and I'm not sure if this was mentioned,
+
+629
+00:34:04,040 --> 00:34:06,440
+but I think one of the great things about the consent decree is
+
+630
+00:34:06,440 --> 00:34:09,710
+it's allocation of resources, right?
+
+631
+00:34:09,710 --> 00:34:14,090
+So, you have something like this that we're now legally bound to do, which I stand by.
+
+632
+00:34:14,090 --> 00:34:16,100
+I think the consent decree is a great thing.
+
+633
+00:34:16,100 --> 00:34:18,830
+I think it's enabled us do a lot of really good work,
+
+634
+00:34:18,830 --> 00:34:21,560
+but with that comes an allocation of resources,
+
+635
+00:34:21,560 --> 00:34:25,280
+with that comes the ability to go to conferences,
+
+636
+00:34:25,280 --> 00:34:27,230
+to be able to write grants, to do these things,
+
+637
+00:34:27,230 --> 00:34:30,200
+to be able to bolster the program and get the technology we need.
+
+638
+00:34:30,200 --> 00:34:34,099
+Not just with Blackboard Ally but being able to get the right magnifiers,
+
+639
+00:34:34,099 --> 00:34:35,795
+being able to get the right equipment,
+
+640
+00:34:35,795 --> 00:34:41,300
+the right everything and be able to have an ability to pay for it,
+
+641
+00:34:41,300 --> 00:34:44,480
+which I think that's been huge for us.
+
+642
+00:34:44,480 --> 00:34:50,200
+It's being able to use that added resources and really figure out a way out.
+
+643
+00:34:50,200 --> 00:34:55,210
+It's very rare that you get the ability to build a program from scratch and say like,
+
+644
+00:34:55,210 --> 00:34:59,519
+"Here's this document, build a program around this document."
+
+645
+00:34:59,519 --> 00:35:02,240
+So, it's a unique position to be in and we really took
+
+646
+00:35:02,240 --> 00:35:05,750
+full advantage of it across the board.
+
+647
+00:35:05,750 --> 00:35:10,865
+The other two amazing resources we did get out of the consent decree is Mike and Chad.
+
+648
+00:35:10,865 --> 00:35:13,490
+Whereas Mike actually was in
+
+649
+00:35:13,490 --> 00:35:16,849
+Atlantic Cape before and Chad was part of instructional technology,
+
+650
+00:35:16,849 --> 00:35:22,340
+but the roles they have here now have changed the Atlantic Cape
+
+651
+00:35:22,340 --> 00:35:28,520
+forever in a positive way and have just really opened up everybody's eyes.
+
+652
+00:35:28,520 --> 00:35:31,969
+They have been the vehicles by which
+
+653
+00:35:31,969 --> 00:35:35,990
+they had directed the change of the culture here at Atlanta Cape.
+
+654
+00:35:35,990 --> 00:35:41,270
+I think by breaking down the silos that had existed across campus for so
+
+655
+00:35:41,270 --> 00:35:46,580
+long and really being able to work so closely with them, instructional technology,
+
+656
+00:35:46,580 --> 00:35:52,970
+that's just been a perfect partnership in that we're able to work seamlessly
+
+657
+00:35:52,970 --> 00:35:55,910
+together on projects where it's not just we're off
+
+658
+00:35:55,910 --> 00:35:59,000
+doing our thing and then we're on Step 10 and we go,
+
+659
+00:35:59,000 --> 00:36:01,310
+"Hey, what do you think about this?"
+
+660
+00:36:01,310 --> 00:36:03,725
+And like, "I've been doing this too.
+
+661
+00:36:03,725 --> 00:36:07,640
+Why don't we." So, our efforts have been combined from the jump.
+
+662
+00:36:07,640 --> 00:36:11,330
+Then not only just with instructional technology but
+
+663
+00:36:11,330 --> 00:36:14,300
+working with the academic side of the college, with purchasing,
+
+664
+00:36:14,300 --> 00:36:17,570
+with every area and every facet
+
+665
+00:36:17,570 --> 00:36:20,900
+of the college being able to make sure that it's accessible.
+
+666
+00:36:20,900 --> 00:36:23,960
+So, for instance the college isn't
+
+667
+00:36:23,960 --> 00:36:27,770
+purchasing any kind of electronic technology without our approval,
+
+668
+00:36:27,770 --> 00:36:31,745
+without it being completely vetted through the center for accessibility.
+
+669
+00:36:31,745 --> 00:36:34,925
+So, we're not even buying anything that we know is inaccessible now,
+
+670
+00:36:34,925 --> 00:36:37,130
+whereas before we just like, "Go ahead and buy it."
+
+671
+00:36:37,130 --> 00:36:39,560
+Now we're able to go in and look at it and feel like if this is
+
+672
+00:36:39,560 --> 00:36:43,130
+an accessible product we're not buying it, right?
+
+673
+00:36:43,130 --> 00:36:48,410
+We have the ability to approve or deny all those things which I think is huge.
+
+674
+00:36:48,410 --> 00:36:52,970
+We've been able to include a lot in policy changes.
+
+675
+00:36:52,970 --> 00:36:54,980
+We've changed a lot of different policies now to
+
+676
+00:36:54,980 --> 00:36:58,160
+include accessibility within those policies now.
+
+677
+00:36:58,160 --> 00:36:59,000
+So,-
+
+678
+00:36:59,000 --> 00:37:01,400
+Absolutely.
+
+679
+00:37:01,400 --> 00:37:04,010
+When I see that we've rebuilt the whole thing and we got rid of
+
+680
+00:37:04,010 --> 00:37:07,190
+every policy and procedure and we rewrote everything.
+
+681
+00:37:07,190 --> 00:37:10,160
+We just went and we found different institutions that were doing it
+
+682
+00:37:10,160 --> 00:37:15,800
+right and we just adopted things that other people had done that worked.
+
+683
+00:37:15,800 --> 00:37:18,500
+We took things that we were doing that worked and we built this
+
+684
+00:37:18,500 --> 00:37:22,430
+around best practices from all over the place,
+
+685
+00:37:22,430 --> 00:37:25,925
+and then realized that we could create our own philosophy, right?
+
+686
+00:37:25,925 --> 00:37:28,205
+We looked at our population of students.
+
+687
+00:37:28,205 --> 00:37:31,020
+It's a unique community college.
+
+688
+00:37:32,100 --> 00:37:38,810
+We service students in the community and a lot of our students are on the fringe,
+
+689
+00:37:38,810 --> 00:37:41,300
+even if you take the disability completely out of it.
+
+690
+00:37:41,300 --> 00:37:44,135
+Even to walk in the front door is a huge success.
+
+691
+00:37:44,135 --> 00:37:48,305
+So, what could we do from an accessibility standpoint to be able to
+
+692
+00:37:48,305 --> 00:37:54,750
+scaffold these students and to be able to make them feel like they can be successful?
+
+693
+00:37:55,330 --> 00:37:58,985
+We've built a program around that.
+
+694
+00:37:58,985 --> 00:38:02,030
+Also, we want to get what we do without the team that's here,
+
+695
+00:38:02,030 --> 00:38:09,365
+without the culture of the institution stepping in and allowing us to build this thing.
+
+696
+00:38:09,365 --> 00:38:12,680
+I think by large it's been pretty successful thus far.
+
+697
+00:38:12,680 --> 00:38:16,400
+You were talking about student success and the benefits for all students and
+
+698
+00:38:16,400 --> 00:38:20,015
+I shared with you all your alternative format downloads recently.
+
+699
+00:38:20,015 --> 00:38:23,225
+It sounds like people are pretty excited to hear that number.
+
+700
+00:38:23,225 --> 00:38:24,920
+They're very excited because you know what?
+
+701
+00:38:24,920 --> 00:38:30,020
+That's a part of Ally that our faculty don't really think about a whole lot.
+
+702
+00:38:30,020 --> 00:38:34,490
+Because they think about the indicators and do I have green or red whatever,
+
+703
+00:38:34,490 --> 00:38:36,950
+but they don't really think about the fact that now
+
+704
+00:38:36,950 --> 00:38:40,760
+their content isn't just like that one accessible file they put up there,
+
+705
+00:38:40,760 --> 00:38:44,285
+but now there's several other ways that students can
+
+706
+00:38:44,285 --> 00:38:48,050
+also get this content in a way that they never could before.
+
+707
+00:38:48,050 --> 00:38:49,775
+That just makes their life,
+
+708
+00:38:49,775 --> 00:38:53,075
+their learning experience a better one.
+
+709
+00:38:53,075 --> 00:38:56,060
+You were speaking to that point earlier Chad,
+
+710
+00:38:56,060 --> 00:39:00,050
+about broadening the conversation to that UDL,
+
+711
+00:39:00,050 --> 00:39:04,970
+thinking about the usability of the course and opening up a lot of those principles.
+
+712
+00:39:04,970 --> 00:39:10,490
+Do you want to talk about maybe what you see as you all move further down the road here?
+
+713
+00:39:10,490 --> 00:39:13,535
+Well, we're definitely focused more on universal design.
+
+714
+00:39:13,535 --> 00:39:15,800
+There's a lot of different aspects to universal design
+
+715
+00:39:15,800 --> 00:39:19,475
+but just the organization structure to the course.
+
+716
+00:39:19,475 --> 00:39:22,850
+It's extremely beneficial for student success,
+
+717
+00:39:22,850 --> 00:39:26,000
+but I think what we're finding too is how faculty member can actually have
+
+718
+00:39:26,000 --> 00:39:29,780
+a dialogue with students about certain things that they never knew before.
+
+719
+00:39:29,780 --> 00:39:32,780
+So, we have a student in your class that relies on a screen reader.
+
+720
+00:39:32,780 --> 00:39:34,430
+We have a faculty member now saying,
+
+721
+00:39:34,430 --> 00:39:36,830
+"I know what screen reader is" I'm aware of
+
+722
+00:39:36,830 --> 00:39:39,980
+that tool and I can build contents so that that will work that way.
+
+723
+00:39:39,980 --> 00:39:41,900
+So that's a huge benefit.
+
+724
+00:39:41,900 --> 00:39:44,075
+That's one of the big changes that we're seeing that
+
+725
+00:39:44,075 --> 00:39:46,460
+actual conversations that are happening.
+
+726
+00:39:46,460 --> 00:39:49,310
+Prior to this, you probably said I don't know what a screen reader is.
+
+727
+00:39:49,310 --> 00:39:52,280
+So go see disability support services and
+
+728
+00:39:52,280 --> 00:39:55,460
+get a combination of something while now it's like, "No, we can work with that.
+
+729
+00:39:55,460 --> 00:39:58,430
+As a matter of fact, there's an alternative versions right here in blackboard.
+
+730
+00:39:58,430 --> 00:40:00,425
+Let me show you. Click this button" type of deal.
+
+731
+00:40:00,425 --> 00:40:03,125
+So, faculty are definitely more
+
+732
+00:40:03,125 --> 00:40:05,960
+open to discussing these type of things with their students.
+
+733
+00:40:05,960 --> 00:40:08,375
+There is a lot of dialogue, which is good.
+
+734
+00:40:08,375 --> 00:40:12,785
+Yeah. I'll just point out prior to this whole thing,
+
+735
+00:40:12,785 --> 00:40:15,575
+the word accessibility was not required in syllabus.
+
+736
+00:40:15,575 --> 00:40:17,960
+So, it wasn't really a thing that a student
+
+737
+00:40:17,960 --> 00:40:20,780
+even had the opportunity to bring up with their instructor.
+
+738
+00:40:20,780 --> 00:40:23,960
+One of the first policy changes you guys can correct me and all
+
+739
+00:40:23,960 --> 00:40:26,780
+that is that there had to be a little blurb in every syllabus thing.
+
+740
+00:40:26,780 --> 00:40:29,090
+"Hey, we have these resources available,
+
+741
+00:40:29,090 --> 00:40:32,600
+here's the contact information to reach out for that."
+
+742
+00:40:32,600 --> 00:40:34,940
+Part of that is now with the very first class.
+
+743
+00:40:34,940 --> 00:40:37,250
+You hand out the syllabus. Hey, it's right there in writing.
+
+744
+00:40:37,250 --> 00:40:39,290
+If the student was curious about something,
+
+745
+00:40:39,290 --> 00:40:41,270
+they can bring it up with their instructor or they can just
+
+746
+00:40:41,270 --> 00:40:43,955
+go straight to CFA to take care of it.
+
+747
+00:40:43,955 --> 00:40:48,365
+That's part of the reasons when we rebuilt the program, we rebranded it.
+
+748
+00:40:48,365 --> 00:40:49,610
+It was for years,
+
+749
+00:40:49,610 --> 00:40:51,740
+it was disability support services.
+
+750
+00:40:51,740 --> 00:40:54,080
+So, the first thing that we did was we took that out and
+
+751
+00:40:54,080 --> 00:40:56,615
+threw it away and changed it to the Center for Accessibility.
+
+752
+00:40:56,615 --> 00:40:58,970
+That's at the bare bones.
+
+753
+00:40:58,970 --> 00:41:00,755
+That's what we do, is we make
+
+754
+00:41:00,755 --> 00:41:04,340
+things accessible for students not distractions with disabilities.
+
+755
+00:41:04,340 --> 00:41:06,590
+So statements like that on the syllabus,
+
+756
+00:41:06,590 --> 00:41:09,200
+we were able to do that and link that directly back to
+
+757
+00:41:09,200 --> 00:41:13,340
+an office instead of just being just random statement.
+
+758
+00:41:13,340 --> 00:41:16,910
+Any other policy things that you wanted to mention,
+
+759
+00:41:16,910 --> 00:41:19,310
+any other things that you instituted you thought were
+
+760
+00:41:19,310 --> 00:41:21,920
+pretty effective and in creating that culture shift?
+
+761
+00:41:21,920 --> 00:41:24,770
+I'm sure a lot of other institutions would love to hear about.
+
+762
+00:41:24,770 --> 00:41:27,420
+Well, we did the 90 percent green.
+
+763
+00:41:27,970 --> 00:41:30,830
+I don't know if you want to mention that, but yeah.
+
+764
+00:41:30,830 --> 00:41:34,310
+Yeah, we did have a goal or challenge.
+
+765
+00:41:34,310 --> 00:41:37,940
+You emphasize 90 percent and you say that we're had a standard that we were looking for.
+
+766
+00:41:37,940 --> 00:41:41,090
+Right, that the Office of Academic Affairs put out,
+
+767
+00:41:41,090 --> 00:41:42,350
+where they told faculty,
+
+768
+00:41:42,350 --> 00:41:46,730
+they wanted everybody to strive towards
+
+769
+00:41:46,730 --> 00:41:51,590
+a 100 percent accessibility but they really wouldn't accept anything below 90 percent.
+
+770
+00:41:51,590 --> 00:41:55,280
+So as a result of that,
+
+771
+00:41:55,280 --> 00:42:00,830
+we had Josh here develop a way to extract the data that the Deans actually
+
+772
+00:42:00,830 --> 00:42:07,115
+look at the accessibility of all of our active courses on a weekly basis.
+
+773
+00:42:07,115 --> 00:42:12,290
+Anybody that dips below that number gets an email from the Dean,
+
+774
+00:42:12,290 --> 00:42:15,080
+"Hey, there's something going on in your course.
+
+775
+00:42:15,080 --> 00:42:17,945
+Did you upload some new content that you need help with?
+
+776
+00:42:17,945 --> 00:42:19,910
+We have these resources.
+
+777
+00:42:19,910 --> 00:42:23,555
+Do you have it in an alternative format we're not aware of?
+
+778
+00:42:23,555 --> 00:42:27,290
+If so, let us know so we're aware."
+
+779
+00:42:27,290 --> 00:42:32,375
+So, that definitely was huge in our success.
+
+780
+00:42:32,375 --> 00:42:34,760
+Again, that's administration support.
+
+781
+00:42:34,760 --> 00:42:36,410
+You need the backbone.
+
+782
+00:42:36,410 --> 00:42:40,310
+You need the muscle from the top and you need the workers
+
+783
+00:42:40,310 --> 00:42:44,615
+from the bottom to have that perfect success I think.
+
+784
+00:42:44,615 --> 00:42:45,890
+Absolutely.
+
+785
+00:42:45,890 --> 00:42:48,950
+I mean, not this isn't specific to Ally,
+
+786
+00:42:48,950 --> 00:42:53,555
+but one of the things that we implemented that I think we've seen a big success on is,
+
+787
+00:42:53,555 --> 00:42:57,210
+being a community college we see a lot of older students.
+
+788
+00:42:57,310 --> 00:43:03,800
+Like a lot of institutions that we are one of them in order to receive accommodations,
+
+789
+00:43:03,800 --> 00:43:07,220
+we have to provide documentation of your disability.
+
+790
+00:43:07,220 --> 00:43:11,060
+We were only accepting documentation that was,
+
+791
+00:43:11,060 --> 00:43:13,715
+less than five years old.
+
+792
+00:43:13,715 --> 00:43:17,390
+So, and making students go if it was older than five years,
+
+793
+00:43:17,390 --> 00:43:19,625
+they can go out and get re-evaluated,
+
+794
+00:43:19,625 --> 00:43:21,875
+at their own cost.
+
+795
+00:43:21,875 --> 00:43:24,170
+I've seen most institutions are
+
+796
+00:43:24,170 --> 00:43:26,210
+doing this but when I was going or going through regarding this,
+
+797
+00:43:26,210 --> 00:43:28,925
+we realized we don't, we really have to do that.
+
+798
+00:43:28,925 --> 00:43:31,325
+We don't really have to have this barrier so,
+
+799
+00:43:31,325 --> 00:43:35,300
+it's kind of the idea for five of the students has documentation that they have
+
+800
+00:43:35,300 --> 00:43:39,470
+autism but the documentation is from 2010.
+
+801
+00:43:39,470 --> 00:43:42,349
+There's a really good chance they still have autism,
+
+802
+00:43:42,349 --> 00:43:45,950
+and what kind of a barrier am I putting in place now for the student saying, oh great,
+
+803
+00:43:45,950 --> 00:43:48,215
+I have this IEP from high school,
+
+804
+00:43:48,215 --> 00:43:49,955
+that says you have autism,
+
+805
+00:43:49,955 --> 00:43:53,990
+but it's not, we can't take it anymore.
+
+806
+00:43:53,990 --> 00:43:56,300
+So, I'm going to need you to go out and spend
+
+807
+00:43:56,300 --> 00:43:59,615
+a thousand bucks to get re-evaluated to tell me something that I already know.
+
+808
+00:43:59,615 --> 00:44:01,400
+We threw out the window, we got rid of it.
+
+809
+00:44:01,400 --> 00:44:06,575
+So, as always we get something from a licensed professional,
+
+810
+00:44:06,575 --> 00:44:08,780
+we're going to take it and we're going to work with
+
+811
+00:44:08,780 --> 00:44:11,090
+every student also comes in and meets with us.
+
+812
+00:44:11,090 --> 00:44:13,410
+So, we don't really
+
+813
+00:44:14,230 --> 00:44:18,950
+go on the days where a student just sends off a piece of documentation,
+
+814
+00:44:18,950 --> 00:44:20,180
+we give them accommodation.
+
+815
+00:44:20,180 --> 00:44:21,440
+They come in and we come up with
+
+816
+00:44:21,440 --> 00:44:26,375
+an individualized plan and if their plan involves accessibility and technology,
+
+817
+00:44:26,375 --> 00:44:28,220
+they're going to go and meet with Chad and develop
+
+818
+00:44:28,220 --> 00:44:31,010
+an individual technology plan
+
+819
+00:44:31,010 --> 00:44:33,920
+to be able to suit them and this is, we're in high schools now.
+
+820
+00:44:33,920 --> 00:44:36,635
+So we're talking to kids or juniors in high school now,
+
+821
+00:44:36,635 --> 00:44:39,830
+that identified Atlantic Cape is the place that they're going to come.
+
+822
+00:44:39,830 --> 00:44:41,360
+We're working with them now,
+
+823
+00:44:41,360 --> 00:44:43,835
+on technology plans, still in high school.
+
+824
+00:44:43,835 --> 00:44:46,745
+So, trying to get this technology in their hands now,
+
+825
+00:44:46,745 --> 00:44:49,655
+so that when they come to Atlantic Cape,
+
+826
+00:44:49,655 --> 00:44:52,730
+they're proficient in the use of that technology already.
+
+827
+00:44:52,730 --> 00:44:54,770
+So, we're really dialing it back.
+
+828
+00:44:54,770 --> 00:44:59,090
+So, we know for instance like how many visually impaired students,
+
+829
+00:44:59,090 --> 00:45:02,300
+how many deaf students are in our catchment area that may
+
+830
+00:45:02,300 --> 00:45:06,155
+possibly come to Atlantic Cape at some point over the next five years.
+
+831
+00:45:06,155 --> 00:45:09,170
+So we're ready, and they know that we have a resource here.
+
+832
+00:45:09,170 --> 00:45:10,625
+They also come on campus.
+
+833
+00:45:10,625 --> 00:45:12,260
+You don't have to be a student here to come in
+
+834
+00:45:12,260 --> 00:45:13,820
+and talk with us and learn about the resource,
+
+835
+00:45:13,820 --> 00:45:18,275
+learn what we can do, how to support you irregardless of where you go to college.
+
+836
+00:45:18,275 --> 00:45:24,060
+So, I think it's been a good success for us, policy wise.
+
+837
+00:45:24,060 --> 00:45:28,340
+It's our policy wise but one of the new Blackboard Ally tools that we are
+
+838
+00:45:28,340 --> 00:45:32,435
+actually or abilities that we are using is,
+
+839
+00:45:32,435 --> 00:45:38,420
+we had to develop or Mike developed a form that students could click on and
+
+840
+00:45:38,420 --> 00:45:41,030
+fill out if they do happen to go through
+
+841
+00:45:41,030 --> 00:45:44,750
+their Blackboard course and find a piece of content that wasn't accessible.
+
+842
+00:45:44,750 --> 00:45:48,065
+They could click on that link and it takes them to a form,
+
+843
+00:45:48,065 --> 00:45:50,690
+then goes to Chad and Mike so they can help the professor
+
+844
+00:45:50,690 --> 00:45:53,780
+identify what the content is and make it more accessible.
+
+845
+00:45:53,780 --> 00:45:56,060
+We were able to use that new feature,
+
+846
+00:45:56,060 --> 00:45:57,710
+where you could include
+
+847
+00:45:57,710 --> 00:46:02,195
+that automatic help feedback to the student to put in a direct link to that form.
+
+848
+00:46:02,195 --> 00:46:05,690
+So as the student clicks on the piece of content and that's not
+
+849
+00:46:05,690 --> 00:46:07,130
+working for them and they go through
+
+850
+00:46:07,130 --> 00:46:09,500
+the alternative formats and they're not working for them,
+
+851
+00:46:09,500 --> 00:46:13,310
+then right there, they're taken to the form that goes straight to those guys
+
+852
+00:46:13,310 --> 00:46:18,270
+to help them to get their content in a format that's actually going to work for them.
+
+853
+00:46:18,370 --> 00:46:22,700
+Very cool. Any closing thoughts?
+
+854
+00:46:22,700 --> 00:46:25,550
+You want me to expand just a minute longer,
+
+855
+00:46:25,550 --> 00:46:28,490
+I know because you wanted some stuff on universal design.
+
+856
+00:46:28,490 --> 00:46:31,235
+Where we're at though in terms of training,
+
+857
+00:46:31,235 --> 00:46:33,770
+we did a lot of training for accessibility,
+
+858
+00:46:33,770 --> 00:46:37,760
+meaning you can use an automated tool to see if something is accessible,
+
+859
+00:46:37,760 --> 00:46:39,200
+just like Blackboard Ally.
+
+860
+00:46:39,200 --> 00:46:41,435
+So, our faculty really understand
+
+861
+00:46:41,435 --> 00:46:44,690
+what accessibility is and how to make something compliant.
+
+862
+00:46:44,690 --> 00:46:48,080
+But now, we're trying to educate them a little bit more on usability and
+
+863
+00:46:48,080 --> 00:46:51,590
+why we're doing the things that we're doing for student success.
+
+864
+00:46:51,590 --> 00:46:53,285
+The student experience side of it.
+
+865
+00:46:53,285 --> 00:46:57,350
+So that's what we're catering towards our workshops now,
+
+866
+00:46:57,350 --> 00:47:00,320
+in the future, adjusting to that.
+
+867
+00:47:00,320 --> 00:47:04,550
+So, in other words you can run a document through an accessibility checker and get
+
+868
+00:47:04,550 --> 00:47:06,260
+the green light because
+
+869
+00:47:06,260 --> 00:47:09,770
+the accessibility checker might say that you have alternative text on an image,
+
+870
+00:47:09,770 --> 00:47:13,700
+but is the alternative text good for the context of the lesson?
+
+871
+00:47:13,700 --> 00:47:16,925
+Is it really a quality alternative text.
+
+872
+00:47:16,925 --> 00:47:20,660
+So that's where the conversation is heading now at our school,
+
+873
+00:47:20,660 --> 00:47:22,665
+quality in universal front.
+
+874
+00:47:22,665 --> 00:47:24,550
+Let me as one challenge question,
+
+875
+00:47:24,550 --> 00:47:27,100
+while I read this one back in at another part.
+
+876
+00:47:27,100 --> 00:47:30,370
+But as far as you mentioned some faculty,
+
+877
+00:47:30,370 --> 00:47:31,570
+because I've heard this one before,
+
+878
+00:47:31,570 --> 00:47:33,580
+some faculty saying I'm going to yank
+
+879
+00:47:33,580 --> 00:47:36,465
+my content out of there so that it doesn't get checked.
+
+880
+00:47:36,465 --> 00:47:39,680
+What's been the strategies in trying to address that?
+
+881
+00:47:39,680 --> 00:47:42,290
+Do you see that starting to change a little as they see
+
+882
+00:47:42,290 --> 00:47:45,725
+other faculty get green and feel more comfortable with it?
+
+883
+00:47:45,725 --> 00:47:46,985
+No, yeah. Number one,
+
+884
+00:47:46,985 --> 00:47:48,830
+our message from our departments and we do
+
+885
+00:47:48,830 --> 00:47:51,350
+workshops is never ever pull content down like that.
+
+886
+00:47:51,350 --> 00:47:54,395
+That's not the way this institution operates,
+
+887
+00:47:54,395 --> 00:47:57,140
+and that's not the way we're trying to operate.
+
+888
+00:47:57,140 --> 00:47:58,640
+That's really not an option.
+
+889
+00:47:58,640 --> 00:48:01,310
+The option is to identify where the barriers are,
+
+890
+00:48:01,310 --> 00:48:03,620
+the struggles for accessibility and reach out to
+
+891
+00:48:03,620 --> 00:48:06,245
+the support circles in order come up with a resolution.
+
+892
+00:48:06,245 --> 00:48:09,799
+So, if we keep doing that rhetoric,
+
+893
+00:48:09,799 --> 00:48:11,435
+then that's what's going to happen.
+
+894
+00:48:11,435 --> 00:48:13,490
+If we have a rhetoric of take it down,
+
+895
+00:48:13,490 --> 00:48:14,600
+it can to make excessive of work.
+
+896
+00:48:14,600 --> 00:48:16,040
+It's too hard, don't worry about it,
+
+897
+00:48:16,040 --> 00:48:17,630
+then that's the result you're going to get.
+
+898
+00:48:17,630 --> 00:48:19,730
+So, we're not really looking at that result.
+
+899
+00:48:19,730 --> 00:48:22,820
+We don't say that rhetoric.
+
+900
+00:48:22,820 --> 00:48:24,680
+We don't, we try to do,
+
+901
+00:48:24,680 --> 00:48:27,725
+push them in the positive direction of trying to,
+
+902
+00:48:27,725 --> 00:48:29,300
+we absorb the challenges,
+
+903
+00:48:29,300 --> 00:48:32,975
+we look forward to a challenge and try to come up with a solution for it, so.
+
+904
+00:48:32,975 --> 00:48:36,545
+I think a lot of it too is just having real talk with
+
+905
+00:48:36,545 --> 00:48:41,255
+faculty members and just when we're noticing that content's removed,
+
+906
+00:48:41,255 --> 00:48:46,249
+the content's not reflective of the course,
+
+907
+00:48:46,249 --> 00:48:49,085
+having blatant purposeful conversations
+
+908
+00:48:49,085 --> 00:48:52,010
+with that faculty member and just trying to figure out why,
+
+909
+00:48:52,010 --> 00:48:55,805
+figuring out what's the rationale behind it.
+
+910
+00:48:55,805 --> 00:48:58,430
+Then, just taking things from there,
+
+911
+00:48:58,430 --> 00:49:02,270
+just realizing what like Chad had said it's not the culture of the institution.
+
+912
+00:49:02,270 --> 00:49:05,870
+We've been collectively working really hard for a long time
+
+913
+00:49:05,870 --> 00:49:09,890
+to build this culture and that's counter to what that culture is and
+
+914
+00:49:09,890 --> 00:49:14,105
+what the mission of the college and the Center for Accessibility and all of
+
+915
+00:49:14,105 --> 00:49:20,975
+the other offices and it's not acceptable and it's kind won't be tolerated.
+
+916
+00:49:20,975 --> 00:49:24,750
+We do have the support of,
+
+917
+00:49:25,780 --> 00:49:30,410
+all the way up to make sure that this stuff happens.
+
+918
+00:49:30,410 --> 00:49:34,100
+But I think communication and real talk and just making sure
+
+919
+00:49:34,100 --> 00:49:40,835
+that once people I think realize how non-difficult it is,
+
+920
+00:49:40,835 --> 00:49:42,350
+that's when we start to see that shift.
+
+921
+00:49:42,350 --> 00:49:45,440
+So I think, having those conversations and not sort
+
+922
+00:49:45,440 --> 00:49:49,085
+of beating around the bush so to speakers, is really important.
+
+923
+00:49:49,085 --> 00:49:50,585
+And you said the examples.
+
+924
+00:49:50,585 --> 00:49:54,515
+I mean we have examples in classes about how this was made accessible.
+
+925
+00:49:54,515 --> 00:49:56,660
+Well, I don't know how to make that. Is it possible to do that?
+
+926
+00:49:56,660 --> 00:49:57,950
+I say, "No hold on, let me show you."
+
+927
+00:49:57,950 --> 00:49:58,400
+Exactly.
+
+928
+00:49:58,400 --> 00:49:59,720
+We have different ways of doing it.
+
+929
+00:49:59,720 --> 00:50:00,965
+We've done it over here this way,
+
+930
+00:50:00,965 --> 00:50:02,450
+maybe you can implement that.
+
+931
+00:50:02,450 --> 00:50:05,720
+When they see that their peers are able to do
+
+932
+00:50:05,720 --> 00:50:09,065
+it and maybe they think outside the box a little bit,
+
+933
+00:50:09,065 --> 00:50:12,770
+to get it done, that's the direction that we push people in.
+
+934
+00:50:12,770 --> 00:50:15,020
+It's a bit of a strange statement because when
+
+935
+00:50:15,020 --> 00:50:16,640
+you're saying I'm going to pull my content down,
+
+936
+00:50:16,640 --> 00:50:19,370
+you're basically saying I don't want to give my students the ability to learn this.
+
+937
+00:50:19,370 --> 00:50:22,805
+So, it's an odd starting point for something like that to say that.
+
+938
+00:50:22,805 --> 00:50:27,950
+I'm going to remove resources from my students, then okay.
+
+939
+00:50:27,950 --> 00:50:31,670
+I mean, if that's going to be your starting point as a teacher,
+
+940
+00:50:31,670 --> 00:50:33,905
+you probably have other things you got to look at.
+
+941
+00:50:33,905 --> 00:50:35,580
+Yeah.
+
+942
+00:50:35,740 --> 00:50:39,305
+All right. That's a wrap.
+
+943
+00:50:39,305 --> 00:50:42,350
+Wow. Hearing from the team in Atlantic Cape,
+
+944
+00:50:42,350 --> 00:50:45,545
+I mean what an amazing, amazing story.
+
+945
+00:50:45,545 --> 00:50:49,070
+They deserve major kudos for leading their campus and really
+
+946
+00:50:49,070 --> 00:50:53,420
+turning a tough situation into a triumph for inclusive learning.
+
+947
+00:50:53,420 --> 00:50:57,530
+So next stop, we'll be continuing on the northeast leg of the tour
+
+948
+00:50:57,530 --> 00:51:01,970
+with visits to William Paterson University from the University of Connecticut.
+
+949
+00:51:01,970 --> 00:51:06,480
+Until then, good luck on your road to IncluCity.
+
+950
+00:51:07,090 --> 00:51:13,190
+Join the tour along with the rest of the Ally community at tour.ally.ac.
+
+951
+00:51:13,190 --> 00:51:18,980
+You can catch the latest updates on Instagram and Twitter at #AllyTour2019 and
+
+952
+00:51:18,980 --> 00:51:21,979
+listen to stories of inclusion from our community champions
+
+953
+00:51:21,979 --> 00:51:25,070
+on the Ally Tour 2019 podcast series,
+
+954
+00:51:25,070 --> 00:51:28,565
+available on SoundCloud or in your favorite podcast app.
+
+955
+00:51:28,565 --> 00:51:33,900
+We'll look forward to seeing you at the next stop on the road to IncluCity.
