@@ -61,7 +61,7 @@
                 <link>https://usergroup.ally.ac/s/tour/custom_pages/container/view?id=36</link>
                 <itunes:duration>00:56:38</itunes:duration>
                 <pubDate>Wed, 27 Feb 2019 09:00:00 GMT</pubDate>
-                <content:encoded>
+                <content:encoded><![CDATA[
                     <p>For the first stop on the Ally Tour, John Scott of the Ally Team visits <a href="http://www.atlantic.edu">Atlantic Cape Community College</a> in New Jersey. Members of the Instructional Technology group and the Center for Accessibility sit down to share their story.</p>
                     <p>After two blind students and the National Federation for the Blind filed a lawsuit against the campus for failing to provide equitable access to their learning content for students with disabilities, the team was issued a <a href="http://www.atlantic.edu/documents/nfb_lanzailotti_atlantic_cape_consent_decree.pdf">Consent Decree</a> to become 100% accessible in three years.</p>
                     <p>In the beginning, the team talks about when they first heard about the decree, and where they and their faculty were in terms of accessibility at that time. They then share go into detail about the processes they put into place and strategies they developed to begin the long march toward inclusion.</p>
@@ -81,6 +81,7 @@
                     <p><a href="https://twitter.com/hashtag/AllyTour2019?src=hash" title="Twitter Searching #AllyTour2109" target="_blank">#AllyTour2019</a></p>
                     <p><a href="https://twitter.com/hashtag/BbAlly?src=hash" title="Twitter Searching #BbAlly" target="_blank">#BbAlly on Twitter</a></p>
                     <p><a href="https://www.instagram.com/allytour2019/" title="@AllyTour2019 on Instagram" target="_blank">@AllyTour2019 on Instagram</a></p>
+                    ]]>
                 </content:encoded>
                 <itunes:keywords>ada504,rehabilitationact,communitycollege,wcag,accessible,atlanticcapecommunitycollege,accc,ally,blackboardally,inclusive,accessibility,a11y,coursecontent,universaldesignforlearning,udl,studentremediation,studentsupport,studentservices</itunes:keywords>
             </item>
