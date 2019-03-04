@@ -58,7 +58,10 @@
                 <description>After receiving a complaint from the Office of Civil Rights, a Community College faces the tall task of becoming accessible in three years. How did they respond in the face of adversity? In the first episode of the Ally Tour, we hear from the team at Atlantic Cape Community College in New Jersey their journey on the pathway to inclusion. Now three years later, inclusivity has become a core part of their campus culture. Their story is an inspiration for the many institutions out there facing similar challenges in becoming more inclusive, and a lesson about how in the end, it really is about student success.</description>
                 <itunes:summary>After receiving a complaint from the Office of Civil Rights, a Community College faces the tall task of becoming accessible in three years. How did they respond in the face of adversity? In the first episode of the Ally Tour, we hear from the team at Atlantic Cape Community College in New Jersey their journey on the pathway to inclusion. Now three years later, inclusivity has become a core part of their campus culture. Their story is an inspiration for the many institutions out there facing similar challenges in becoming more inclusive, and a lesson about how in the end, it really is about student success.</itunes:summary>
                 <itunes:subtitle>A Community College makes a campus-wide commitment to accessibility to create more equitable, higher quality learning experiences for students.</itunes:subtitle>
-                <itunesu:category itunesu:code="112" />
+                <itunes:category text="Education"></itunes:category>
+                    <itunes:category text="Education">
+                        <itunes:category text="Educational Technology"/>
+                    </itunes:category>
                 <enclosure url="http://www.ally.ac/podcast/tour/ep01-atlantic-cape.mp3" type="audio/mpeg" length="75196095" />
                 <guid>http://www.ally.ac/podcast/tour/ep01-atlantic-cape.mp3</guid>
                 <link><![CDATA[https://usergroup.ally.ac/s/tour/custom_pages/container/view?id=36]]></link>
