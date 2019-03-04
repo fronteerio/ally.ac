@@ -38,7 +38,10 @@
                 <description>The 2019 Ally Tour Trailer is an overview of our plans to visit as many institutions around the globe as possible for 2019. It includes some of the activities we are planning carrying out and how to follow the tour. Join the tour along with the rest of the Ally Community at tour.ally.ac. You can catch the latest updates on Instagram and Twitter at #AllyTour2019. And listen to stories of inclusion from our Community Champions on the Ally Tour 2019 Podcast series available on SoundCloud or in your favorite podcast app. We’ll look forward to seeing you at the next stop on the road to IncluCity.</description>
                 <itunes:summary>The 2019 Ally Tour Trailer is an overview of our plans to visit as many institutions around the globe as possible for 2019. It includes some of the activities we are planning carrying out and how to follow the tour.</itunes:summary>
                 <itunes:subtitle>The 2019 Ally Tour Trailer is an overview of our plans to visit as many institutions around the globe as possible for 2019. It includes some of the activities we are planning carrying out and how to follow the tour.</itunes:subtitle>
-                <itunesu:category itunesu:code="112" />
+                <itunes:category text="Education"></itunes:category>
+                    <itunes:category text="Education">
+                        <itunes:category text="Educational Technology"/>
+                    </itunes:category>
                 <enclosure url="http://www.ally.ac/podcast/tour/2019-ally-tour-trailer.mp3" type="audio/mpeg" length="1690088" />
                 <guid>http://www.ally.ac/podcast/tour/2019-ally-tour-trailer.mp3</guid>
                 <link>https://usergroup.ally.ac/s/tour/custom_pages/container/view?id=36</link>
@@ -58,7 +61,7 @@
                 <itunesu:category itunesu:code="112" />
                 <enclosure url="http://www.ally.ac/podcast/tour/ep01-atlantic-cape.mp3" type="audio/mpeg" length="75196095" />
                 <guid>http://www.ally.ac/podcast/tour/ep01-atlantic-cape.mp3</guid>
-                <link>https://usergroup.ally.ac/s/tour/custom_pages/container/view?id=36</link>
+                <link><![CDATA[https://usergroup.ally.ac/s/tour/custom_pages/container/view?id=36]]></link>
                 <itunes:duration>00:56:38</itunes:duration>
                 <pubDate>Wed, 27 Feb 2019 09:00:00 GMT</pubDate>
                 <content:encoded><![CDATA[
