@@ -87,5 +87,43 @@
             <itunes:keywords>ada504,rehabilitationact,communitycollege,wcag,accessible,atlanticcapecommunitycollege,accc,ally,blackboardally,inclusive,accessibility,a11y,coursecontent,universaldesignforlearning,udl,studentremediation,studentsupport,studentservices</itunes:keywords>
         </item>
         <!--END EPISODE 01-->
+        <!-- EPISODE 02-->
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <title>Ep02: Lesley University - Technology for Social Justice</title>
+            <itunes:title>Lesley University - Technology for Social Justice</itunes:title>
+            <description>In this second episode of the Ally Tour, we speak with the team at Lesley University and how they’ve experienced their inclusivity journey. Built on the core principle of social justice, Lesley University truly embraces an accessibility and inclusivity mindset. About 3 years ago, the school’s general counsel office embarked on a mission on how to be more proactive with making digital content more accessible. Since then, the team has rolled out various accessibility initiatives successfully and Ally helped them do this in a more streamlined and holistic way.</description>
+            <itunes:summary>In this second episode of the Ally Tour, we speak with the team at Lesley University and how they’ve experienced their inclusivity journey. Built on the core principle of social justice, Lesley University truly embraces an accessibility and inclusivity mindset. About 3 years ago, the school’s general counsel office embarked on a mission on how to be more proactive with making digital content more accessible. Since then, the team has rolled out various accessibility initiatives successfully and Ally helped them do this in a more streamlined and holistic way.</itunes:summary>
+            <itunes:subtitle>A Tradition of Supporting Equity and Access in Education</itunes:subtitle>
+            <enclosure url="http://www.ally.ac/podcast/tour/ep02-lesley.mp3" type="audio/mpeg" length="59565593" />
+            <guid>http://www.ally.ac/podcast/tour/ep02-lesley.mp3</guid>
+            <link><![CDATA[https://usergroup.ally.ac/s/tour/blog/view?id=57]]></link>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:author>Blackboard Ally</itunes:author>
+            <itunes:duration>00:41:21</itunes:duration>
+            <pubDate>Wed, 27 Mar 2019 09:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[
+                <p>For the second stop on the Ally Tour, John Scott of the Ally Team visits Lesley University in Cambridge, Massachusetts. The team shares its passion for Social Justice, and how accessibility and Universal Design for Learning have always been an important topic on campus.</p>
+                <p>In the beginning, the team talks about how the school’s general counsel office embarked on a mission on how to be more proactive with making digital content more accessible.</p>
+                <p>With the efforts that came from the counsel office and the important support from leadership, Lesley University also benefited from having Ally in making it more accessible and supporting that concerted view.</p>
+                <p>The discussion moves on to talking about how they secured funding, their overall (very quick!) roll-out of Ally, how they trained their faculty and how students perceived the Alternative Formats.</p>
+                <ul>
+                    <li>Robyn Belair - Instructional Technologist</li>
+                    <li>Kristina McElroy - Director of Academic Technology</li>
+                    <li>Danielle Powell - Instructional Technologist</li>
+                    <li>Heather Tillberg Web - Associate Provost, Systems, Planning & Administration</li>
+                </ul>
+                <p><a href="http://www.lesley.edu">www.lesley.edu</a></p>
+                <br/>
+                <p>The Ally Tour Blog:<a href="https://usergroup.ally.ac/s/tour/custom_pages/container/view?id=36">http://tour.ally.ac</a></p>
+                <p><a href="https://twitter.com/hashtag/AllyTour2019?src=hash" title="Twitter Searching #AllyTour2109" target="_blank">#AllyTour2019</a></p>
+                <p><a href="https://twitter.com/hashtag/BbAlly?src=hash" title="Twitter Searching #BbAlly" target="_blank">#BbAlly on Twitter</a></p>
+                <p><a href="https://www.instagram.com/allytour2019/" title="@AllyTour2019 on Instagram" target="_blank">@AllyTour2019 on Instagram</a></p>
+                ]]>
+            </content:encoded>
+            <itunes:keywords>ada504,rehabilitationact,communitycollege,wcag,accessible,lesley,lesleyuniversity,accc,ally,blackboardally,inclusive,accessibility,a11y,coursecontent,universaldesignforlearning,udl,studentremediation,studentsupport,studentservices</itunes:keywords>
+        </item>
+        <!--END EPISODE 02-->
     </channel>
 </rss>
