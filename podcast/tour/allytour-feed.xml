@@ -81,7 +81,7 @@
                 <p>The Ally Tour Blog:<a href="https://usergroup.ally.ac/s/tour/custom_pages/container/view?id=36">http://tour.ally.ac</a></p>
                 <p><a href="https://twitter.com/hashtag/AllyTour2019?src=hash" title="Twitter Searching #AllyTour2109" target="_blank">#AllyTour2019</a></p>
                 <p><a href="https://twitter.com/hashtag/BbAlly?src=hash" title="Twitter Searching #BbAlly" target="_blank">#BbAlly on Twitter</a></p>
-                <p><a href="https://www.instagram.com/allytour2019/" title="@AllyTour2019 on Instagram" target="_blank">@AllyTour2019 on Instagram</a></p>
+                <p><a href="https://www.instagram.com/ally_tour_2019/" title="@Ally_Tour_2019 on Instagram" target="_blank">@Ally_Tour_2019 on Instagram</a></p>
                 ]]>
             </content:encoded>
             <itunes:keywords>ada504,rehabilitationact,communitycollege,wcag,accessible,atlanticcapecommunitycollege,accc,ally,blackboardally,inclusive,accessibility,a11y,coursecontent,universaldesignforlearning,udl,studentremediation,studentsupport,studentservices</itunes:keywords>
@@ -119,11 +119,46 @@
                 <p>The Ally Tour Blog:<a href="https://usergroup.ally.ac/s/tour/custom_pages/container/view?id=36">http://tour.ally.ac</a></p>
                 <p><a href="https://twitter.com/hashtag/AllyTour2019?src=hash" title="Twitter Searching #AllyTour2109" target="_blank">#AllyTour2019</a></p>
                 <p><a href="https://twitter.com/hashtag/BbAlly?src=hash" title="Twitter Searching #BbAlly" target="_blank">#BbAlly on Twitter</a></p>
-                <p><a href="https://www.instagram.com/allytour2019/" title="@AllyTour2019 on Instagram" target="_blank">@AllyTour2019 on Instagram</a></p>
+                <p><a href="https://www.instagram.com/ally_tour_2019/" title="@Ally_Tour_2019 on Instagram" target="_blank">@Ally_Tour_2019 on Instagram</a></p>
                 ]]>
             </content:encoded>
             <itunes:keywords>ada504,rehabilitationact,communitycollege,wcag,accessible,lesley,lesleyuniversity,accc,ally,blackboardally,inclusive,accessibility,a11y,coursecontent,universaldesignforlearning,udl,studentremediation,studentsupport,studentservices</itunes:keywords>
         </item>
         <!--END EPISODE 02-->
+        <!-- EPISODE 03-->
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <title>EP03: UC Berkeley - A history of free speech, diversity and accessibility</title>
+            <itunes:title>An R1 University’s history of free speech and supporting students with disabilities</itunes:title>
+            <description>As the birthplace of the Free Speech Movement, advocacy for minorities and people with disabilities is at the core of UC Berkeley. During the third episode of the Ally Tour, we learn more about Berkeley’s rich history of inclusion and equity, and how accessibility fits into the bigger picture. We hear from Lucy Greco and Joseph Feria-Galicia about their involvement with Ally, and how faculty and students reacted.</description>
+            <itunes:summary>As the birthplace of the Free Speech Movement, advocacy for minorities and people with disabilities is at the core of UC Berkeley. During the third episode of the Ally Tour, we learn more about Berkeley’s rich history of inclusion and equity, and how accessibility fits into the bigger picture. We hear from Lucy Greco and Joseph Feria-Galicia about their involvement with Ally, and how faculty and students reacted.</itunes:summary>
+            <itunes:subtitle>An R1 University’s history of free speech and supporting students with disabilities</itunes:subtitle>
+            <enclosure url="http://www.ally.ac/podcast/tour/ep02-lesley.mp3" type="audio/mpeg" length="68553103" />
+            <guid>http://www.ally.ac/podcast/tour/ep03-ucberkeley.mp3</guid>
+            <link><![CDATA[https://usergroup.ally.ac/s/tour/custom_pages/view?id=55]]></link>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:author>Blackboard Ally</itunes:author>
+            <itunes:duration>00:47:36</itunes:duration>
+            <pubDate>Wed, 01 May 2019 09:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[
+                <p>The third stop on the Ally Tour brings us to UC Berkeley in California, where we’re fortunate to talk to accessibility champion and Paralympics Bronze medal winner Lucy Greco and Accessibility Team Lead, Joseph Feria-Galicia. As the birthplace of the Free Speech Movement, advocacy for minorities and people with disabilities is at the core of UC Berkeley.</p>
+                <p>During the first half of the podcast, Lucy talks about Berkeley’s history of free speech, and the community of students with disabilities pushing for a more accessible learning experience in the 60’s. She continues the conversation about the relationship and difference between accessibility and UDL, and the challenges faculty face when tools are often limited in terms of accessibility. She highlights how it’s important to continue to engage with faculty.</p>
+                <p>During the second part of the podcast, Joseph talks about his involvement and the roll-out strategy of Ally, and how it helped bring a culture change across campus. We hear about the reactions from both faculty and students, and how the team plans to continue their efforts on creating an accessible environment for all students.</p>
+                <ul>
+                    <li>Lucy Greco - Assistive Technologist Specialist and Accessibility Evangelist, UC Berkeley</li>
+                    <li>Joseph Feria-Galicia - Accessibility Team Lead, UC Berkeley </li>
+                </ul>
+                <p><a href="http://www.berkeley.edu">www.berkeley.edu</a></p>
+                <br/>
+                <p>The Ally Tour Blog:<a href="https://usergroup.ally.ac/s/tour/custom_pages/container/view?id=36">http://tour.ally.ac</a></p>
+                <p><a href="https://twitter.com/hashtag/AllyTour2019?src=hash" title="Twitter Searching #AllyTour2109" target="_blank">#AllyTour2019</a></p>
+                <p><a href="https://twitter.com/hashtag/BbAlly?src=hash" title="Twitter Searching #BbAlly" target="_blank">#BbAlly on Twitter</a></p>
+                <p><a href="https://www.instagram.com/ally_tour_2019/" title="@Ally_Tour_2019 on Instagram" target="_blank">@Ally_Tour_2019 on Instagram</a></p>
+                ]]>
+            </content:encoded>
+            <itunes:keywords>accessibility,accessible,bbally,ally,blackboardally,inclusive,coursecontent,universaldesignforlearning,udl,UCBerkeley,freespeech</itunes:keywords>
+        </item>
+        <!--END EPISODE 03-->
     </channel>
 </rss>
