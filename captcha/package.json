@@ -1,0 +1,17 @@
+{
+  "name": "captcha",
+  "version": "1.0.0",
+  "description": "Lambda that checks demo requests from ally.ac",
+  "main": "index.js",
+  "scripts": {
+    "build": "./build.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "node-fetch": "^2.6.0",
+    "url": "^0.11.0"
+  }
+}

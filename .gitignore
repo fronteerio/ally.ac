@@ -2,3 +2,8 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+.idea/
+
+captcha/.idea/
+captcha/node_modules/
+captcha/dist/
