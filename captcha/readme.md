@@ -9,6 +9,7 @@ https://www.google.com/recaptcha/admin/site/346536634
 
 ## Deployment:
 ```console
+$ npm i
 $ npm run build
 ```
 Then upload the zip file in /dist to the aws lambda.
