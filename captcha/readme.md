@@ -14,7 +14,7 @@ $ npm run build
 ```
 Then upload the zip file in /dist to the aws lambda.
 
-The following Environment values should be configured:
+The following Environment values should be configured in the aws lambda console:
 - `ELOQUA_URL`: the eloqua endpoint which expects the form data
 - `SECRET_KEY`: the secret captcha key, as provided in available in the Google captcha admin console 
 
