@@ -199,11 +199,11 @@
         <item>
             <itunes:episodeType>full</itunes:episodeType>
             <itunes:season>1</itunes:season>
-            <title>EP05: MUSC - Tackling unique challenges at a Medical university</title>
-            <itunes:title>How a medical university approaches their unique accessibility challenges</itunes:title>
+            <title>EP05: MUSC - Tackling unique challenges at a health care university</title>
+            <itunes:title>How a health care university approaches their unique accessibility challenges</itunes:title>
             <description>As a University as well as a hospital, the Medical University of South Carolina doesn’t only look after its students but also its many patients. During this fifth episode, we learn how a medical University faces some unique accessibility challenges, ranging from complex medical images, to linking to medical journal articles. We hear from Melissa Hortman and Alex Walters how MUSC approached this and how liaising with key stakeholders such as librarians, as well as using Ally’s ‘hidden gem’ feature the Library Reference, helped contribute towards a successful accessibility journey.</description>
             <itunes:summary>As a University as well as a hospital, the Medical University of South Carolina doesn’t only look after its students but also its many patients. During this fifth episode, we learn how a medical University faces some unique accessibility challenges, ranging from complex medical images, to linking to medical journal articles. We hear from Melissa Hortman and Alex Walters how MUSC approached this and how liaising with key stakeholders such as librarians, as well as using Ally’s ‘hidden gem’ feature the Library Reference, helped contribute towards a successful accessibility journey.</itunes:summary>
-            <itunes:subtitle>How a medical university approaches their unique accessibility challenges</itunes:subtitle>
+            <itunes:subtitle>How a health care university approaches their unique accessibility challenges</itunes:subtitle>
             <enclosure url="http://www.ally.ac/podcast/tour/ep05-musc.mp3" type="audio/mpeg" length="64905528" />
             <guid>http://www.ally.ac/podcast/tour/ep05-musc.mp3</guid>
             <link><![CDATA[https://usergroup.ally.ac/s/tour/custom_pages/view?id=55]]></link>
@@ -227,7 +227,7 @@
                 <p><a href="https://www.instagram.com/ally_tour_2019/" title="@Ally_Tour_2019 on Instagram" target="_blank">@Ally_Tour_2019 on Instagram</a></p>
                 ]]>
             </content:encoded>
-            <itunes:keywords>musc,medicaluniversityofsouthcarolina,accessibility,accessible,bbally,ally,blackboardally,inclusive,a11y,universaldesignforlearning,udl</itunes:keywords>
+            <itunes:keywords>musc,medicaluniversityofsouthcarolina,accessibility,accessible,bbally,ally,blackboardally,inclusive,a11y,universaldesignforlearning,udl,healthcare</itunes:keywords>
         </item>
         <!--END EPISODE 05-->
     </channel>
