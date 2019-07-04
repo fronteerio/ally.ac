@@ -58,8 +58,7 @@ const generateResponse = (statusCode, body) => {
     return {
         statusCode,
         headers: {
-            //"Access-Control-Allow-Origin": "ally.ac"
-            "Access-Control-Allow-Origin": "*"
+            "Access-Control-Allow-Origin": "ally.ac"
         },
         'body': JSON.stringify(body)
     };

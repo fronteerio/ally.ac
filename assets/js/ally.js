@@ -185,9 +185,7 @@
                         'method': 'POST',
                         'data': JSON.stringify(formData),
                         'contentType': "application/json; charset=utf-8",
-                        'success': (response) => {
-                            requestDemoSubmitted();
-                        },
+                        'success': requestDemoSubmitted,
                         'error': (err) => {
                             console.log(err);
                             window.alert('An error has occurred. Please try again later.')
