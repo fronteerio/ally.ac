@@ -174,24 +174,24 @@
                 }
 
                 if (isValid) {
-                    var data = $(this).serialize();
                     if (!selectedCountryHasRequiredStateField()) {
-                        data = data.replace('StateorProvince=', '');
+                        formData.StateorProvince = '';
                     }
                     if (!$('#form-optin').prop('checked')) {
-                        data = data + '&OptIn=0';
+                        formData.OptIn = 0;
                     }
                     $.ajax({
-                        'url': 'https://s2376.t.eloqua.com/e/f2',
+                        'url': 'https://2m0qbgl101.execute-api.us-east-1.amazonaws.com/dev',
                         'method': 'POST',
-                        'data': data,
+                        'data': JSON.stringify(formData),
+                        'contentType': "application/json; charset=utf-8",
                         'success': requestDemoSubmitted,
-                        'error': function(err) {
+                        'error': (err) => {
+                            console.log(err);
                             window.alert('An error has occurred. Please try again later.')
                         }
                     });
                 }
-
                 return false;
             }
         });
