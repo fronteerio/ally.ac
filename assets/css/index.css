@@ -252,8 +252,8 @@
 
 /* Integrations */
 
-#integrations ul li {
-    padding: 30px 45px;
+#integrations {
+    text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -262,4 +262,25 @@
         padding-left: 0;
         padding-right: 0;
     }
+}
+
+.integrations-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.integrations-logos div {
+    max-width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.integrations-logos img {
+    width: 75%;
+}
+
+.integrations-logos div img.d2l {
+    min-width: 200px;
 }
