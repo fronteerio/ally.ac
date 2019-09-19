@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Ally seamlessly integrates with the Learning Management System and automatically generates alternative accessible formats, provides instructor feedback and generates an institutional accessibility report. For websites Ally scans your website domains and generates a content accessibility report.">
+        <meta name="description" content="Ally seamlessly integrates with the Learning Management System and automatically generates alternative accessible formats, provides instructor feedback and generates an institutional accessibility report. For websites Ally scans your website domains and generates a content accessibility report and offers your audiences alternative formats of your website content.">
         <meta name="author" content="Blackboard Inc.">
         <link rel="icon" href="favicon.ico">
 
         <title>Blackboard Ally - Accessible content is better content</title>
 
         <link href="//fonts.googleapis.com/css?family=Roboto:400,300,500" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
         <link href="assets/css/index.css" rel="stylesheet" type="text/css">
@@ -25,129 +26,89 @@
     </head>
 
     <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXVW3QS"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXVW3QS"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
 
-        <section id="top" class="triangle clearfix">
+        <section id="top" class="clearfix">
             <!-- NAVIGATION -->
-            <nav class="clearfix header">
-                <div class="hidden-xs col-sm-3">
+            <nav class="header">
+                <div class="col-xs-1 col-sm-4">
                     <h1>
-                        <figure>
-                            <a href="index.html"><img src="/assets/img/logo-brand-mark.svg" alt="Ally" /></a>
-                        </figure>
+                        <a href="index.html"><img src="/assets/img/ally-a.svg" alt="Blackboard Ally" /><span class="hidden-xs hidden-sm">Blackboard Ally</span></a>
                     </h1>
                 </div>
-                <div class="col-xs-12 col-sm-9">
+                <div class="col-xs-11 col-sm-8">
                     <ul>
-                        <li><a href="#ally-for-lms">Courses</a></li>
-                        <li><a href="#ally-for-web">Websites</a></li>
-                        <li><a href="https://usergroup.ally.ac" target="_blank">Ally User Group</a></li>
-                        <li><a id="request-demo-action" href="/demo.html">Request Demo</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="websites.html">Websites</a></li>
+                        <li class="hidden-xs hidden-sm"><a href="https://usergroup.ally.ac" target="_blank">Community</a></li>
+                        <li class="hidden-xs hidden-sm"><a href="https://usergroup.ally.ac/s/tour/" target="_blank">Ally Tour</a></li>
+                        <li><a id="btn-primary" href="/demo.html">Request Demo</a></li>
                     </ul>
                 </div>
             </nav>
 
             <!-- HEADER -->
-            <div id="header">
+            <div id="home-hero">
                 <figure id="logo">
                     <img src="assets/img/logo.svg" alt="" />
                 </figure>
                 <p>Accessible content is better content</p>
-                <ul>
-                    <li><a class="product-overview-action" href="#ally-for-lms">Ally for courses</a></li>
-                    <li><a class="product-overview-action" href="#ally-for-web">Ally for websites</a></li>
-                </ul>
-                <div class="hero">
-                    <div class="hero-image">
-                        <figure>
-                            <img src="/assets/img/ally-for-lms.png" alt="" />
-                        </figure>
-                    </div>
+                <div class="hero-image">
+                    <figure>
+                        <img src="/assets/img/homehero.png" alt="Blackboard Ally interface for showing content preview while highlighting accessibility issues in context" />
+                    </figure>
                 </div>
             </div>
         </section>
 
         <!-- ALLY FOR COURSES -->
-        <div id="ally-for-lms" class="features-container triangle">
+        <div id="ally-for-lms" class="triangle-green">
             <!-- FEATURES -->
-            <section id="features" class="container-fluid">
+            <section class="features container">
                 <h2 class="sr-only">Ally for courses</h2>
                 <h3>Making course content accessible</h3>
                 <div class="row">
-                    <div class="row-height">
-                        <div class="col-xs-12 col-sm-5 col-sm-height">
-                            <div class="inside inside-full-height">
-                                <div class="content">
-                                    <figure>
-                                        <img src="assets/img/features/alternative-accessible-formats.png" alt="" title="Alternative accessible formats" />
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-7 col-sm-height col-sm-middle">
-                            <div class="inside">
-                                <div class="content">
-                                    <h4>Alternative accessible formats</h4>
-                                    <p>Automatically check for accessibility issues and generate alternative accessible formats using advanced Machine Learning algorithms.</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <h4>Alternative formats</h4>
+                        <p>Automatically check for accessibility issues and generate alternative accessible formats using advanced Machine Learning algorithms.</p>
+                        <a href="courses.html#courses-alternative-formats-general" class="btn-secondary">Learn more about alternative formats <i class="material-icons">keyboard_arrow_right</i></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-5">
+                        <figure>
+                            <img src="assets/img/features/alternative-formats.png" alt=" " />
+                        </figure>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="row-height">
-                        <div class="visible-xs col-xs-12">
-                            <figure>
-                                <img src="assets/img/features/instructor-feedback.png" alt="" title="Instructor feedback" />
-                            </figure>
-                        </div>
-                        <div class="col-xs-12 col-sm-7 col-sm-height col-sm-middle">
-                            <div class="inside">
-                                <div class="content">
-                                    <h4>Instructor feedback</h4>
-                                    <p>Guide instructors on how to improve the accessibility of their course content and alter future behavior.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hidden-xs col-sm-5 col-sm-height">
-                            <div class="inside inside-full-height">
-                                <div class="content">
-                                    <figure>
-                                        <img src="assets/img/features/instructor-feedback.png" alt="" title="Instructor feedback" />
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <h4>Instructor feedback</h4>
+                        <p>Guide instructors on how to improve the accessibility of their course content and alter future behavior.</p>
+                        <a href="courses.html#courses-instructor-feedback-general" class="btn-secondary">Learn more about instructor feedback <i class="material-icons">keyboard_arrow_right</i></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-5">
+                        <figure>
+                            <img src="assets/img/features/instructor-feedback.png" alt=" " />
+                        </figure>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="row-height">
-                        <div class="col-xs-12 col-sm-5 col-sm-height">
-                            <div class="inside">
-                                <div class="content">
-                                    <figure>
-                                        <img src="assets/img/features/institutional-report.png" alt="" title="Institutional report" />
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-7 col-sm-height col-sm-middle">
-                            <div class="inside">
-                                <div class="content">
-                                    <h4>Institutional report</h4>
-                                    <p>Provides institution-wide reporting on course content accessibility and drive further improvements at the institution.</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <h4>Institutional report</h4>
+                        <p>Provides institution-wide reporting on course content accessibility and drive further improvements at the institution.</p>
+                        <a href="courses.html#courses-institutional-report-general" class="btn-secondary">Learn more about the institutional report <i class="material-icons">keyboard_arrow_right</i></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-5">
+                        <figure>
+                            <img src="assets/img/features/institutional-report.png" alt=" " />
+                        </figure>
                     </div>
                 </div>
             </section>
-
             <!-- INTEGRATIONS -->
-            <section id="integrations">
+            <section id="integrations" class="container">
                 <h2 class="sr-only">Learning Management System integrations</h2>
                 <div class="integrations-logos">
                     <div>
@@ -177,116 +138,131 @@
                     </div>
                 </div>
             </section>
-
             <!-- VIDEO -->
              <div class='embed-container'>
-                <iframe src="//www.youtube-nocookie.com/embed/FmUTPI4sujo?&theme=dark&color=white&autohide=2&cc_load_policy=1&modestbranding=1&showinfo=0&rel=0" frameborder="0"></iframe>
+                <iframe
+                    src="//www.youtube-nocookie.com/embed/FmUTPI4sujo?&theme=dark&color=white&autohide=2&cc_load_policy=1&modestbranding=1&showinfo=0&rel=0"
+                    frameborder="0">
+                </iframe>
             </div>
-
+            <!-- CTA -->
+            <div class="triangle-blue call-to-action container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>Check out Ally for courses</p>
+                        <a href="demo.html" class="btn-secondary">Request a demo <i class="material-icons">keyboard_arrow_right</i></a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- ALLY FOR WEB -->
-        <div id="ally-for-web" class="features-container triangle">
+        <div id="ally-for-web" class="triangle-green">
             <!-- FEATURES -->
-                <div class="hero">
+            <section class="features container">
+                <div>
+                    <h4>Blackboard Ally for websites</h4>
                     <div class="hero-image">
                         <figure>
                             <img src="/assets/img/ally-for-web.png" alt="" />
                         </figure>
                     </div>
                 </div>
-            <section id="features" class="container-fluid">
-                <h2 class="sr-only">Ally for websites</h2>
-                <h3>Introducing Ally for websites</h3>
+                <h3>Take your website to the next level</h3>
                 <div class="row">
-                    <div class="row-height">
-                        <div class="col-xs-12 col-sm-5 col-sm-height">
-                            <div class="inside inside-full-height">
-                                <div class="content">
-                                    <figure>
-                                        <img src="assets/img/features/domain-overview.png" alt="" title="Domain Overview" />
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-7 col-sm-height col-sm-middle">
-                            <div class="inside">
-                                <div class="content">
-                                    <h4>Closely Monitor</h4>
-                                    <p>Get consistent feedback on your content's accessibility and easily monitor changes to determine further action.</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <h4>A new way to engage your audience</h4>
+                        <p>Blackboard Ally for Websites now offers automatically generated alternative formats for your website content and any embedded or linked files to give your users added flexibility and choice.</p>
+                        <a href="websites.html" class="btn-secondary">Learn more about alternative formats <i class="material-icons">keyboard_arrow_right</i></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-5">
+                        <figure>
+                            <img src="assets/img/features/web-alternative-formats.png" alt=" " />
+                        </figure>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="row-height">
-                        <div class="visible-xs col-xs-12">
-                            <figure>
-                                <img src="assets/img/features/issues-and-domains-with-them.png" alt="" title="Issue overview page showing domains with the issue" />
-                            </figure>
-                        </div>
-                        <div class="col-xs-12 col-sm-7 col-sm-height col-sm-middle">
-                            <div class="inside">
-                                <div class="content">
-                                    <h4>Efficiently check what matters</h4>
-                                    <p>Automatically checks content for accessibility issues against our accessibility checklist based on key areas of the WCAG 2.0 A.A. standard.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hidden-xs col-sm-5 col-sm-height">
-                            <div class="inside inside-full-height">
-                                <div class="content">
-                                    <figure>
-                                        <img src="assets/img/features/issues-and-domains-with-them.png" alt="" title="Issue overview page showing domains with the issue" />
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <h4>An easier way to track accessibility</h4>
+                        <p>Use your Website Accessibility Report to automatically check your website content for accessibility issues against our accessibility checklist based on key areas of the WCAG 2.1 A.A. standard.</p>
+                        <a href="websites.html#websites-institutional-report" class="btn-secondary">Learn more about your website report <i class="material-icons">keyboard_arrow_right</i></a>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="row-height">
-                        <div class="col-xs-12 col-sm-5 col-sm-height">
-                            <div class="inside">
-                                <div class="content">
-                                    <figure>
-                                        <img src="assets/img/features/listing-all-sub-domains.png" alt="" title="Listing all domains and sub-domains" />
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-7 col-sm-height col-sm-middle">
-                            <div class="inside">
-                                <div class="content">
-                                    <h4>Prioritize with confidence</h4>
-                                    <p>Offers insight into the overall accessibility performance and a breakdown of issues to allow for prioritization of resources.</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-xs-12 col-sm-5">
+                        <figure>
+                            <img src="assets/img/features/web-institutional-report.png" alt=" " />
+                        </figure>
                     </div>
                 </div>
             </section>
 
             <!-- VIDEO -->
-             <div class='embed-container'>
-                <iframe src="//www.youtube-nocookie.com/embed/pihn0LClExo?&theme=dark&color=white&autohide=2&cc_load_policy=1&modestbranding=1&showinfo=0&rel=0" frameborder="0"></iframe>
-
+             <div class="embed-container">
+                <iframe
+                    src="//www.youtube-nocookie.com/embed/pihn0LClExo?&theme=dark&color=white&autohide=2&cc_load_policy=1&modestbranding=1&showinfo=0&rel=0"
+                    frameborder="0">
+                </iframe>
             </div>
 
+            <!-- CTA -->
+            <div class="triangle-blue call-to-action container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>Check out Ally for websites</p>
+                        <a href="demo.html" class="btn-secondary">Request a demo <i class="material-icons">keyboard_arrow_right</i></a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- FOOTER -->
-        <footer>
-            <div id="footer-logo-container">
-                <figure>
-                    <img src="/assets/img/logo-footer.svg" alt="" title="Ally" />
-                </figure>
+        <!-- AWARDS -->
+        <section id="awards" class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="https://wcet.wiche.edu/initiatives/wcet-awards/wow/media-release-2017" target="_blank" title="WCET WOW Awards 2017">
+                                <img src="assets/img/awards/wowaward.png" alt="WCET WOW Awards 2017">
+                                <p>WCET WOW Awards 2017</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://usdla.org/blog/2018/10/05/blackboards-accessibility-solution-ally-receives-innovation-award-from-usdla/" target="_blank" title="USDL Innovation Award 2018">
+                                <img src="assets/img/awards/uslinnovationaward.png" alt="USDL Innovation Award 2018">
+                                <p>USDLA Innovation Award 2018</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.imsglobal.org/winners-2018-learning-impact-awards" target="_blank" title="IMS Global Learn Impact Platinum Award 2018">
+                                <img src="assets/img/awards/imsglobalplatinumaward.png" alt="IMS Global Learn Impact Platinum Award 2018">
+                                <p class="long">IMS Global Learn Impact Platinum Award 2018</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div id="footer-copyright-container">
-                <a href="http://www.blackboard.com/footer/privacy-policy.html" target="_blank">Privacy Policy</a>
-                <span class="footer-copyright-divider">|</span>
-                &copy; All rights reserved Blackboard Inc. <span id="footer-year"></span>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul>
+                        <!-- <li><a href="index.html"><img src="/assets/img/ally-a.svg" alt="Blackboard Ally" /></a></li> -->
+                        <li><a href="https://usergroup.ally.ac/s/announcements/" target="_blank" title="Blackboard Ally Announcements">Announcements</a></li>
+                        <li><a href="https://usergroup.ally.ac/s/releases/" target="_blank" title="Blackboard Ally Release notes">Release notes</a></li>
+                        <li><a href="https://usergroup.ally.ac/s/discussion/" target="_blank" title="Blackboard Ally Discussions">Discussions</a></li>
+                        <li><a href="https://usergroup.ally.ac/s/case-studies/" target="_blank" title="Blackboard Ally Case studies">Case studies</a></li>
+                        <li><a href="https://usergroup.ally.ac/s/resources/" target="_blank" title="Blackboard Ally Resources">Resources</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCWXzwKChiyWOXMTN9qQFSnQ" target="_blank" title="Blackboard Ally on YouTube">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12">
+                    <div id="footer-copyright-container">
+                        <a href="http://www.blackboard.com/footer/privacy-policy.html" target="_blank">Privacy Policy</a>
+                        <span class="footer-copyright-divider">|</span>
+                        &copy; All rights reserved Blackboard Inc. <span id="footer-year"></span>
+                    </div>
+                </div>
             </div>
         </footer>
 
