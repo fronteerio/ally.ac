@@ -1,15 +1,7 @@
-/* Nav */
-
-nav {
-    margin-bottom: 20px;
-}
-
 /* Demo */
 
 #demo {
     background-color: #EAECEC;
-    background-image: url('/assets/img/triangle-blue.svg');
-    background-position: left bottom;
     color: #262626;
     padding-left: 20px;
     padding-right: 20px;

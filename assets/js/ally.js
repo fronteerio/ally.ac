@@ -251,27 +251,6 @@
             return decodeURIComponent(results[2].replace(/\+/g, " "));
         }
 
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== '') {
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll. Subtract the height of the navigational header
-                // so that the target element starts just below the navigation.
-                var headerNavHeight = $('nav ul').height();
-                var props = {
-                    'scrollTop': $(hash).offset().top - headerNavHeight
-                };
-                $('html, body').animate(props, 800, function() {
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            }
-        });
-
         /**
          * Sticky heading
          */

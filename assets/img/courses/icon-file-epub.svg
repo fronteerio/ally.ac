@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="62px" viewBox="0 0 48 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-file-epub</title>
+    <desc>Created with Sketch.</desc>
+    <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1440-ally.ac-courses-he-general" transform="translate(-370.000000, -2860.000000)" fill="#222222">
+            <g id="icon-fileEPub" transform="translate(370.000000, 2859.000000)">
+                <path d="M20.5044902,1.97810543 L20.5044902,29.1666667 L29.6919902,23.6979167 L38.8794902,29.1666667 L38.8794902,1.97810543 L44.3403699,1.97810543 C46.0662598,1.97810543 47.4653699,3.37721559 47.4653699,5.10310543 L47.4653699,59.305579 C47.4653699,61.0314689 46.0662598,62.430579 44.3403699,62.430579 L3.21282356,62.430579 C1.48693372,62.430579 0.0878235638,61.0314689 0.0878235638,59.305579 L0.0878235638,5.10310543 C0.0878235638,3.37721559 1.48693372,1.97810543 3.21282356,1.97810543 L20.5044902,1.97810543 Z" id="filePDF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
