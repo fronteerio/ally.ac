@@ -343,10 +343,16 @@ footer figure {
 
 /* Media queries */
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
     .triangle-green,
     .triangle-blue {
         background-size: 100px;
+    }
+    #top {
+        text-align: right;
+    }
+    #top h1 {
+        margin-top: 16px;
     }
     .features figure {
         margin-bottom: 40px;
@@ -364,7 +370,30 @@ footer figure {
     .features blockquote cite {
         font-size: 14px;
     }
+}
 
+@media (max-width: 768px) {
+    .triangle-green,
+    .triangle-blue {
+        background-size: 100px;
+    }
+    .features .row div {
+        display: block;
+        min-width: 400px;
+    }
+    .features .row {
+        margin-bottom: 0;
+    }
+    .features .row:last-of-type {
+        margin-top: 64px;
+    }
+    .features figure {
+        margin-bottom: 0;
+    }
+    img.features-icon {
+        margin-bottom: 16px;
+        margin-top: 40px;
+    }
 }
 
 @media (min-width: 768px) {
