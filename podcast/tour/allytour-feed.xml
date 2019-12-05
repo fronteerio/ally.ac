@@ -230,5 +230,43 @@
             <itunes:keywords>musc,medicaluniversityofsouthcarolina,accessibility,accessible,bbally,ally,blackboardally,inclusive,a11y,universaldesignforlearning,udl,healthcare</itunes:keywords>
         </item>
         <!--END EPISODE 05-->
+        <!-- EPISODE 06-->
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <title>EP06: College of DuPage - Mapping the journey to success for the diverse needs of many</title>
+            <itunes:title>Strategies in policy, formats, media and technology that directly support diverse learning opportunities</itunes:title>
+            <description>Learn how the second-largest community college in the United States uses inclusivity and diversity to enhance success-driven education.</description>
+            <itunes:summary>Learn how the second-largest community college in the United States uses inclusivity and diversity to enhance success-driven education.</itunes:summary>
+            <itunes:subtitle>Strategies in policy, formats, media and technology that directly support diverse learning opportunities</itunes:subtitle>
+            <enclosure url="http://www.ally.ac/podcast/tour/ep06-college-of-dupage.mp3" type="audio/mpeg" length="65776879" />
+            <guid>http://www.ally.ac/podcast/tour/ep06-college-of-dupage.mp3</guid>
+            <link><![CDATA[https://usergroup.ally.ac/s/tour/custom_pages/view?id=55]]></link>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:author>Blackboard Ally</itunes:author>
+            <itunes:duration>00:45:40</itunes:duration>
+            <pubDate>Thu, 04 December 2019 09:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[
+                <p>In this episode, we visit the College of DuPage the second-largest community college in the United States. John Scott had the opportunity to speak with an amazing team that together contribute a wide range of skills and experience.</p>
+                <p>The conversation brings to light the team's tenacity to serve student diversity, supporting each unique pathway to success. Helping faculty build in Universal Design for Learning practices and strategies for adoption and benchmarking were shared. Other interesting areas covered include the importance of student self-advocacy and the ever-growing role of mobile-first experiences for learning.</p>
+                <p>Center for Access and Accommodations - College of DuPage <a href="https://www.cod.edu/student_life/resources/access_accommodations/index.aspx">https://www.cod.edu/student_life/resources/access_accommodations/index.aspx</a></p>
+                <ul>
+                    <li>Lara Tomkins - Instructional Technologist</li>
+                    <li>Becky Benkert - Instructional Designer</li>
+                    <li>Michael Maxse - Instructional Designer</li>
+                    <li>Kelli Kerns - Accommodations Specialist</li>
+                    <li>Susan Landers - Manager of Learning Technologies</li>
+                </ul>
+                <p><a href="https://cod.edu">cod.edu</a></p>
+                <br/>
+                <p>The Ally Tour Blog:<a href="https://usergroup.ally.ac/s/tour/custom_pages/container/view?id=36">http://tour.ally.ac</a></p>
+                <p><a href="https://twitter.com/hashtag/BbAllyTour2019?src=hash" title="Twitter Searching #BbAllyTour2109" target="_blank">#AllyTour2019</a></p>
+                <p><a href="https://twitter.com/hashtag/BbAlly?src=hash" title="Twitter Searching #BbAlly" target="_blank">#BbAlly on Twitter</a></p>
+                <p><a href="https://www.instagram.com/ally_tour_2019/" title="@Ally_Tour_2019 on Instagram" target="_blank">@Ally_Tour_2019 on Instagram</a></p>
+                ]]>
+            </content:encoded>
+            <itunes:keywords>collegeofdupage,accessibility,accessible,bbally,ally,blackboardally,inclusive,a11y,universaldesignforlearning,udl,coursecontent,teachingandlearning</itunes:keywords>
+        </item>
+        <!--END EPISODE 06-->
     </channel>
 </rss>
