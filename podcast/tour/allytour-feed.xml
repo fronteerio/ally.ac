@@ -268,5 +268,43 @@
             <itunes:keywords>collegeofdupage,accessibility,accessible,bbally,ally,blackboardally,inclusive,a11y,universaldesignforlearning,udl,coursecontent,teachingandlearning</itunes:keywords>
         </item>
         <!--END EPISODE 06-->
+        <!-- EPISODE 07-->
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <title>EP07: Southern Illinois University Edwardsville – An Evolution in Access through Empathy</title>
+            <itunes:title>Inclusive Design and Culture at Southern Illinois University Edwardsville</itunes:title>
+            <description>Bringing accessibility and inclusion into the wider conversation as empathy driven culture change.</description>
+            <itunes:summary>Bringing accessibility and inclusion into the wider conversation as empathy driven culture change.</itunes:summary>
+            <itunes:subtitle>Inclusive Design and Culture at Southern Illinois University Edwardsville</itunes:subtitle>
+            <enclosure url="http://www.ally.ac/podcast/tour/ep07-siue.mp3" type="audio/mpeg" length="54954935" />
+            <guid>http://www.ally.ac/podcast/tour/ep07-siue.mp3</guid>
+            <link><![CDATA[https://usergroup.ally.ac/content/perma?id=28890]]></link>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:author>Blackboard Ally</itunes:author>
+            <itunes:duration>00:38:09</itunes:duration>
+            <pubDate>Tue, 28 January 2020 09:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[
+                <p>Our final installment from the 2019 Ally Tour comes from our visit to Southern Illinois University Edwardsville where we learned about the important role empathy plays in both their course design and support for diverse students. We have an open conversation with the Instructional Design and Learning Technologies Team, who have been leading SIUE’s Ally roll-out. In this we cover their journey with Ally and how they are supporting diversity, inclusion and equitable learning experiences for all students.</p>
+                <p>Office for Accessible Campus Community & Equitable Student Support (ACCESS) - Southern Illinois University Edwardsville<a href="https://www.siue.edu/access">https://www.siue.edu/access</a></p>
+                <ul>
+                    <li>Laura Million - Instructional Designer</li>
+                    <li>Niki Glick - Trainer</li>
+                    <li>Angela Beyer - Instructional Designer</li>
+                    <li>Jodie Nehrt - Instructional Designer</li>
+                    <li>Emily Keener - Instructional Designer</li>
+                    <li>Mathew Schmitz - Assoc Director of Online and Blended Ed</li>
+                    <li>Jonathon Coons - Instructional Designer</li>
+                </ul>
+                <br/>
+                <p>The Ally Tour Blog:<a href="https://usergroup.ally.ac/content/perma?id=28890">http://tour.ally.ac</a></p>
+                <p><a href="https://twitter.com/hashtag/BbAllyTour2019?src=hash" title="Twitter Searching #BbAllyTour2109" target="_blank">#AllyTour2019</a></p>
+                <p><a href="https://twitter.com/hashtag/BbAlly?src=hash" title="Twitter Searching #BbAlly" target="_blank">#BbAlly on Twitter</a></p>
+                <p><a href="https://www.instagram.com/ally_tour_2019/" title="@Ally_Tour_2019 on Instagram" target="_blank">@Ally_Tour_2019 on Instagram</a></p>
+                ]]>
+            </content:encoded>
+            <itunes:keywords>collegeofdupage,accessibility,accessible,bbally,ally,blackboardally,inclusive,a11y,universaldesignforlearning,coursecontent,teachingandlearning,inclusion,diversity,equity,studentsuccess,studentsupport,siue,southernillinoisuniversityedwardsville</itunes:keywords>
+        </item>
+        <!--END EPISODE 07-->
     </channel>
 </rss>
