@@ -348,9 +348,6 @@ footer figure {
     .triangle-blue {
         background-size: 100px;
     }
-    .btn-secondary {
-        padding: 8px 16px;
-    }
     #top h1 {
         margin-top: 16px;
     }
@@ -379,7 +376,6 @@ footer figure {
     }
     .features .row div {
         display: block;
-        min-width: 400px;
     }
     .features .row {
         margin-bottom: 0;
