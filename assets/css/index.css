@@ -114,6 +114,11 @@ section#integrations {
         padding: 64px 32px;
     }
 }
+@media (max-width: 480px) {
+    .integrations-logos div {
+        margin: 24px;
+    }
+}
 
 @media (min-width: 768px) {
     #integrations ul li {

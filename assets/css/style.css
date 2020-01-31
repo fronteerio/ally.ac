@@ -348,8 +348,8 @@ footer figure {
     .triangle-blue {
         background-size: 100px;
     }
-    #top {
-        text-align: right;
+    .btn-secondary {
+        padding: 8px 16px;
     }
     #top h1 {
         margin-top: 16px;
