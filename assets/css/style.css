@@ -193,6 +193,10 @@ img.features-icon {
     width: 50px;
 }
 
+img.features-icon.courses {
+    padding-bottom: 20px;
+}
+
 .courses-features .align-top {
     align-items: flex-start;
 }
