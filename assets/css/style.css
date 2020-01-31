@@ -367,6 +367,19 @@ footer figure {
     .features blockquote cite {
         font-size: 14px;
     }
+    .courses-features h4 {
+        font-size: 20px;
+    }
+    .courses-features p {
+        font-size: 16px;
+    }
+    .courses-features img.features-icon {
+        margin: 0;
+        width: 40px;
+    }
+    .course-features .row {
+        margin-top: 8px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -376,9 +389,6 @@ footer figure {
     }
     .features .row div {
         display: block;
-    }
-    .features .row {
-        margin-bottom: 0;
     }
     .features .row:last-of-type {
         margin-top: 64px;
