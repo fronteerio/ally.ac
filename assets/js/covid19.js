@@ -114,9 +114,7 @@
         }, false);
         xhr.addEventListener('load', function() {
             if (this.status === 200) {
-                var keyParts = response.form.key.split('/');
-                keyParts.pop();
-                var url = bucketUrl + '/' + keyParts.join('/') + '/' + selectedFile.name;
+                var url = bucketUrl + '/' + response.form.key;
                 triggerAlternativeFormats(url)
             }
         }, false);
