@@ -98,7 +98,7 @@
     }
 
     function resetForm() {
-        setValidationErrors();
+        setValidationErrors([]);
         setButtonDisabledState();
     }
 
@@ -122,7 +122,12 @@
     }
 
     function setValidationErrors(errors) {
+        errors = errors || [];
+
+        // Clear any previous errors
         $('#covid19-af-form .validation-error').hide();
+
+        // Enable the new errors, if any
         errors.forEach(function(err) {
             $('#covid19-af-form .validation-error.error-' + err).show();
         });
