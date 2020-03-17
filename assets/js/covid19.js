@@ -43,36 +43,43 @@
 
         $('#covid19-af-form').on('submit', function(e) {
             if (!e.isDefaultPrevented()) {
-                var formData = $(this).serializeArray();
-                var file = getFile();
-                if (!file) {
-                    throw new Error('No file selected');
-                }
-                formData.push({'name': 'filename', 'value': file.name});
-
-                // TODO: Exchange for S3 signature
-                $.ajax({
-                    'url': 'https://4mctrq9vy0.execute-api.us-east-1.amazonaws.com/covid19',
-                    'method': 'POST',
-                    'data': JSON.stringify(formData),
-                    'contentType': "application/json; charset=utf-8",
-                    'success': function (data) {
-                        try {
-                            data = JSON.parse(data);
-                            uploadFile(data);
-                        } catch (err) {
-                            // Set fail
-                            setValidationErrors([ERRORS.somethingWentWrong])
-                        }
-                    },
-                    'error': function(err) {
-                        if (err.status === 400) {
-                            setValidationErrors([err.responseText]);
-                        } else if (err.status === 500) {
-                            setValidationErrors([ERRORS.somethingWentWrong]);
-                        }
+                // If the file was already uploaded, we can simply trigger again
+                var url = $('#covid19-af-form #trigger').attr('data-ally-invoke-direct-file');
+                if (url) {
+                    triggerAlternativeFormats(url);
+                } else {
+                    // Upload the file
+                    var formData = $(this).serializeArray();
+                    var file = getFile();
+                    if (!file) {
+                        throw new Error('No file selected');
                     }
-                });
+                    formData.push({'name': 'filename', 'value': file.name});
+
+                    // TODO: Exchange for S3 signature
+                    $.ajax({
+                        'url': 'https://4mctrq9vy0.execute-api.us-east-1.amazonaws.com/covid19',
+                        'method': 'POST',
+                        'data': JSON.stringify(formData),
+                        'contentType': "application/json; charset=utf-8",
+                        'success': function (data) {
+                            try {
+                                data = JSON.parse(data);
+                                uploadFile(data);
+                            } catch (err) {
+                                // Set fail
+                                setValidationErrors([ERRORS.somethingWentWrong])
+                            }
+                        },
+                        'error': function(err) {
+                            if (err.status === 400) {
+                                setValidationErrors([err.responseText]);
+                            } else if (err.status === 500) {
+                                setValidationErrors([ERRORS.somethingWentWrong]);
+                            }
+                        }
+                    });
+                }
             }
             return false;
         });
@@ -102,7 +109,7 @@
     }
 
     function triggerAlternativeFormats(url) {
-        var $trigger = $('#covid19-af-form #trigger')
+        var $trigger = $('#covid19-af-form #trigger');
         $trigger.attr('data-ally-invoke-direct-file', url);
         $trigger[0].click();
     }
@@ -117,6 +124,7 @@
         var $dropArea = $('.drop-area');
         $dropArea.removeClass('file-selected');
         $dropArea.find('.filename').text('');
+        $('#covid19-af-form #trigger').attr('data-ally-invoke-direct-file', '');
     }
 
     /** Enable or disable the upload button */

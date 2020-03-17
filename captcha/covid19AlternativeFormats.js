@@ -40,6 +40,8 @@ exports.handler = async (event, context) => {
 
     const verified = await verifyCaptcha(token, remoteip);
     if (verified.success !== true) {
+        console.log('Unable to verify captcha');
+        console.log(verified);
         return generateResponse(400, ERRORS.invalidCaptcha);
     } else {
         // The file should be uploaded in this folder
