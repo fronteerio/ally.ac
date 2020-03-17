@@ -53,7 +53,9 @@
                     },
                     'error': (err) => {
                         if (err.status === 400) {
-                            setValidationErrors([err.statusText]);
+                            setValidationErrors([err.responseText]);
+                        } else if (err.status === 500) {
+                            setValidationErrors([ERRORS.somethingWentWrong]);
                         }
                     }
                 });

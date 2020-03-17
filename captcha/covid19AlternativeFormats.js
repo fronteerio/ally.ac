@@ -38,8 +38,8 @@ exports.handler = async (event, context) => {
         return generateResponse(400, ERRORS.unsupportedContentType);
     }
 
-    // const verified = await verifyCaptcha(token, remoteip);
-    const verified = {'success': true};
+    const verified = await verifyCaptcha(token, remoteip);
+    //const verified = {'success': true};
 
     if (verified.success !== true) {
         return generateResponse(400, ERRORS.invalidCaptcha);
