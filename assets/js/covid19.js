@@ -114,7 +114,9 @@
     function resetForm() {
         setValidationErrors([]);
         setButtonDisabledState();
-        $('.drop-area').removeClass('file-selected');
+        var $dropArea = $('.drop-area');
+        $dropArea.removeClass('file-selected');
+        $dropArea.find('.filename').text('');
     }
 
     /** Enable or disable the upload button */
