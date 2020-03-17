@@ -1,4 +1,5 @@
 body {
+    background: url('/assets/img/bgPanel-header.png') center bottom no-repeat;
     background-color: #263438;
     color: #FFF;
     display: flex;
@@ -36,6 +37,7 @@ body {
 
 #container form .drop-area {
     background-color: #FFF;
+    border-radius: 3px;
     color: #333;
     height: 200px;
     margin-bottom: 10px;

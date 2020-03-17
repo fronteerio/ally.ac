@@ -1,6 +1,6 @@
 (function() {
 
-    const ERRORS = {
+    var ERRORS = {
         // API Errors
         'invalidCaptcha': 'invalid-captcha',
         'missingCaptchaToken': 'missing-captcha-token',
@@ -24,14 +24,13 @@
 
         /** Invoked when a file gets selected */
         $('#covid19-af-form input').on('change', function() {
-            setButtonDisabledState();
-            var $dropArea = $('.drop-area');
-            $dropArea.removeClass('file-selected');
+            resetForm();
 
             var file = getFile();
             if (file && file.name) {
                 var icon = getSupportedFileType(file.name);
                 if (icon) {
+                    var $dropArea = $('.drop-area');
                     $dropArea.addClass('file-selected');
                     $dropArea.find('.filename').text(file.name);
                     $dropArea.find('img.fileicon').attr('src', icon);
@@ -57,7 +56,7 @@
                     'method': 'POST',
                     'data': JSON.stringify(formData),
                     'contentType': "application/json; charset=utf-8",
-                    'success': (data, status, xhr) => {
+                    'success': function (data) {
                         try {
                             data = JSON.parse(data);
                             uploadFile(data);
@@ -66,7 +65,7 @@
                             setValidationErrors([ERRORS.somethingWentWrong])
                         }
                     },
-                    'error': (err) => {
+                    'error': function(err) {
                         if (err.status === 400) {
                             setValidationErrors([err.responseText]);
                         } else if (err.status === 500) {
@@ -81,9 +80,9 @@
 
     function uploadFile(response) {
         var bucketUrl = 'https://ally-covid19-files.s3.amazonaws.com';
-        const file = getFile();
+        var file = getFile();
         var fd = new FormData();
-        Object.keys(response.form).forEach((key) => {
+        Object.keys(response.form).forEach(function(key) {
             fd.append(key, response.form[key]);
         });
         fd.append('file', file);
@@ -92,9 +91,9 @@
         xhr.upload.addEventListener('progress', function() {}, false);
         xhr.addEventListener('load', function() {
             if (this.status === 200) {
-                const keyParts = response.form.key.split('/');
+                var keyParts = response.form.key.split('/');
                 keyParts.pop();
-                const url = bucketUrl + '/' + keyParts.join('/') + '/' + file.name;
+                var url = bucketUrl + '/' + keyParts.join('/') + '/' + file.name;
                 triggerAlternativeFormats(url)
             }
         }, false);
@@ -103,7 +102,7 @@
     }
 
     function triggerAlternativeFormats(url) {
-        const $trigger = $('#covid19-af-form #trigger')
+        var $trigger = $('#covid19-af-form #trigger')
         $trigger.attr('data-ally-invoke-direct-file', url);
         $trigger[0].click();
     }
@@ -115,6 +114,7 @@
     function resetForm() {
         setValidationErrors([]);
         setButtonDisabledState();
+        $('.drop-area').removeClass('file-selected');
     }
 
     /** Enable or disable the upload button */
@@ -150,8 +150,8 @@
 
     /** Given a filename, return an appropriate content-type value */
     function getSupportedFileType(filename) {
-        const extension = filename.toLowerCase().split('.').pop();
-        const extensionIconMapping = {
+        var extension = filename.toLowerCase().split('.').pop();
+        var extensionIconMapping = {
             'doc': '/assets/img/mime-types/icon-mimetype-application-doc.svg',
             'docx': '/assets/img/mime-types/icon-mimetype-application-docx.svg',
             'html': '/assets/img/mime-types/icon-mimetype-text-html.svg',
