@@ -123,11 +123,13 @@
         }, false);
         xhr.addEventListener('load', function() {
             if (this.status === 200) {
-                var url = bucketUrl + '/' + response.form.key;
+                var parts = response.form.key.split('/');
+                const fileName = encodeURIComponent(parts.pop());
+                var url = bucketUrl + '/' + parts.join('/') + '/' + fileName
                 triggerAlternativeFormats(url)
             }
         }, false);
-        xhr.open('POST', 'https://ally-covid19-files.s3.amazonaws.com/', true);
+        xhr.open('POST', bucketUrl, true);
         xhr.send(fd);
     }
 
