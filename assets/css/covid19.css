@@ -1,6 +1,8 @@
 body {
     background-color: #263438;
     color: #FFF;
+    display: flex;
+    flex-direction: column;
     font-family: 'Roboto', sans-serif;
     text-align: left;
 }
@@ -8,6 +10,7 @@ body {
 #container {
     align-items: center;
     display: flex;
+    flex: 1;
     flex-direction: column;
 }
 
@@ -170,4 +173,9 @@ body {
     border: 1px solid darkred;
     color: #333;
     padding: 10px;
+}
+
+footer {
+    margin-top: 200px;
+    text-align: center;
 }
