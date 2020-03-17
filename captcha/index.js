@@ -1,6 +1,7 @@
 const _ = require('lodash');
-const fetch = require('node-fetch');
-const { URLSearchParams } = require('url');
+
+const { submitToEloqua } = require('./eloqua');
+const { verifyCaptcha } = require('./recaptcha');
 
 exports.handler = async (event, context) => {
     const remoteip = _.get(event, ['requestContext', 'identity', 'sourceIp']);
@@ -26,39 +27,11 @@ exports.handler = async (event, context) => {
     }
 };
 
-const verifyCaptcha = async (token, remoteip) => {
-    const url = 'https://www.google.com/recaptcha/api/siteverify';
-    const body = new URLSearchParams();
-    body.append('secret', process.env.SECRET_KEY);
-    body.append('response', token);
-    body.append('remoteip', remoteip);
-    const options = {
-        headers: { 'content-type': 'application/x-www-form-urlencoded' },
-        method: 'POST',
-        body
-    };
-    return fetch(url, options).then(res => res.json());
-};
-
-const submitToEloqua = async (data) => {
-    const url = process.env.ELOQUA_URL;
-    const body = new URLSearchParams();
-    data.forEach(element => {
-        body.append(element.name, element.value);
-    });
-    const options = {
-        headers: { 'content-type': 'application/x-www-form-urlencoded' },
-        method: 'POST',
-        body
-    };
-    return fetch(url, options);
-};
-
-const generateResponse = (statusCode, body) => {
+function generateResponse(statusCode, body) {
     return {
         statusCode,
-        headers: {
-            "Access-Control-Allow-Origin": "ally.ac"
+        'headers': {
+            'Access-Control-Allow-Origin': 'ally.ac'
         },
         'body': JSON.stringify(body)
     };

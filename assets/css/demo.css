@@ -27,7 +27,7 @@
     margin-top: 25px;
 }
 
-#demo-form {
+#demo form {
     margin: 32px auto;
     max-width: 600px;
     text-align: left;
@@ -57,13 +57,18 @@
     transition-duration: 0.15s;
 }
 
-#demo button:hover {
+#demo button[disabled="disabled"] {
+    background-color: #ccc;
+    color: #333
+}
+
+#demo button:not([disabled="disabled"]):hover {
     background-color: #FFFFFF;
     color: #121519;
 }
 
-#demo button:visted {
-    background-color: #FFFFFF;
+#demo button:not([disabled="disabled"]):visted {
+    background-color: #FFF;
     color: #121519;
 }
 

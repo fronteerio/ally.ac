@@ -37,16 +37,16 @@
             <nav class="clearfix">
                 <div class="hidden-xs col-sm-4">
                     <h1>
-                        <a href="index.html"><img src="/assets/img/ally-a.svg" alt="Blackboard Ally" /><span class="hidden-sm">Blackboard Ally</span></a>
+                        <a href="/index.html"><img src="/assets/img/ally-a.svg" alt="Blackboard Ally" /><span class="hidden-sm">Blackboard Ally</span></a>
                     </h1>
                 </div>
                 <div class="col-xs-12 col-sm-8">
                     <ul>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="websites.html">Websites</a></li>
+                        <li><a href="/courses.html">Courses</a></li>
+                        <li><a href="/websites.html">Websites</a></li>
                         <li><a href="https://usergroup.ally.ac" target="_blank">Community</a></li>
                         <li><a href="https://usergroup.ally.ac/s/tour/" target="_blank">Ally Tour</a></li>
-                        <li><a class="active" href="/demo.html">Request Demo</a></li>
+                        <li><a id="btn-primary" class="hidden-xs hidden-sm" href="/demo.html">Request Demo</a></li>
                     </ul>
                 </div>
             </nav>
@@ -54,14 +54,32 @@
 
         <div id="demo" class="clearfix" data-ally-content-id="0">
             <h2>Generate an alternative format</h2>
-            <form id="demo-form" method="get" action="#" name="AllyMicrosite">
+            <form id="covid19-af-form" method="get" action="#" name="AllyMicrosite">
                 <h3>Select a file that you would like to request an alternative format for.</h3>
-                <div class="form-group">
+                <div class="form-group form-group-file">
                     <label for="form-file">File</label>
                     <input type="file" class="form-control" id="form-file" name="file" placeholder="myfile.pdf">
                 </div>
+                <div
+                    class="g-recaptcha"
+                    data-callback="recaptchaCalback"
+                    data-expired-callback="recaptchaCalback"
+                    data-sitekey="6Le6uqcUAAAAAOHXv0-vgikymiFb1rC4JByY7pDG"></div>
 
-                <button id="upload-button" class="primary" type="button">Upload the file</button>
+                <!-- API errors -->
+                <p style="display: none" class="text-error validation-error error-invalid-captcha">The provided captcha could not be validated</p>
+                <p style="display: none" class="text-error validation-error error-missing-captcha-token">No captcha was provided</p>
+                <p style="display: none" class="text-error validation-error error-missing-filename">No filename could be resolved for the file</p>
+                <p style="display: none" class="text-error validation-error error-unsupported-content-type">The file type is not supported</p>
+
+                <!-- UI errors -->
+                <p style="display: none" class="text-error validation-error error-no-file-selected">Please select a file</p>
+                <p style="display: none" class="text-error validation-error error-captcha-not-selected">The file type is not supported</p>
+
+                <!-- Generic error -->
+                <p style="display: none" class="text-error validation-error error-something-went-wrong">Something went wrong</p>
+
+                <button id="upload-button" class="primary" type="submit" disabled="disabled">Upload the file</button>
                 <a
                     id="trigger"
                     href="#"
@@ -97,6 +115,7 @@
 
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="/assets/js/ally.js"></script>
+        <script type="text/javascript" src="/assets/js/covid19.js"></script>
         <script>
             (function(i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -134,11 +153,6 @@
         data-ally-client-id="8473"
         data-ally-af-style="none"
         src="https://performance.ally.ac/integration/api/ally.ui.js">
-        </script>
-        <script>
-            document.getElementById('upload-button').onclick = function() {
-                document.getElementById('trigger').click();
-            };
         </script>
     </body>
 </html>
