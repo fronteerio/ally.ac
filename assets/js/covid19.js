@@ -25,6 +25,21 @@
         /** Invoked when a file gets selected */
         $('#covid19-af-form input').on('change', function() {
             setButtonDisabledState();
+            var $dropArea = $('.drop-area');
+            $dropArea.removeClass('file-selected');
+
+            var file = getFile();
+            if (file && file.name) {
+                var icon = getSupportedFileType(file.name);
+                if (icon) {
+                    $dropArea.addClass('file-selected');
+                    $dropArea.find('.filename').text(file.name);
+                    $dropArea.find('img.fileicon').attr('src', icon);
+                    $('.g-recaptcha').focus();
+                } else {
+                    setValidationErrors([ERRORS.unsupportedContentType]);
+                }
+            }
         });
 
         $('#covid19-af-form').on('submit', function(e) {
@@ -131,5 +146,23 @@
         errors.forEach(function(err) {
             $('#covid19-af-form .validation-error.error-' + err).show();
         });
+    }
+
+    /** Given a filename, return an appropriate content-type value */
+    function getSupportedFileType(filename) {
+        const extension = filename.toLowerCase().split('.').pop();
+        const extensionIconMapping = {
+            'doc': '/assets/img/mime-types/icon-mimetype-application-doc.svg',
+            'docx': '/assets/img/mime-types/icon-mimetype-application-docx.svg',
+            'html': '/assets/img/mime-types/icon-mimetype-text-html.svg',
+            'pdf': '/assets/img/mime-types/icon-mimetype-application-pdf.svg',
+            'ppt': '/assets/img/mime-types/icon-mimetype-application-ppt.svg',
+            'pptx': '/assets/img/mime-types/icon-mimetype-application-pptx.svg'
+        };
+        if (extensionIconMapping[extension]) {
+            return extensionIconMapping[extension];
+        } else {
+            return null;
+        }
     }
 })();
