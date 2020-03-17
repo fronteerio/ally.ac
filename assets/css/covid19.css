@@ -155,8 +155,9 @@ body {
 }
 
 #container form .button-container button[disabled="disabled"] {
-    color: #CCC;
     border: 2px solid #7B9697;
+    color: #CCC;
+    cursor: not-allowed;
 }
 
 #container form .button-container img {
