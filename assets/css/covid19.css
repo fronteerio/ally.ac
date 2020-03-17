@@ -1,3 +1,6 @@
+html {
+    height: 100%;
+}
 body {
     background: url('/assets/img/bgPanel-header.png') center bottom no-repeat;
     background-color: #263438;
@@ -5,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
     text-align: left;
 }
 
@@ -28,6 +32,7 @@ body {
     font-weight: 300;
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -35,13 +40,69 @@ body {
     width: 440px;
 }
 
+#container form .step {
+    display: none;
+    transition: transform 0.5s;
+}
+
+#container form .step.slide-out {
+    left: -50px;
+    transform: translateX(-1200px);
+}
+
+#container form .step.step1 {
+    display: block;
+}
+
+#container form .step.step2 .captcha-container {
+    height: 125px;
+}
+
+#container form .step.step3 {
+    background-color: #FFF;
+    border-radius: 3px;
+    color: #333;
+    font-weight: 500;
+    padding: 10px;
+}
+
+#container form .step.step3 .progress {
+    margin-bottom: 0;
+}
+
+#container form .step.step3 .progress .progress-bar {
+    background-color: #222;
+    border-radius: 5px;
+    box-shadow: inset 0 0 3px #888;
+}
+
+/* Step transitions */
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+
 #container form .drop-area {
     background-color: #FFF;
     border-radius: 3px;
     color: #333;
-    height: 200px;
+    height: 208px;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 8px;
 }
 
 #container form .drop-area.drag-on {
@@ -59,15 +120,16 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 30px 0;
 }
 
 #container form .drop-area-inner span {
-    margin-top: 10px;
+    line-height: 16px;
 }
 
-#container form .drop-area-inner span.or {
-    margin: 0 0 10px;
+#container form .drop-area-inner span.drop-message {
+    margin-top: 10px;
 }
 
 #container form .drop-area-inner img.fileicon {
@@ -78,8 +140,11 @@ body {
     background-color: #222;
     color: #FFF;
     cursor: pointer;
+    font-size: 14px;
     font-weight: 400;
-    padding: 10px 20px;
+    line-height: 14px;
+    margin-top: 10px;
+    padding: 12px 20px;
     border: 1px solid #222;
     border-radius: 3px;
 }
@@ -158,19 +223,9 @@ body {
     display: block;
 }
 
-#container form .drop-area .progress .progress-bar {
-    background-color: #222;
-    border-radius: 5px;
-    box-shadow: inset 0 0 3px #888;
-}
-
 #container form .g-recaptcha {
     transform: scale(1.45);
     transform-origin: 0 0;
-}
-
-#container form .button-container {
-    margin-top: 55px;
 }
 
 #container form .button-container button {

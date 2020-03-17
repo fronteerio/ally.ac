@@ -20,8 +20,12 @@
 
         /** Invoked by recaptcha when its state changed (button selected, expires, ...) */
         window.recaptchaCalback = function() {
-            setButtonDisabledState();
+            $('#covid19-af-form').submit();
         };
+
+        window.recaptchaExpiredCalback = function() {
+            resetForm();
+        }
 
         /** Invoked when a file gets selected */
         $('#covid19-af-form input[type="file"]').on('change', function() {
@@ -52,6 +56,7 @@
 
         $('#covid19-af-form').on('submit', function(e) {
             if (!e.isDefaultPrevented()) {
+                showStep(3);
                 // If the file was already uploaded, we can simply trigger again
                 var url = $('#covid19-af-form #trigger').attr('data-ally-invoke-direct-file');
                 if (url) {
@@ -92,6 +97,7 @@
         });
     });
 
+    /** Upload the file */
     function uploadFile(response) {
         // Start the upload
         $('#covid19-af-form .drop-area').addClass('is-uploading');
@@ -107,7 +113,7 @@
         xhr.upload.addEventListener('progress', function(progress) {
             if (progress.lengthComputable) {
                 var percent = progress.loaded / progress.total;
-                $('#covid19-af-form .drop-area .progress .progress-bar').css({
+                $('#covid19-af-form .progress .progress-bar').css({
                     // Don't go all the way to 100 as there's a bit more work to do after the file is uploaded
                     // but we can't really track progress for it. By leaving a little gap, there's the illusion
                     // that there's more to do which informs the user they should wait
@@ -125,17 +131,22 @@
         xhr.send(fd);
     }
 
+    /** Trigger the alternative formats modal for the given state */
     function triggerAlternativeFormats(url) {
         var $trigger = $('#covid19-af-form #trigger');
         $trigger.attr('data-ally-invoke-direct-file', url);
         $trigger[0].click();
+        $('.step3').hide();
 
         // The AF takes a second to load, leave the progress bar visible for a while
         setTimeout(function() {
             $('#covid19-af-form .drop-area').removeClass('is-uploading');
+            resetForm();
+            showStep(1);
         }, 1000);
     }
 
+    /** Reset the form to its initial state */
     function resetForm() {
         selectedFile = null;
         setValidationErrors([]);
@@ -147,6 +158,7 @@
         $('#covid19-af-form #trigger').attr('data-ally-invoke-direct-file', '');
     }
 
+    /** Set the given file as the selected file and move to the next step */
     function selectFile(file) {
         resetForm();
         selectedFile = file;
@@ -158,9 +170,20 @@
             $dropArea.find('img.fileicon').attr('src', icon);
             $('.g-recaptcha').focus();
             setButtonDisabledState();
+            showStep(2);
         } else {
             setValidationErrors([ERRORS.unsupportedContentType]);
         }
+    }
+
+    /** Show the given step */
+    function showStep(n) {
+        $('.step').addClass('slide-out');
+
+        setTimeout(function() {
+            $('.step').hide();
+            $('.step.step' + n).removeClass('slide-out').show();
+        }, 500);
     }
 
     /** Enable or disable the upload button */
