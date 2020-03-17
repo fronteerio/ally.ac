@@ -191,6 +191,13 @@ body {
     cursor: not-allowed;
 }
 
+#container form .button-container button:not([disabled="disabled"]):active,
+#container form .button-container button:not([disabled="disabled"]):focus,
+#container form .button-container button:not([disabled="disabled"]):hover {
+    background-color: #00C7D1;
+    color: #222;
+}
+
 #container form .button-container img {
     margin-right: 5px;
 }

@@ -108,7 +108,10 @@
             if (progress.lengthComputable) {
                 var percent = progress.loaded / progress.total;
                 $('#covid19-af-form .drop-area .progress .progress-bar').css({
-                    'width': Math.floor(percent * 50) + '%'
+                    // Don't go all the way to 100 as there's a bit more work to do after the file is uploaded
+                    // but we can't really track progress for it. By leaving a little gap, there's the illusion
+                    // that there's more to do which informs the user they should wait
+                    'width': Math.floor(percent * 90) + '%'
                 });
             }
         }, false);
@@ -154,6 +157,7 @@
             $dropArea.find('.filename').text(file.name);
             $dropArea.find('img.fileicon').attr('src', icon);
             $('.g-recaptcha').focus();
+            setButtonDisabledState();
         } else {
             setValidationErrors([ERRORS.unsupportedContentType]);
         }
