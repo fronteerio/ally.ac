@@ -39,8 +39,6 @@ exports.handler = async (event, context) => {
     }
 
     const verified = await verifyCaptcha(token, remoteip);
-    //const verified = {'success': true};
-
     if (verified.success !== true) {
         return generateResponse(400, ERRORS.invalidCaptcha);
     } else {
@@ -65,11 +63,6 @@ exports.handler = async (event, context) => {
         return generateResponse(200, {form});
     }
 };
-
-exports.handler({
-    'body': '[{"name": "g-recaptcha-response", "value": "123"}, {"name": "filename", "value": "alt_text_filename.pdf"}]',
-    'requestContext': {'identity': {'sourceIp': '127.0.0.1'}}
-});
 
 function findParamValue(data, key) {
     return _.chain(data)
