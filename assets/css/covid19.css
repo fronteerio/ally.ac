@@ -44,6 +44,14 @@ body {
     padding: 10px;
 }
 
+#container form .drop-area.drag-on {
+    background-color: #00C7D1;
+}
+
+#container form .drop-area.drag-on .drop-area-inner {
+    border-color: #009097;
+}
+
 #container form .drop-area-inner {
     align-items: center;
     border: 2px dashed #D8D8D8;
@@ -133,6 +141,27 @@ body {
 
 #container form .drop-area.file-selected label {
     margin: 0;
+}
+#container form .drop-area.is-uploading {
+    height: 40px;
+}
+
+#container form .drop-area.is-uploading .drop-area-inner {
+    display: none;
+}
+
+#container form .drop-area .progress {
+    display: none;
+}
+
+#container form .drop-area.is-uploading .progress {
+    display: block;
+}
+
+#container form .drop-area .progress .progress-bar {
+    background-color: #222;
+    border-radius: 5px;
+    box-shadow: inset 0 0 3px #888;
 }
 
 #container form .g-recaptcha {

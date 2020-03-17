@@ -13,8 +13,9 @@
         'somethingWentWrong': 'something-went-wrong'
     };
 
-    $(document).ready(function() {
+    var selectedFile = null;
 
+    $(document).ready(function() {
         resetForm();
 
         /** Invoked by recaptcha when its state changed (button selected, expires, ...) */
@@ -23,23 +24,31 @@
         };
 
         /** Invoked when a file gets selected */
-        $('#covid19-af-form input').on('change', function() {
-            resetForm();
-
-            var file = getFile();
+        $('#covid19-af-form input[type="file"]').on('change', function() {
+            var file = $(this)[0].files[0];
             if (file && file.name) {
-                var icon = getSupportedFileType(file.name);
-                if (icon) {
-                    var $dropArea = $('.drop-area');
-                    $dropArea.addClass('file-selected');
-                    $dropArea.find('.filename').text(file.name);
-                    $dropArea.find('img.fileicon').attr('src', icon);
-                    $('.g-recaptcha').focus();
-                } else {
-                    setValidationErrors([ERRORS.unsupportedContentType]);
-                }
+                selectFile(file);
             }
         });
+
+        $('#covid19-af-form .drop-area')
+            .on('drag dragstart dragend dragover dragenter dragleave drop', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            })
+            .on('dragover dragenter', function() {
+                $(this).addClass('drag-on');
+            })
+            .on('dragleave dragend drop', function() {
+                $(this).removeClass('drag-on');
+            })
+            .on('drop', function(e) {
+                const file = [...e.originalEvent.dataTransfer.items].map((item) => item.getAsFile())[0];
+                if (file && file.name) {
+                    // The file is only assignable from this stack :shrug:
+                    selectFile(file);
+                }
+            });
 
         $('#covid19-af-form').on('submit', function(e) {
             if (!e.isDefaultPrevented()) {
@@ -47,14 +56,12 @@
                 var url = $('#covid19-af-form #trigger').attr('data-ally-invoke-direct-file');
                 if (url) {
                     triggerAlternativeFormats(url);
+                } else if (!selectedFile) {
+                    setValidationErrors([ERRORS.fileNotSelected]);
                 } else {
                     // Upload the file
                     var formData = $(this).serializeArray();
-                    var file = getFile();
-                    if (!file) {
-                        throw new Error('No file selected');
-                    }
-                    formData.push({'name': 'filename', 'value': file.name});
+                    formData.push({'name': 'filename', 'value': selectedFile.name});
 
                     // TODO: Exchange for S3 signature
                     $.ajax({
@@ -86,16 +93,25 @@
     });
 
     function uploadFile(response) {
+        // Start the upload
+        $('#covid19-af-form .drop-area').addClass('is-uploading');
+
         var bucketUrl = 'https://ally-covid19-files.s3.amazonaws.com';
-        var file = getFile();
         var fd = new FormData();
         Object.keys(response.form).forEach(function(key) {
             fd.append(key, response.form[key]);
         });
-        fd.append('file', file);
+        fd.append('file', selectedFile);
 
         var xhr = new XMLHttpRequest();
-        xhr.upload.addEventListener('progress', function() {}, false);
+        xhr.upload.addEventListener('progress', function(progress) {
+            if (progress.lengthComputable) {
+                var percent = progress.loaded / progress.total;
+                $('#covid19-af-form .drop-area .progress .progress-bar').css({
+                    'width': Math.floor(percent * 50) + '%'
+                });
+            }
+        }, false);
         xhr.addEventListener('load', function() {
             if (this.status === 200) {
                 var keyParts = response.form.key.split('/');
@@ -112,25 +128,42 @@
         var $trigger = $('#covid19-af-form #trigger');
         $trigger.attr('data-ally-invoke-direct-file', url);
         $trigger[0].click();
-    }
 
-    function getFile() {
-        return document.querySelector("input[type=file]").files[0];
+        // The AF takes a second to load, leave the progress bar visible for a while
+        setTimeout(function() {
+            $('#covid19-af-form .drop-area').removeClass('is-uploading');
+        }, 1000);
     }
 
     function resetForm() {
+        selectedFile = null;
         setValidationErrors([]);
         setButtonDisabledState();
-        var $dropArea = $('.drop-area');
-        $dropArea.removeClass('file-selected');
-        $dropArea.find('.filename').text('');
+        $('.drop-area')
+            .removeClass('is-uploading')
+            .removeClass('file-selected')
+            .find('.filename').text('');
         $('#covid19-af-form #trigger').attr('data-ally-invoke-direct-file', '');
+    }
+
+    function selectFile(file) {
+        resetForm();
+        selectedFile = file;
+        var icon = getSupportedFileType(file.name);
+        if (icon) {
+            var $dropArea = $('.drop-area');
+            $dropArea.addClass('file-selected');
+            $dropArea.find('.filename').text(file.name);
+            $dropArea.find('img.fileicon').attr('src', icon);
+            $('.g-recaptcha').focus();
+        } else {
+            setValidationErrors([ERRORS.unsupportedContentType]);
+        }
     }
 
     /** Enable or disable the upload button */
     function setButtonDisabledState() {
-        var file = getFile();
-        if (file && file.name && getCaptchaToken()) {
+        if (selectedFile && selectedFile.name && getCaptchaToken()) {
             $('#covid19-af-form button').removeAttr('disabled');
         } else {
             $('#covid19-af-form button').attr('disabled', 'disabled');
