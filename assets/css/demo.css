@@ -99,3 +99,8 @@
 .form-group.has-error .form-control:-ms-input-placeholder {
     color: #D0021B;
 }
+
+#covid19-af-form .validation-error {
+    margin: 20px 0;
+    padding: 10px;
+}

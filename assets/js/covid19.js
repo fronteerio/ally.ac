@@ -98,7 +98,7 @@
     }
 
     function resetForm() {
-        setValidationErrors([]);
+        setValidationErrors();
         setButtonDisabledState();
     }
 
@@ -124,7 +124,7 @@
     function setValidationErrors(errors) {
         $('#covid19-af-form .validation-error').hide();
         errors.forEach(function(err) {
-            $('#covid19-af-form .validation-error .error-' + err).show();
+            $('#covid19-af-form .validation-error.error-' + err).show();
         });
     }
 })();
