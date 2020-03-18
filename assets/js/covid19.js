@@ -56,7 +56,8 @@
 
         $('#covid19-af-form').on('submit', function(e) {
             if (!e.isDefaultPrevented()) {
-                showStep(3);
+                setProgress(0);
+                showStep(3, true);
                 // If the file was already uploaded, we can simply trigger again
                 var url = $('#covid19-af-form #trigger').attr('data-ally-invoke-direct-file');
                 if (url) {
@@ -68,13 +69,15 @@
                     var formData = $(this).serializeArray();
                     formData.push({'name': 'filename', 'value': selectedFile.name});
 
-                    // TODO: Exchange for S3 signature
+                    // Exchange the recaptcha token for an S3 signature so that the file can be uploaded.
                     $.ajax({
                         'url': 'https://4mctrq9vy0.execute-api.us-east-1.amazonaws.com/covid19',
                         'method': 'POST',
                         'data': JSON.stringify(formData),
                         'contentType': "application/json; charset=utf-8",
                         'success': function (data) {
+                            // Note that this invalidates the recaptcha
+                            grecaptcha.reset();
                             try {
                                 data = JSON.parse(data);
                                 uploadFile(data);
@@ -84,6 +87,9 @@
                             }
                         },
                         'error': function(err) {
+                            // Note that this invalidates the recaptcha
+                            grecaptcha.reset();
+                            showStep(1);
                             if (err.status === 400) {
                                 setValidationErrors([err.responseText]);
                             } else if (err.status === 500) {
@@ -112,13 +118,7 @@
         var xhr = new XMLHttpRequest();
         xhr.upload.addEventListener('progress', function(progress) {
             if (progress.lengthComputable) {
-                var percent = progress.loaded / progress.total;
-                $('#covid19-af-form .progress .progress-bar').css({
-                    // Don't go all the way to 100 as there's a bit more work to do after the file is uploaded
-                    // but we can't really track progress for it. By leaving a little gap, there's the illusion
-                    // that there's more to do which informs the user they should wait
-                    'width': Math.floor(percent * 90) + '%'
-                });
+                setProgress(progress.loaded / progress.total);
             }
         }, false);
         xhr.addEventListener('load', function() {
@@ -144,7 +144,7 @@
         setTimeout(function() {
             $('#covid19-af-form .drop-area').removeClass('is-uploading');
             resetForm();
-            showStep(1);
+            showStep(1, false);
         }, 1000);
     }
 
@@ -172,19 +172,25 @@
             $dropArea.find('img.fileicon').attr('src', icon);
             $('.g-recaptcha').focus();
             setButtonDisabledState();
-            showStep(2);
+            showStep(2, true);
         } else {
             setValidationErrors([ERRORS.unsupportedContentType]);
         }
     }
 
     /** Show the given step */
-    function showStep(n) {
+    function showStep(n, moveFocus) {
         $('.step').addClass('slide-out');
 
         setTimeout(function() {
             $('.step').hide();
-            $('.step.step' + n).removeClass('slide-out').show();
+            var $step = $('.step.step' + n)
+                .removeClass('slide-out')
+                .show();
+            if (moveFocus) {
+                $step.find('label, [tabindex="-1"]').focus();
+            }
+
         }, 500);
     }
 
@@ -204,6 +210,20 @@
         } else {
             return null;
         }
+    }
+
+    function setProgress(percent) {
+        var loaded = Math.floor(percent * 90);
+        $('#covid19-af-form .progress .progress-bar')
+            .attr('aria-valuenow', loaded)
+            .css({
+                // Don't go all the way to 100 as there's a bit more work to do after the file is uploaded
+                // but we can't really track progress for it. By leaving a little gap, there's the illusion
+                // that there's more to do which informs the user they should wait
+                'width': loaded + '%'
+            })
+            .find('.sr-only')
+            .text(loaded + '% Complete');
     }
 
     function setValidationErrors(errors) {
