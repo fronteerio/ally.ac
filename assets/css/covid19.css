@@ -12,14 +12,15 @@ body {
     text-align: left;
 }
 
-#container {
+#file-transformer-container {
     align-items: center;
     display: flex;
     flex: 1;
     flex-direction: column;
+    padding-bottom: 50px;
 }
 
-#container h2 {
+#file-transformer-container h2 {
     font-style: normal;
     font-weight: 300;
     font-size: 28px;
@@ -27,7 +28,7 @@ body {
     text-align: center;
 }
 
-#container h3 {
+#file-transformer-container .explanation {
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -36,29 +37,29 @@ body {
     text-align: center;
 }
 
-#container form {
+#file-transformer-container form {
     width: 440px;
 }
 
-#container form .step {
+#file-transformer-container form .step {
     display: none;
     transition: transform 0.5s;
 }
 
-#container form .step.slide-out {
+#file-transformer-container form .step.slide-out {
     left: -50px;
     transform: translateX(-1200px);
 }
 
-#container form .step.step1 {
+#file-transformer-container form .step.step1 {
     display: block;
 }
 
-#container form .step.step2 .captcha-container {
+#file-transformer-container form .step.step2 .captcha-container {
     height: 125px;
 }
 
-#container form .step.step3 {
+#file-transformer-container form .step.step3 {
     background-color: #FFF;
     border-radius: 3px;
     color: #333;
@@ -66,11 +67,11 @@ body {
     padding: 10px;
 }
 
-#container form .step.step3 .progress {
+#file-transformer-container form .step.step3 .progress {
     margin-bottom: 0;
 }
 
-#container form .step.step3 .progress .progress-bar {
+#file-transformer-container form .step.step3 .progress .progress-bar {
     background-color: #222;
     border-radius: 5px;
     box-shadow: inset 0 0 3px #888;
@@ -96,7 +97,7 @@ body {
     100% { -webkit-transform: translateX(0%); }
 }
 
-#container form .drop-area {
+#file-transformer-container form .drop-area {
     background-color: #FFF;
     border-radius: 3px;
     color: #333;
@@ -105,15 +106,15 @@ body {
     padding: 8px;
 }
 
-#container form .drop-area.drag-on {
+#file-transformer-container form .drop-area.drag-on {
     background-color: #00C7D1;
 }
 
-#container form .drop-area.drag-on .drop-area-inner {
+#file-transformer-container form .drop-area.drag-on .drop-area-inner {
     border-color: #009097;
 }
 
-#container form .drop-area-inner {
+#file-transformer-container form .drop-area-inner {
     align-items: center;
     border: 2px dashed #D8D8D8;
     border-radius: 3px;
@@ -124,19 +125,19 @@ body {
     padding: 30px 0;
 }
 
-#container form .drop-area-inner span {
+#file-transformer-container form .drop-area-inner span {
     line-height: 16px;
 }
 
-#container form .drop-area-inner span.drop-message {
+#file-transformer-container form .drop-area-inner span.drop-message {
     margin-top: 10px;
 }
 
-#container form .drop-area-inner img.fileicon {
+#file-transformer-container form .drop-area-inner img.fileicon {
     display: none;
 }
 
-#container form .drop-area-inner label {
+#file-transformer-container form .drop-area-inner label {
     background-color: #222;
     color: #FFF;
     cursor: pointer;
@@ -149,7 +150,7 @@ body {
     border-radius: 3px;
 }
 
-#container form .drop-area-inner input[type="file"] {
+#file-transformer-container form .drop-area-inner input[type="file"] {
     width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
@@ -158,19 +159,19 @@ body {
     z-index: -1;
 }
 
-#container form .drop-area-inner input:focus + label,
-#container form .drop-area-inner label:active,
-#container form .drop-area-inner label:focus,
-#container form .drop-area-inner label:hover {
+#file-transformer-container form .drop-area-inner input:focus + label,
+#file-transformer-container form .drop-area-inner label:active,
+#file-transformer-container form .drop-area-inner label:focus,
+#file-transformer-container form .drop-area-inner label:hover {
     background-color: #FFF;
     color: #222;
 }
 
-#container form .drop-area.file-selected {
+#file-transformer-container form .drop-area.file-selected {
     height: 70px;
 }
 
-#container form .drop-area.file-selected .drop-area-inner {
+#file-transformer-container form .drop-area.file-selected .drop-area-inner {
     border-style: solid;
     border-width: 1px;
     flex-direction: row;
@@ -178,24 +179,24 @@ body {
     padding: 0 5px;
 }
 
-#container form .drop-area.file-selected img.upload {
+#file-transformer-container form .drop-area.file-selected img.upload {
     display: none;
 }
 
-#container form .drop-area.file-selected img.fileicon {
+#file-transformer-container form .drop-area.file-selected img.fileicon {
     display: block;
 }
 
-#container form .drop-area.file-selected img {
+#file-transformer-container form .drop-area.file-selected img {
     margin: 0 10px;
 }
 
-#container form .drop-area.file-selected span {
+#file-transformer-container form .drop-area.file-selected span {
     display: none;
     margin: 0;
 }
 
-#container form .drop-area.file-selected span.filename {
+#file-transformer-container form .drop-area.file-selected span.filename {
     display: block;
     flex: 1;
     margin-right: 10px;
@@ -204,31 +205,31 @@ body {
     white-space: nowrap;
 }
 
-#container form .drop-area.file-selected label {
+#file-transformer-container form .drop-area.file-selected label {
     margin: 0;
 }
-#container form .drop-area.is-uploading {
+#file-transformer-container form .drop-area.is-uploading {
     height: 40px;
 }
 
-#container form .drop-area.is-uploading .drop-area-inner {
+#file-transformer-container form .drop-area.is-uploading .drop-area-inner {
     display: none;
 }
 
-#container form .drop-area .progress {
+#file-transformer-container form .drop-area .progress {
     display: none;
 }
 
-#container form .drop-area.is-uploading .progress {
+#file-transformer-container form .drop-area.is-uploading .progress {
     display: block;
 }
 
-#container form .g-recaptcha {
+#file-transformer-container form .g-recaptcha {
     transform: scale(1.45);
     transform-origin: 0 0;
 }
 
-#container form .button-container button {
+#file-transformer-container form .button-container button {
     background-color: #263438;
     color: #FFF;
     border: 2px solid #00C7D1;
@@ -240,30 +241,30 @@ body {
     width: 100%;
 }
 
-#container form .button-container button[disabled="disabled"] {
+#file-transformer-container form .button-container button[disabled="disabled"] {
     border: 2px solid #7B9697;
     color: #CCC;
     cursor: not-allowed;
 }
 
-#container form .button-container button:not([disabled="disabled"]):active,
-#container form .button-container button:not([disabled="disabled"]):focus,
-#container form .button-container button:not([disabled="disabled"]):hover {
+#file-transformer-container form .button-container button:not([disabled="disabled"]):active,
+#file-transformer-container form .button-container button:not([disabled="disabled"]):focus,
+#file-transformer-container form .button-container button:not([disabled="disabled"]):hover {
     background-color: #00C7D1;
     color: #222;
 }
 
-#container form .button-container img {
+#file-transformer-container form .button-container img {
     margin-right: 5px;
 }
 
-#container form .button-container span {
+#file-transformer-container form .button-container span {
     font-weight: 300;
     font-size: 14px;
     line-height: 30px;
 }
 
-#container form .validation-error {
+#file-transformer-container form .validation-error {
     border: 1px solid darkred;
     color: #333;
     padding: 10px;
