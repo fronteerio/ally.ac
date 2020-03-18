@@ -168,6 +168,17 @@ body {
     color: #222;
 }
 
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#file-transformer-container form .drop-area img.spinner {
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
 #file-transformer-container form .drop-area.file-selected {
     height: 70px;
 }
@@ -207,8 +218,13 @@ body {
 }
 
 #file-transformer-container form .drop-area.file-selected label {
-    margin: 0;
+    display: none;
 }
+
+#file-transformer-container form .drop-area.file-selected img.spinner {
+    display: block;
+}
+
 #file-transformer-container form .drop-area.is-uploading {
     height: 40px;
 }

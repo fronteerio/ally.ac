@@ -151,7 +151,6 @@
     function resetForm() {
         selectedFile = null;
         setValidationErrors([]);
-        setButtonDisabledState();
         $('.drop-area')
             .removeClass('is-uploading')
             .removeClass('file-selected')
@@ -170,8 +169,12 @@
             $dropArea.find('.filename').text(file.name);
             $dropArea.find('img.fileicon').attr('src', icon);
             $('.g-recaptcha').focus();
-            setButtonDisabledState();
-            showStep(2, true);
+
+            // Show a spinner for a bit to show "transition"
+            setTimeout(function() {
+                showStep(2, true);
+                $dropArea.removeClass('file-selected');
+            }, 1000);
         } else {
             setValidationErrors([ERRORS.unsupportedContentType]);
         }
@@ -179,35 +182,12 @@
 
     /** Show the given step */
     function showStep(n, moveFocus) {
-        $('.step').addClass('slide-out');
-
-        setTimeout(function() {
-            $('.step').hide();
-            var $step = $('.step.step' + n)
-                .removeClass('slide-out')
-                .show();
-            if (moveFocus) {
-                $step.find('label, [tabindex="-1"]').focus();
-            }
-
-        }, 500);
-    }
-
-    /** Enable or disable the upload button */
-    function setButtonDisabledState() {
-        if (selectedFile && selectedFile.name && getCaptchaToken()) {
-            $('#covid19-af-form button').removeAttr('disabled');
-        } else {
-            $('#covid19-af-form button').attr('disabled', 'disabled');
-        }
-    }
-
-    /** Get the recaptcha token, if any */
-    function getCaptchaToken() {
-        if (grecaptcha && grecaptcha.getResponse && grecaptcha.getResponse()) {
-            return grecaptcha.getResponse();
-        } else {
-            return null;
+        $('.step').hide();
+        var $step = $('.step.step' + n)
+            .removeClass('slide-out')
+            .show();
+        if (moveFocus) {
+            $step.find('label, [tabindex="-1"]').focus();
         }
     }
 
