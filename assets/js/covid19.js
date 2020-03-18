@@ -185,9 +185,7 @@
     /** Show the given step */
     function showStep(n, moveFocus) {
         $('.step').hide();
-        var $step = $('.step.step' + n)
-            .removeClass('slide-out')
-            .show();
+        var $step = $('.step.step' + n).show();
         if (moveFocus) {
             $step.find('label, [tabindex="-1"]').focus();
         }

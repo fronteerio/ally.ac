@@ -10,6 +10,10 @@ body {
     text-align: left;
 }
 
+nav ul {
+    margin-left: 30px;
+}
+
 #file-transformer-container {
     align-items: center;
     display: flex;
@@ -45,11 +49,6 @@ body {
     transition: transform 0.5s;
 }
 
-#file-transformer-container form .step.slide-out {
-    left: -50px;
-    transform: translateX(-1200px);
-}
-
 #file-transformer-container form .step.step1 {
     display: block;
 }
@@ -74,26 +73,6 @@ body {
     background-color: #222;
     border-radius: 5px;
     box-shadow: inset 0 0 3px #888;
-}
-
-/* Step transitions */
-
-.slide-in {
-    animation: slide-in 0.5s forwards;
-    -webkit-animation: slide-in 0.5s forwards;
-}
-
-.slide-out {
-    animation: slide-out 0.5s forwards;
-    -webkit-animation: slide-out 0.5s forwards;
-}
-
-@keyframes slide-in {
-    100% { transform: translateX(0%); }
-}
-
-@-webkit-keyframes slide-in {
-    100% { -webkit-transform: translateX(0%); }
 }
 
 #file-transformer-container form .drop-area {
