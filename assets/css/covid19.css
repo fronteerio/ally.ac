@@ -58,10 +58,6 @@ body {
     margin-right: 8px;
 }
 
-#file-transformer-container form .step.step2 .captcha-container {
-    height: 125px;
-}
-
 #file-transformer-container form .step.step3 {
     background-color: #FFF;
     border-radius: 3px;
@@ -245,9 +241,8 @@ body {
     display: block;
 }
 
-#file-transformer-container form .g-recaptcha {
-    transform: scale(1.45);
-    transform-origin: 0 0;
+#file-transformer-container form .g-recaptcha > div {
+    margin: 0 auto;
 }
 
 #file-transformer-container form .button-container button {
