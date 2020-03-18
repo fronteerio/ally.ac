@@ -5,8 +5,8 @@ const { verifyCaptcha } = require('./recaptcha');
 
 const CHARS = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.split('');
 
-const bucketName = 'ally-covid19-files';
-const bucketRegion = 'us-east-1';
+const bucketName = 'ally-production-eu-central-1-covid19';
+const bucketRegion = 'eu-central-1';
 
 const extensionMimeTypeMapping = {
     'doc': 'application/msword',

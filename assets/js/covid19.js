@@ -14,6 +14,7 @@
     };
 
     var selectedFile = null;
+    var bucketUrl = 'https://ally-production-eu-central-1-covid19.s3.eu-central-1.amazonaws.com';
 
     $(document).ready(function() {
         resetForm();
@@ -71,7 +72,7 @@
 
                     // Exchange the recaptcha token for an S3 signature so that the file can be uploaded.
                     $.ajax({
-                        'url': 'https://4mctrq9vy0.execute-api.us-east-1.amazonaws.com/covid19',
+                        'url': 'https://cul0fa56ce.execute-api.eu-central-1.amazonaws.com/covid19',
                         'method': 'POST',
                         'data': JSON.stringify(formData),
                         'contentType': "application/json; charset=utf-8",
@@ -107,8 +108,6 @@
     function uploadFile(response) {
         // Start the upload
         $('#covid19-af-form .drop-area').addClass('is-uploading');
-
-        var bucketUrl = 'https://ally-covid19-files.s3.amazonaws.com';
         var fd = new FormData();
         Object.keys(response.form).forEach(function(key) {
             fd.append(key, response.form[key]);
