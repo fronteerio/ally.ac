@@ -135,7 +135,9 @@
     /** Trigger the alternative formats modal for the given state */
     function triggerAlternativeFormats(url) {
         var $trigger = $('#covid19-af-form #trigger');
-        $trigger.attr('data-ally-invoke-direct-file', url);
+        $trigger.attr('data-ally-invoke-direct-file', '');
+        $trigger.attr('href', url);
+        $trigger.text(selectedFile.name);
         $trigger[0].click();
         $('.step3').hide();
 
