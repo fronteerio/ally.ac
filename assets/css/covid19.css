@@ -5,8 +5,6 @@ body {
     background: url('/assets/img/bgPanel-header.png') center bottom no-repeat;
     background-color: #263438;
     color: #FFF;
-    display: flex;
-    flex-direction: column;
     font-family: 'Roboto', sans-serif;
     height: 100%;
     text-align: left;
@@ -17,7 +15,7 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 #file-transformer-container h2 {
@@ -38,7 +36,8 @@ body {
 }
 
 #file-transformer-container form {
-    width: 440px;
+    margin: 0 5px;
+    max-width: 440px;
 }
 
 #file-transformer-container form .step {
@@ -64,7 +63,7 @@ body {
     border-radius: 3px;
     color: #333;
     font-weight: 500;
-    padding: 10px;
+    padding: 10px 10px 16px;
 }
 
 #file-transformer-container form .step.step3 .progress {
@@ -112,6 +111,8 @@ body {
 
 #file-transformer-container form .drop-area.drag-on .drop-area-inner {
     border-color: #009097;
+    border-style: solid;
+    border-width: 3px;
 }
 
 #file-transformer-container form .drop-area-inner {
@@ -271,7 +272,6 @@ body {
 }
 
 footer {
-    margin-top: 200px;
     text-align: center;
 }
 
