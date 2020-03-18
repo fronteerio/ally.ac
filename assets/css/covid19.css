@@ -54,6 +54,10 @@ body {
     display: block;
 }
 
+#file-transformer-container form .step.step1 .supported-files img {
+    margin-right: 8px;
+}
+
 #file-transformer-container form .step.step2 .captcha-container {
     height: 125px;
 }
