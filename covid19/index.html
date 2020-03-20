@@ -102,23 +102,25 @@
                         </div>
                     </div>
                     <div class="step step2">
-                        <div class="form-group">
-                            <label for="form-institution">Your institution</label>
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="form-institution"
-                                name="institution"
-                                placeholder="Your institution"
-                                required="required" />
-                        </div>
-                        <div class="captcha-container">
-                            <span class="sr-only" tabindex="-1">Please verify that you are not a robot</span>
-                            <div
-                                class="g-recaptcha"
-                                data-callback="recaptchaCalback"
-                                data-expired-callback="recaptchaExpiredCalback"
-                                data-sitekey="6Le6uqcUAAAAAOHXv0-vgikymiFb1rC4JByY7pDG"></div>
+                        <div class="white-container">
+                            <div class="form-group">
+                                <label for="form-institution">Institution</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="form-institution"
+                                    name="institution"
+                                    placeholder="Your institution"
+                                    required="required" />
+                            </div>
+                            <div class="captcha-container">
+                                <span class="sr-only" tabindex="-1">Please verify that you are not a robot</span>
+                                <div
+                                    class="g-recaptcha"
+                                    data-callback="recaptchaCalback"
+                                    data-expired-callback="recaptchaExpiredCalback"
+                                    data-sitekey="6Le6uqcUAAAAAOHXv0-vgikymiFb1rC4JByY7pDG"></div>
+                            </div>
                         </div>
                         <div class="button-container">
                             <button id="upload-button" class="primary" type="submit" disabled="disabled">Yes, gimme more formats!</button>

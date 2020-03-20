@@ -57,14 +57,18 @@ nav ul {
     margin-right: 8px;
 }
 
-#file-transformer-container form .step.step2.show-step {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+#file-transformer-container form .step.step2 .white-container {
+    background-color: #FAFAFA;
+    border-radius: 3px;
+    padding: 10px;
 }
 
-#file-transformer-container form .step.step2 > div {
-    width: 304px;
+#file-transformer-container form .step.step2 .white-container label {
+    color: #333;
+}
+
+#file-transformer-container form .step.step2 .white-container .captcha-container {
+    margin-top: 20px;
 }
 
 #file-transformer-container form .step.step3 {
@@ -228,14 +232,6 @@ nav ul {
 
 #file-transformer-container form .drop-area.is-uploading .progress {
     display: block;
-}
-
-#file-transformer-container form .form-group {
-    margin-top: 30px;
-}
-
-#file-transformer-container form .captcha-container .g-recaptcha > div {
-    margin: 0 auto;
 }
 
 #file-transformer-container form .button-container {
