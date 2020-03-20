@@ -14,7 +14,6 @@
     };
 
     var selectedFile = null;
-    var bucketUrl = 'https://ally-production-eu-central-1-covid19.s3.eu-central-1.amazonaws.com';
 
     $(document).ready(function() {
         resetForm();
@@ -40,7 +39,7 @@
                 $(this).removeClass('drag-on');
             })
             .on('drop', function(e) {
-                const file = [...e.originalEvent.dataTransfer.items].map((item) => item.getAsFile())[0];
+                var file = [...e.originalEvent.dataTransfer.items].map((item) => item.getAsFile())[0];
                 if (file && file.name) {
                     // The file is only assignable from this stack :shrug:
                     selectFile(file);
@@ -83,20 +82,14 @@
 
                     // Exchange the recaptcha token for an S3 signature so that the file can be uploaded.
                     $.ajax({
-                        'url': 'https://cul0fa56ce.execute-api.eu-central-1.amazonaws.com/covid19',
+                        'url': 'https://852r0t7rv3.execute-api.eu-central-1.amazonaws.com/live',
                         'method': 'POST',
                         'data': JSON.stringify(formData),
                         'contentType': "application/json; charset=utf-8",
                         'success': function (data) {
                             // Note that this invalidates the recaptcha
                             grecaptcha.reset();
-                            try {
-                                data = JSON.parse(data);
-                                uploadFile(data);
-                            } catch (err) {
-                                // Set fail
-                                setValidationErrors([ERRORS.somethingWentWrong])
-                            }
+                            uploadFile(data);
                         },
                         'error': function(err) {
                             // Note that this invalidates the recaptcha
@@ -104,7 +97,7 @@
                             showStep(1);
                             if (err.status === 400) {
                                 setValidationErrors([err.responseText]);
-                            } else if (err.status === 500) {
+                            } else {
                                 setValidationErrors([ERRORS.somethingWentWrong]);
                             }
                         }
@@ -117,6 +110,7 @@
 
     /** Upload the file */
     function uploadFile(response) {
+        var bucketUrl = 'https://' + response.bucketUrl;
         // Start the upload
         $('#covid19-af-form .step1').addClass('is-uploading');
         var fd = new FormData();
@@ -134,9 +128,11 @@
         xhr.addEventListener('load', function() {
             if (this.status === 200) {
                 var parts = response.form.key.split('/');
-                const fileName = encodeURIComponent(parts.pop());
+                var fileName = encodeURIComponent(parts.pop());
                 var url = bucketUrl + '/' + parts.join('/') + '/' + fileName
                 triggerAlternativeFormats(url)
+            } else {
+                setValidationErrors([ERRORS.somethingWentWrong]);
             }
         }, false);
         xhr.open('POST', bucketUrl, true);
