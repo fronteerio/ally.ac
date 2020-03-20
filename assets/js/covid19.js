@@ -224,7 +224,7 @@
         $('.step').removeClass('show-step');
         var $step = $('.step.step' + n).addClass('show-step');
         if (moveFocus) {
-            $step.find('label, [tabindex="-1"]').focus();
+            $step.find('input, label, [tabindex="-1"]').first().focus();
         }
     }
 
