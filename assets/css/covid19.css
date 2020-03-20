@@ -49,12 +49,22 @@ nav ul {
     transition: transform 0.5s;
 }
 
-#file-transformer-container form .step.step1 {
+#file-transformer-container form .step.show-step {
     display: block;
 }
 
 #file-transformer-container form .step.step1 .supported-files img {
     margin-right: 8px;
+}
+
+#file-transformer-container form .step.step2.show-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#file-transformer-container form .step.step2 > div {
+    width: 304px;
 }
 
 #file-transformer-container form .step.step3 {
@@ -220,8 +230,16 @@ nav ul {
     display: block;
 }
 
-#file-transformer-container form .g-recaptcha > div {
+#file-transformer-container form .form-group {
+    margin-top: 30px;
+}
+
+#file-transformer-container form .captcha-container .g-recaptcha > div {
     margin: 0 auto;
+}
+
+#file-transformer-container form .button-container {
+    margin-top: 15px;
 }
 
 #file-transformer-container form .button-container button {

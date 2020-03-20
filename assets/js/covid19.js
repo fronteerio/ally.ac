@@ -19,15 +19,6 @@
     $(document).ready(function() {
         resetForm();
 
-        /** Invoked by recaptcha when its state changed (button selected, expires, ...) */
-        window.recaptchaCalback = function() {
-            $('#covid19-af-form').submit();
-        };
-
-        window.recaptchaExpiredCalback = function() {
-            resetForm();
-        }
-
         /** Invoked when a file gets selected */
         $('#covid19-af-form input[type="file"]').on('change', function() {
             var file = $(this)[0].files[0];
@@ -36,6 +27,7 @@
             }
         });
 
+        // Drag logic
         $('#covid19-af-form .drop-area')
             .on('drag dragstart dragend dragover dragenter dragleave drop', function(e) {
                 e.preventDefault();
@@ -55,9 +47,28 @@
                 }
             });
 
+        // The university field
+        $('#covid19-af-form input[type="text"]').on('change', setButtonDisabledState);
+        $('#covid19-af-form input[type="text"]').on('keyup', setButtonDisabledState);
+        if (window.localStorage.getItem('university')) {
+            $('#covid19-af-form input[type="text"]').val(window.localStorage.getItem('university'));
+        }
+
+        /** Invoked by recaptcha when the user confirms they're a human */
+        window.recaptchaCalback = function() {
+            setButtonDisabledState();
+        };
+
+        /** Invoked by recaptcha when the users recaptcha token expires */
+        window.recaptchaExpiredCalback = function() {
+            setButtonDisabledState();
+        }
+
         $('#covid19-af-form').on('submit', function(e) {
             if (!e.isDefaultPrevented()) {
                 setProgress(0);
+                var university = getUniversity();
+                saveUniversity(university);
                 showStep(3, true);
                 // If the file was already uploaded, we can simply trigger again
                 var url = $('#covid19-af-form #trigger').attr('data-ally-invoke-direct-file');
@@ -158,6 +169,32 @@
             .removeClass('file-selected')
             .find('.filename').text('');
         $('#covid19-af-form #trigger').attr('data-ally-invoke-direct-file', '');
+        setButtonDisabledState();
+    }
+
+    function setButtonDisabledState() {
+        if (getUniversity() && getCaptchaToken()) {
+            $('#covid19-af-form button').removeAttr('disabled');
+        } else {
+            $('#covid19-af-form button').attr('disabled', 'disabled');
+        }
+    }
+
+    function getUniversity() {
+        return $('#covid19-af-form input[type="text"]').val();
+    }
+
+    /** Get the recaptcha token, if any */
+    function getCaptchaToken() {
+        if (grecaptcha && grecaptcha.getResponse && grecaptcha.getResponse()) {
+            return grecaptcha.getResponse();
+        } else {
+            return null;
+        }
+    }
+
+    function saveUniversity(university) {
+        localStorage.setItem('university', university);
     }
 
     /** Set the given file as the selected file and move to the next step */
@@ -184,8 +221,8 @@
 
     /** Show the given step */
     function showStep(n, moveFocus) {
-        $('.step').hide();
-        var $step = $('.step.step' + n).show();
+        $('.step').removeClass('show-step');
+        var $step = $('.step.step' + n).addClass('show-step');
         if (moveFocus) {
             $step.find('label, [tabindex="-1"]').focus();
         }

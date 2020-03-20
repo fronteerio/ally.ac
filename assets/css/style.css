@@ -47,6 +47,16 @@ input.form-control:-ms-input-placeholder {
     color: #4A4A4A;
 }
 
+input.form-control {
+    height: 40px;
+}
+
+#demo label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
 /* Top */
 
 #top h1 {

@@ -33,15 +33,6 @@
     text-align: left;
 }
 
-.form-control {
-    height: 40px;
-}
-
-#demo label {
-    font-size: 16px;
-    font-weight: 400;
-}
-
 #demo button {
     background-color: #007900;
     border: none;

@@ -76,7 +76,7 @@
                     <p style="display: none" class="bg-danger validation-error error-something-went-wrong">Oops! Something went wrong</p>
 
 
-                    <div class="step step1">
+                    <div class="step step1 show-step">
                         <div class="drop-area">
                             <div class="drop-area-inner">
                                 <!-- When no file is selected -->
@@ -102,6 +102,16 @@
                         </div>
                     </div>
                     <div class="step step2">
+                        <div class="form-group">
+                            <label for="form-institution">Your institution</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="form-institution"
+                                name="institution"
+                                placeholder="Your institution"
+                                required="required" />
+                        </div>
                         <div class="captcha-container">
                             <span class="sr-only" tabindex="-1">Please verify that you are not a robot</span>
                             <div
@@ -109,6 +119,9 @@
                                 data-callback="recaptchaCalback"
                                 data-expired-callback="recaptchaExpiredCalback"
                                 data-sitekey="6Le6uqcUAAAAAOHXv0-vgikymiFb1rC4JByY7pDG"></div>
+                        </div>
+                        <div class="button-container">
+                            <button id="upload-button" class="primary" type="submit" disabled="disabled">Yes, gimme more formats!</button>
                         </div>
                     </div>
                     <div class="step step3">
