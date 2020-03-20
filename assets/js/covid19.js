@@ -118,7 +118,7 @@
     /** Upload the file */
     function uploadFile(response) {
         // Start the upload
-        $('#covid19-af-form .drop-area').addClass('is-uploading');
+        $('#covid19-af-form .step1').addClass('is-uploading');
         var fd = new FormData();
         Object.keys(response.form).forEach(function(key) {
             fd.append(key, response.form[key]);
@@ -154,7 +154,7 @@
 
         // The AF takes a second to load, leave the progress bar visible for a while
         setTimeout(function() {
-            $('#covid19-af-form .drop-area').removeClass('is-uploading');
+            $('#covid19-af-form .step1').removeClass('is-uploading');
             resetForm();
             showStep(1, false);
         }, 1000);
@@ -164,7 +164,7 @@
     function resetForm() {
         selectedFile = null;
         setValidationErrors([]);
-        $('.drop-area')
+        $('.step1')
             .removeClass('is-uploading')
             .removeClass('file-selected')
             .find('.filename').text('');
@@ -203,16 +203,16 @@
         selectedFile = file;
         var icon = getSupportedFileType(file.name);
         if (icon) {
-            var $dropArea = $('.drop-area');
-            $dropArea.addClass('file-selected');
-            $dropArea.find('.filename').text(file.name);
-            $dropArea.find('img.fileicon').attr('src', icon);
+            var $step1 = $('.step1');
+            $step1.addClass('file-selected');
+            $step1.find('.filename').text(file.name);
+            $step1.find('img.fileicon').attr('src', icon);
             $('.g-recaptcha').focus();
 
             // Show a spinner for a bit to show "transition"
             setTimeout(function() {
                 showStep(2, true);
-                $dropArea.removeClass('file-selected');
+                $step1.removeClass('file-selected');
             }, 1000);
         } else {
             setValidationErrors([ERRORS.unsupportedContentType]);

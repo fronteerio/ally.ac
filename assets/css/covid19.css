@@ -53,6 +53,10 @@ nav ul {
     display: block;
 }
 
+#file-transformer-container form .step.step1.file-selected .supported-files {
+    display: none;
+}
+
 #file-transformer-container form .step.step1 .supported-files img {
     margin-right: 8px;
 }
@@ -172,11 +176,11 @@ nav ul {
     display: none;
 }
 
-#file-transformer-container form .drop-area.file-selected {
+#file-transformer-container form .file-selected .drop-area {
     height: 70px;
 }
 
-#file-transformer-container form .drop-area.file-selected .drop-area-inner {
+#file-transformer-container form .file-selected .drop-area .drop-area-inner {
     border-style: solid;
     border-width: 1px;
     flex-direction: row;
@@ -184,24 +188,24 @@ nav ul {
     padding: 0 5px;
 }
 
-#file-transformer-container form .drop-area.file-selected img.upload {
+#file-transformer-container form .file-selected .drop-area img.upload {
     display: none;
 }
 
-#file-transformer-container form .drop-area.file-selected img.fileicon {
+#file-transformer-container form .file-selected .drop-area img.fileicon {
     display: block;
 }
 
-#file-transformer-container form .drop-area.file-selected img {
+#file-transformer-container form .file-selected .drop-area img {
     margin: 0 10px;
 }
 
-#file-transformer-container form .drop-area.file-selected span {
+#file-transformer-container form .file-selected .drop-area span {
     display: none;
     margin: 0;
 }
 
-#file-transformer-container form .drop-area.file-selected span.filename {
+#file-transformer-container form .file-selected .drop-area span.filename {
     display: block;
     flex: 1;
     margin-right: 10px;
@@ -210,19 +214,19 @@ nav ul {
     white-space: nowrap;
 }
 
-#file-transformer-container form .drop-area.file-selected label {
+#file-transformer-container form .file-selected .drop-area label {
     display: none;
 }
 
-#file-transformer-container form .drop-area.file-selected img.spinner {
+#file-transformer-container form .file-selected .drop-area img.spinner {
     display: block;
 }
 
-#file-transformer-container form .drop-area.is-uploading {
+#file-transformer-container form .is-uploading .drop-area {
     height: 40px;
 }
 
-#file-transformer-container form .drop-area.is-uploading .drop-area-inner {
+#file-transformer-container form .is-uploading .drop-area .drop-area-inner {
     display: none;
 }
 
@@ -230,7 +234,7 @@ nav ul {
     display: none;
 }
 
-#file-transformer-container form .drop-area.is-uploading .progress {
+#file-transformer-container form .is-uploading .drop-area .progress {
     display: block;
 }
 
