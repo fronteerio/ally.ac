@@ -106,6 +106,18 @@
             }
             return false;
         });
+
+        var browserLanguage = navigator.language.slice(0, 2);
+        var language = ['de', 'en', 'es', 'fr', 'it'].indexOf(browserLanguage) > -1 ? browserLanguage : 'en';
+
+        $.i18n().load({
+            [language]: '/assets/locale/covid19/' + language +'.json'
+        }).done(function () {
+            $.i18n().locale = language;
+            $('body').i18n();
+            setProgress(0);
+        });
+
     });
 
     /** Upload the file */
@@ -226,6 +238,7 @@
 
     function setProgress(percent) {
         var loaded = Math.floor(percent * 90);
+
         $('#covid19-af-form .progress .progress-bar')
             .attr('aria-valuenow', loaded)
             .css({
@@ -235,7 +248,7 @@
                 'width': loaded + '%'
             })
             .find('.sr-only')
-            .text(loaded + '% Complete');
+            .text($.i18n('PROGRESS', loaded));
     }
 
     function setValidationErrors(errors) {
