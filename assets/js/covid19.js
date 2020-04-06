@@ -107,11 +107,20 @@
             return false;
         });
 
-        var browserLanguage = navigator.language.slice(0, 2);
-        var language = ['de', 'en', 'es', 'fr', 'it'].indexOf(browserLanguage) > -1 ? browserLanguage : 'en';
+        const languages = navigator.languages;
+        let language;
+        if(languages && languages.length > 0) {
+            language = languages.map(l => l.slice(0, 2))
+              .filter(l => ['de', 'en', 'es', 'fr', 'it'].includes(l))[0] || 'en';
+        } else if(navigator.language) {
+            language = navigator.language.slice(0,2)
+        } else {
+            language = 'en';
+        }
 
+        $('html').attr('lang', language);
         $.i18n().load({
-            [language]: '/assets/locale/covid19/' + language +'.json'
+            [language]: `/assets/locale/covid19/${language}.json`
         }).done(function () {
             $.i18n().locale = language;
             $('body').i18n();
