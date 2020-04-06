@@ -1,4 +1,15 @@
 (function() {
+    const languages = navigator.languages;
+    let language;
+    if (languages && languages.length > 0) {
+        language = languages.map(l => l.slice(0, 2))
+          .filter(l => ['de', 'en', 'es', 'fr', 'it'].includes(l))[0] || 'en';
+    } else if (navigator.language) {
+        language = navigator.language.slice(0, 2);
+    } else {
+        language = 'en';
+    }
+    document.documentElement.lang = language;
 
     var ERRORS = {
         // API Errors
@@ -106,6 +117,15 @@
             }
             return false;
         });
+
+        $.i18n().load({
+            [language]: `/assets/locale/covid19/${language}.json`
+        }).done(function () {
+            $.i18n().locale = language;
+            $('body').i18n();
+            setProgress(0);
+        });
+
     });
 
     /** Upload the file */
@@ -226,6 +246,7 @@
 
     function setProgress(percent) {
         var loaded = Math.floor(percent * 90);
+
         $('#covid19-af-form .progress .progress-bar')
             .attr('aria-valuenow', loaded)
             .css({
@@ -235,7 +256,7 @@
                 'width': loaded + '%'
             })
             .find('.sr-only')
-            .text(loaded + '% Complete');
+            .text($.i18n('PROGRESS', loaded));
     }
 
     function setValidationErrors(errors) {

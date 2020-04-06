@@ -32,49 +32,52 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
 
+
         <section id="top" class="clearfix">
             <!-- NAVIGATION -->
             <nav class="header">
                 <div class="col-xs-1 col-sm-4">
                     <h1>
-                        <a href="/index.html"><img src="/assets/img/ally-a.svg" alt="" /><span class="hidden-xs hidden-sm">Blackboard Ally</span></a>
+                        <a href="/index.html"><img src="/assets/img/ally-a.svg" alt="" />
+                            <span class="hidden-xs hidden-sm" data-i18n="NAVIGATION_LINK_INDEX"></span></a>
                     </h1>
                 </div>
                 <div class="col-xs-11 col-sm-8">
                     <ul>
-                        <li><a href="/courses.html">Courses</a></li>
-                        <li><a href="/websites.html">Websites</a></li>
-                        <li class="hidden-xs hidden-sm"><a href="https://usergroup.ally.ac" target="_blank">Community</a></li>
-                        <li class="hidden-xs hidden-sm"><a href="https://usergroup.ally.ac/s/tour/" target="_blank">Ally Tour</a></li>
-                        <li><a class="hidden-xs hidden-sm" id="btn-primary" href="/demo.html">Request Demo</a></li>
+                        <li><a href="/courses.html" data-i18n="NAVIGATION_LINK_COURSES"></a></li>
+                        <li><a href="/websites.html" data-i18n="NAVIGATION_LINK_WEBSITES"></a></li>
+                        <li class="hidden-xs hidden-sm"><a href="https://usergroup.ally.ac" target="_blank" data-i18n="NAVIGATION_LINK_COMMUNITY"></a></li>
+                        <li class="hidden-xs hidden-sm"><a href="https://usergroup.ally.ac/s/tour/" target="_blank" data-i18n="NAVIGATION_LINK_ALLY_TOUR"></a></li>
+                        <li><a class="hidden-xs hidden-sm" id="btn-primary" href="/demo.html" data-i18n="NAVIGATION_LINK_REQUEST_DEMO"></a></li>
                     </ul>
                 </div>
             </nav>
         </section>
         <main>
             <div id="file-transformer-container" class="clearfix" data-ally-content-id="0">
-                <h2>Engage the <strong>File Transformer</strong></h2>
+                <h2 data-i18n="[html]ENGAGE_FILE_TRANSFORMER"></h2>
                 <form id="covid19-af-form" method="get" action="#" name="AllyMicrosite">
-                    <p class="explanation">
-                    	As schools move to fully online learning, the File Transformer
-                        helps you to personalize your learning experience by converting your course files into alternative formats that fit your needs,
-                        devices, and learning preferences.
-                    </p>
+                    <p class="explanation" data-i18n="FILE_TRANSFORMER_EXPLANATION"></p>
 
                     <!-- API errors -->
-                    <p style="display: none" class="bg-danger validation-error error-invalid-captcha">The provided captcha could not be validated</p>
-                    <p style="display: none" class="bg-danger validation-error error-missing-captcha-token">No captcha was provided</p>
-                    <p style="display: none" class="bg-danger validation-error error-missing-filename">No filename could be resolved for the file</p>
-                    <p style="display: none" class="bg-danger validation-error error-unsupported-content-type">
-                        Sorry, this file type is not supported. Please select a PDF, DOC, DOCX, PPT, PPTX or HTML file
-                    </p>
+                    <p style="display: none" class="bg-danger validation-error error-invalid-captcha"
+                       data-i18n="ERROR_INVALID_CAPTCHA"></p>
+                    <p style="display: none" class="bg-danger validation-error error-missing-captcha-token"
+                       data-i18n="ERROR_MISSING_CAPTCHA_TOKEN"></p>
+                    <p style="display: none" class="bg-danger validation-error error-missing-filename"
+                       data-i18n="ERROR_MISSING_FILENAME"></p>
+                    <p style="display: none" class="bg-danger validation-error error-unsupported-content-type"
+                       data-i18n="ERROR_UNSUPPORTED_CONTENT_TYPE"></p>
 
                     <!-- UI errors -->
-                    <p style="display: none" class="bg-danger validation-error error-no-file-selected">Please select a file</p>
-                    <p style="display: none" class="bg-danger validation-error error-captcha-not-selected">Sorry, this file type is not supported</p>
+                    <p style="display: none" class="bg-danger validation-error error-no-file-selected"
+                       data-i18n="ERROR_NO_FILE_SELECTED"></p>
+                    <p style="display: none" class="bg-danger validation-error error-captcha-not-selected"
+                       data-i18n="ERROR_CAPTCHA_NOT_SELECTED"></p>
 
                     <!-- Generic error -->
-                    <p style="display: none" class="bg-danger validation-error error-something-went-wrong">Oops! Something went wrong</p>
+                    <p style="display: none" class="bg-danger validation-error error-something-went-wrong"
+                       data-i18n="ERROR_SOMETHING_WENT_WRONG"></p>
 
 
                     <div class="step step1 show-step">
@@ -82,8 +85,8 @@
                             <div class="drop-area-inner">
                                 <!-- When no file is selected -->
                                 <img src="/assets/img/icon-upload.svg" alt="" class="upload" />
-                                <span class="drop-message">Drop file to upload</span>
-                                <span class="or">or</span>
+                                <span class="drop-message" data-i18n="DROP_FILE_TO_UPLOAD"></span>
+                                <span class="or" data-i18n="OR"></span>
 
                                 <!-- When a file is selected -->
                                 <img src="/assets/img/mime-types/icon-mimetype-application-pdf.svg" alt="" class="fileicon" />
@@ -94,28 +97,28 @@
                                     type="file"
                                     id="file"
                                     accept=".pdf,.doc,.docx,.ppt,.pptx,.html,application/pdf,application/vnd.ms-powerpoint,application/vnd.oasis.opendocument.presentation,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/x-mspowerpoint,application/x-powerpoint,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/html" />
-                                <label for="file" id="browse">Browse</label>
+                                <label for="file" id="browse" data-i18n="BROWSE"></label>
                             </div>
                         </div>
                         <div class="supported-files">
                             <img src="/assets/img/ic_info_outline.svg" alt="" />
-                            <span>Supported file types: PDF, DOC, DOCX, PPT, PPTX, HTML</span>
+                            <span data-i18n="SUPPORTED_FILES"></span>
                         </div>
                     </div>
                     <div class="step step2">
                         <div class="white-container">
                             <div class="form-group">
-                                <label for="form-institution">Institution</label>
+                                <label for="form-institution" data-i18n="INSTITUTION"></label>
                                 <input
                                     type="text"
                                     class="form-control"
                                     id="form-institution"
                                     name="institution"
-                                    placeholder="Your institution"
+                                    data-i18n="[placeholder]INSTITUTION_PLACEHOLDER"
                                     required="required" />
                             </div>
                             <div class="captcha-container">
-                                <span class="sr-only" tabindex="-1">Please verify that you are not a robot</span>
+                                <span class="sr-only" tabindex="-1" data-i18n="CAPTCHA_NOT_A_ROBOT"></span>
                                 <div
                                     class="g-recaptcha"
                                     data-callback="recaptchaCalback"
@@ -124,11 +127,11 @@
                             </div>
                         </div>
                         <div class="button-container">
-                            <button id="upload-button" class="primary" type="submit" disabled="disabled">Transform my file</button>
+                            <button id="upload-button" class="primary" type="submit" disabled="disabled" data-i18n="UPLOAD_BUTTON"></button>
                         </div>
                     </div>
                     <div class="step step3">
-                        <p tabindex="-1">Uploading new file...</p>
+                        <p tabindex="-1" data-i18n="UPLOADING_FILE"></p>
                         <div class="progress">
                             <div
                                 class="progress-bar progress-bar-success progress-bar-striped"
@@ -147,8 +150,8 @@
                         data-ally-content-ref="0"
                         data-ally-invoke="alternativeformats"
                         data-ally-invoke-direct-file=""
-                        style="display: none">
-                        Open the alternative formats modal
+                        style="display: none"
+                        data-i18n="OPEN_ALTERNATIVE_FORMATS_MODAL">
                     </a>
                 </form>
             </div>
@@ -157,16 +160,9 @@
                 <section class="courses-features features container">
                     <div class="row">
                         <div class="col-xs-12 col-lg-12">
-                            <h3>Transform your files to formats that work for you</h3>
-                            <p>
-                                &quot;File Transformer&quot; allows you to upload a course file and download it in
-                                an alternative format. This way, you can personalize your learning experience to better
-                                fit your needs, devices, and learning preferences.
-                            </p>
-                            <p>
-                                After uploading your file, pick an alternative format that best suits your current task or situation.
-                                You can pick and mix formats too.
-                            </p>
+                            <h3 data-i18n="FEATURE_FILE_TRANSFORMER_HEADING"></h3>
+                            <p data-i18n="FEATURE_FILE_TRANSFORMER_TEXT"></p>
+                            <p data-i18n="FEATURE_FILE_TRANSFORMER_GUIDE"></p>
                         </div>
                     </div>
                     <div class="row align-top">
@@ -174,18 +170,15 @@
                             <img class="features-icon ocred" src="/assets/img/courses/icon-file-ocred.svg" alt="" />
                         </div>
                         <div class="col-xs-12 col-sm-4">
-                            <h4>OCRed PDF</h4>
-                            <p>Makes scanned documents searchable and more readable. Reduces file size.</p>
+                            <h4 data-i18n="FORMAT_OCRED_PDF"></h4>
+                            <p data-i18n="FORMAT_OCRED_PDF_DESCRIPTION"></p>
                         </div>
                         <div class="col-xs-12 col-sm-2 col-md-1">
                             <img class="features-icon" src="/assets/img/courses/icon-file-tagged-pdf.svg" alt="" />
                         </div>
                         <div class="col-xs-12 col-sm-4">
-                            <h4>Tagged PDF</h4>
-                            <p>
-                                Open DOC or PPT files without Microsoft &reg; Office.
-                                Improves use with assistive technology and helps reduce bandwith.
-                            </p>
+                            <h4 data-i18n="FORMAT_TAGGED_PDF"></h4>
+                            <p data-i18n="FORMAT_TAGGED_PDF_DESCRIPTION"></p>
                         </div>
                     </div>
                     <div class="row align-top">
@@ -193,15 +186,15 @@
                             <img class="features-icon" src="/assets/img/courses/icon-file-audio.svg" alt="" />
                         </div>
                         <div class="col-xs-12 col-sm-4">
-                            <h4>Audio</h4>
-                            <p>MP3 version for listening on personal devices, or when you want to take a break from reading.</p>
+                            <h4 data-i18n="FORMAT_AUDIO"></h4>
+                            <p data-i18n="FORMAT_AUDIO_DESCRIPTION"></p>
                         </div>
                         <div class="col-xs-12 col-sm-2 col-md-1">
                             <img class="features-icon" src="/assets/img/courses/icon-file-epub.svg" alt="" />
                         </div>
                         <div class="col-xs-12 col-sm-4">
-                            <h4>HTML</h4>
-                            <p>Mobile-friendly responsive version for easier reading in browser and on mobile devices.</p>
+                            <h4 data-i18n="FORMAT_HTML"></h4>
+                            <p data-i18n="FORMAT_HTML_DESCRIPTION"></p>
                         </div>
                     </div>
                     <div class="row align-top">
@@ -209,15 +202,15 @@
                             <img class="features-icon" src="/assets/img/courses/icon-file-braille.svg" alt="" />
                         </div>
                         <div class="col-xs-12 col-sm-4">
-                            <h4>Electronic braille</h4>
-                            <p>BRF version for tactile reading on electronic braille displays.</p>
+                            <h4 data-i18n="FORMAT_BRAILLE"></h4>
+                            <p data-i18n="FORMAT_BRAILLE_DESCRIPTION"></p>
                         </div>
                         <div class="col-xs-12 col-sm-2 col-md-1">
                             <img class="features-icon" src="/assets/img/courses/icon-file-html.svg" alt="" />
                         </div>
                         <div class="col-xs-12 col-sm-4">
-                            <h4>ePub</h4>
-                            <p>For reading and annotating as an e-book on an iPad and other e-book readers.</p>
+                            <h4 data-i18n="FORMAT_EPUB"></h4>
+                            <p data-i18n="FORMAT_EPUB_DESCRIPTION"></p>
                         </div>
                     </div>
                     <div class="row align-top">
@@ -225,48 +218,56 @@
                             <img class="features-icon" src="/assets/img/courses/icon-file-beeline.svg" alt="" />
                         </div>
                         <div class="col-xs-12 col-sm-4">
-                            <h4>Beeline Reader</h4>
-                            <p>Enhanced version for faster and more focused on-screen reading.</p>
+                            <h4 data-i18n="FORMAT_BEELINE"></h4>
+                            <p data-i18n="FORMAT_BEELINE_DESCRIPTION"></p>
                         </div>
                     </div>
                     <div class="row">
                         <a
                             href="https://help.blackboard.com/Ally/Ally_for_LMS/Student/Alternative_Formats"
                             target="_blank"
-                            class="btn-secondary">
-                            Learn more about Alternative Formats <i class="material-icons">keyboard_arrow_right</i>
+                            class="btn-secondary"
+                            data-i18n="LEARN_MORE">
+                            <i class="material-icons">keyboard_arrow_right</i>
                         </a>
                     </div>
                 </section>
             </div>
         </main>
-
         <footer class="container-fluid">
             <div class="row">
                 <div class="col-xs-12">
                     <ul>
                         <!-- <li><a href="index.html"><img src="/assets/img/ally-a.svg" alt="Blackboard Ally" /></a></li> -->
-                        <li><a href="https://usergroup.ally.ac/s/announcements/" target="_blank" title="Blackboard Ally Announcements">Announcements</a></li>
-                        <li><a href="https://usergroup.ally.ac/s/releases/" target="_blank" title="Blackboard Ally Release notes">Release notes</a></li>
-                        <li><a href="https://usergroup.ally.ac/s/discussion/" target="_blank" title="Blackboard Ally Discussions">Discussions</a></li>
-                        <li><a href="https://usergroup.ally.ac/s/case-studies/" target="_blank" title="Blackboard Ally Case studies">Case studies</a></li>
-                        <li><a href="https://usergroup.ally.ac/s/resources/" target="_blank" title="Blackboard Ally Resources">Resources</a></li>
-                        <li><a href="https://www.youtube.com/channel/UCWXzwKChiyWOXMTN9qQFSnQ" target="_blank" title="Blackboard Ally on YouTube">YouTube</a></li>
+                        <li><a href="https://usergroup.ally.ac/s/announcements/" target="_blank" title="Blackboard Ally Announcements" data-i18n="NAVIGATION_LINK_ANNOUNCEMENTS"></a></li>
+                        <li><a href="https://usergroup.ally.ac/s/releases/" target="_blank" title="Blackboard Ally Release notes" data-i18n="NAVIGATION_LINK_RELEASE_NOTES"></a></li>
+                        <li><a href="https://usergroup.ally.ac/s/discussion/" target="_blank" title="Blackboard Ally Discussions" data-i18n="NAVIGATION_LINK_DISCUSSIONS"></a></li>
+                        <li><a href="https://usergroup.ally.ac/s/case-studies/" target="_blank" title="Blackboard Ally Case studies" data-i18n="NAVIGATION_LINK_CASE_STUDIES"></a></li>
+                        <li><a href="https://usergroup.ally.ac/s/resources/" target="_blank" title="Blackboard Ally Resources" data-i18n="NAVIGATION_LINK_RESOURCES"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCWXzwKChiyWOXMTN9qQFSnQ" target="_blank" title="Blackboard Ally on YouTube" data-i18n="NAVIGATION_LINK_YOUTUBE"></a></li>
                     </ul>
                 </div>
                 <div class="col-xs-12">
-                    <div id="footer-copyright-container">
-                        <a href="https://help.blackboard.com/Privacy_Statement" target="_blank">Privacy Policy</a>
+                    <div id="footer-copyright-container" data-i18n="COPYRIGHT">
+                        <a href="https://help.blackboard.com/Privacy_Statement" target="_blank" data-i18n="PRIVACY_POLICY"></a>
                         <span class="footer-copyright-divider">|</span>
-                        <a href="https://help.blackboard.com/Terms_of_Use" target="_blank">Terms of Use</a>
+                        <a href="https://help.blackboard.com/Terms_of_Use" target="_blank" data-i18n="TERMS_OF_USE"></a>
                         <span class="footer-copyright-divider">|</span>
-                        &copy; All rights reserved Blackboard Inc. <span id="footer-year"></span>
+                        <span id="footer-year"></span>
                     </div>
                 </div>
             </div>
         </footer>
 
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.7/jquery.i18n.min.js" integrity="sha256-Xe5TCNN0b3K98e99/oWJr0FOiSTILqWWWEaDCY48V5E=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.7/jquery.i18n.parser.min.js" integrity="sha256-wShTIrxeao7Eih6UkkjLqdE2jiH/N0MqaJdiXeGl/7o=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.7/jquery.i18n.emitter.bidi.min.js" integrity="sha256-gtc2Tvs5/k9I3Q28OZ/CP7TzCHANC8wUbJZQVE989Do=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.7/jquery.i18n.emitter.min.js" integrity="sha256-VNKWSG0j8kQ/+I4J9r0skSppRy11yw7kRmoZK7xmcIM=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.7/jquery.i18n.fallbacks.min.js" integrity="sha256-JYNCT/waNdj6h/SOcUqOmluIEjQakFz54nrbkd44Kj0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.7/jquery.i18n.language.min.js" integrity="sha256-GQa4KOpPyr5vY9JrqY9ibG3IXNyNTzTpb/K4fyReaBY=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.7/jquery.i18n.messagestore.min.js" integrity="sha256-dxDziD29LGTvKo6LXzZmm8o8W87YCu4BOh+tsrDJd4k=" crossorigin="anonymous"></script>
+
         <script type="text/javascript" src="/assets/js/covid19.js"></script>
         <script>
             (function(i, s, o, g, r, a, m) {
