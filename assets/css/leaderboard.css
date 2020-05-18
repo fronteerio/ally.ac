@@ -248,3 +248,15 @@ img.features-icon.ocred {
     justify-content: flex-end;
     padding-right: 0px;
 }
+
+.child.half {
+    flex-basis: 50%;
+}
+
+.child:not(.half) {
+    flex-basis: 100%;
+}
+
+.details_child_name {
+    font-weight: bold;
+}

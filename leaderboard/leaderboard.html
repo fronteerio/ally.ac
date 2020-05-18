@@ -56,29 +56,29 @@
             <div class="container">
                 <div class="row vertical-align">
                     <div id="leaderboard" class="table">
-                        <div class="chart-container">
+                        <div class="chart-container child">
                             <div class="chart-holder">
                                 <div id="chart-container" style="width:100%; height:300px;"></div>
                             </div>
                         </div>
                         <div class="table_row header">
-                            <div class="table_column table_header"></div>
-                            <div class="table_column table_header text_overall">Overall Leaderboard</div>
-                            <div class="table_column table_header">Fixes</div>
-                            <div class="table_column table_header">Students</div>
-                            <div class="table_column table_header">Fixes per student</div>
+                            <div class="table_column table_header child half"></div>
+                            <div class="table_column table_header text_overall child">Overall Leaderboard</div>
+                            <div class="table_column table_header child half">Fixes</div>
+                            <div class="table_column table_header child half">Students</div>
+                            <div class="table_column table_header child half">Fixes per student</div>
                         </div>
                         <div class="table_body">
 
                         </div>
                         <div class="table_footer">
-                            <div class="table_column text_right_align"></div>
-                            <div class="table_column text_left_align">
+                            <div class="table_column text_right_align child half"></div>
+                            <div class="table_column text_left_align child">
                                 <a href="#" class="table_show_full">Show full list</a>
                             </div>
-                            <div class="table_column"></div>
-                            <div class="table_column"></div>
-                            <div class="table_column table_header text_right_align"><span>Out of total participants:</span><span class="units"></span></div>
+                            <div class="table_column child half"></div>
+                            <div class="table_column child half"></div>
+                            <div class="table_column table_header text_right_align child half"><span>Out of total participants:</span><span class="units"></span></div>
                             <div>
                         </div>
                     </div>
@@ -128,14 +128,14 @@
           function renderItem(fixdata) {
                 $(".table_body").append(`
                     <div class="table_row">
-                        <div class="table_column position">${fixdata.position}</div>
-                        <div class="table_column details table_white table_left_side_radius">
-                            <div class="details_child">${fixdata.details.name}</div>
+                        <div class="table_column position child half">${fixdata.position}</div>
+                        <div class="table_column details table_white table_left_side_radius child">
+                            <div class="details_child details_child_name">${fixdata.details.name}</div>
                             <div class="details_child">${fixdata.details.location}</div>
                         </div>
-                        <div class="table_column table_white">${fixdata.fixes}</div>
-                        <div class="table_column table_white">${fixdata.students}</div>
-                        <div class="table_column table_grey table_right_side_radius">${fixdata.fixes_per_student}</div>
+                        <div class="table_column table_white child half">${fixdata.fixes}</div>
+                        <div class="table_column table_white child half">${fixdata.students}</div>
+                        <div class="table_column table_grey table_right_side_radius child half">${fixdata.fixes_per_student}</div>
                     </div>
                     `)
           }
