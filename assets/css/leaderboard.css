@@ -238,3 +238,13 @@ img.features-icon.ocred {
     font-size: 18px;
     font-weight: bold;
 }
+
+.text_left_align {
+    justify-content: flex-start;
+    padding-left: 0px;
+}
+
+.text_right_align {
+    justify-content: flex-end;
+    padding-right: 0px;
+}
