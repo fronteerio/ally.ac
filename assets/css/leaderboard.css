@@ -233,3 +233,8 @@ img.features-icon.ocred {
     background-color: #00C7D1;
     padding: 12px;
 }
+
+.text_overall {
+    font-size: 18px;
+    font-weight: bold;
+}

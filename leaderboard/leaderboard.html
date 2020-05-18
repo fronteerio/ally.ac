@@ -58,12 +58,12 @@
                     <div id="leaderboard" class="table">
                         <div class="chart-container">
                             <div class="chart-holder">
-                                <div id="chart-container" style="width:100%; height:400px;"></div>
+                                <div id="chart-container" style="width:100%; height:300px;"></div>
                             </div>
                         </div>
                         <div class="table_row header">
                             <div class="table_column table_header"></div>
-                            <div class="table_column table_header"></div>
+                            <div class="table_column table_header text_overall">Overall Leaderboard</div>
                             <div class="table_column table_header">Fixes</div>
                             <div class="table_column table_header">Students</div>
                             <div class="table_column table_header">Fixes per student</div>
@@ -241,7 +241,8 @@
                     chart: {
                         type: 'line',
                         backgroundColor: 'transparent',
-                        color: '#00C7D1'
+                        color: '#00C7D1',
+                        height: '300px'
                     },
                     legend: {
                         enabled: false
@@ -253,6 +254,7 @@
                     },
                     caption: {
                         text: last,
+                        style: { "color": "#000", "fontSize": "16px" },
                         y: 60,
                         verticalAlign: "top",
                         useHTML: true
@@ -265,6 +267,7 @@
                     },
                     series: [{
                         name: 'Fixes',
+                        color: "#00C7D1",
                         data: points
                     }]
                 });
