@@ -167,6 +167,10 @@ img.features-icon.ocred {
     color: #fff;
 }
 
+.table_row {
+    background-color: transparent;
+}
+
 .table_white {
     background-color: #FFF;
     color: #000;
@@ -174,6 +178,8 @@ img.features-icon.ocred {
 
 .table_grey {
     background-color: #DEDEDE;
+    color: #000;
+    font-weight: bold;
 }
 
 .table_left_side_radius {
