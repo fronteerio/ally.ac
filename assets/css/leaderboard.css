@@ -137,3 +137,92 @@ footer {
 img.features-icon.ocred {
     width: 61px;
 }
+
+.table {
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+}
+
+.table_row {
+    display: flex;
+    height: 70px;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.table_column {
+    display: flex;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+}
+
+.table_header {
+    background-color: transparent;
+    color: #fff;
+}
+
+.table_white {
+    background-color: #FFF;
+}
+
+.table_grey {
+    background-color: #DEDEDE;
+}
+
+.table_left_side_radius {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.table_right_side_radius {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.table_body > tr.table_row {
+    height: 50px;
+}
+
+.table_footer {
+    display: flex;
+}
+
+.details {
+    display: flex;
+    flex-flow: column;
+}
+
+.details_child {
+    display: flex;
+}
+
+.position {
+    background-color: transparent;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.chart-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.chart-holder {
+    width: 80%;
+}
+
+.highcharts-caption {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #00C7D1;
+    padding: 12px;
+}
