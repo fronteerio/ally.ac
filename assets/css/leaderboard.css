@@ -202,11 +202,12 @@ img.features-icon.ocred {
 
 .details {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
+    flex-wrap: wrap;
 }
 
 .details_child {
-    display: flex;
+    
 }
 
 .position {
@@ -223,7 +224,7 @@ img.features-icon.ocred {
 }
 
 .chart-holder {
-    width: 85%;
+    width: 94%;
 }
 
 .highcharts-caption {
@@ -249,14 +250,22 @@ img.features-icon.ocred {
     padding-right: 0px;
 }
 
-.child.half {
-    flex-basis: 50%;
+.child {
+    flex-basis: 100%;
 }
 
-.child:not(.half) {
-    flex-basis: 100%;
+.child.half {
+    flex-basis: 10%;
+}
+
+.child.third {
+    flex-basis: 30%;
 }
 
 .details_child_name {
     font-weight: bold;
+}
+
+.details > .child {
+    text-align: left;
 }

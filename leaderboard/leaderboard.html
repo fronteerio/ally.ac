@@ -66,7 +66,7 @@
                             <div class="table_column table_header text_overall child">Overall Leaderboard</div>
                             <div class="table_column table_header child half">Fixes</div>
                             <div class="table_column table_header child half">Students</div>
-                            <div class="table_column table_header child half">Fixes per student</div>
+                            <div class="table_column table_header child third">Fixes per student</div>
                         </div>
                         <div class="table_body">
 
@@ -78,7 +78,7 @@
                             </div>
                             <div class="table_column child half"></div>
                             <div class="table_column child half"></div>
-                            <div class="table_column table_header text_right_align child half"><span>Out of total participants:</span><span class="units"></span></div>
+                            <div class="table_column table_header text_right_align child third"><span>Out of total participants:</span><span class="units"></span></div>
                             <div>
                         </div>
                     </div>
@@ -130,12 +130,12 @@
                     <div class="table_row">
                         <div class="table_column position child half">${fixdata.position}</div>
                         <div class="table_column details table_white table_left_side_radius child">
-                            <div class="details_child details_child_name">${fixdata.details.name}</div>
-                            <div class="details_child">${fixdata.details.location}</div>
+                            <div class="child details_child_name">${fixdata.details.name}</div>
+                            <div class="child">${fixdata.details.location}</div>
                         </div>
                         <div class="table_column table_white child half">${fixdata.fixes}</div>
                         <div class="table_column table_white child half">${fixdata.students}</div>
-                        <div class="table_column table_grey table_right_side_radius child half">${fixdata.fixes_per_student}</div>
+                        <div class="table_column table_grey table_right_side_radius child third">${fixdata.fixes_per_student}</div>
                     </div>
                     `)
           }
