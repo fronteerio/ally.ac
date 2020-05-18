@@ -1,0 +1,192 @@
+{
+    "eu-11": {
+        "fte" : 7635,
+        "name": "London Metropolitan University",
+        "location": "Europe"
+    },
+    "eu-221": {
+        "fte" : 11420,
+        "name": "Canterbury Christ Church University",
+        "location": "Europe"
+    },
+    "eu-154": {
+        "fte" : 6085,
+        "name": "York St John University",
+        "location": "Europe"
+    },
+    "eu-55": {
+        "fte" : 15950,
+        "name": "University of Reading",
+        "location": "Europe"
+    },
+    "us-143": {
+        "fte" : 24902,
+        "name": "Utrgv",
+        "location": "North America"
+    },
+    "us-1690": {
+        "fte" : 25106,
+        "name": "Stony Brook University",
+        "location": "North America"
+    },
+    "us-7855": {
+        "fte" : 2953,
+        "name": "Jackson State Community College",
+        "location": "North America"
+    },
+    "us-7412": {
+        "fte" : 10351,
+        "name": "CCU",
+        "location": "North America"
+    },
+    "us-4": {
+        "fte" : 22468,
+        "name": "Utah State University",
+        "location": "North America"
+    },
+    "us-2814": {
+        "fte" : 2585,
+        "name": "Franciscan University of Steubenville",
+        "location": "North America"
+    },
+    "us-7112": {
+        "fte" : 12283,
+        "name": "Indian River State College",
+        "location": "North America"
+    },
+    "us-166": {
+        "fte" : 1654,
+        "name": "Middlesex Community College",
+        "location": "North America"
+    },
+    "us-5501": {
+        "fte" : 3157,
+        "name": "University of Houston",
+        "location": "North America"
+    },
+    "us-222": {
+        "fte" : 9114,
+        "name": "Community College of Rhode Island",
+        "location": "North America"
+    },
+    "us-210": {
+        "fte" : 3484,
+        "name": "Medical University of South Carolina",
+        "location": "North America"
+    },
+    "us-5707": {
+        "fte" : 34777,
+        "name": "CSUF",
+        "location": "North America"
+    },
+    "us-7034": {
+        "fte" : 46554,
+        "name": "Miami Dade College",
+        "location": "North America"
+    },
+    "us-1699": {
+        "fte" : 22516,
+        "name": "Grand Valley State University",
+        "location": "North America"
+    },
+    "us-1700": {
+        "fte" : 13848,
+        "name": "CSU San Marcos",
+        "location": "North America"
+    },
+    "us-149": {
+        "fte" : 1903,
+        "name": "Coastal Pines Technical College",
+        "location": "North America"
+    },
+    "us-101": {
+        "fte" : 3163,
+        "name": "Atlanta Technical College",
+        "location": "North America"
+    },
+    "us-85": {
+        "fte" : 1835,
+        "name": "North Georgia Technical College",
+        "location": "North America"
+    },
+    "us-3074": {
+        "fte" : 7784,
+        "name": "MCPHS University",
+        "location": "North America"
+    },
+    "us-154": {
+        "fte" : 989,
+        "name": "Oconee Fall Line Technical College",
+        "location": "North America"
+    },
+    "us-95": {
+        "fte" : 2286,
+        "name": "Athens Technical College",
+        "location": "North America"
+    },
+    "us-151": {
+        "fte" : 1552,
+        "name": "Ogeechee Technical College",
+        "location": "North America"
+    },
+    "us-152": {
+        "fte" : 2463,
+        "name": "Lanier Technical College",
+        "location": "North America"
+    },
+    "us-5164": {
+        "fte" : 0,
+        "name": "University of North Dakota",
+        "location": "North America"
+    },
+    "us-4414": {
+        "fte" : 4121,
+        "name": "Northwest Florida State College",
+        "location": "North America"
+    },
+    "us-102": {
+        "fte" : 3357,
+        "name": "Augusta Technical College",
+        "location": "North America"
+    },
+    "us-1663": {
+        "fte" : 6252,
+        "name": "Forsyth Technical Community College",
+        "location": "North America"
+    },
+    "us-7039": {
+        "fte" : 10919,
+        "name": "NORTH CAROLINA A&T STATE UNIVERSITY",
+        "location": "North America"
+    },
+    "us-159": {
+        "fte" : 2544,
+        "name": "Wiregrass Georgia Technical College",
+        "location": "North America"
+    },
+    "us-6491": {
+        "fte" : 2112,
+        "name": "Concordia",
+        "location": "North America"
+    },
+    "us-7136": {
+        "fte" : 3664,
+        "name": "Harford Community College",
+        "location": "North America"
+    },
+    "us-7082": {
+        "fte" : 2664,
+        "name": "Adams State",
+        "location": "North America"
+    },
+    "us-160": {
+        "fte" : 2916,
+        "name": "Savannah Technical College",
+        "location": "North America"
+    },
+    "us-2338": {
+        "fte" : 688,
+        "name": "McDowell Technical Community College   ",
+        "location": "North America"
+    }
+}
