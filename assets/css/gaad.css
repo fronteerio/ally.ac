@@ -94,7 +94,10 @@ nav ul {
 	font-size: 18px;
 }
 
-.triangle-green a:not(.btn-secondary),
+.triangle-green a:not(.btn-secondary) {
+	color: #00838A;
+}
+
 .triangle-blue a {
 	color: #00C7D1;
 }
