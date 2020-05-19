@@ -84,7 +84,7 @@
     $('.table_show_full').on('click', function (e) {
         if (show === 'top5') {
             show = 'all';
-            $('.table_show_full').text('Collapse');
+            $('.table_show_full').text('Collapse list');
             renderAll();
         } else if (show === 'all') {
             show = 'top5';
