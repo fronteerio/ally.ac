@@ -2,6 +2,7 @@
     document.documentElement.lang = 'en';
 
     var data = [];
+    var regionalLeaders = [];
 
     function renderItem(fixdata) {
         $(".table_body").append(`
@@ -84,16 +85,7 @@
                         };
                         data.push(details);
                     } else {
-                        var details = {
-                            "details": {
-                                "name": "Unknown",
-                                "location": "Unknown"
-                            },
-                            "fixes": value,
-                            "students": 0,
-                            "fixes_per_student": fixesPerStudent.toFixed(8)
-                        };
-                        data.push(details);
+                        console.log(`Received info for unknown client ${key}`);
                     }
                 }
 
@@ -106,9 +98,21 @@
                     element.position = position++;
                 });
 
+                data.forEach(element => {
+                    const location = element.details.location;
+                    if (location in regionalLeaders) {
+                        const leader = regionalLeaders[location];
+                        if (leader.fixes_per_student < element.fixes_per_student) {
+                            regionalLeaders[location] = element;
+                        }
+                    } else {
+                        regionalLeaders[location] = element;
+                    }
+                });
+
+                console.log(regionalLeaders);
+
                 renderTopFive();
-
-
             })
                 .fail(function (data) {
                     console.log(data);
