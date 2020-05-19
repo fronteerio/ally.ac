@@ -137,6 +137,14 @@ img.features-icon.ocred {
     color: #fff;
 }
 
+.centered {
+    text-align: center;
+}
+
+thead > tr > td.table_header {
+    padding: 0 1rem;
+}
+
 .table_row {
     background-color: transparent;
 }
@@ -179,7 +187,9 @@ img.features-icon.ocred {
 .position {
     background-color: transparent;
     color: #FFF;
-    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    padding-bottom: 4px;
 }
 
 .chart-container {
@@ -236,8 +246,19 @@ img.features-icon.ocred {
     text-align: left;
 }
 
+a.table_show_full,
 a.table_show_full:visited, 
 a.table_show_full:hover,
 a.table_show_full:active {
-    color: #00C7D1
+    color: #00C7D1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    text-decoration-line: underline;
+}
+
+.badge {
+  background: url(/assets/img/leaderboard/badge.svg) no-repeat center;
+  background-size: 43px 33px;
 }

@@ -5,9 +5,13 @@
     var regionalLeaders = [];
 
     function renderItem(fixdata) {
+        var badge = "";
+        if (fixdata.position < 4) {
+            badge = "badge";
+        }
         $(".table_body").append(`
             <tr class="table_row">
-                <td class="table_column position child half">${fixdata.position}</td>
+                <td class="table_column position child half ${badge}">${fixdata.position}</td>
                 <td class="table_column details table_white table_left_side_radius child">
                     <div class="details_container child">
                         <div class="details_logo_placeholder">
@@ -144,7 +148,7 @@
                 title: {
                     text: 'Total fixes around the world',
                     align: 'left',
-                    style: { "color": "#FFF", "fontSize": "18px", "fontWeight" : "bold" }
+                    style: { "color": "#FFF", "fontSize": "20px", "fontWeight" : "bold", "line-height": "15px" }
                 },
                 caption: {
                     text: last,
