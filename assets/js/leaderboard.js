@@ -5,9 +5,9 @@
 
     function renderItem(fixdata) {
         $(".table_body").append(`
-            <div class="table_row">
-                <div class="table_column position child half">${fixdata.position}</div>
-                <div class="table_column details table_white table_left_side_radius child">
+            <tr class="table_row">
+                <td class="table_column position child half">${fixdata.position}</td>
+                <td class="table_column details table_white table_left_side_radius child">
                     <div class="details_container child">
                         <div class="details_logo_placeholder">
 
@@ -17,11 +17,11 @@
                             <div>${fixdata.details.location}</div>
                         </div>
                     </div>
-                </div>
-                <div class="table_column table_white child half">${fixdata.fixes}</div>
-                <div class="table_column table_white child half">${fixdata.students}</div>
-                <div class="table_column table_grey table_right_side_radius child third">${fixdata.fixes_per_student}</div>
-            </div>
+                </td>
+                <td class="table_column table_white child half">${fixdata.fixes}</td>
+                <td class="table_column table_white child half">${fixdata.students}</td>
+                <td class="table_column table_grey table_right_side_radius child third">${fixdata.fixes_per_student}</td>
+            </tr>
             `)
     }
 
