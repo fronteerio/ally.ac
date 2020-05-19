@@ -244,6 +244,11 @@
 		"fte": 1808,
 		"location": "North America"
 	},
+	"us-71": {
+		"name": "California State University, Chico",
+		"fte": 17578,
+		"location": "North America"
+	},
 	"us-6432": {
 		"name": "Universidad del Norte",
 		"fte": 10000,
