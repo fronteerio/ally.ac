@@ -8,8 +8,15 @@
             <div class="table_row">
                 <div class="table_column position child half">${fixdata.position}</div>
                 <div class="table_column details table_white table_left_side_radius child">
-                    <div class="child details_child_name">${fixdata.details.name}</div>
-                    <div class="child">${fixdata.details.location}</div>
+                    <div class="details_container child">
+                        <div class="details_logo_placeholder">
+
+                        </div>
+                        <div class="details_placeholder">
+                            <div class="details_child_name">${fixdata.details.name}</div>
+                            <div>${fixdata.details.location}</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="table_column table_white child half">${fixdata.fixes}</div>
                 <div class="table_column table_white child half">${fixdata.students}</div>
