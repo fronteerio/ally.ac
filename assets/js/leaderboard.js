@@ -9,7 +9,7 @@
         if (fixdata.position < 4) {
             badge = "pos-badge";
         }
-        $(".table_body").append(`
+        $("#leaderboard .table_body").append(`
             <tr class="">
                 <td class="text-center position ${badge}"><span>${fixdata.position}</span></td>
                 <td class="logo table_white table_left_side_radius text-center">
@@ -85,7 +85,7 @@
     }
 
     function renderAll() {
-        $(".table_body").html('');
+        $("#leaderboard .table_body").html('');
         data.forEach(element => {
             renderItem(element);
         });
@@ -93,7 +93,7 @@
     }
 
     function renderTopFive() {
-        $(".table_body").html('');
+        $("#leaderboard .table_body").html('');
         data.slice(0, 5).forEach(element => {
             renderItem(element);
         });
@@ -101,7 +101,7 @@
     }
 
     function renderRegionalLeaders() {
-        $(".cards").html('');
+        $("#regional_leaders").html('');
         for(var key in regionalLeaders) {
             var leader = regionalLeaders[key];
             renderRegion(leader);
