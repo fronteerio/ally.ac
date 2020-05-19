@@ -30,6 +30,31 @@
             `)
     }
 
+    function renderRegion(fixdata) {
+        $(".cards").append(`
+        <article class="card card-container">
+            <div class="card-line card-header">${fixdata.details.location}</div>
+            <div class="card-line card-content-container">
+                <div class="card-content-item"></div>
+                <div class="card-content-item card-content-details">
+                    <div class="card-details-item card-details-item-name">${fixdata.details.name}</div>
+                    <div class="card-details-item">${fixdata.details.location}</div>
+                    <div class="card-details-item card-details-stats">
+                        <div>
+                            <img src="/assets/img/leaderboard/tick.svg" alt="">
+                            <span>${fixdata.fixes}</span>
+                        </div>
+                        <div>
+                            <img src="/assets/img/leaderboard/head.svg" alt="">
+                            <span>${fixdata.students}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content-item-grey">${fixdata.fixes_per_student}</div>
+            </div>
+        </article>`);
+    }
+
     function renderAll() {
         $(".table_body").html('');
         data.forEach(element => {
@@ -44,6 +69,14 @@
             renderItem(element);
         });
         $(".units").text(data.length);
+    }
+
+    function renderRegionalLeaders() {
+        $(".cards").html('');
+        for(var key in regionalLeaders) {
+            var leader = regionalLeaders[key];
+            renderRegion(leader);
+        }
     }
 
     var show = 'top5';
@@ -114,6 +147,7 @@
                     }
                 });
                 renderTopFive();
+                renderRegionalLeaders();
             })
                 .fail(function (data) {
                     console.log(data);

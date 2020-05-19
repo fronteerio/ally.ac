@@ -1,6 +1,7 @@
 html {
     height: 100%;
 }
+
 body {
     background: url('/assets/img/bgPanel-header.png') center bottom no-repeat;
     background-color: #263438;
@@ -23,81 +24,75 @@ nav ul {
 }
 
 #countdown-container #countdown {
-	background-color: #0F2F35;
-	margin-bottom: 50px;
-	margin-top: -110px; 
-	padding: 30px 0;
-	text-align: center; 
-	width: 440px;
+    background-color: #0F2F35;
+    margin-bottom: 50px;
+    margin-top: -110px;
+    padding: 30px 0;
+    text-align: center;
+    width: 440px;
 }
 
 #countdown-container #countdown .countdown-row {
-	display: inline-block;
-	width: 350px; 
+    display: inline-block;
+    width: 350px;
 }
 
 #countdown-container #countdown .countdown-number {
-	font-size: 30px;
-	font-weight: bold;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 #countdown-container #countdown .countdown-unit {
-	position: relative;
-	top: -5px;
+    position: relative;
+    top: -5px;
 }
 
-.triangle-green section,
-.triangle-blue section {
-	padding-bottom: 30px;
-	padding-left: 30px;
-	padding-right: 30px;
-	max-width: 650px;	
+.triangle-green section, .triangle-blue section {
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 650px;
 }
 
-.triangle-green section h3,
-.triangle-blue section h3 {
-	font-size: 35px;
+.triangle-green section h3, .triangle-blue section h3 {
+    font-size: 35px;
 }
 
-.triangle-blue section p,
-.triangle-green section p {
-	font-size: 18px;
+.triangle-blue section p, .triangle-green section p {
+    font-size: 18px;
 }
 
 .triangle-green a:not(.btn-secondary) {
-	color: #00838A;
+    color: #00838A;
 }
 
 .triangle-blue a {
-	color: #00C7D1;
+    color: #00C7D1;
 }
 
 .triangle-blue {
-	background: url(/assets/img/bgPanel-header.png) center bottom no-repeat;
+    background: url(/assets/img/bgPanel-header.png) center bottom no-repeat;
     background-color: #263438;
 }
 
-.triangle-blue h3,
-.triangle-blue p,
-.triangle-blue a.btn-secondary {
-	color: #FFF;
+.triangle-blue h3, .triangle-blue p, .triangle-blue a.btn-secondary {
+    color: #FFF;
 }
 
 @media (max-width: 768px) {
-	.features .row:last-of-type {
-		margin-top: auto;
-	}
+    .features .row:last-of-type {
+        margin-top: auto;
+    }
 }
 
 @media (max-width: 1100px) {
-	nav {
-		text-align: center;
-	}
-	
-	#gaad-container #countdown {
-		margin-top: 0px;
-		margin-bottom: 40px;
-	}
+    nav {
+        text-align: center;
+    }
+    #gaad-container #countdown {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
 }
 
 footer {
@@ -141,7 +136,7 @@ img.features-icon.ocred {
     text-align: center;
 }
 
-thead > tr > td.table_header {
+thead>tr>td.table_header {
     padding: 0 1rem;
 }
 
@@ -170,7 +165,7 @@ thead > tr > td.table_header {
     border-bottom-right-radius: 5px;
 }
 
-.table_body > tr.table_row {
+.table_body>tr.table_row {
     height: 50px;
 }
 
@@ -242,14 +237,11 @@ thead > tr > td.table_header {
     font-weight: bold;
 }
 
-.details > .child {
+.details>.child {
     text-align: left;
 }
 
-a.table_show_full,
-a.table_show_full:visited, 
-a.table_show_full:hover,
-a.table_show_full:active {
+a.table_show_full, a.table_show_full:visited, a.table_show_full:hover, a.table_show_full:active {
     color: #00C7D1;
     font-style: normal;
     font-weight: normal;
@@ -259,6 +251,82 @@ a.table_show_full:active {
 }
 
 .badge {
-  background: url(/assets/img/leaderboard/badge.svg) no-repeat center;
-  background-size: 43px 33px;
+    background: url(/assets/img/leaderboard/badge.svg) no-repeat center;
+    background-size: 43px 33px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 80px;
+}
+
+.card {
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 1rem .25em;
+}
+
+.card-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 33px;
+}
+
+.card-item {
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+}
+
+.card-content-container {
+    display: grid;
+    grid-template-columns: 80px auto 160px;
+    border-radius: 5px;
+    border: 1px #FFF solid;
+}
+
+.card-content-item, .card-content-item-grey {
+    background-color:#FFF;
+    color: #000;
+    text-align: center;
+    height: 124px;
+}
+
+.card-content-item-grey {
+    background-color: #EEE;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 15px;
+    padding-bottom: 12px;
+}
+
+.card-content-item-details {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.card-details-item-name {
+    font-weight: bold;
+}
+
+.card-details-stats {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 20px;
+}
+
+.card-content-details {
+    text-align: left;
 }
