@@ -173,6 +173,14 @@ table .details .details_name {
 	margin-bottom: 5px;
 }
 
+table .details_small {
+	margin-top: 15px;
+}
+
+table .details_small .details_small_fixes {
+	margin-bottom: 5px;
+}
+
 a.table_show_full, a.table_show_full:visited, a.table_show_full:hover, a.table_show_full:active {
     color: #00C7D1;
     font-style: normal;

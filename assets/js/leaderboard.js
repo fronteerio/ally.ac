@@ -20,6 +20,16 @@
                 <td class="details table_white">
                     <div class="details_name">${fixdata.details.name}</div>
                     <div>${fixdata.details.location}</div>
+                    <div class="details_small visible-xs">
+                    	<div class="details_small_fixes">
+                            <img src="/assets/img/leaderboard/tick.svg" alt="">
+                            <span>${fixdata.fixes}</span>
+                        </div>
+                        <div>
+                            <img src="/assets/img/leaderboard/head.svg" alt="">
+                            <span>${fixdata.students}</span>
+                        </div>
+                    </div>
                 </td>
                 <td class="hidden-xs text-center table_white">${fixdata.fixes}</td>
                 <td class="hidden-xs text-center table_white">${fixdata.students}</td>
@@ -73,6 +83,16 @@
                 <td class="details table_white">
                     <div class="details_name">${fixdata.details.name}</div>
                     <div>${fixdata.details.location}</div>
+                    <div class="details_small visible-xs">
+                    	<div class="details_small_fixes">
+                            <img src="/assets/img/leaderboard/tick.svg" alt="">
+                            <span>${fixdata.fixes}</span>
+                        </div>
+                        <div>
+                            <img src="/assets/img/leaderboard/head.svg" alt="">
+                            <span>${fixdata.students}</span>
+                        </div>
+                    </div>
                 </td>
                 <td class="text-center table_grey table_right_side_radius">${fixdata.fixes_per_student}</td>
             	</tr>
