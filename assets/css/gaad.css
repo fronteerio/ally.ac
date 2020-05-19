@@ -1,13 +1,18 @@
 html {
     height: 100%;
 }
+
 body {
-    background: url('/assets/img/bgPanel-header.png') center bottom no-repeat;
-    background-color: #263438;
     color: #FFF;
     font-family: 'Roboto', sans-serif;
     height: 100%;
     text-align: left;
+}
+
+#topcontainer {
+	background-color: #263438;
+	background: url('/assets/img/bgPanel-header.png') center top;
+	background-size: 1000%;
 }
 
 nav ul {
@@ -15,6 +20,7 @@ nav ul {
 }
 
 #gaad-container {
+	
     align-items: center;
     display: flex;
     flex: 1;
@@ -56,7 +62,7 @@ nav ul {
 	background-color: #0F2F35;
 	margin-bottom: 50px;
 	margin-top: -110px; 
-	padding: 30px 0;
+	padding: 30px 20px;
 	text-align: center; 
 	width: 440px;
 }
@@ -113,9 +119,23 @@ nav ul {
 	color: #FFF;
 }
 
+@media (max-width: 480px) {
+	#gaad-container #countdown {
+		width: 320px;
+	}
+	
+	#gaad-container #countdown .countdown-row {
+		width: 300px;
+	}
+}
+
 @media (max-width: 768px) {
 	.features .row:last-of-type {
 		margin-top: auto;
+	}
+	
+	.triangle-green {
+    	background-size: 60px;
 	}
 }
 
@@ -131,9 +151,6 @@ nav ul {
 }
 
 footer {
+	background-color: #263438;
     text-align: center;
-}
-
-img.features-icon.ocred {
-    width: 61px;
 }
