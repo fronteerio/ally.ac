@@ -137,7 +137,8 @@ footer {
     font-weight: bold;
 }
 
-#leaderboard {
+#leaderboard,
+#regional {
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -193,6 +194,21 @@ a.table_show_full, a.table_show_full:visited, a.table_show_full:hover, a.table_s
 	left: 1px;
 }
 
+#regional {
+	padding-bottom: 50px;
+}
+
+#regional h3 {
+	font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#regional table {
+    margin-bottom: 10px;
+}
+
 .cards {
     display: flex;
     justify-content: space-between;
@@ -206,6 +222,7 @@ a.table_show_full, a.table_show_full:visited, a.table_show_full:hover, a.table_s
     font-size: 20px;
     line-height: 15px;
     margin-top: 30px;
+    margin-bottom: 0;
 }
 
 .card {

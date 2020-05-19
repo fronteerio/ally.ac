@@ -14,7 +14,7 @@
                 <td class="text-center position ${badge}"><span>${fixdata.position}</span></td>
                 <td class="logo table_white table_left_side_radius text-center">
                 	<span class="logo_container">
-                		<img src="/assets/img/logos/${fixdata.id}.png" />
+                		<img src="/assets/img/logos/${fixdata.id}.png" alt="${fixdata.details.name}" />
                 	</span>
                 </td>
                 <td class="details table_white">
@@ -28,9 +28,7 @@
             `)
     }
 
-    function renderRegion(fixdata) {
-        $(".cards").append(`
-        <article class="card card-container">
+/* <article class="card card-container">
             <div class="card-line card-header">${fixdata.details.location}</div>
             <div class="card-line card-content-container">
                 <div class="card-content-item"></div>
@@ -50,7 +48,40 @@
                 </div>
                 <div class="card-content-item-grey">${fixdata.fixes_per_student}</div>
             </div>
-        </article>`);
+        </article> */
+
+    function renderRegion(fixdata) {
+        $("#regional_leaders").append(`
+        	<div class="col-xs-12 col-sm-6">
+        		<h3 class="regional_leader_region">${fixdata.details.location}</h3>
+        		<div>
+        		<table width="100%">
+                            <thead class="hidden">
+                                <tr class=" ">
+                                    <td class="" style="width: 90px;"><span class="sr-only">Logo</span></td>
+                                    <td class=""><span class="sr-only">Institution name</span></td>
+                                    <td class=" text-center" style="width: 150px;">Fixes per student</td>
+                                </tr>
+                            </thead>
+                            <tbody class="table_body">
+				<tr class="">
+                <td class="logo table_white table_left_side_radius text-center">
+                	<span class="logo_container">
+                		<img src="/assets/img/logos/${fixdata.id}.png" alt="${fixdata.details.name}" />
+                	</span>
+                </td>
+                <td class="details table_white">
+                    <div class="details_name">${fixdata.details.name}</div>
+                    <div>${fixdata.details.location}</div>
+                </td>
+                <td class="text-center table_grey table_right_side_radius">${fixdata.fixes_per_student}</td>
+            	</tr>
+                            </tbody>
+                        </table>
+        		
+        		</div>
+        	</div>
+        `);
     }
 
     function renderAll() {
