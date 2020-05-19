@@ -14,7 +14,7 @@ nav ul {
     margin-left: 30px;
 }
 
-#gaad-container {
+#countdown-container {
     align-items: center;
     display: flex;
     flex: 1;
@@ -22,37 +22,7 @@ nav ul {
     padding: 40px 20px 50px;
 }
 
-#gaad-container h2 {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 33px;
-    text-align: center;
-}
-
-#gaad-container .explanation {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 30px;
-    max-width: 440px;
-    text-align: center;
-}
-
-#gaad-container .explanation .hashtag {
-	color: #00C7D1;
-	display: block;
-	margin-bottom: 20px;
-	margin-top: 5px;
-}
-
-#gaad-container .explanation .btn-secondary {
-	background-color: #00C7D1;
-	padding: 10px 30px;
-}
-
-#gaad-container #countdown {
+#countdown-container #countdown {
 	background-color: #0F2F35;
 	margin-bottom: 50px;
 	margin-top: -110px; 
@@ -61,17 +31,17 @@ nav ul {
 	width: 440px;
 }
 
-#gaad-container #countdown .countdown-row {
+#countdown-container #countdown .countdown-row {
 	display: inline-block;
 	width: 350px; 
 }
 
-#gaad-container #countdown .countdown-number {
+#countdown-container #countdown .countdown-number {
 	font-size: 30px;
 	font-weight: bold;
 }
 
-#gaad-container #countdown .countdown-unit {
+#countdown-container #countdown .countdown-unit {
 	position: relative;
 	top: -5px;
 }
@@ -206,10 +176,6 @@ img.features-icon.ocred {
     flex-wrap: wrap;
 }
 
-.details_child {
-    
-}
-
 .position {
     background-color: transparent;
     color: #FFF;
@@ -268,4 +234,10 @@ img.features-icon.ocred {
 
 .details > .child {
     text-align: left;
+}
+
+a.table_show_full:visited, 
+a.table_show_full:hover,
+a.table_show_full:active {
+    color: #00C7D1
 }

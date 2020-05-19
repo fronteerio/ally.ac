@@ -44,7 +44,37 @@
             </nav>
         </section>
         <main>
-            <div class="container">
+            <div class="container clearfix">
+                <div id="countdown-container">
+                    <div id="countdown">
+                        <div class="row countdown-row">
+                            <div class="col-xs-3">
+                                <div class="text-center">
+                                    <div id="gaad-days" class="countdown-number"></div>
+                                    <div class="countdown-unit">DAYS</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="text-center">
+                                    <div id="gaad-hours" class="countdown-number"></div>
+                                    <div class="countdown-unit">HOURS</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="text-center">
+                                    <div id="gaad-minutes" class="countdown-number"></div>
+                                    <div class="countdown-unit">MINUTES</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="text-center">
+                                    <div id="gaad-seconds" class="countdown-number"></div>
+                                    <div class="countdown-unit">SECONDS</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            	</div>
                 <div class="row vertical-align">
                     <div id="leaderboard" class="table">
                         <div class="chart-container child">
@@ -103,7 +133,7 @@
 
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://code.highcharts.com/highcharts.js"></script>
-
+        <script type="text/javascript" src="/assets/js/gaad.js"></script>
         <script type="text/javascript" src="/assets/js/leaderboard.js"></script>
 
         <script>

@@ -18,7 +18,7 @@
             `)
     }
 
-    function showAll() {
+    function renderAll() {
         $(".table_body").html('');
         data.forEach(element => {
             renderItem(element);
@@ -33,10 +33,21 @@
         });
         $(".units").text(data.length);
     }
+
+    var show = 'top5';
+
     $('.table_show_full').on('click', function (e) {
-        showAll();
+        if (show === 'top5') {
+            show = 'all';
+            $('.table_show_full').text('Collapse');
+            renderAll();
+        } else if (show === 'all') {
+            show = 'top5';
+            $('.table_show_full').text('Show full list');
+            renderTopFive();
+        }
+        
         e.preventDefault();
-        $('.table_show_full').remove();
     });
 
     function loadData() {
@@ -48,7 +59,6 @@
             }).done(function (response) {
                 for (var key in results) {
                     var value = results[key];
-                    var regionAndId = key.split('-');
 
                     var uniDetails = response[key];
                     var fixesPerStudent = 0;
@@ -113,7 +123,7 @@
                 last = fixes;
             }
 
-            var myChart = Highcharts.chart('chart-container', {
+            Highcharts.chart('chart-container', {
                 chart: {
                     type: 'line',
                     backgroundColor: 'transparent',
@@ -126,7 +136,7 @@
                 title: {
                     text: 'Total fixes around the world',
                     align: 'left',
-                    style: { "color": "#FFF", "fontSize": "18px" }
+                    style: { "color": "#FFF", "fontSize": "18px", "fontWeight" : "bold" }
                 },
                 caption: {
                     text: last,
