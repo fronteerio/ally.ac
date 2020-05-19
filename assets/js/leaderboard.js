@@ -109,9 +109,6 @@
                         regionalLeaders[location] = element;
                     }
                 });
-
-                console.log(regionalLeaders);
-
                 renderTopFive();
             })
                 .fail(function (data) {
