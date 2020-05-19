@@ -7,25 +7,21 @@
     function renderItem(fixdata) {
         var badge = "";
         if (fixdata.position < 4) {
-            badge = "badge";
+            badge = "pos-badge";
         }
         $(".table_body").append(`
-            <tr class="table_row">
-                <td class="table_column position child half ${badge}">${fixdata.position}</td>
-                <td class="table_column details table_white table_left_side_radius child">
-                    <div class="details_container child">
-                        <div class="details_logo_placeholder">
-
-                        </div>
-                        <div class="details_placeholder">
-                            <div class="details_child_name">${fixdata.details.name}</div>
-                            <div>${fixdata.details.location}</div>
-                        </div>
-                    </div>
+            <tr class="">
+                <td class="text-center position ${badge}"><span>${fixdata.position}</span></td>
+                <td class="logo table_white table_left_side_radius text-center">
+                	<img src="/assets/img/logos/us-4413.png" />
                 </td>
-                <td class="table_column table_white child half">${fixdata.fixes}</td>
-                <td class="table_column table_white child half">${fixdata.students}</td>
-                <td class="table_column table_grey table_right_side_radius child third">${fixdata.fixes_per_student}</td>
+                <td class="details table_white">
+                    <div class="details_name">${fixdata.details.name}</div>
+                    <div>${fixdata.details.location}</div>
+                </td>
+                <td class="hidden-xs text-center table_white">${fixdata.fixes}</td>
+                <td class="hidden-xs text-center table_white">${fixdata.students}</td>
+                <td class="text-center table_grey table_right_side_radius">${fixdata.fixes_per_student}</td>
             </tr>
             `)
     }
@@ -116,8 +112,8 @@
                                 "name": uniDetails.name,
                                 "location": uniDetails.location
                             },
-                            "fixes": value,
-                            "students": uniDetails.fte,
+                            "fixes": formatNumber(value),
+                            "students": formatNumber(uniDetails.fte),
                             "fixes_per_student": fixesPerStudent.toFixed(8)
                         };
                         data.push(details);
@@ -182,10 +178,10 @@
                 title: {
                     text: 'Total fixes around the world',
                     align: 'left',
-                    style: { "color": "#FFF", "fontSize": "20px", "fontWeight" : "bold", "line-height": "15px" }
+                    style: { "color": "#FFF", "fontSize": "20px", "fontWeight" : "bold", "line-height": "15px", "fontFamily": "Roboto" }
                 },
                 caption: {
-                    text: last,
+                    text: formatNumber(last),
                     style: { "color": "#000", "fontSize": "16px" },
                     y: 60,
                     verticalAlign: "top",
@@ -197,6 +193,14 @@
                 yAxis: {
                     visible: false
                 },
+                plotOptions: {
+                    line: {
+                    	lineWidth: 4,
+                    	marker: {
+                    		enabled: false
+                    	}
+                    }
+                },
                 series: [{
                     name: 'Fixes',
                     color: "#00C7D1",
@@ -206,6 +210,10 @@
 
         });
     }
+    
+    function formatNumber(nr) {
+    	return nr.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    };
 
     loadData();
     loadGraph();
