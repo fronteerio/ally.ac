@@ -89,13 +89,13 @@
                     <div>
                         <section class="cards-title">Overall leaderboard</section>
                     </div>
-                    <div class="">
+                    <div>
                         <table width="100%">
                             <thead>
                                 <tr class=" ">
-                                    <td class="text-left" style="width: 60px;"></td>
-                                    <td class="" style="width: 90px;"></td>
-                                    <td class=""></td>
+                                    <td class="text-left" style="width: 60px;"><span class="sr-only">Rank</span></td>
+                                    <td class="" style="width: 90px;"><span class="sr-only">Logo</span></td>
+                                    <td class=""><span class="sr-only">Institution name</span></td>
                                     <td class="hidden-xs text-center" style="width: 100px;">Fixes</td>
                                     <td class="hidden-xs text-center" style="width: 100px;">Students</td>
                                     <td class=" text-center" style="width: 150px;">Fixes per student</td>
@@ -106,9 +106,13 @@
                             </tbody>
                         </table>
                     </div>
-                    <div>
-                    	<a href="#" class="table_show_full">Show full list</a>
-                    	<span>Out of total participants:</span><span class="units"></span>
+                    <div class="row">
+                    	<div class="col-xs-6">
+                    		<a href="#" class="table_show_full">Show full list</a>
+                    	</div>
+                    	<div class="col-xs-6 text-right">
+                    		<span>Total participants:</span><span class="units"></span>
+                    	</div>
                     </div>
                 </div>
             </div>
@@ -154,7 +158,6 @@
 
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script type="text/javascript" src="/assets/js/gaad.js"></script>
     <script type="text/javascript" src="/assets/js/leaderboard.js"></script>
 
     <script>
@@ -174,23 +177,6 @@
         ga('create', 'UA-74642053-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <script type="text/javascript">
-        var _dcq = _dcq || [];
-        var _dcs = _dcs || {};
-        _dcs.account = '9041875';
-
-        (function () {
-            var dc = document.createElement('script');
-            dc.type = 'text/javascript';
-            dc.async = true;
-            dc.src = '//tag.getdrip.com/9041875.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(dc, s);
-        })();
-    </script>
-    <script data-ally-loader data-ally-platform-name="web" data-ally-client-id="306" data-ally-af-style="none"
-        src="https://prod-eu-central-1.ally.ac/integration/api/ally.ui.js">
-        </script>
 
 </body>
 

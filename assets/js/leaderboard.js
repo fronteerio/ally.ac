@@ -13,7 +13,9 @@
             <tr class="">
                 <td class="text-center position ${badge}"><span>${fixdata.position}</span></td>
                 <td class="logo table_white table_left_side_radius text-center">
-                	<img src="/assets/img/logos/us-4413.png" />
+                	<span class="logo_container">
+                		<img src="/assets/img/logos/${fixdata.id}.png" />
+                	</span>
                 </td>
                 <td class="details table_white">
                     <div class="details_name">${fixdata.details.name}</div>
@@ -114,7 +116,8 @@
                             },
                             "fixes": formatNumber(value),
                             "students": formatNumber(uniDetails.fte),
-                            "fixes_per_student": fixesPerStudent.toFixed(8)
+                            "fixes_per_student": fixesPerStudent.toFixed(8),
+                            "id": key
                         };
                         data.push(details);
                     } else {
@@ -172,6 +175,9 @@
                     color: '#00C7D1',
                     height: '300px'
                 },
+                credits: {
+                	enabled: false
+                },
                 legend: {
                     enabled: false
                 },
@@ -217,5 +223,28 @@
 
     loadData();
     loadGraph();
+    
+    function getTimeRemaining(endtime){
+  		var t = endtime - new Date().getTime();
+  		var seconds = Math.floor( (t/1000) % 60 );
+  		var minutes = Math.floor( (t/1000/60) % 60 );
+  		var hours = Math.floor( (t/(1000*60*60)) );
+  		return {
+    		'total': t,
+    		'hours': hours,
+    		'minutes': minutes,
+    		'seconds': seconds
+  		};
+	}
+	
+	function updateTimeRemaining() {
+		var t = getTimeRemaining(1590145201000);
+		$('#gaad-hours').text(t.hours);
+		$('#gaad-minutes').text(t.minutes);
+		$('#gaad-seconds').text(t.seconds);
+	};
+    
+    updateTimeRemaining();
+    setInterval(updateTimeRemaining, 1000);
 
 })();
