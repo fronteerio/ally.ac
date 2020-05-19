@@ -262,10 +262,19 @@ a.table_show_full, a.table_show_full:visited, a.table_show_full:hover, a.table_s
     padding-left: 80px;
 }
 
+.cards-title {
+    padding-left: 80px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 15px;
+}
+
 .card {
     flex: 1 0 500px;
     box-sizing: border-box;
     margin: 1rem .25em;
+    max-width: 530px;
 }
 
 .card-container {
