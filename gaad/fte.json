@@ -258,5 +258,10 @@
 		"name": "College of DuPage",
 		"fte": 17010,
 		"location": "North America"
+	},
+	"us-6490": {
+		"name": "Texas A&M International University",
+		"fte": 6331,
+		"location": "North America"
 	}
 }
