@@ -61,7 +61,7 @@
                 <td class="details table_white">
                     <div class="details_name">${fixdata.details.name}</div>
                     <div>${fixdata.details.location}</div>
-                    <div class="details_small visible-xs">
+                    <div class="details_small">
                     	<div class="details_small_fixes">
                             <img src="/assets/img/leaderboard/tick.svg" alt="">
                             <span>${fixdata.fixes}</span>
@@ -141,7 +141,7 @@
                             },
                             "fixes": formatNumber(value),
                             "students": formatNumber(uniDetails.fte),
-                            "fixes_per_student": fixesPerStudent.toFixed(8),
+                            "fixes_per_student": fixesPerStudent.toFixed(5),
                             "id": key
                         };
                         data.push(details);
@@ -221,6 +221,17 @@
                 },
                 yAxis: {
                     visible: false
+                },
+                tooltip: {
+                	headerFormat: "",
+                	pointFormat: "<b>{point.y}</b>",
+                	backgroundColor: "#14676A",
+                	borderColor: "#14676A",
+                	style: {
+                		color: "#FFF",
+                		fontSize: "13px"
+                	},
+                	padding: 10
                 },
                 plotOptions: {
                     line: {
