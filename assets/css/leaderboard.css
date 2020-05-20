@@ -11,7 +11,7 @@ body {
 }
 
 #topcontainer {
-	background: url('/assets/img/background_7000.png') center bottom no-repeat;
+	background: url('/assets/img/background_7000.png') center bottom repeat-y;
 	background-size: 500%;
 }
 
