@@ -253,5 +253,10 @@
 		"name": "Universidad del Norte",
 		"fte": 10000,
 		"location": "South America"
+	},
+	"us-5262": {
+		"name": "College of DuPage",
+		"fte": 17010,
+		"location": "North America"
 	}
 }
