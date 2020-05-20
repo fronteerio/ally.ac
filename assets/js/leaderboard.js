@@ -15,7 +15,6 @@
                 <td class="logo table_white table_left_side_radius text-center">
                 	<span class="logo_container">
                 		<img src="/assets/img/logos/${fixdata.id}.png" alt="${fixdata.details.name}" />
-                		<span>${fixdata.id}</span>
                 	</span>
                 </td>
                 <td class="details table_white">
