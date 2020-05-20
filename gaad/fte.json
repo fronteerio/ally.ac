@@ -273,5 +273,10 @@
 		"name": "UMass Amherst",
 		"fte": 29706,
 		"location": "North America"
+	},
+	"us-97": {
+		"name": "Southern Regional Technical College",
+		"fte": 2735,
+		"location": "North America"
 	}
 }
