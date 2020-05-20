@@ -148,6 +148,10 @@ table {
 	border-spacing: 0px 10px;
 }
 
+table th {
+	font-weight: normal;
+}
+
 table tbody td {
 	padding-bottom: 15px;
 	padding-top: 15px;

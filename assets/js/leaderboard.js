@@ -46,9 +46,9 @@
         		<table width="100%">
                             <thead class="hidden">
                                 <tr class=" ">
-                                    <td class="" style="width: 90px;"><span class="sr-only">Logo</span></td>
-                                    <td class=""><span class="sr-only">Institution name</span></td>
-                                    <td class=" text-center" style="width: 150px;">Fixes per student</td>
+                                    <th class="" style="width: 90px;"><span class="sr-only">Logo</span></th>
+                                    <th><span class="sr-only">Institution name</span></th>
+                                    <th style="width: 150px;">Fixes per student</th>
                                 </tr>
                             </thead>
                             <tbody class="table_body">
