@@ -12,9 +12,9 @@
         $("#leaderboard .table_body").append(`
             <tr class="">
                 <td class="text-center position ${badge}"><span>${fixdata.position}</span></td>
-                <td class="logo table_white table_left_side_radius text-center">
+                <td class="logo table_white table_left_side_radius text-center" aria-hidden="true">
                 	<span class="logo_container">
-                		<img src="/assets/img/logos/${fixdata.id}.png" alt="${fixdata.details.name}" />
+                		<img src="/assets/img/logos/${fixdata.id}.png" alt="" />
                 	</span>
                 </td>
                 <td class="details table_white">
@@ -22,11 +22,11 @@
                     <div>${fixdata.details.location}</div>
                     <div class="details_small visible-xs">
                     	<div class="details_small_fixes">
-                            <img src="/assets/img/leaderboard/tick.svg" alt="">
+                            <img src="/assets/img/leaderboard/tick.svg" alt="Fixes" title="Fixes">
                             <span>${fixdata.fixes}</span>
                         </div>
                         <div>
-                            <img src="/assets/img/leaderboard/head.svg" alt="">
+                            <img src="/assets/img/leaderboard/head.svg" alt="Students" title="Students">
                             <span>${fixdata.students}</span>
                         </div>
                     </div>
@@ -46,16 +46,16 @@
         		<table width="100%">
                             <thead class="hidden">
                                 <tr class=" ">
-                                    <th class="" style="width: 90px;"><span class="sr-only">Logo</span></th>
+                                    <th aria-hidden="true" style="width: 90px;"><span class="sr-only">Logo</span></th>
                                     <th><span class="sr-only">Institution name</span></th>
                                     <th style="width: 150px;">Fixes per student</th>
                                 </tr>
                             </thead>
                             <tbody class="table_body">
 				<tr class="">
-                <td class="logo table_white table_left_side_radius text-center">
+                <td class="logo table_white table_left_side_radius text-center" aria-hidden="true">
                 	<span class="logo_container">
-                		<img src="/assets/img/logos/${fixdata.id}.png" alt="${fixdata.details.name}" />
+                		<img src="/assets/img/logos/${fixdata.id}.png" alt="" />
                 	</span>
                 </td>
                 <td class="details table_white">
@@ -63,11 +63,11 @@
                     <div>${fixdata.details.location}</div>
                     <div class="details_small">
                     	<div class="details_small_fixes">
-                            <img src="/assets/img/leaderboard/tick.svg" alt="">
+                            <img src="/assets/img/leaderboard/tick.svg" alt="Fixes" title="Fixes">
                             <span>${fixdata.fixes}</span>
                         </div>
                         <div>
-                            <img src="/assets/img/leaderboard/head.svg" alt="">
+                            <img src="/assets/img/leaderboard/head.svg" alt="Students" title="Students">
                             <span>${fixdata.students}</span>
                         </div>
                     </div>
