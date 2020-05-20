@@ -15,6 +15,7 @@
                 <td class="logo table_white table_left_side_radius text-center">
                 	<span class="logo_container">
                 		<img src="/assets/img/logos/${fixdata.id}.png" alt="${fixdata.details.name}" />
+                		<span>${fixdata.id}</span>
                 	</span>
                 </td>
                 <td class="details table_white">
@@ -37,28 +38,6 @@
             </tr>
             `)
     }
-
-/* <article class="card card-container">
-            <div class="card-line card-header">${fixdata.details.location}</div>
-            <div class="card-line card-content-container">
-                <div class="card-content-item"></div>
-                <div class="card-content-item card-content-details">
-                    <div class="card-details-item card-details-item-name">${fixdata.details.name}</div>
-                    <div class="card-details-item">${fixdata.details.location}</div>
-                    <div class="card-details-item card-details-stats">
-                        <div>
-                            <img src="/assets/img/leaderboard/tick.svg" alt="">
-                            <span>${fixdata.fixes}</span>
-                        </div>
-                        <div>
-                            <img src="/assets/img/leaderboard/head.svg" alt="">
-                            <span>${fixdata.students}</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-content-item-grey">${fixdata.fixes_per_student}</div>
-            </div>
-        </article> */
 
     function renderRegion(fixdata) {
         $("#regional_leaders").append(`
@@ -145,12 +124,8 @@
     });
 
     function loadData() {
-        $.getJSON("https://gaad-dedd2.firebaseio.com/gaad.json", function () {
-            console.log("Fixes count loaded");
-        }).done(function (results) {
-            $.getJSON("fte.json", function () {
-                console.log("Fte Counts loaded");
-            }).done(function (response) {
+        $.getJSON("https://gaad-dedd2.firebaseio.com/gaad.json").done(function (results) {
+            $.getJSON("fte.json").done(function (response) {
                 for (var key in results) {
                     var value = results[key];
 
@@ -206,9 +181,7 @@
     }
 
     function loadGraph() {
-        $.getJSON("https://gaad-dedd2.firebaseio.com/gaad-total.json", function () {
-            console.log("Graph Data loaded")
-        }).done(function (response) {
+        $.getJSON("https://gaad-dedd2.firebaseio.com/gaad-total.json").done(function (response) {
             var labels = [];
             var points = [];
             var last = 0;
