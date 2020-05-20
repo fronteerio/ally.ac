@@ -224,7 +224,7 @@
                 },
                 tooltip: {
                 	headerFormat: "",
-                	pointFormat: "<b>{point.y}</b> fixes",
+                	pointFormat: "Fixes: <b>{point.y}</b>",
                 	backgroundColor: "#14676A",
                 	borderColor: "#14676A",
                 	style: {
