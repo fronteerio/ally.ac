@@ -263,5 +263,20 @@
 		"name": "Texas A&M International University",
 		"fte": 6331,
 		"location": "North America"
+	},
+	"us-8810": {
+		"name": "Kennesaw State University",
+		"fte": 31098,
+		"location": "North America"
+	},
+	"us-5258": {
+		"name": "Southeastern Community College",
+		"fte": 1148,
+		"location": "North America"
+	},
+	"us-1576": {
+		"name": "UMass Amherst",
+		"fte": 29706,
+		"location": "North America"
 	}
 }
