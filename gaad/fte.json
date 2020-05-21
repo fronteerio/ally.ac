@@ -288,5 +288,10 @@
 		"name": "Central Georgia Technical College",
 		"fte": 5629,
 		"location": "North America"
+	},
+	"us-86": {
+		"name": "Southern Crescent Technical College",
+		"fte": 3219,
+		"location": "North America"
 	}
 }
