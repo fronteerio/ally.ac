@@ -86,7 +86,7 @@
 	},
 	"us-5501": {
 		"name": "University of Houston",
-		"fte": 3157,
+		"fte":  38366,
 		"location": "North America"
 	},
 	"us-210": {
@@ -278,5 +278,10 @@
 		"name": "Southern Regional Technical College",
 		"fte": 2735,
 		"location": "North America"
+	},
+	"us-8863": {
+		"name": "Southern Regional Technical College",
+		"fte": 24500,
+		"location": "South America"
 	}
 }
