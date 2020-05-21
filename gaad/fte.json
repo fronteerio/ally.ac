@@ -237,7 +237,7 @@
 	"us-4413": {
 		"name": "Universidad Carlos Albizu",
 		"fte": 1808,
-		"location": "North America"
+		"location": "Latin America"
 	},
 	"us-71": {
 		"name": "California State University, Chico",
@@ -245,9 +245,9 @@
 		"location": "North America"
 	},
 	"us-6432": {
-		"name": "Universidad del Norte",
+		"name": "Universidad Privada del Norte",
 		"fte": 10000,
-		"location": "South America"
+		"location": "Latin America"
 	},
 	"us-5262": {
 		"name": "College of DuPage",
@@ -280,7 +280,7 @@
 		"location": "North America"
 	},
 	"us-8863": {
-		"name": "Southern Regional Technical College",
+		"name": "Universidad Continental",
 		"fte": 24500,
 		"location": "South America"
 	}
