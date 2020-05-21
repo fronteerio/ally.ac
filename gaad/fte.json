@@ -283,5 +283,10 @@
 		"name": "Universidad Continental",
 		"fte": 24500,
 		"location": "Latin America"
+	},
+	"us-103": {
+		"name": "Central Georgia Tech ",
+		"fte": 5629,
+		"location": "North America"
 	}
 }
