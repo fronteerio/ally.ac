@@ -123,7 +123,7 @@
     });
 
     function loadData() {
-        $.getJSON("https://gaad-dedd2.firebaseio.com/gaad.json").done(function (results) {
+        $.getJSON("gaad.json").done(function (results) {
             $.getJSON("fte.json").done(function (response) {
                 for (var key in results) {
                     var value = results[key];
@@ -180,7 +180,7 @@
     }
 
     function loadGraph() {
-        $.getJSON("https://gaad-dedd2.firebaseio.com/gaad-total.json").done(function (response) {
+        $.getJSON("gaad-total.json").done(function (response) {
             var labels = [];
             var points = [];
             var last = 0;
