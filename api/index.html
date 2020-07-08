@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Blackboard Ally, generate an alternative format">
+        <meta name="author" content="Blackboard Inc.">
+        <link rel="icon" href="/favicon.ico">
+
+        <title>Blackboard Ally - Generate an alternative format</title>
+
+        <link href="//fonts.googleapis.com/css?family=Roboto:400,300,500" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="/assets/css/api.css" rel="stylesheet" type="text/css">
+
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NXVW3QS');</script>
+        <!-- End Google Tag Manager -->
+    </head>
+
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXVW3QS"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+
+        <section id="top" class="clearfix">
+            <!-- NAVIGATION -->
+            <nav class="header">
+                <div class="col-xs-1 col-sm-4">
+                    <h1>
+                        <a href="index.html"><img src="/assets/img/ally-a.svg" alt="" /><span class="hidden-xs hidden-sm">Blackboard Ally as a Service</span></a>
+                    </h1>
+                </div>
+                <div class="col-xs-11 col-sm-8">
+                    <ul>
+                        <li><a href="/courses.html">Courses</a></li>
+                        <li><a href="/websites.html">Websites</a></li>
+                        <li class="hidden-xs hidden-sm"><a href="https://usergroup.ally.ac" target="_blank">Community</a></li>
+                        <li class="hidden-xs hidden-sm"><a href="https://usergroup.ally.ac/s/tour/" target="_blank">Ally Tour</a></li>
+                        <li><a class="hidden-xs hidden-sm" id="btn-primary" href="/demo.html">Request Demo</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <main>
+            <div class="triangle-green">
+                <section class="container api-container">
+                    <div class="row" style="display: none">
+                        <div class="col-xs-12 col-lg-12">
+                            <h3>Ally as a service</h3>
+                            <h4>Introduction</h4>
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-top api-row" id="api-section-authentication">
+                        <div class="col-xs-12">
+                            <h4>Authentication</h4>
+                            <p>
+                                Ally uses straight-forward Bearer token authentication with a signed JWT token (HS256).
+                                You will have been issued with a client Id and an application key/secret combination. Use
+                                these to generate and sign the JWT token. Then simply pass along a <var>Authorization</var>
+                                header with a <code>Bearer token</code> value.
+                            </p>
+                            <p>The required parameters in the JWT payload are:</p>
+                            <ul>
+                                <li><var>clientId</var> - holds the numerical value of your provided and unique Ally client ID</li>
+                                <li><var>iat</var> - when the token was issued (seconds since epoch)</li>
+                            </ul>
+                            </p>
+                            <h5>Example (javascript)</h5>
+<pre>
+const jwt = require('jsonwebtoken');
+
+const clientId = 123;
+const applicationSecret = '...';
+const payload = {
+    'clientId': clientId
+};
+const token = jwt.sign(payload, applicationSecret);
+const authorizationHeaderValue = `Bearer ${token}`;
+</pre>
+                            <p>You can make the rest of this page interactive, by setting your values here:</p>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                  <label for="clientId" class="control-label">Client ID</label>
+                                  <input type="number" class="form-control" id="clientId" placeholder="Client ID" />
+                                </div>
+                                <div class="form-group">
+                                  <label for="applicationSecret" class="control-label">Application secret</label>
+                                  <input type="text" class="form-control" id="applicationSecret" placeholder="Application secret" />
+                                </div>
+                              </form>
+                              <div class="api-try-it-out">
+                                  <p>Example authorization header:</p>
+                                  <pre></pre>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="row align-top api-row" id="api-section-upload">
+                        <div class="col-xs-12">
+                            <h4>Upload a file to Ally</h4>
+                            <p>
+                                Start the process by uploading the file you would like to get feedback for. This is a
+                                multipart POST request. The response will contain the <var>statusUrl</var> that you
+                                can poll to check whether the file has been processed. If the file was processed
+                                previously, a <var>resourceUrl</var> will be provided through which you can fetch the
+                                feedback information immediately.
+                            </p>
+                            <h5>Supported content types</h5>
+                            <ul>
+                                <li>PDFs</li>
+                                <li>Office documents (.docx and .doc)</li>
+                                <li>Office presentations (.pptx and .ppt)</li>
+                                <li>Images</li>
+                                <li>HTML files</li>
+                            </ul>
+                            <h5>Endpoint</h5>
+                            <pre class="api-endpoint">POST /api/v2/clients/:clientId/content</pre>
+                            <h5>Parameters</h5>
+                            <ul>
+                                <li><var>clientId</var> - Path parameter - Your Ally Client ID</li>
+                                <li><var>file</var> - Post parameter - The binary file data</li>
+                            </ul>
+                            <h5>Expected response</h5>
+                            <p>There are two potential outcomes:</p>
+                            <ol>
+                                <li>
+                                    The file is new and will be processed asynchronously. The endpoint will return with
+                                    a 202 Accepted response and the following response body:
+<pre class="api-expected-response">
+    {
+        "hash": "UkVBRE1FLm1k...",
+        "status": "pending",
+        "statusUrl": "/api/v2/clients/:clientId/content/UkVBRE1FLm1k.../status,
+        "resourceUrl": null
+    }
+</pre>
+                                </li>
+                                <li>
+                                    The file has been processed before. The endpoint will return a 303 See Other with
+                                    a Location header to the feedback URL
+                                </li>
+                            </ol>
+
+
+                            <h5>cURL</h5>
+                            <pre class="api-curl-request">
+curl \
+  -H "Authorization: Bearer myJwtToken" \
+  -F"file=@test.pdf" https://prod.ally.ac/api/v2/clients/:clientId/content</pre>
+                            <div class="api-try-it-out">
+                                <h5>Try it out</h5>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="file" class="control-label">File</label>
+                                        <input type="file" class="form-control" id="file" />
+                                    </div>
+                                    <button type="button" class="btn btn-default">Submit</button>
+                                </form>
+                                <pre style="display: none" class="response"></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row align-top api-row" id="api-section-status">
+                        <div class="col-xs-12">
+                            <h4>Check the processing status of a file</h4>
+                            <p>
+                                Ally processes files asynchronously. We aim to process files in near-realtime, but some
+                                delays might be present. This endpoint can be used to poll for status updates.
+                            </p>
+                            <h5>Endpoint</h5>
+                            <pre class="api-endpoint">GET /api/v2/clients/:clientId/content/:contentHash/status</pre>
+                            <h5>Parameters</h5>
+                            <ul>
+                                <li><var>clientId</var> - Path parameter - Your Ally Client ID</li>
+                                <li><var>contentHash</var> - Path parameter - The content hash from the previous endpoint</li>
+                            </ul>
+                            <h5>Expected response</h5>
+                            <p>
+                                This endpoint will <i>always</i> return a 200 status code for existing content hashes
+                                regardless of whether the file was processed successfully.
+                            </p>
+<pre class="api-expected-response">
+{
+    "hash": "MS4gQWxsI...",
+    "status": "success",
+    "statusUrl": "/api/v2/clients/7/content/MS4gQWxsIH.../status",
+    "resourceUrl": "/api/v2/clients/7/content/MS4gQWxsIH..."
+}
+</pre>
+                            <p>The following status values can be identified:</p>
+                            <ul>
+                                <li>success</li>
+                                <li>pending</li>
+                                <li>inprogress</li>
+                                <li>failed</li>
+                            </ul>
+                            <h5>cURL</h5>
+                            <pre class="api-curl-request">
+curl \
+  -H "Authorization: Bearer myJwtToken" \
+  https://prod.ally.ac/api/v2/clients/:clientId/content/:contentHash/status</pre>
+                            <div class="api-try-it-out">
+                                <h5>Try it out</h5>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="statusContentHash" class="control-label">Content hash</label>
+                                        <input type="text" class="form-control contentHash" id="statusContentHash" placeholder="Content hash" />
+                                    </div>
+                                    <button type="button" class="btn btn-default">Submit</button>
+                                </form>
+                                <pre style="display: none" class="response"></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row align-top api-row" id="api-section-report">
+                        <div class="col-xs-12">
+                            <h4>Retrieve the feedback for a file</h4>
+                            <p>Once the file is processed, the feedback can be retrieved</p>
+                            <h5>Endpoint</h5>
+                            <pre class="api-endpoint">GET /api/v2/clients/:clientId/content/:contentHash</pre>
+                            <h5>Parameters</h5>
+                            <ul>
+                                <li><var>clientId</var> - Path parameter - Your Ally Client ID</li>
+                                <li><var>contentHash</var> - Path parameter - The content hash from the previous endpoint</li>
+                                <li>
+                                    <var>feedback</var> - Query parameter - Whether feedback information should be
+                                    returned. Should be <var>true</var>, <var>false</var> or ommitted.
+                                </li>
+                            </ul>
+                            <h5>Expected response</h5>
+<pre class="api-expected-response">
+{
+    "hash": "UXVpei0xNDYtUGljdHVyZS1Sb3VuZC5wZGY6Mjc2QkIxQ0IwNDBEMzBFRjBEMkUxRDc0MEE2RjFDQkYyNzg5NzQyQjphcHBsaWNhdGlvbi9wZGY=",
+    "feedback": {
+        "score": 0.4292113158749556
+        "visibility": "medium",
+        "report": {
+          "results": {
+            "HeadingsSequential": {
+              "snippets": [],
+              "score": 1
+            },
+            "Scanned": {
+              "score": 1
+            },
+            "HeadingsHigherLevel": {
+              "snippets": [],
+              "score": 1
+            },
+            "Title": {
+              "score": 0
+            },
+            "TableHeaders": {
+              "snippets": [
+                {
+                  "page": 1,
+                  "y0": 344.09,
+                  "x0": 77.664,
+                  "y1": 645.45996,
+                  "x1": 517.17
+                }
+              ],
+              "score": 0
+            },
+            "LanguagePresence": {
+              "score": 1
+            },
+            "HeadingsPresence": {
+              "score": 1
+            },
+            "LanguageCorrect": {
+              "detectedLanguage": "en",
+              "score": 1
+            },
+            "HeadingsStartAtOne": {
+              "snippets": [],
+              "score": 1
+            },
+            "AlternativeText": {
+              "snippets": [
+                {
+                  "page": 3,
+                  "y0": 397.45,
+                  "x0": 72,
+                  "y1": 720,
+                  "x1": 526
+                },
+                {
+                  "page": 4,
+                  "y0": 394.81,
+                  "x0": 72,
+                  "y1": 720,
+                  "x1": 476.8
+                },
+                ...
+              ],
+              "score": 0
+            },
+            "Contrast": {
+              "snippets": [
+                {
+                  "page": 0,
+                  "y0": 588.6369,
+                  "x0": 63.583138,
+                  "y1": 612.7333,
+                  "x1": 385.0053
+                },
+                {
+                  "page": 1,
+                  "y0": 688.4769,
+                  "x0": 63.583138,
+                  "y1": 712.5733,
+                  "x1": 473.90308
+                },
+                ...
+              ],
+              "score": 0.9442992157651318
+            },
+            "Tagged": {
+              "score": 1
+            }
+          },
+          "suggestions": {
+            "HeadingsSequential": 0.4306552764930626,
+            "Title": 0.4471530009744932,
+            "TableHeaders": 0.47092573373138025,
+            "HeadingsStartAtOne": 0.44798280391034667,
+            "AlternativeText": 0.6169261962288668,
+            "Contrast": 0.4515796153846155
+          },
+        }
+    },
+    "metadata": {
+        "name": "Quiz-146-Picture-Round.pdf",
+        "decorative": null,
+        "description": null,
+        "fileType": "pdf",
+        "mimeType": "application/pdf",
+        "isVersioned": false,
+        "isSeizureInducing": false,
+        "libraryReference": null
+    }
+}
+</pre>
+
+                            <h5>cURL</h5>
+                            <pre class="api-curl-request">
+curl \
+  -H "Authorization: Bearer myJwtToken" \
+  https://prod.ally.ac/api/v2/clients/:clientId/content/:contentHash</pre>
+                            <div class="api-try-it-out">
+                                <h5>Try it out</h5>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="feedbackContentHash" class="control-label">Content hash</label>
+                                        <input type="text" class="form-control contentHash" id="feedbackContentHash" placeholder="Content hash" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Feedback</label><br />
+                                        <fieldset id="feedbackGroup">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="feedback" id="feedback1" value="true" /> true
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="feedback" id="feedback2" value="false" /> false
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="feedback" id="feedback2" value="n/a" /> N/A
+                                            </label>
+                                        </fieldset>
+                                    </div>
+                                    <button type="button" class="btn btn-default">Submit</button>
+                                </form>
+                                <pre style="display: none" class="response"></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row api-row" id="api-section-ui">
+                        <div class="col-xs-12">
+                            <h4>Show the guidance for a file with the Ally UI API</h4>
+                            <p>Once a file is processed, you can show tailored guidance for it through the Ally UI API.</p>
+                            <h5>Set up</h5>
+                            <p>Include the ally UI:</p>
+<pre>
+&lt;script src="https://prod-eu-central-1.ally.ac/integration/api/ally.ui.js"&gt;&lt;/script&gt;
+</pre>
+<pre>
+ally.ready(function() {
+    window.ui = ally.ui({
+        'client': {
+            'auth': () => Promise.resolve({'bearer': 'Your JWT token for the content'}),
+            'baseUrl': 'https://prod-eu-central-1.ally.ac',
+            'clientId': 7
+        },
+        'locale': 'en-US',
+        'platformName': 'AaaS'
+    });
+    window.ui.autoUpdate();
+});
+</pre>
+<pre>
+&lt;a
+    id="trigger"
+    href="#"
+    data-ally-content-id="0"
+    data-ally-content-ref="0"
+    data-ally-file-eid="MS5BbGwgd3JvbmdfdGFnZ2VkLnBkZjo5RTZENTdGQjRENjIxMDkwQTQ5NDBFRDJCNjJEMUE1MkZCNzdFNzhEOmFwcGxpY2F0aW9uL3BkZg=="
+    data-ally-download-url="https://my.app.com/my-file.pdf"
+    data-ally-invoke="guidance"
+&gt;Show guidance&lt;/a&gt;
+</pre>
+                            <h5>Try it out</h5>
+                            <a
+                                id="trigger"
+                                href="#"
+                                data-ally-content-id="0"
+                                data-ally-content-ref="0"
+                                data-ally-invoke="instructorfeedback"
+                                data-ally-file-eid="Mi4gSGVhZGluZ3NfdGFnZ2VkX2luY29ycmVjdGx5LnBkZjo4NkE3NEJGOTUxRDA2NEM4Qzk1ODUyMDI0NEQ0REJBNkM4RDdGRjJCOmFwcGxpY2F0aW9uL3BkZg=="
+                            >Show guidance
+                            </a>
+                        </div>
+                    </div>
+
+
+                </section>
+            </div>
+        </main>
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul>
+                        <!-- <li><a href="index.html"><img src="/assets/img/ally-a.svg" alt="Blackboard Ally" /></a></li> -->
+                        <li><a href="https://usergroup.ally.ac/s/announcements/" target="_blank" title="Blackboard Ally Announcements" data-i18n="NAVIGATION_LINK_ANNOUNCEMENTS"></a></li>
+                        <li><a href="https://usergroup.ally.ac/s/releases/" target="_blank" title="Blackboard Ally Release notes" data-i18n="NAVIGATION_LINK_RELEASE_NOTES"></a></li>
+                        <li><a href="https://usergroup.ally.ac/s/discussion/" target="_blank" title="Blackboard Ally Discussions" data-i18n="NAVIGATION_LINK_DISCUSSIONS"></a></li>
+                        <li><a href="https://usergroup.ally.ac/s/case-studies/" target="_blank" title="Blackboard Ally Case studies" data-i18n="NAVIGATION_LINK_CASE_STUDIES"></a></li>
+                        <li><a href="https://usergroup.ally.ac/s/resources/" target="_blank" title="Blackboard Ally Resources" data-i18n="NAVIGATION_LINK_RESOURCES"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCWXzwKChiyWOXMTN9qQFSnQ" target="_blank" title="Blackboard Ally on YouTube" data-i18n="NAVIGATION_LINK_YOUTUBE"></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12">
+                    <div id="footer-copyright-container">
+                        <a href="https://help.blackboard.com/Privacy_Statement" target="_blank">Privacy Policy</a>
+                        <span class="footer-copyright-divider">|</span>
+                        <a href="https://help.blackboard.com/Terms_of_Use" target="_blank">Terms of Use</a>
+                        <span class="footer-copyright-divider">|</span>
+                        &copy; All rights reserved Blackboard Inc. <span id="footer-year"></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.7/jquery.i18n.min.js" integrity="sha256-Xe5TCNN0b3K98e99/oWJr0FOiSTILqWWWEaDCY48V5E=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.7/jquery.i18n.parser.min.js" integrity="sha256-wShTIrxeao7Eih6UkkjLqdE2jiH/N0MqaJdiXeGl/7o=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.7/jquery.i18n.emitter.bidi.min.js" integrity="sha256-gtc2Tvs5/k9I3Q28OZ/CP7TzCHANC8wUbJZQVE989Do=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.7/jquery.i18n.emitter.min.js" integrity="sha256-VNKWSG0j8kQ/+I4J9r0skSppRy11yw7kRmoZK7xmcIM=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.7/jquery.i18n.fallbacks.min.js" integrity="sha256-JYNCT/waNdj6h/SOcUqOmluIEjQakFz54nrbkd44Kj0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.7/jquery.i18n.language.min.js" integrity="sha256-GQa4KOpPyr5vY9JrqY9ibG3IXNyNTzTpb/K4fyReaBY=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.7/jquery.i18n.messagestore.min.js" integrity="sha256-dxDziD29LGTvKo6LXzZmm8o8W87YCu4BOh+tsrDJd4k=" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="/assets/js/jsrassign-all-min.js"></script>
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] ||
+                function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-74642053-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <script type="text/javascript">
+            var _dcq = _dcq || [];
+            var _dcs = _dcs || {};
+            _dcs.account = '9041875';
+
+            (function() {
+                var dc = document.createElement('script');
+                dc.type = 'text/javascript';
+                dc.async = true;
+                dc.src = '//tag.getdrip.com/9041875.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(dc, s);
+            })();
+        </script>
+        <script data-ally-loader src="https://performance.ally.ac/integration/api/ally.ui.js"></script>
+        <script type="text/javascript" src="/assets/js/api.js"></script>
+    </body>
+</html>
