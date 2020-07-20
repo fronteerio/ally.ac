@@ -1,4 +1,4 @@
-﻿state,code,region,totalInstitutions,totalFTE,totalFilesChecked,totalWYSIWYGChecked,Total Alt Format Downloads,avgAltFormatPerFTE,totalIndicatorClicks,totalFilesImproved
+﻿state,code,region,totalInstitutions,totalFTE,totalFilesChecked,totalWYSIWYGChecked,totalAltFormats,avgAltFormatPerFTE,totalIndicatorClicks,totalFilesImproved
 Alabama,AL,South,29,112744,2286423,3503157,13686,1.0200,1828,806
 Alaska,AK,West,2,15844,372243,460455,33645,1.1500,6654,2494
 Arizona,AZ,Southwest,4,159440,4908518,4038239,244900,1.1200,53470,22008
