@@ -84,15 +84,16 @@
                             	The “Accessibility Scores and Issues” chart includes accessibility data for the 2019-2020 academic year from the Institutional Reports of 568 U.S. Higher Education institutions organized by state. From the drop-down menu,select the variable by which you want to view the chart.
                             </p>
                             <div class="form-group">
-                            <select class="form-control" name="scoresandissues-select" id="scoresandissues-select">
-  								<option value="overallFiles" selected>Overall File Score</option>
-  								<option value="overallWysiwyg">Overall WYSIWYG Score</option>
-  								<option value="scannedPDFs">% Scanned PDFs</option>
-  								<option value="untaggedPDFs">% Untagged PDFs</option>
-  								<option value="docsMissingHeadings">% Documents Missing Headings</option>
-  								<option value="imagesMissingDescriptions">% Images Missing Description</option>
-  								<option value="docsWithContrast">% Documents With Contrast Issues</option>
-							</select>
+                            	<label for="scoresandissues-select" class="sr-only">Accessibility Scores and Issues filter</label>
+                            	<select class="form-control" name="scoresandissues-select" id="scoresandissues-select">
+  									<option value="overallFiles" selected>Overall File Score</option>
+  									<option value="overallWysiwyg">Overall WYSIWYG Score</option>
+  									<option value="scannedPDFs">% Scanned PDFs</option>
+  									<option value="untaggedPDFs">% Untagged PDFs</option>
+  									<option value="docsMissingHeadings">% Documents Missing Headings</option>
+  									<option value="imagesMissingDescriptions">% Images Missing Description</option>
+  									<option value="docsWithContrast">% Documents With Contrast Issues</option>
+								</select>
 							</div>
                         </div>
                     </div>
@@ -105,6 +106,18 @@
                             <p>
                             	The “Adoption and Usage” chart includes Ally adoption and usage data for 697 U.S. Higher Education institutions organized by state and color coded by region. From the drop-down menu, select the variable by which you want to view the chart. 
                             </p>
+                            <div class="form-group">
+                            	<label for="adoptionandusage-select" class="sr-only">Adoption and Usage filter</label>
+                            	<select class="form-control" name="adoptionandusage-select" id="adoptionandusage-select">
+  									<option value="totalInstitutions" selected>Total Institutions</option>
+  									<option value="totalFTE">Total FTE</option>
+  									<option value="totalFilesChecked">Total Files Checked</option>
+  									<option value="totalWYSIWYGChecked">Total WYSIWYG Items Checked</option>
+  									<option value="avgAltFormatPerFTE">Average Alternative Format Downloads per FTE</option>
+  									<option value="totalIndicatorClicks">Total Indicator Clicks</option>
+  									<option value="totalFilesImproved">Total Files Improved</option>
+								</select>
+							</div>
                         </div>
                     </div>
                     <div class="row">
