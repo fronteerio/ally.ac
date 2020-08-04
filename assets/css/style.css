@@ -413,7 +413,7 @@ footer figure {
 @media (max-width: 768px) {
     .triangle-green,
     .triangle-blue {
-        background-size: 100px;
+        background-size: 50px;
     }
     .features .row div {
         display: block;
@@ -439,7 +439,7 @@ footer figure {
     }
     .triangle-green,
     .triangle-blue {
-        background-size: 150px;
+        background-size: 75px;
     }
     img.features-icon {
         margin-top: 0px;
@@ -455,7 +455,7 @@ footer figure {
 @media (min-width: 990px) {
     .triangle-green,
     .triangle-blue {
-        background-size: 200px;
+        background-size: 100px;
     }
     .features blockquote q {
         font-size: 28px;
@@ -465,4 +465,6 @@ footer figure {
     }
 }
 
-
+p.contrast-issue {
+	color: #AAAAAA;
+}
