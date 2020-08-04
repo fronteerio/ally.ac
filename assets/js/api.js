@@ -45,24 +45,28 @@
         const fd = new FormData();
         fd.append('file', file);
 
-        const response = await fetch(url, {
-            'body': fd,
-            'headers': {
-                'Authorization': `Bearer ${getJwtToken()}`
-            },
-            'method': 'POST'
-        });
-        if (response.redirected) {
-            const redirectUrl = response.url;
-            setUploadResponse(`303 See Other\n\nLocation: ${redirectUrl}`);
-            const contentHash = redirectUrl.split('/').pop();
-            setContentHash(contentHash);
-        } else if (response.status === 202) {
-            const json = await response.json();
-            setUploadResponse(`${response.status} ${response.statusText}\n\n${JSON.stringify(json, null, 2)}`);
-        } else {
-            const text = await response.text();
-            setUploadResponse(`${response.status} ${response.statusText}\n\n${text}`);
+        try {
+            const response = await fetch(url, {
+                'body': fd,
+                'headers': {
+                    'Authorization': `Bearer ${getJwtToken()}`
+                },
+                'method': 'POST'
+            });
+            if (response.redirected) {
+                const redirectUrl = response.url;
+                setUploadResponse(`303 See Other\n\nLocation: ${redirectUrl}`);
+                const contentHash = redirectUrl.split('/').pop();
+                setContentHash(contentHash);
+            } else if (response.status === 202) {
+                const json = await response.json();
+                setUploadResponse(`${response.status} ${response.statusText}\n\n${JSON.stringify(json, null, 2)}`);
+            } else {
+                const text = await response.text();
+                setUploadResponse(`${response.status} ${response.statusText}\n\n${text}`);
+            }
+        } catch (err) {
+            console.error(err);
         }
     }
 
