@@ -1,5 +1,7 @@
 (function() {
 
+    const baseUrl = 'https://prod.ally.ac';
+
     $(document).ready(function() {
         checkClientSecret();
         $('#api-section-authentication form input').keyup(checkClientSecret)
@@ -11,6 +13,7 @@
 
     function checkClientSecret() {
         const token = getJwtToken();
+        console.log(token);
 
         if (token) {
             $('#api-section-authentication .api-try-it-out pre').text(`Authorization: Bearer ${token}`);
@@ -23,7 +26,7 @@
                     window.ui = ally.ui({
                         'client': {
                             'auth': () => Promise.resolve({'bearer': getJwtToken()}),
-                            'baseUrl': 'https://performance.ally.ac',
+                            'baseUrl': baseUrl,
                             'clientId': getClientId()
                         },
                         'locale': 'en-US',
@@ -41,7 +44,7 @@
     async function tryOutUpload() {
         const clientId = getClientId();
         const file = $('#api-section-upload .api-try-it-out input')[0].files[0]
-        const url = `https://performance.ally.ac/api/v2/clients/${clientId}/content`;
+        const url = `${baseUrl}/api/v2/clients/${clientId}/content`;
         const fd = new FormData();
         fd.append('file', file);
 
@@ -84,7 +87,7 @@
     async function tryOutStatus() {
         const clientId = getClientId();
         const contentHash = $('#api-section-status form input.contentHash').val();
-        const url = `https://performance.ally.ac/api/v2/clients/${clientId}/content/${contentHash}/status`;
+        const url = `${baseUrl}/api/v2/clients/${clientId}/content/${contentHash}/status`;
         const response = await fetch(url, {
             'headers': {
                 'Authorization': `Bearer ${getJwtToken()}`
@@ -107,7 +110,7 @@
         const clientId = getClientId();
         const feedback = getFeedback();
         const contentHash = $('#api-section-report form input.contentHash').val();
-        let url = `https://performance.ally.ac/api/v2/clients/${clientId}/content/${contentHash}`;
+        let url = `${baseUrl}/api/v2/clients/${clientId}/content/${contentHash}`;
         if (feedback === 'true' || feedback === 'false') {
             url += `?feedback=${feedback}`;
         }
