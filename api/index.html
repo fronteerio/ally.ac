@@ -75,7 +75,7 @@
 <pre>
 const jwt = require('jsonwebtoken');
 
-const clientId = 123;
+const clientId = 'xxxx';
 const applicationSecret = '...';
 const payload = {
     'clientId': clientId
@@ -190,8 +190,8 @@ curl \
 {
     "hash": "MS4gQWxsI...",
     "status": "success",
-    "statusUrl": "/api/v2/clients/7/content/MS4gQWxsIH.../status",
-    "resourceUrl": "/api/v2/clients/7/content/MS4gQWxsIH..."
+    "statusUrl": "/api/v2/clients/:clientId/content/MS4gQWxsIH.../status",
+    "resourceUrl": "/api/v2/clients/:clientId/content/MS4gQWxsIH..."
 }
 </pre>
                             <p>The following status values can be identified:</p>
