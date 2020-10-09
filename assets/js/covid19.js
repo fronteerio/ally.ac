@@ -1,14 +1,6 @@
 (function() {
-    const languages = navigator.languages;
-    let language;
-    if (languages && languages.length > 0) {
-        language = languages.map(l => l.slice(0, 2))
-          .filter(l => ['de', 'en', 'es', 'fr', 'it'].includes(l))[0] || 'en';
-    } else if (navigator.language) {
-        language = navigator.language.slice(0, 2);
-    } else {
-        language = 'en';
-    }
+
+    let language = resolveLanguage();
     document.documentElement.lang = language;
 
     var ERRORS = {
@@ -58,11 +50,8 @@
             });
 
         // The university field
-        $('#covid19-af-form input[type="text"]').on('change', setButtonDisabledState);
-        $('#covid19-af-form input[type="text"]').on('keyup', setButtonDisabledState);
-        if (window.localStorage.getItem('university')) {
-            $('#covid19-af-form input[type="text"]').val(window.localStorage.getItem('university'));
-        }
+        var university = getUniversity();
+        $('#covid19-af-form input[type="hidden"]').val(university);
 
         /** Invoked by recaptcha when the user confirms they're a human */
         window.recaptchaCalback = function() {
@@ -77,8 +66,6 @@
         $('#covid19-af-form').on('submit', function(e) {
             if (!e.isDefaultPrevented()) {
                 setProgress(0);
-                var university = getUniversity();
-                saveUniversity(university);
                 showStep(3, true);
                 // If the file was already uploaded, we can simply trigger again
                 var url = $('#covid19-af-form #trigger').attr('data-ally-invoke-direct-file');
@@ -127,6 +114,32 @@
         });
 
     });
+
+    function resolveLanguage() {
+        const defaultLanguage = 'en'
+        const supportedLanguages = ['de', 'en', 'es', 'fr', 'it']
+        const languages = navigator.languages;
+
+        const url = new URL(document.location.href);
+        const locale = url.searchParams.get('locale');
+
+        let language;
+        if (locale && supportedLanguages.includes(localeToLanguage(locale))) {
+            language = localeToLanguage(locale);
+        } else if (languages && languages.length > 0) {
+            language = languages.map(l => l.slice(0, 2))
+              .filter(l => supportedLanguages.includes(l))[0] || defaultLanguage;
+        } else if (navigator.language) {
+            language = navigator.language.slice(0, 2);
+        } else {
+            language = defaultLanguage;
+        }
+        return language;
+    }
+
+    function localeToLanguage(locale) {
+        return locale.slice(0, 2);
+    }
 
     /** Upload the file */
     function uploadFile(response) {
@@ -189,7 +202,7 @@
     }
 
     function setButtonDisabledState() {
-        if (getUniversity() && getCaptchaToken()) {
+        if (getCaptchaToken()) {
             $('#covid19-af-form button').removeAttr('disabled');
         } else {
             $('#covid19-af-form button').attr('disabled', 'disabled');
@@ -197,7 +210,8 @@
     }
 
     function getUniversity() {
-        return $('#covid19-af-form input[type="text"]').val();
+        const url = new URL(document.location.href);
+        return url.searchParams.get('siteId');
     }
 
     /** Get the recaptcha token, if any */
@@ -207,10 +221,6 @@
         } else {
             return null;
         }
-    }
-
-    function saveUniversity(university) {
-        localStorage.setItem('university', university);
     }
 
     /** Set the given file as the selected file and move to the next step */
