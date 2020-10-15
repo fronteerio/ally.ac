@@ -50,8 +50,15 @@
             });
 
         // The university field
+        var universityField = '#covid19-af-form input[type="text"]';
+        $(universityField).on('change', setButtonDisabledState);
+        $(universityField).on('keyup', setButtonDisabledState);
         var university = getUniversity();
-        $('#covid19-af-form input[type="hidden"]').val(university);
+        if (university) {
+            $(universityField).val(university);
+            $(universityField).hide();
+            $('label[for="form-institution"]').hide();
+        }
 
         /** Invoked by recaptcha when the user confirms they're a human */
         window.recaptchaCalback = function() {
@@ -66,6 +73,8 @@
         $('#covid19-af-form').on('submit', function(e) {
             if (!e.isDefaultPrevented()) {
                 setProgress(0);
+                var university = getUniversity();
+                saveUniversity(university);
                 showStep(3, true);
                 // If the file was already uploaded, we can simply trigger again
                 var url = $('#covid19-af-form #trigger').attr('data-ally-invoke-direct-file');
@@ -202,16 +211,36 @@
     }
 
     function setButtonDisabledState() {
-        if (getCaptchaToken()) {
+        if (getUniversity() && getCaptchaToken()) {
             $('#covid19-af-form button').removeAttr('disabled');
         } else {
             $('#covid19-af-form button').attr('disabled', 'disabled');
         }
     }
 
+    function saveUniversity(university) {
+        localStorage.setItem('university', university);
+    }
+
     function getUniversity() {
+        const university = getUniversityFromURL();
+        const universityFromStorage = getUniversityFromStorage();
+        if (university && university.length > 0) {
+            return university;
+        } else if (universityFromStorage && universityFromStorage.length > 0) {
+            return universityFromStorage;
+        } else {
+            return $('#covid19-af-form input[type="text"]').val();
+        }
+    }
+
+    function getUniversityFromURL() {
         const url = new URL(document.location.href);
         return url.searchParams.get('siteId');
+    }
+
+    function getUniversityFromStorage() {
+        return window.localStorage.getItem('university');
     }
 
     /** Get the recaptcha token, if any */
