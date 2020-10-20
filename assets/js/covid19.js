@@ -1,14 +1,6 @@
 (function() {
-    const languages = navigator.languages;
-    let language;
-    if (languages && languages.length > 0) {
-        language = languages.map(l => l.slice(0, 2))
-          .filter(l => ['de', 'en', 'es', 'fr', 'it'].includes(l))[0] || 'en';
-    } else if (navigator.language) {
-        language = navigator.language.slice(0, 2);
-    } else {
-        language = 'en';
-    }
+
+    let language = resolveLanguage();
     document.documentElement.lang = language;
 
     var ERRORS = {
@@ -58,10 +50,14 @@
             });
 
         // The university field
-        $('#covid19-af-form input[type="text"]').on('change', setButtonDisabledState);
-        $('#covid19-af-form input[type="text"]').on('keyup', setButtonDisabledState);
-        if (window.localStorage.getItem('university')) {
-            $('#covid19-af-form input[type="text"]').val(window.localStorage.getItem('university'));
+        var universityField = '#covid19-af-form input[type="text"]';
+        $(universityField).on('change', setButtonDisabledState);
+        $(universityField).on('keyup', setButtonDisabledState);
+        var university = getUniversity();
+        if (university) {
+            $(universityField).val(university);
+            $(universityField).hide();
+            $('label[for="form-institution"]').hide();
         }
 
         /** Invoked by recaptcha when the user confirms they're a human */
@@ -127,6 +123,32 @@
         });
 
     });
+
+    function resolveLanguage() {
+        const defaultLanguage = 'en'
+        const supportedLanguages = ['de', 'en', 'es', 'fr', 'it']
+        const languages = navigator.languages;
+
+        const url = new URL(document.location.href);
+        const locale = url.searchParams.get('locale');
+
+        let language;
+        if (locale && supportedLanguages.includes(localeToLanguage(locale))) {
+            language = localeToLanguage(locale);
+        } else if (languages && languages.length > 0) {
+            language = languages.map(l => l.slice(0, 2))
+              .filter(l => supportedLanguages.includes(l))[0] || defaultLanguage;
+        } else if (navigator.language) {
+            language = navigator.language.slice(0, 2);
+        } else {
+            language = defaultLanguage;
+        }
+        return language;
+    }
+
+    function localeToLanguage(locale) {
+        return locale.slice(0, 2);
+    }
 
     /** Upload the file */
     function uploadFile(response) {
@@ -196,8 +218,29 @@
         }
     }
 
+    function saveUniversity(university) {
+        localStorage.setItem('university', university);
+    }
+
     function getUniversity() {
-        return $('#covid19-af-form input[type="text"]').val();
+        const university = getUniversityFromURL();
+        const universityFromStorage = getUniversityFromStorage();
+        if (university && university.length > 0) {
+            return university;
+        } else if (universityFromStorage && universityFromStorage.length > 0) {
+            return universityFromStorage;
+        } else {
+            return $('#covid19-af-form input[type="text"]').val();
+        }
+    }
+
+    function getUniversityFromURL() {
+        const url = new URL(document.location.href);
+        return url.searchParams.get('siteId');
+    }
+
+    function getUniversityFromStorage() {
+        return window.localStorage.getItem('university');
     }
 
     /** Get the recaptcha token, if any */
@@ -207,10 +250,6 @@
         } else {
             return null;
         }
-    }
-
-    function saveUniversity(university) {
-        localStorage.setItem('university', university);
     }
 
     /** Set the given file as the selected file and move to the next step */
