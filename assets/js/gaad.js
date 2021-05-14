@@ -16,7 +16,7 @@
 	}
 	
 	function updateTimeRemaining() {
-		var t = getTimeRemaining(new Date(2020, 4, 21, 0, 0, 0, 0).getTime());
+		var t = getTimeRemaining(new Date(2021, 4, 20, 0, 0, 0, 0).getTime());
 		$('#gaad-days').text(t.days);
 		$('#gaad-hours').text(t.hours);
 		$('#gaad-minutes').text(t.minutes);
