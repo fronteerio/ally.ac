@@ -123,7 +123,7 @@
     });
 
     function loadData() {
-        $.getJSON("gaad.json").done(function (results) {
+        $.getJSON("https://api.jsonbin.io/v3/b/60953fbd3538ba6e9bca0600").done(function (results) {
             $.getJSON("fte.json").done(function (response) {
                 for (var key in results) {
                     var value = results[key];
@@ -180,7 +180,7 @@
     }
 
     function loadGraph() {
-        $.getJSON("gaad-total.json").done(function (response) {
+        $.getJSON("https://api.jsonbin.io/v3/b/60954097526ec76ecf5944e9").done(function (response) {
             var labels = [];
             var points = [];
             var last = 0;
@@ -275,7 +275,7 @@
 	}
 	
 	function updateTimeRemaining() {
-		var t = getTimeRemaining(1590145201000);
+		var t = getTimeRemaining(1621681201000);
 		$('#gaad-hours').text(t.hours);
 		$('#gaad-minutes').text(t.minutes);
 		$('#gaad-seconds').text(t.seconds);
