@@ -59,6 +59,16 @@
         "fte": 1903,
         "location": "North America"
     },
+    "us-150": {
+        "name": "South Georgia Technical College - Crisp",
+        "fte": 1560,
+        "location": "North America"
+    },
+    "us-151": {
+        "name": "Ogeechee Technical College",
+        "fte": 1552,
+        "location": "North America"
+    },
     "us-152": {
         "name": "Lanier Technical College",
         "fte": 2463,
@@ -82,6 +92,16 @@
     "us-158": {
         "name": "Georgia Piedmont Technical College",
         "fte": 2017,
+        "location": "North America"
+    },
+    "us-159": {
+        "name": "Wiregrass Georgia Technical College",
+        "fte": 2544,
+        "location": "North America"
+    },
+    "us-160": {
+        "name": "Savannah Technical College",
+        "fte": 2916,
         "location": "North America"
     },
     "us-166": {
@@ -255,6 +275,11 @@
         "fte": 4230,
         "location": "North America"
     },
+    "us-5164": {
+        "name": "North Dakota State University",
+        "fte": 33348,
+        "location": "North America"
+    },
     "us-5243": {
         "name": "Austin Community College",
         "fte": 100000,
@@ -283,6 +308,11 @@
     "us-603": {
         "name": "University of Florida",
         "fte": 48177,
+        "location": "North America"
+    },
+    "us-605": {
+        "name": "University of St Thomas",
+        "fte": 2682,
         "location": "North America"
     },
     "us-628": {
@@ -425,6 +455,11 @@
         "fte": 1943,
         "location": "North America"
     },
+    "us-9521": {
+        "name": "Seneca College of Applied Arts and Technology",
+        "fte": 30000,
+        "location": "North America"
+    },
     "us-9577": {
         "name": "University of La Verne",
         "fte": 0,
@@ -513,6 +548,11 @@
     "eu-516": {
         "name": "University of Bahrain",
         "fte": 26000,
+        "location": "Europe"
+    },
+    "eu-511": {
+        "name": "Universiteit Antwerpen voor Associatie Antwerpen",
+        "fte": 21133,
         "location": "Europe"
     },
     "eu-56": {
