@@ -123,7 +123,7 @@
     });
 
     function loadData() {
-        $.getJSON("https://api.jsonbin.io/v3/b/60953fbd3538ba6e9bca0600").done(function (results) {
+        $.getJSON("https://performance-us-east-1-gaadstack-allygaad5a670049-141o6wjvy80ts.s3.amazonaws.com/clients.json").done(function (results) {
             $.getJSON("fte.json").done(function (response) {
                 for (var key in results) {
                     var value = results[key];
@@ -180,7 +180,7 @@
     }
 
     function loadGraph() {
-        $.getJSON("https://api.jsonbin.io/v3/b/60954097526ec76ecf5944e9").done(function (response) {
+        $.getJSON("https://performance-us-east-1-gaadstack-allygaad5a670049-141o6wjvy80ts.s3.amazonaws.com/totals.json").done(function (response) {
             var labels = [];
             var points = [];
             var last = 0;
