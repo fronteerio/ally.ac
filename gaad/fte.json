@@ -39,6 +39,11 @@
         "fte": 5629,
         "location": "North America"
     },
+    "us-104": {
+        "name": "Columbus Technical College",
+        "fte": 2215,
+        "location": "North America"
+    },
     "us-1166": {
         "name": "Lockport City School District",
         "fte": 5100,
@@ -207,7 +212,8 @@
     "us-4": {
         "name": "Utah State University",
         "fte": 22468,
-        "location": "North America"
+        "location": "North America",
+        "hasLogo": true
     },
     "us-4051": {
         "name": "Missouri State University",
@@ -447,6 +453,11 @@
     "us-97": {
         "name": "Southern Regional Technical College",
         "fte": 2735,
+        "location": "North America"
+    },
+    "us-98": {
+        "name": "Southeastern Technical College",
+        "fte": 1188,
         "location": "North America"
     },
     "us-9879": {

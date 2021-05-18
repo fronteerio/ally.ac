@@ -9,12 +9,13 @@
         if (fixdata.position < 4) {
             badge = "pos-badge";
         }
+    
         $("#leaderboard .table_body").append(`
             <tr class="">
                 <td class="text-center position ${badge}"><span>${fixdata.position}</span></td>
                 <td class="logo table_white table_left_side_radius text-center" aria-hidden="true">
                 	<span class="logo_container">
-                		<img src="/assets/img/logos/${fixdata.id}.png" alt="" />
+                		<img src="/assets/img/logos/${fixdata.logo}.png" alt="" />
                 	</span>
                 </td>
                 <td class="details table_white">
@@ -134,6 +135,11 @@
                         if (value && value > 0) {
                             fixesPerStudent = value / uniDetails.fte;
                         }
+
+                        var logo = key;
+                        if (("hasLogo" in uniDetails && !uniDetails.hasLogo)) {
+                            logo = "nologo";
+                        }
                         var details = {
                             "details": {
                                 "name": uniDetails.name,
@@ -142,7 +148,8 @@
                             "fixes": formatNumber(value),
                             "students": formatNumber(uniDetails.fte),
                             "fixes_per_student": fixesPerStudent.toFixed(5),
-                            "id": key
+                            "id": key,
+                            "logo": logo
                         };
                         data.push(details);
                     } else {
