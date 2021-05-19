@@ -282,7 +282,7 @@
 	}
 	
 	function updateTimeRemaining() {
-		var t = getTimeRemaining(1621681201000);
+		var t = getTimeRemaining(1621594801000);
 		$('#gaad-hours').text(t.hours);
 		$('#gaad-minutes').text(t.minutes);
 		$('#gaad-seconds').text(t.seconds);
