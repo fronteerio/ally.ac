@@ -306,3 +306,23 @@ a.table_show_full, a.table_show_full:visited, a.table_show_full:hover, a.table_s
 .card-content-details {
     text-align: left;
 }
+
+#canvas {
+    height:100%; 
+    width:100%;
+ }
+
+ #record {
+     z-index: 1000;
+     position: absolute;
+     color: #FFF;
+     font-size: 20px;
+     font-weight: bold;
+     line-height: 15px;
+     font-family: Roboto;
+     background-color: #085659;
+     padding-top: 25px;
+     padding-bottom: 25px;
+     padding-left: 20px;
+     padding-right: 20px;
+ }

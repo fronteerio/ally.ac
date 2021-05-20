@@ -198,6 +198,22 @@
                 last = fixes;
             }
 
+            var showConfetti = Cookies.get('confetti');
+            if (last > 57003 && !showConfetti) {
+                Cookies.set('confetti', 'true');
+
+                var confettiSettings = { 
+                    'target': 'my-canvas',
+                    'respawn': false
+                };
+                var confetti = new ConfettiGenerator(confettiSettings);
+                confetti.render();
+
+                $("#leaderboard").append("<div id='record'>We beat last year’s record!</div>");
+                $('#record').css({top:'50%',left:'50%',margin:'-'+($('#record').height() / 2)+'px 0 0 -'+($('#record').width() / 2)+'px'});
+                $('#record').fadeOut(10000);
+            }
+
             Highcharts.chart('chart-container', {
                 chart: {
                     type: 'line',
