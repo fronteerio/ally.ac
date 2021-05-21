@@ -198,9 +198,9 @@
                 last = fixes;
             }
 
-            var showConfetti = Cookies.get('confetti');
-            if (last > 57003 && !showConfetti) {
-                Cookies.set('confetti', 'true');
+            var showConfetti = Cookies.get('confetti_100k');
+            if (last > 100000 && !showConfetti) {
+                Cookies.set('confetti_100k', 'true');
 
                 var confettiSettings = { 
                     'target': 'my-canvas',
@@ -209,7 +209,7 @@
                 var confetti = new ConfettiGenerator(confettiSettings);
                 confetti.render();
 
-                $("#leaderboard").append("<div id='record'>We beat last year’s record!</div>");
+                $("#leaderboard").append("<div id='record'>Wow! We fixed 100,000 files!</div>");
                 $('#record').css({top:'50%',left:'50%',margin:'-'+($('#record').height() / 2)+'px 0 0 -'+($('#record').width() / 2)+'px'});
                 $('#record').fadeOut(10000);
             }
